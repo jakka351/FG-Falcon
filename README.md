@@ -1,14 +1,25 @@
-# FG-Falcon-specific-
-MkI fg falcon scripts, codes, canbus bits for project
+## FG-Falcon-specific ##
+Collection of Mine & Others Work, Resources, Information, inks with regards to the FG Falcon's CAN-BUS, ICC, SWC, etcetc.
 
-Fg falcon rpi4 ICC replacement mk IV.
 
--Android Auto Headunit via DASH/intelligent auto from https://github.com/openDsh/dash
+# HS-Can Decoded
 
--GUI for engine performance, fault notifications, datalogger for predictive maintenance charts
+# MS-Can Decoded
 
--Front & Rear dash cam + gps + can + openalpr data logger/blackbox
+# Forscan Resources
 
--Modify available scripts to fit specific to FG falcon mk1 needs.
+# Scripts for RPI + Arduino
 
-.....and it will all be network booted to save pulling the f***en thing apart every time you want to change something 
+# Wiring Diagrams
+
+
+# Links #
+
+Ford Forums AU post link
+https://fordforums.com.au/showthread.php?t=11475851
+
+Kyle May's FG ICC Repo
+https://github.com/KyleMay/Ford-FG-ICC
+
+
+
