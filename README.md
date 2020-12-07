@@ -18,12 +18,9 @@ Raspberry Pi
 
 
 # Links #
-Ford Forums AU  
-https://fordforums.com.au/  
-Ford Forums AU post link  
-https://fordforums.com.au/showthread.php?t=11475851  
-Kyle May's FG ICC Repo  
-https://github.com/KyleMay/Ford-FG-ICC  
+[Ford Forums AU](https://fordforums.com.au/)  
+[Ford Forums AU post link](https://fordforums.com.au/showthread.php?t=11475851)  
+[Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
 
 
 
