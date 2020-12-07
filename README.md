@@ -15,14 +15,26 @@ ICC
 Arduino  
 Raspberry Pi  
 
+# Technical Documents   
+[HVAC General Info](http://fordforums.com.au/wsmpub/fgfpv50/412-00.html)  
+
 # Wiring Diagrams
 
 
 # Links #
 [Ford Forums AU](https://fordforums.com.au/)  
-[Ford Forums AU post link](https://fordforums.com.au/showthread.php?t=11475851)  
-[Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
+[Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)
+[Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)  
 
 
+# Disclaimer #
+Modifying any system on a vehicle may have unforseen consequences. Be careful.  
+
+# Credit & License #
+[Kyle May](https://www.kylemay.net.au/)
+Bulltime
+[Mitchell H](https://fordforums.com.au/member.php?u=2315299)  
+[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)  
+[Ford Forums Australia](https://fordforums.com.au)  
 
 
