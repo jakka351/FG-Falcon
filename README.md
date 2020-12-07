@@ -19,12 +19,12 @@ As Built Data Backups
  - [HVAC CAN Reader]()  
  
 **Raspberry Pi**  
- - [Crankshaft NG]()    
- - [Opendsh/Dash Intelligent Auto]()      
+ - [Crankshaft NG](https://getcrankshaft.com/)    
+ - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
 
 # Technical Documents   
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewcategory.php?moduleid=64)  
-[FG Falcon}(https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
+[FG Falcon](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
 [Supplement](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
 [Module Comms Network](http://fordforums.com.au/wsmpub/fgii/418-00.html)  
 [HVAC General Info](http://fordforums.com.au/wsmpub/fgfpv50/412-00.html) 
@@ -54,6 +54,7 @@ Modifying any system on a vehicle may have unforseen consequences. Be careful.
 Bulltime  
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)    
 [MRFGXR6](http://fordforums.com.au/member.php?u=25234)  
+[Robert Stanley Judka rsjudka - Intelligent Auto](https://github.com/rsjudka)
 [XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)    
 [Ford Forums Australia](https://fordforums.com.au)  
 
