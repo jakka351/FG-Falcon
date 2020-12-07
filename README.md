@@ -61,9 +61,9 @@ Modifying any system on a vehicle may have unforseen consequences. Be careful.
 Bulltime  
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)    
 [MRFGXR6](http://fordforums.com.au/member.php?u=25234)  
-[Robert Stanley Judka rsjudka - Intelligent Auto](https://github.com/rsjudka)
-[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)    
-[Ford Forums Australia](https://fordforums.com.au)  
+[Robert Stanley Judka rsjudka - Intelligent Auto](https://github.com/rsjudka)  
+[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)      
+[Ford Forums Australia](https://fordforums.com.au)    
 
 
 ![image](https://cdn.shopify.com/s/files/1/0068/9569/7989/products/b_sdbsdb_3c8424a4-fbbc-4064-9924-8e1e5f2c0e94_1024x1024@2x.jpg?v=1598414441)  
