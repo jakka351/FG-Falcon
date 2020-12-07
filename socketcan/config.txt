@@ -1,0 +1,44 @@
+# https://github.com/jakka351/vac_laser_test
+# Dri-Sump Containment Testing 
+# Leighton OBrien 
+# vaclasertest 08112020 /boot/config.txt
+# For more options and information see
+# http://rpf.io/configtxt
+# Some settings may impact device functionality. See link above for details
+[pi4]
+arm_freq=2000
+arm_freq_min=300
+force_turbo=0
+initial_turbo=60
+over_voltage=8
+gpu_freq=700
+gpu_freq_min=250
+gpu_mem=64
+#dtoverlay=mmc,overclock_50=100
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+
+#enable_uart=1
+#dtoverlay=miniuart-bt,krnbt=on
+#dtparam=krnbt=on
+#dtparam=krnbt_baudrate=9600
+#dtparam=uart0=on
+#dtparam=uart1=on
+#dtoverlay=disable-bt
+#dtoverlay=disable-wifi
+#dtoverlay=pps-gpio,gpiopin=18,assert_falling_edge=on,capture_clear=on
+[all]
+#set mac address if necessary 
+#smsc95xx.macaddr=B8:AA:BC:DE:F0:12
+dtparam=audio=off
+#dtoverlay=vc4-fkms-v3d
+avoid_warnings=2 
+#avoid_pwm_pll=1
+temp_limit=90
+temp_soft_limit=80
+hdmi_ignore_hotplug=1
+hdmi_ignore_cec=1
+hdmi_ignore_edid_audio=1
+disable_splash=1
+max_usb_current=0
+
