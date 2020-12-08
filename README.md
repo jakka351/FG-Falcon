@@ -8,6 +8,7 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
+ - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
  
 **FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
@@ -31,7 +32,8 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
 add database of hex and deci for ms and hs can     
   ![image](https://www.crowdsupply.com/img/24a9/python-can_png_project-body.jpg)  
-# Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)       
+# Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
+[Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)      
 [As Built Data ]()  
@@ -58,6 +60,7 @@ add workshop manual link
  ![image](https://img.favcars.com/fpv/gt/fpv_gt_2008_wallpapers_1_b.jpg)  
 # Links #  
 [Ford Forums AU](https://fordforums.com.au/)  
+[Forscan](https://forscan.org/)  
 [PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
    
 
@@ -65,14 +68,14 @@ add workshop manual link
 Modifying any system on a vehicle may have unforseen consequences. 
 ![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
 # Credit & License #
-[Kyle May](https://www.kylemay.net.au/)  
-[Bulletime]()
-[Mitchell H](https://fordforums.com.au/member.php?u=2315299)    
+[Kyle May](https://www.kylemay.net.au/)   
+[Bull3time](https://github.com/Bull3time)  
+[Mitchell H](https://fordforums.com.au/member.php?u=2315299)      
 [MRFGXR6](http://fordforums.com.au/member.php?u=25234)  
-[Robert Stanley Judka rsjudka - Intelligent Auto](https://github.com/rsjudka)  
-[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)  
-[ICC Replacement](https://fordforums.com.au/showthread.php?p=6521457#post6521457)
-[Ford Forums Australia](https://fordforums.com.au)    
+[RSJudka - Intelligent Auto](https://github.com/rsjudka)    
+[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)    
+[ICC Replacement](https://fordforums.com.au/showthread.php?p=6521457#post6521457)  
+[Ford Forums Australia](https://fordforums.com.au)      
 
 
 ![image](https://img.favcars.com/fpv/logotypes/fpv_logotypes__wallpapers_1.jpg)  
