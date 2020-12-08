@@ -19,17 +19,20 @@ As Built Data Backups
  ![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
  
 # Software
-**fg falcon specific arduino**  
+**FG Specific Arduino Sketches**  
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
- - [CANbus to keypresses repo](https://)  
+ 
 
-**fg falcon specific python & can-utils scripts**  
- - swc  
+**FG Falcon Specific Scripts*  
+ - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
+ Listens for can frames on can0 and translates button pushes (seek, volup, voldown, phone) to keyboard presses.  
  - hvac  
- - cansend can0 specific commands   
+ - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
+ - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)
+ 
 
 **Raspberry Pi & Linux**  
  - [Crankshaft NG](https://getcrankshaft.com/)    
