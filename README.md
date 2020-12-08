@@ -6,11 +6,12 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 # FG CAN bus decoded    
 [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
 [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)  
-[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    y
-database of hex and deci for ms and hs can     
+[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
+
+add database of hex and deci for ms and hs can     
 
 
-# Forscan Resources     
+# Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)       
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)      
 As Built Data Backups    
@@ -19,14 +20,14 @@ As Built Data Backups
  ![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
  
 # Software  ![image](https://img.shields.io/badge/cansend-can0-orange)  
-**FG Specific Arduino Sketches**  
+**FG Specific Arduino Sketches**    ![image](https://img.shields.io/badge/FG-Falcon-blue)  
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  
 
-**FG Falcon Specific Scripts**    
+**FG Falcon Specific Scripts**      ![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
  Listens for can frames on can0 and translates button pushes (seek, volup, voldown, phone) to keyboard presses.  
  - hvac  
@@ -34,7 +35,7 @@ As Built Data Backups
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)
  
 
-**Raspberry Pi & Linux**  
+**Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto Headunit Simulator](https://github.com/f1xpl/openauto)  
@@ -66,10 +67,10 @@ add workshop manual link
  - ACU  
  - DIAGNOSTIC PORT add pinouts + photos
    
- ![image](https://img.favcars.com/fpv/gt/fpv_gt_2008_wallpapers_1_b.jpg)
+ ![image](https://img.favcars.com/fpv/gt/fpv_gt_2008_wallpapers_1_b.jpg)  
 # Links #  
 [Ford Forums AU](https://fordforums.com.au/)  
-[PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)  
+[PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
    
 
 # Disclaimer #
