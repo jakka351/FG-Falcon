@@ -32,8 +32,10 @@ As Built Data Backups
  - [Openauto - Android Auto Headunit Simulator](https://github.com/f1xpl/openauto)  
  - [Adding CAN to the Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
- - [Socketcan Linux Documentation](can.txt)
- - [Python-CAN PiCAN2 Examples]()  
+ - [Socketcan Linux Documentation](can.txt)  
+ - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)    
+ 
+ ![image](https://i.ebayimg.com/images/g/j6UAAOSwuAVWvCq1/s-l1600.jpg)  
  
  
 # Technical Documents   
@@ -51,9 +53,9 @@ As Built Data Backups
  - [Audio Interface Module](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)   
  - [AIM & Phone](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=699)  
  - ACU  
- - DIAGNOSTIC PORT  
+ - DIAGNOSTIC PORT add pinout
    
- ![image](https://e7.pngegg.com/pngimages/848/310/png-clipart-ford-falcon-gt-ford-performance-vehicles-fpv-gt-r-spec-car-ford-gt-giant-compact-car-sedan.png)
+ ![image](https://www.conceptcarz.com/images/Ford/2008-Ford-Australia-FPV-GT-03-800.jpg)
 # Links #  
 [Ford Forums AU](https://fordforums.com.au/)  
 [PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)  
