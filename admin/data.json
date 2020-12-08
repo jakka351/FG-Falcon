@@ -1,0 +1,28 @@
+---
+notPage:
+  - /admin/data.json
+layout:
+---
+{
+  "collections": {
+    {% for item in site.collections %}
+      "{{item.label}}": {{ site[item.label] | jsonify}}
+      {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+  },
+  "pages": [
+    {% for item in site.pages %}
+      {% unless page.notPage contains item.url %}
+      {
+        "id": "{{ item.url }}",
+        {% for prop in item %}
+          "{{ prop[0] }}": {{ prop[1] | jsonify }}
+          {% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+      }
+      {% if forloop.last %}{% else %},{% endif %}
+      {% endunless %}
+    {% endfor %}
+  ],
+  "data": {{ site.data | jsonify }}
+}
