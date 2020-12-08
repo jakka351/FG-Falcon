@@ -10,7 +10,7 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  
 **FG Falcon Specific Scripts**      ![image](https://img.shields.io/badge/FG-Falcon-blue)    
- - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)![Foo](https://img.shields.io/badge/github-can0swc-yellowgreen)](https://github.com/jakka351/can0swc)      
+ - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
  [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)      
  - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
