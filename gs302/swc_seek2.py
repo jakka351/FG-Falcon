@@ -11,13 +11,13 @@ import uinput
 import queue
 from threading import Thread
 
-led = 22
+led = 22 #GPIO22 on the PiCAN2 Board has a LED fitted
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(led,GPIO.OUT)
 GPIO.output(led,True)
 
-# ==== Keyboard buttons configurations ====
+# simulated keypresses setup
 device = uinput.Device([
         uinput.KEY_NEXTSONG,
         uinput.KEY_PREVIOUSSONG,
@@ -30,13 +30,13 @@ device = uinput.Device([
 ])
 
 
-# For a list of PIDs visit https://en.wikipedia.org/wiki/OBD-II_PIDs
-SWC_SEEK               = 0x09
-SWC_SEEKHOLD           = 0x09
-SWC_VOLUP              = 0x11
-SWC_VOLDOWN            = 0x19
-SWC_PHONE              = 0x68      
-SWC                    = 0x2F2
+# add full can data
+SWC_SEEK               = 0x09 #frame 8
+SWC_SEEKHOLD           = 0x09 #frame 8
+SWC_VOLUP              = 0x11 #frame 8
+SWC_VOLDOWN            = 0x19 #frame 8
+SWC_PHONE              = 0x68 #frame 7      
+SWC                    = 0x2F2 #can id
 
 print('\n\rSteering Wheel Controls Adapter Starting...')
 print('PiCAN2 Board bringing up can0 hs-can...')
@@ -48,7 +48,7 @@ os.system("sudo /sbin/ip link set can0 up type can bitrate 500000")
 time.sleep(0.1)
 print('can0 ready')
 print('can1 ready')
-print('listening for steering wheel buttons...')
+print('listening for 0x2F2 can ids on bus...')
 
 try:
     bus = can.interface.Bus(channel='can0', bustype='socketcan_native')
@@ -62,10 +62,9 @@ def can_rx_task():  # Receive thread
         message = bus.recv()
         if message.arbitration_id == SWC:
             q.put(message)          # Put message into queue
-            print('can frame recvd and queued...')
+            print('')
+            print('can frame queued...')
             print('detected steering wheel button:')
-
-
 q = queue.Queue()
 rx = Thread(target = can_rx_task)
 rx.start()
@@ -83,25 +82,25 @@ try:
             c = '{0:f},{1:d},'.format(message.timestamp,count)
             if message.arbitration_id == SWC and message.data[7] == SWC_SEEK:
                 device.emit_click(uinput.KEY_NEXTSONG) # Next Track
-                print('Seek!')
+                print('     Seek!')
 
             if message.arbitration_id == SWC and message.data[7] == SWC_VOLUP:
                 device.emit_click(uinput.KEY_VOLUMEUP) # 
-                print('Volup!')
+                print('     Volup!')
                                     
             if message.arbitration_id == SWC and message.data[7] == SWC_VOLDOWN:
                 device.emit_click(uinput.KEY_VOLUMEDOWN) #
-                print('Voldown!')
+                print('     Voldown!')
 
             if message.arbitration_id == SWC and message.data[6] == SWC_PHONE:
                 device.emit_click(uinput.KEY_M) # 
-                print('Phone!')
+                print('     Phone!')
 
        #     if message.arbitration_id == SWC and message.data[7] == SWC_SEEKHOLD:
         #        device.emit_click(uinput.KEY_NEXTSONG) # 
          #       print('Seekhold!')                             
 
-    print('FG Steering Wheel Button')
+    print('FG Falcon')
 
 except KeyboardInterrupt:
     #Catch keyboard interrupt
