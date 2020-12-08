@@ -40,13 +40,14 @@ As Built Data Backups
  - [Openauto - Android Auto Headunit Simulator](https://github.com/f1xpl/openauto)  
  - [Adding CAN to the Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
- - [Socketcan Linux Documentation](can.txt)  
+ - [Socketcan Linux Documentation](https://android.googlesource.com/kernel/msm/+/228428428138e231a155464239880201e5cc8b44/Documentation/networking/can.txt)   
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)    
  
  ![image](https://i.ebayimg.com/images/g/j6UAAOSwuAVWvCq1/s-l1600.jpg)  
  
  
-# Technical Documents   
+# Technical Documents  ![image}(https://img.shields.io/badge/FG-Falcon-blue)  
+
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewcategory.php?moduleid=64)  
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
 [Supplement](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
@@ -55,13 +56,15 @@ As Built Data Backups
 [ICC](http://fordforums.com.au/wsmpub/fg/413-08.html)  
 [Remove ICC Assembly](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
+add workshop manual link  
 
-# Wiring Diagrams
+
+# Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)  
  - [ICC connector](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)    
  - [Audio Interface Module](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)   
  - [AIM & Phone](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=699)  
  - ACU  
- - DIAGNOSTIC PORT add pinout
+ - DIAGNOSTIC PORT add pinouts + photos
    
  ![image](https://www.conceptcarz.com/images/Ford/2008-Ford-Australia-FPV-GT-03-800.jpg)
 # Links #  
@@ -70,18 +73,19 @@ As Built Data Backups
    
 
 # Disclaimer #
-Modifying any system on a vehicle may have unforseen consequences. Be careful.  
+Modifying any system on a vehicle may have unforseen consequences. 
 
 # Credit & License #
 [Kyle May](https://www.kylemay.net.au/)  
-Bulletime  
+[Bulletime]()
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)    
 [MRFGXR6](http://fordforums.com.au/member.php?u=25234)  
 [Robert Stanley Judka rsjudka - Intelligent Auto](https://github.com/rsjudka)  
-[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)      
+[XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)  
+[ICC Replacement](https://fordforums.com.au/showthread.php?p=6521457#post6521457)
 [Ford Forums Australia](https://fordforums.com.au)    
 
 
-![image](https://cdn.shopify.com/s/files/1/0068/9569/7989/products/b_sdbsdb_3c8424a4-fbbc-4064-9924-8e1e5f2c0e94_1024x1024@2x.jpg?v=1598414441)  
+![image](https://img.favcars.com/fpv/logotypes/fpv_logotypes__wallpapers_1.jpg)  
 
 
