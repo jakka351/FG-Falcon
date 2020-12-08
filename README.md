@@ -49,7 +49,7 @@ add database of hex and deci for ms and hs can
 [Remove ICC Assembly](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 add workshop manual link  
-![image](https://banner2.cleanpng.com/20180611/tc/kisspng-ford-falcon-bmw-car-ford-motor-company-ford-falcon-5b1dfe0cbf8535.0739571215286922367845.jpg)  
+
 # Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)    
  - [Audio Interface Module](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)   
@@ -63,7 +63,6 @@ add workshop manual link
 [ASL Automedia](https://www.aslautomedia.com.au/)  
 [PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
    
-![image](https://banner2.cleanpng.com/20180611/tc/kisspng-ford-falcon-bmw-car-ford-motor-company-ford-falcon-5b1dfe0cbf8535.0739571215286922367845.jpg)  
 # Disclaimer #
 Modifying any system on a vehicle may have unforseen consequences. 
 ![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
