@@ -2,14 +2,14 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 Collection of resources relating to electronic and mechanical systems of the FG Falcon.  
 
-# Software  ![image](https://img.shields.io/badge/cansend-can0-orange) ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red) ![image](https://img.shields.io/badge/%23-Arduino-lightgrey) ![image](https://img.shields.io/badge/github-can0swc-yellowgreen)   
+# Software  ![image](https://img.shields.io/badge/cansend-can0-orange) ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red) ![image](https://img.shields.io/badge/%23-Arduino-lightgrey) ![image](https://img.shields.io/badge/github-can0swc-yellowgreen) [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
 **FG Specific Arduino Sketches**   
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  
-**FG Falcon Specific Scripts**      
+**FG Falcon Specific Scripts** [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
  - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)     
  - hvac script todo  
