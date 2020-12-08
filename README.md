@@ -2,20 +2,19 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 Collection of resources relating to electronic and mechanical systems of the FG Falcon.  
 
-# Software  ![image](https://img.shields.io/badge/cansend-can0-orange) ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)![image](https://img.shields.io/badge/%23-Arduino-lightgrey)    
+# Software  ![image](https://img.shields.io/badge/cansend-can0-orange) ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red) ![image](https://img.shields.io/badge/%23-Arduino-lightgrey) ![image](https://img.shields.io/badge/github-can0swc-yellowgreen)   
 **FG Specific Arduino Sketches**   
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
- - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
+ - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  
 **FG Falcon Specific Scripts**      
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
- - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)![image](https://img.shields.io/badge/github-can0swc-yellowgreen)    
+ - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)     
  - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
- - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)
- ![image](https://www.crowdsupply.com/img/24a9/python-can_png_project-body.jpg)  
+ - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
 
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
@@ -24,8 +23,9 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  - [Adding CAN to the Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
  - [Socketcan Linux Documentation](https://android.googlesource.com/kernel/msm/+/228428428138e231a155464239880201e5cc8b44/Documentation/networking/can.txt)   
- - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)    
- ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)  
+ - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)      
+  ![image](https://www.crowdsupply.com/img/24a9/python-can_png_project-body.jpg)  
+ ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)    
  
 # FG CAN bus decoded    
 [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
