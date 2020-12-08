@@ -6,8 +6,8 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 # FG CAN bus decoded    
 [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
 [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)  
-[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
-Steering Wheel Controls    
+[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    y
+database of hex and deci for ms and hs can     
 
 
 # Forscan Resources     
@@ -19,14 +19,19 @@ As Built Data Backups
  ![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
  
 # Software
-**Arduino**  
+**fg falcon specific arduino**  
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  - [CANbus to keypresses repo](https://)  
 
-**Linux**  
+**fg falcon specific python & can-utils scripts**  
+ - swc  
+ - hvac  
+ - cansend can0 specific commands   
+
+**Raspberry Pi & Linux**  
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto Headunit Simulator](https://github.com/f1xpl/openauto)  
