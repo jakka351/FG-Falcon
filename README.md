@@ -2,20 +2,20 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 Collection of resources relating to electronic and mechanical systems of the FG Falcon.  
 
-# Software  ![image](https://img.shields.io/badge/cansend-can0-orange)  
-**FG Specific Arduino Sketches**    ![image](https://img.shields.io/badge/FG-Falcon-blue)  
+# Software  ![image](https://img.shields.io/badge/cansend-can0-orange) ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)![image](https://img.shields.io/badge/%23-Arduino-lightgrey)    
+**FG Specific Arduino Sketches**   
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
- - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
+ - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
  
-**FG Falcon Specific Scripts**      ![image](https://img.shields.io/badge/FG-Falcon-blue)    
- - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
- - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)      
+**FG Falcon Specific Scripts**      
+ - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
+ - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)![image](https://img.shields.io/badge/github-can0swc-yellowgreen)    
  - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)
- 
+ ![image](https://www.crowdsupply.com/img/24a9/python-can_png_project-body.jpg)  
 
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
@@ -55,7 +55,7 @@ add database of hex and deci for ms and hs can
 add workshop manual link  
 
 
-# Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)  
+# Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)    
  - [Audio Interface Module](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)   
  - [AIM & Phone](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=699)  
