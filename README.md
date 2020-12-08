@@ -11,7 +11,7 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  
 **FG Falcon Specific Scripts**      ![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
- [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)      
+ - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)      
  - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)
