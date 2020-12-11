@@ -59,7 +59,9 @@ add workshop manual link
  - [Audio Interface Module](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1173)   
  - [AIM & Phone](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=699)  
  - ACU  
- - DIAGNOSTIC PORT add pinouts + photos   
+ - DIAGNOSTIC PORT add pinouts + photos + handy dandy fuse labels
+ [!image](https://fuse-box.info/wp-content/uploads/2019/06/Ford-Falcon-FG-X-2013-2016_in1_fuse_box_diagram.jpg)  
+   
  ![image](https://img.favcars.com/fpv/gt/fpv_gt_2008_wallpapers_1_b.jpg)  
 # Links #  
 [Ford Forums AU](https://fordforums.com.au/)  
