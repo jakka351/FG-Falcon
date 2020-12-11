@@ -16,22 +16,24 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
+    
+# FG CAN bus decoded      
+[HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
+[MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
+[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
+- add database of hex and deci for ms and hs can  
+- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring  
+ ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)    
 
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
- - [Openauto - Android Auto Headunit Simulator](https://github.com/f1xpl/openauto)  
- - [Adding CAN to the Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
+ - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
+ - [Adding CAN to  Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
  - [Socketcan Linux Documentation](https://android.googlesource.com/kernel/msm/+/228428428138e231a155464239880201e5cc8b44/Documentation/networking/can.txt)   
- - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)      
- ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)    
-# FG CAN bus decoded    
-[HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
-[MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)  
-[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
-add database of hex and deci for ms and hs can  
-  ![image](https://i.ibb.co/L8brGGM/fggreen.jpg)  
+ - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
+![image](https://i.ibb.co/L8brGGM/fggreen.jpg)  
 # Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
