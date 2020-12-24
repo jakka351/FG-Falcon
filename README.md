@@ -24,8 +24,31 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
 [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
 - add database of hex and deci for ms and hs can  
-- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring  
- ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)    
+- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring    
+   
+ ## Steering wheel media buttons
+
+| Address | Data    | Function | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
+| ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
+| `754`   | 8 bytes | Complex  | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x00|
+
+Frame address 754 = 0x2F2 in hex
+
+| Function | Byte1  | Byte2 | Byte3 | Byte4 | Byte5 | Byte6 | Byte7 | Byte8 |
+| -------- | -----  | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| seek              | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x09 |
+| volume UP         | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x11 |
+| volume DOWN       | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x19 |
+| phone             | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x68 | 0x00 |
+| mode              | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x09 |
+
+SWC are resistance based, ie one wire through all switches, pushing a button causes a specific resistance in circuit.  module then interprets and sends data on to mscan. 
+
+ ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)  
+
+
+
+
 
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
@@ -44,7 +67,8 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 [Police Mode]()  
  ![image](https://i.ibb.co/WWzGWZz/silfg.jpg)  
 # Technical Documents  ![image](https://img.shields.io/badge/FG-Falcon-blue)  
-[FG Falcon](https://www.fordforums.com.au/vbportal/viewcategory.php?moduleid=64)  
+[FG Falcon mkI Workshop Manual](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
+[FG Falcon mkII Workshop Manual]()    
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
 [Supplement](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
 [Module Comms Network](http://fordforums.com.au/wsmpub/fgii/418-00.html)  
