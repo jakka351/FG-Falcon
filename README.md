@@ -23,7 +23,9 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
 [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
 [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
-- add database of hex and deci for ms and hs can  
+[HS-Can Database]()
+[MS-Can Database]()
+[Where & How]()
 - add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring    
    
  ## Steering wheel media buttons
@@ -82,12 +84,11 @@ add workshop manual link
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
- - [AIM & Phone](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=699)  
- - [DIAGNOSTIC PORT]()
- [!image](https://fuse-box.info/wp-content/uploads/2019/06/Ford-Falcon-FG-X-2013-2016_in1_fuse_box_diagram.jpg)  
+ - [AIM & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
+ - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)
+ - [DIAGNOSTIC PORT]()  
    
- ![image](https://img.favcars.com/fpv/gt/fpv_gt_2008_wallpapers_1_b.jpg)  
-# Links #  
+ # Links #  
 [Ford Forums AU](https://fordforums.com.au/)  
 [Forscan](https://forscan.org/) 
 [ASL Automedia](https://www.aslautomedia.com.au/)  
