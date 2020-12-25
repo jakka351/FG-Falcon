@@ -19,7 +19,8 @@
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
  -  hvac python script in progress    
  
-# FG CAN bus decoded      
+# FG CAN bus decoded    
+ - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
  - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
@@ -70,7 +71,7 @@
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
  - [AIM & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
- - [DIAGNOSTIC PORT]()  
+ - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
  # Links #  
 [Ford Forums AU](https://fordforums.com.au/)    
