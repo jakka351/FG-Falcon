@@ -34,12 +34,6 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 | ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
 | `754`   | 8 bytes | Complex  | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x00|
  
-
-
-
-
-
-
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
@@ -53,7 +47,7 @@ Collection of resources relating to electronic and mechanical systems of the FG 
 # Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
-[How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)      
+[How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
 [As Built Data ]()  
 [Police Mode]()  
  ![image](https://i.ibb.co/WWzGWZz/silfg.jpg)  
@@ -72,9 +66,10 @@ add workshop manual link
 # Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
+ - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
  - [AIM & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
- - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)
+ - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT]()  
    
  # Links #  
