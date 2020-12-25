@@ -1,4 +1,4 @@
-# FG-Falcon-specific #
+ # FG-Falcon-specific #
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 Collection of resources relating to electronic and mechanical systems of the FG Falcon.  
 
@@ -10,43 +10,31 @@ Collection of resources relating to electronic and mechanical systems of the FG 
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
  - mcp2515 arduino library[]()  
- - u8g2-master.zip depency library  
+ - libs   
   
 **FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
  - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)     
- - hvac script todo  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
-    
+ -  hvac python script in progress    
+ 
 # FG CAN bus decoded      
-[HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
-[MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
-[ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
-[HS-Can Database]()
-[MS-Can Database]()
-[Where & How]()
+ - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
+ - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
+ - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
+ - [Can-bus Database](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database)  
+ - [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
+  
 - add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring    
    
- ## Steering wheel media buttons
+ ## [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
 
 | Address | Data    | Function | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
 | ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
 | `754`   | 8 bytes | Complex  | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x00|
+ 
 
-Frame address 754 = 0x2F2 in hex
-
-| Function | Byte1  | Byte2 | Byte3 | Byte4 | Byte5 | Byte6 | Byte7 | Byte8 |
-| -------- | -----  | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| seek              | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x09 |
-| volume UP         | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x11 |
-| volume DOWN       | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x19 |
-| phone             | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x68 | 0x00 |
-| mode              | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x09 |
-
-SWC are resistance based, ie one wire through all switches, pushing a button causes a specific resistance in circuit.  module then interprets and sends data on to mscan. 
-
- ![image](https://www.automobilesreview.com/gallery/2011-fpv-gt/2011-fpv-gt-04.jpg)  
 
 
 
@@ -60,7 +48,8 @@ SWC are resistance based, ie one wire through all switches, pushing a button cau
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
  - [Socketcan Linux Documentation](https://android.googlesource.com/kernel/msm/+/228428428138e231a155464239880201e5cc8b44/Documentation/networking/can.txt)   
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
-![image](https://i.ibb.co/L8brGGM/fggreen.jpg)  
+  
+  
 # Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
