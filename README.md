@@ -6,8 +6,9 @@
 **FG Specific Arduino Sketches**   
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
- - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)     
- - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)  
+ - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino) 
+ - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
+ - [Kyle May's FG ICC Repo]()  
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
  - mcp2515 arduino library[]()  
  - libs   
