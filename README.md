@@ -78,11 +78,11 @@
 [Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
 [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
 [ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC
-[CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - "converts the CANBUS signals from BA BF FG PCMs into wired outputs suitable for standard gauges and instrument clusters"  
-[A curated list of awesome tools, hardware and resources for CAN bus](https://github.com/iDoka/awesome-canbus)  
-[PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)   
-[Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)
-[Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)  
+[CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - converts the CANBUS signals from BA BF FG PCMs  
+[iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
+[Raspberry Pi PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
+[Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
+[Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
 [Generic China MCP2515 board](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
    
 # Disclaimer #
