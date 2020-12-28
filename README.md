@@ -74,10 +74,11 @@
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
- # Links #  
-[Ford Forums AU](https://fordforums.com.au/)    
-[Forscan](https://forscan.org/)   
-[ASL Automedia](https://www.aslautomedia.com.au/)    
+ # Links #  - add descriptions / warn of products for sale / no association
+[Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
+[Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
+[ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC
+[CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - "converts the CANBUS signals from BA BF FG PCMs into wired outputs suitable for standard gauges and instrument clusters"  
 [A curated list of awesome tools, hardware and resources for CAN bus](https://github.com/iDoka/awesome-canbus)  
 [PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)   
 [Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)
