@@ -79,7 +79,8 @@
 [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
 [ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC  
 [CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - converts the CANBUS signals from BA BF FG PCMs  
-[FG Mods](https://fgmods.com.au/)  - please seek professional avice if you intend on modifying your car.
+[FG Mods](https://fgmods.com.au/)  - FG Mods  
+[MCP2515 microchip.com data sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)  
 [iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
 [Raspberry Pi PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
 [Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
