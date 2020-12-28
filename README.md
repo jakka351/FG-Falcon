@@ -38,7 +38,7 @@
  
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
- - [Opendsh/Dash Intelligent Auto](https://github.com/openDsh/dash)      
+ - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
  - [Adding CAN to  Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
@@ -77,7 +77,7 @@
  # Links #  - add descriptions / warn of products for sale / no association
 [Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
 [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
-[ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC
+[ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC  
 [CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - converts the CANBUS signals from BA BF FG PCMs  
 [iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
 [Raspberry Pi PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
@@ -93,7 +93,7 @@ Modifying any system on a vehicle may have unforseen consequences.
 [Bull3time](https://github.com/Bull3time)  
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)      
 [MRFGXR6](http://fordforums.com.au/member.php?u=25234)  
-[RSJudka - Intelligent Auto](https://github.com/rsjudka)    
+[RSJudka - OpenDash](https://github.com/rsjudka)    
 [XR6 ICC Replacement](https://fordforums.com.au/showthread.php?t=11475851)    
 [ICC Replacement](https://fordforums.com.au/showthread.php?p=6521457#post6521457)  
 [Ford Forums Australia](https://fordforums.com.au)      
