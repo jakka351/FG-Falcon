@@ -1,0 +1,69 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: AIM ACM ABS BEM BPM FDIM HIM IC OBD2 PAM PCM RCM TCM 
+BO_ 296 MSG1: 8 BEM
+
+BO_ 742 MSG2: 0 ACM
+
+BO_ 748 MSG3: 8 ACM
+
+BO_ 754 9: 8 ACM
+
+BO_ 0 MSG1: 0 Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "isj1939dbc" INT 0 0;
+BA_ "GenMsgBackgroundColor" BO_ 742 "#ffff7f";
+BA_ "GenMsgBackgroundColor" BO_ 748 "#aaffff";
+BA_ "GenMsgForegroundColor" BO_ 748 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 754 "#000000";
+BA_ "GenMsgBackgroundColor" BO_ 754 "#00ff7f";
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "isj1939dbc" 0;
+CM_ BU_ AIM "Audio Interface Module MS";
+CM_ BU_ ACM "Audio Control Module MS";
+CM_ BU_ ABS "Antilock Braking System Module HS";
+CM_ BU_ BEM "Body Electronic Module HS";
+CM_ BU_ BPM "Bluetooth Phone Module MS";
+CM_ BU_ FDIM "Front Display Interface Module MS";
+CM_ BU_ HIM "HVAC Interface Module HS";
+CM_ BU_ IC "Instrument Cluster Module MS";
+CM_ BU_ OBD2 "On Board Diagnostics Module HS";
+CM_ BU_ PAM "Parking Aid Module HS";
+CM_ BU_ PCM "Powertrain Control Module HS";
+CM_ BU_ RCM "Restraint Control Module HS";
+CM_ BU_ TCM "Transmission Control Module HS";
