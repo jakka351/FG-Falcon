@@ -21,20 +21,28 @@
  -  hvac python script in progress    
  
 # FG CAN bus decoded    
+
  - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
- - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
- - [Can-bus Database](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database)  
+ - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources) 
+ - reworked spreadsheet - in progress 01/01/2021    
+ - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) - in progress 01/01/2021  
+ - [CAN Database](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) - in progress 01/01/2021 
  - [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
   
-- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring    
-   
- ## [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
+- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring - in progress 01/01/21      
+Currently this information only really covers the CAN identifiers and data from the Front Display Interface Module, Audio Control Module, Body Electronic Module and the HVAC Intergrated Module. I am keen to create a mostly full database for the fg mkI so the progress will go up here. Anyone interested doing the same with a BA, BF FGII or FG-X that wants to help give me a shout. - 01/01/2021  
+
+ 
+ ## [Steering wheel media CAN data](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
 
 | Address | Data    | Function | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
 | ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
 | `754`   | 8 bytes | Complex  | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x00|
+  
+    
+    
  
 **Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
  - [Crankshaft NG](https://getcrankshaft.com/)    
@@ -70,7 +78,6 @@
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
- - [AIM & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
