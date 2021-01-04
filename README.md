@@ -102,7 +102,7 @@ Currently this information only really covers the CAN identifiers and data from 
    
 # Disclaimer #
 Modifying any system on a vehicle may have unforseen consequences. 
-![image](https://i.postimg.cc/3NzQt9S9/FPV_FG_MK_II_GS_-_VANISH-_SILVER.jpg)  
+![image](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/fgcartoon.png)  
 # Credit & License #
 [Kyle May](https://www.kylemay.net.au/)   
 [Bull3time](https://github.com/Bull3time)  
