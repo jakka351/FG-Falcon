@@ -2,8 +2,9 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 [Collection of resources relating to electronic and mechanical systems of the FG Falcon.](https://github.com/jakka351/FG-Falcon/wiki)  
 
-# Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue) ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red) ![image](https://img.shields.io/badge/%23-Arduino-lightgrey) ![image](https://img.shields.io/badge/%23-Forscan-lightblue) ![image](https://img.shields.io/badge/github-can0swc-yellowgreen) ![image](https://img.shields.io/badge/cansend-can0-orange) [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
-**FG Specific Arduino Sketches**   
+# Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue)   ![image](https://img.shields.io/badge/%23-Forscan-lightblue)    
+**FG Specific Arduino Sketches**     ![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
+
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino) 
@@ -13,14 +14,15 @@
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino/mcp2515) 
  
   
-**FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) [![GitHub issues](https://img.shields.io/github/issues/jakka351/FG-Falcon?style=social)](https://github.com/jakka351/FG-Falcon/issues)  
+**FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) 
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
- - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc)     
+ - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc) -- work in progress          ![image](https://img.shields.io/badge/github-can0swc-yellowgreen)    
+
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
  -  hvac python script in progress    
  
-# FG CAN bus decoded    
+# FG CAN bus decoded                       ![image](https://img.shields.io/badge/cansend-can0-orange)      
 
  - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
@@ -48,7 +50,7 @@ Currently this information only really covers the CAN identifiers and data from 
  
    
      
-**Raspberry Pi & Linux**  ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)  
+**Raspberry Pi & Linux**            ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)    
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
@@ -58,13 +60,13 @@ Currently this information only really covers the CAN identifiers and data from 
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
   
   
-# Forscan Resources ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
+# Forscan Resources                 ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
 [As Built Data ]()  
 [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
-# Technical Documents  ![image](https://img.shields.io/badge/FG-Falcon-blue)  
+# Technical Documents      ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)  
 [FG Github Wiki](https://github.com/jakka351/FG-Falcon/wiki)    
 [FG Falcon mkI Workshop Manual](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
 [FG Falcon mkII Workshop Manual]()    
@@ -77,7 +79,7 @@ Currently this information only really covers the CAN identifiers and data from 
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
 
-# Wiring Diagrams ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
+# Wiring Diagrams                   ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
