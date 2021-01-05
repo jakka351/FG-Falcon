@@ -21,7 +21,8 @@
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
  -  hvac python script in progress    
- 
+ - [FDIM Controller project](https://github.com/p1ne/fdim-controller) - Not FG specific   
+  
 # FG CAN bus decoded                       ![image](https://img.shields.io/badge/cansend-can0-orange)      
 
  - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
