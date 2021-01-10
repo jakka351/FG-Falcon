@@ -4,7 +4,7 @@
 
 # Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue)   ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  ![image](https://img.shields.io/badge/bro-%20these%20badges%20are%20so%20cool-red)  
 
-**[FG Specific Arduino Sketches](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     ![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
+**[FG Specific Arduino Sketches](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
 
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
@@ -51,7 +51,7 @@ Currently this information only really covers the CAN identifiers and data from 
  
    
      
-**Raspberry Pi & Linux**            ![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)    
+**Raspberry Pi & Linux**            [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
@@ -79,7 +79,7 @@ As Built Data
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
 
-# Wiring Diagrams                   ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)    
+# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan) ![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
