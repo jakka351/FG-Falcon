@@ -24,7 +24,7 @@
   
 # FG CAN bus decoded                       ![image](https://img.shields.io/badge/cansend-can0-orange)      
 
- - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network  
+ - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
  - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources) 
