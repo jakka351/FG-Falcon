@@ -12,7 +12,7 @@
  - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)    
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
- - [mcp2515 can library](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources/software/arduino/mcp2515) 
+ - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
 **FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) 
