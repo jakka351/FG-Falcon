@@ -4,15 +4,15 @@
 
 # Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue)   ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  ![image](https://img.shields.io/badge/bro-%20these%20badges%20are%20so%20cool-red)  
 
-**FG Specific Arduino Sketches**     ![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
+**[FG Specific Arduino Sketches](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     ![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
 
- - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
- - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)      
- - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino) 
+ - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
+ - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
+ - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/CANReader.ino) 
  - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)    
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
- - [mcp2515 can library](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino/mcp2515) 
+ - [mcp2515 can library](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources/software/arduino/mcp2515) 
  
   
 **FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) 
@@ -57,7 +57,7 @@ Currently this information only really covers the CAN identifiers and data from 
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
  - [Adding CAN to  Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
- - [Socketcan Linux Documentation](https://android.googlesource.com/kernel/msm/+/228428428138e231a155464239880201e5cc8b44/Documentation/networking/can.txt)   
+ - [Socketcan Linux Documentation](https://github.com/jakka351/FG-Falcon/blob/master/socketcan/can.txt)   
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
   
   
@@ -65,7 +65,7 @@ Currently this information only really covers the CAN identifiers and data from 
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
-[As Built Data ]()  
+As Built Data   
 [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
 # Technical Documents      ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)  
 [FG Github Wiki](https://github.com/jakka351/FG-Falcon/wiki)    
