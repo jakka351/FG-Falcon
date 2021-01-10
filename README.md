@@ -2,7 +2,8 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 [Collection of resources relating to electronic and mechanical systems of the FG Falcon.](https://github.com/jakka351/FG-Falcon/wiki)  
 
-# Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue)   ![image](https://img.shields.io/badge/%23-Forscan-lightblue)    
+# Software  ![image](https://img.shields.io/badge/FG-Falcon-blue) ![image](https://img.shields.io/badge/mkI-mkII-lightblue)   ![image](https://img.shields.io/badge/%23-Forscan-lightblue)  ![image](https://img.shields.io/badge/bro-%20these%20badges%20are%20so%20cool-red)  
+
 **FG Specific Arduino Sketches**     ![image](https://img.shields.io/badge/%23-Arduino-lightgrey)  
 
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon-specific/tree/master/software/arduino)  
@@ -15,17 +16,15 @@
  
   
 **FG Falcon Specific Scripts** ![image](https://img.shields.io/badge/python-v3.7-blue) 
- - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) (untested)  
- - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc) -- work in progress          ![image](https://img.shields.io/badge/github-can0swc-yellowgreen)    
-
- - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc) (untested)
- - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc) (untested)    
- -  hvac python script in progress    
+ - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
+ - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc) -- work in progress![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
+ - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
+ - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller) - Not FG specific   
   
 # FG CAN bus decoded                       ![image](https://img.shields.io/badge/cansend-can0-orange)      
 
- - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
+ - [Controller Area Network](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
  - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources) 
