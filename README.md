@@ -1,10 +1,10 @@
- # FG-Falcon-specific [![image](https://img.shields.io/badge/NEW-STUFF!-brightgreen)]()    
+ # FG-Falcon-specific [![image](https://img.shields.io/badge/NEW-STUFF!-brightgreen)]()![images](https://img.shields.io/badge/FG-WIKI-darkred)](https://github.com/jakka351/FG-Falcon/wiki)    
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 [Collection of resources relating to electronic and mechanical systems of the FG Falcon.](https://github.com/jakka351/FG-Falcon/wiki)  
 
 # Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
 
-**[FG Specific Arduino Sketches](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
+**[FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
 
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
@@ -48,7 +48,7 @@
  
    
      
-**Raspberry Pi & Linux**            [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
+# Raspberry Pi & Linux**            [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
@@ -64,7 +64,7 @@
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
 As Built Data   
 [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
-# Technical Documents      ![images](https://img.shields.io/badge/Ford-Forums-darkblue)![image](https://img.shields.io/badge/FG-Falcon-blue)  
+# Technical Documents      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
 [FG Github Wiki](https://github.com/jakka351/FG-Falcon/wiki)    
 [FG Falcon mkI Workshop Manual](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
@@ -76,8 +76,9 @@ As Built Data
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
 
-# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) ![image](https://img.shields.io/badge/FG-Falcon-blue)    
+# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
+ - [Cruise Control Buttons](https://github.com/jakka351/FG-Falcon/wiki/Cruise-Control)  
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
