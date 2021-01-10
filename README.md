@@ -22,7 +22,7 @@
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller) - Not FG specific   
   
-# FG CAN bus decoded                       ![image](https://img.shields.io/badge/cansend-can0-orange)      
+# FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
 
  - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
@@ -79,7 +79,7 @@ As Built Data
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
 
-# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan) ![image](https://img.shields.io/badge/FG-Falcon-blue)    
+# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) ![image](https://img.shields.io/badge/FG-Falcon-blue)    
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
