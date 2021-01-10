@@ -48,7 +48,7 @@
  
    
      
-# Raspberry Pi & Linux**            [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
+# Raspberry Pi & Linux           [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
