@@ -4,7 +4,7 @@
 
 # Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
 
-## [FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
+### [FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)    [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
 
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
@@ -15,7 +15,7 @@
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
-## FG Falcon specific  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+### FG Falcon specific  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
  - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc) -- work in progress![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
@@ -23,7 +23,7 @@
    
  
    
-## FG Falcon not-so-specific [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+### FG Falcon not-so-specific [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller)   
  - [Python-Ford Reader](https://github.com/jakka351/python-fordreader)  
  
@@ -64,7 +64,7 @@
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
   
   
-## Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
+### Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
@@ -82,7 +82,7 @@ As Built Data
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
 
-## Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
+### Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Cruise Control Buttons](https://github.com/jakka351/FG-Falcon/wiki/Cruise-Control)  
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
@@ -91,7 +91,7 @@ As Built Data
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
- ## Links 
+ ### Links 
 [Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
 [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
 [Cluster Mods](http://clustermods.com/index.php)  - ba bf   
@@ -107,10 +107,10 @@ As Built Data
 [Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
 [Generic China MCP2515 board](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
    
-## Disclaimer 
+### Disclaimer 
 Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be 100% accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in anyway. 
 ![image](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/fgcartoon.png)  
-## Credit & License 
+### Credit & License 
 [Kyle May](https://www.kylemay.net.au/)   
 [Bull3time](https://github.com/Bull3time)  
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)      
