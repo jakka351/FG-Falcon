@@ -4,7 +4,7 @@
 
 # Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
 
-**[FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
+## [FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)**     [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
 
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
@@ -15,12 +15,18 @@
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
-**FG Falcon Specific Scripts** [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+## FG Falcon specific  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
  - [can0swc:catch can frames and throw keypresses](https://github.com/jakka351/can0swc) -- work in progress![image](https://img.shields.io/badge/github-can0swc-yellowgreen)  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
- - [FDIM Controller project](https://github.com/p1ne/fdim-controller) - Not FG specific   
+   
+ 
+   
+**FG Falcon not-so-specific** [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+ - [FDIM Controller project](https://github.com/p1ne/fdim-controller)   
+ - [Python-Ford Reader](https://github.com/jakka351/python-fordreader)  
+ 
   
 # FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
 
