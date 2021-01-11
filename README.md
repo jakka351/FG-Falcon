@@ -31,9 +31,9 @@
 # FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
 
  - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
- - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)   
- - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources)    
- - [ICC Can codes](https://github.com/jakka351/FG-Falcon-specific/tree/master/resources) 
+ - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/FG%20HS%20CAN%20Decoded.xlsx)   
+ - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls)
+ - [ICC Can codes](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx) 
  - [fg_controller_area_network.xlsx](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area_network.xlsx) - work in progress, updated 10/01/21 ![image](https://img.shields.io/badge/-Updated-blue)      
  - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) - in progress 01/01/2021    
  - [CAN Database](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) -scrap this for that ^03/01/2021 
