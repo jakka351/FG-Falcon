@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 #// Ford FG can0hvac
-#FG Falcon can-frames used in this example
-#https://jakka351.github.io/FG-Falcon/
-#import RPi.GPIO as GPIO #GPIO Library for LED on GPIO22 on PiCAN2 board
+#https://github.com/jakka351/FG-Falcon/
+#pip3 install regex uinput evdev python-can
 import can 
 import time
 import os
-import uinput #keypress lib for version 1
+import uinput 
 import queue
+import sys, traceback
 from threading import Thread
-
+#############################
 HVAC                    =  0x353 #can id 851 
 HVAC_off                =  0xAB  #  [5] A 129 0 0 34 [171] 0 0    All Off
 HVAC_TEMP               =  0     #851 x4
@@ -38,28 +38,72 @@ VS                      =  0xCF  # print('A/C Off, Foot and Window Vents, Close 
 VT                      =  0xDB  # print('A/C Off, Foot and Face Vents, Close Cabin')
 VU                      =  0x43  # print('Auto, Close Cabin')
 VW                      =  0x23  # print('Auto, Open Cabin')
-
+#############################
 try:
     bus = can.interface.Bus(channel='vcan0', bustype='socketcan_native') #bus channel & type refer to python-can docs
+    print('')
+    print('')                                                                            
+    print('███████  ██████      ███████  █████  ██       ██████  ██████  ███    ██ ')
+    time.sleep(0.05)
+    print('██      ██           ██      ██   ██ ██      ██      ██    ██ ████   ██ ')
+    time.sleep(0.05)
+    print('█████   ██   ███     █████   ███████ ██      ██      ██    ██ ██ ██  ██ ')
+    time.sleep(0.05)
+    print('██      ██    ██     ██      ██   ██ ██      ██      ██    ██ ██  ██ ██ ')
+    time.sleep(0.05)
+    print('██       ██████      ██      ██   ██ ███████  ██████  ██████  ██   ████ ')
+    time.sleep(1.0)
+
+    print('   ╔═╗╦ ╦╔╦╗╦ ╦╔═╗╔╗╔   ╔═╗╔═╗╔╗╔  ╦ ╦╦  ╦╔═╗╔═╗  ╔═╗╔═╗╦═╗╦╔═╗╔╦╗')
+    time.sleep(0.08)
+    print('   ╠═╝╚╦╝ ║ ╠═╣║ ║║║║───║  ╠═╣║║║  ╠═╣╚╗╔╝╠═╣║    ╚═╗║  ╠╦╝║╠═╝ ║ ')
+    time.sleep(0.08)
+    print('   ╩   ╩  ╩ ╩ ╩╚═╝╝╚╝   ╚═╝╩ ╩╝╚╝  ╩ ╩ ╚╝ ╩ ╩╚═╝  ╚═╝╚═╝╩╚═╩╩   ╩ ')
+
+    print('         ')
+
+    print('              https://github.com/jakka351/fg-falcon')
+
+    time.sleep(2.0)
+    
+    print('          ')
+    time.sleep(0.08)
+    print('┌─┐┌─┐┌┐┌┌┐┌┌─┐┌─┐┌┬┐┌─┐┌┬┐  ┌┬┐┌─┐  ┌┐┌┌─┐┌┬┐┬ ┬┌─┐┬─┐┬┌─  ┌─┐┌─┐┌┐┌   ┌─┐┌─┐┬─┐┌─┐')
+    time.sleep(0.08)
+    print('│  │ │││││││├┤ │   │ ├┤  ││   │ │ │  │││├┤  │ ││││ │├┬┘├┴┐  │  ├─┤│││───┌─┘├┤ ├┬┘│ │')
+    time.sleep(0.08)
+    print('└─┘└─┘┘└┘┘└┘└─┘└─┘ ┴ └─┘─┴┘   ┴ └─┘  ┘└┘└─┘ ┴ └┴┘└─┘┴└─┴ ┴  └─┘┴ ┴┘└┘   └─┘└─┘┴└─└─┘')
+    time.sleep(0.08)
+    print('                                                                                    ')
+    time.sleep(0.5)
+    print('───────────────────────────────────────────────────  ───  ───  ───  ───  ───   ───  ')
+                                                                                    
+    time.sleep(1.0)        
+                                                    
 except OSError:
     print('can0swc cannot start can0 or can1 interface: can0swc cant get it up: check wiring and config')
     #GPIO.output(led,False)
     exit()
 
+#############################
 def can_rx_task():  # Recv can frames only with CAN_ID specified in SWC variable
     while True:
         message = bus.recv()
         if message.arbitration_id == HVAC: #CAN_ID variable
             q.put(message)          # Put message into queue
-            print('')
+            print(message)
+
+
+
+
 q = queue.Queue()
 rx = Thread(target = can_rx_task)
 rx.start()
 #c = ''
 count = 0
-
 time.sleep(0.1)
 
+#############################
 # Main loop
 try:
     while True:
@@ -69,19 +113,20 @@ try:
             message = q.get()
  
             if message.arbitration_id == HVAC and message.data[3] != HVAC_TEMP:
+                
                 print('AC Temp:')
                 print(message.data[3] / 2)
-                time.sleep(1.0)
+                time.sleep(0.1)
 
             if message.arbitration_id == HVAC and message.data[4] != HVAC_OUT:
                 print('Outside Temp:')
                 print(message.data[4])
-                time.sleep(1.0)
+                time.sleep(0.1)
 
             if message.arbitration_id == HVAC and message.data[7] != HVAC_FANSPEED:
                 print('Fan Speed:')
                 print(message.data[7])
-                time.sleep(1.0)
+                time.sleep(0.1)
 
             if message.arbitration_id == HVAC and message.data[0] != HVAC_VENTSTATUS:
                 print('Vent Status:')
@@ -130,7 +175,10 @@ try:
                  print('Auto, Close Cabin')
                 if message.data[0] == VW: 
                  print('Auto, Open Cabin')
-                time.sleep(1.0) 
+                time.sleep(0.1) 
+                print('                                                                                    ')
+                print('───────────────────────────────────────────────────  ───  ───  ───  ───  ───   ───  ')
+          
 
             if message.arbitration_id == HVAC and message.data[5] == HVAC_off:
                 print('AC Off')
@@ -139,6 +187,18 @@ try:
             #if message.arbitration_id == HVAC:
              #   print('')
              #   time.sleep(1.0)
+############################
 
+############################
+# end
 except KeyboardInterrupt:
     exit()
+except Exception:
+    traceback.print_exc(file=sys.stdout)
+    exit()
+except OSError:
+    exit()   
+############################
+# can0hvac
+############################
+
