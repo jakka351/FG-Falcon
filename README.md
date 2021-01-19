@@ -62,8 +62,8 @@
  - [Adding CAN to  Raspberry Pi](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
  - [Socketcan](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
  - [Socketcan Linux Documentation](https://github.com/jakka351/FG-Falcon/blob/master/socketcan/can.txt)   
- - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
-  
+ - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+ - [omxplayer pi splash video](https://github.com/jakka351/omx-pi-splash)  
   
 ### Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
 [Forscan Website](https://forscan.org/)    
