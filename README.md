@@ -65,6 +65,10 @@
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [omxplayer pi splash video](https://github.com/jakka351/omx-pi-splash)  
   
+### OpenXC Platform - FoMoCo open source  
+ - [OpenXC](https://openxcplatform.com/)  
+ - [OpenXC on GitHub]()  
+  
 ### Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
