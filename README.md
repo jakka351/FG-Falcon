@@ -108,6 +108,7 @@ As Built Data
 [FG Mods](https://fgmods.com.au/) 
 [MCP2515 microchip.com data sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)  
 [iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
+[CAN-BUS Gist](https://gist.github.com/jackm/f33d6e3a023bfcc680ec3bfa7076e696) - CAN Tools and Software List  
 [Raspberry Pi PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
 [Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
 [Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
