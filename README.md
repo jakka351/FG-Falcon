@@ -17,7 +17,8 @@
  
   
 ### FG Falcon specific  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
- - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
+-[Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)  
+- [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
  - [can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)    [![image](https://img.shields.io/badge/testing-can0-yellow)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)
  - [can0swc](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/testing-can0swc-yellowgreen)](https://github.com/jakka351/can0swc)    
 >tested in car, needs tweaking to get to work properly 22/01/21  
