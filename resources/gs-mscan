@@ -1,0 +1,24 @@
+<cangaroo-workspace>
+ <tabs>
+  <tab mode="linear" title="Trace" TimestampMode="0" type="TraceWindow">
+   <LinearTraceView AutoScroll="0"/>
+   <AggregatedTraceView SortColumn="-1"/>
+  </tab>
+  <tab mode="linear" title="Trace" TimestampMode="1" type="TraceWindow">
+   <LinearTraceView AutoScroll="0"/>
+   <AggregatedTraceView SortColumn="-1"/>
+  </tab>
+  <tab mode="aggregated" title="Trace" TimestampMode="1" type="TraceWindow">
+   <LinearTraceView AutoScroll="1"/>
+   <AggregatedTraceView SortColumn="3"/>
+  </tab>
+ </tabs>
+ <setup>
+  <network name="Network 1">
+   <interfaces>
+    <interface configure="1" auto-restart-time="100" name="vcan0" bitrate="125000" listen-only="0" sample-point-fd="875" one-shot="0" bitrate-fd="4000000" driver="SocketCAN" sample-point="875" triple-sampling="0" auto-restart="0" type="can" can-fd="0"/>
+   </interfaces>
+   <databases/>
+  </network>
+ </setup>
+</cangaroo-workspace>
