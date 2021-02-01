@@ -39,21 +39,30 @@
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls)
  - [ICC Can codes](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx) 
  - [fg_controller_area_network.xlsx](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area_network.xlsx) - work in progress, updated 10/01/21 ![image](https://img.shields.io/badge/-Updated-blue)      
- - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) - in progress 01/01/2021    
- - [CAN Database](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) -scrap this for that ^03/01/2021 
+ - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) - in progress 01/01/2021   
+ - [fg fpv 5.4 tr6060 candump log mscan](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)  
+ - [fg fpv 5.4 tr6060 candump log hscan](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)  
+ - [CAN Frames ms-can](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) 
  - [ba,bf CAN spreadsheet](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx) - [from PCMTec Forums user Lukeyson](https://forum.pcmtec.com/topic/279-can-messages/)  
  - [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
   
-- add document explaining basics of two buses/speeds/obd pin out/various points in car to tee into wiring - in progress 01/01/21  
-  
+ ### 
 
- ### [Steering wheel media CAN data](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
-
-| Address | Data    | Function | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
+| Address | Data    |  | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
 | ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
-| `754`   | 8 bytes | Complex  | 0x02 | 0xE3 | 0x06 | 0x4E | 0x08 | 0x1D | 0x00 | 0x00|
+| `0x000`   | 8 bytes |   | 0x00 | 0x01 | 0x02 | 0x03 | 0x04 | 0x05 | 0x06 | 0x07|
   
-     
+  
+    
+  ### OpenXC Platform - FoMoCo open source  
+ - [OpenXC](https://openxcplatform.com/)  
+ - [OpenXC on GitHub](https://github.com/openxc)    
+ - [Ford Developers](https://developer.ford.com/)  
+ - [OpenXC Background Information](https://developer.ford.com/pages/openxc)  
+ - [More Background](http://vi.openxcplatform.com/)  
+ - [Supported Vehicles](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=2)  
+ - [Supported Data](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  
+ - - Falcon is type 8
     
  
    
@@ -68,10 +77,7 @@
  - [Python-CAN PiCAN2 Examples](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [omxplayer pi splash video](https://github.com/jakka351/omx-pi-splash)  
   
-### OpenXC Platform - FoMoCo open source  
- - [OpenXC](https://openxcplatform.com/)  
- - [OpenXC on GitHub]()  
-  
+
 ### Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
