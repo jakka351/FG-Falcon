@@ -82,13 +82,13 @@
  - [omxplayer pi splash video](https://github.com/jakka351/omx-pi-splash)  
   
 
-### Forscan Resources                 [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
+# Forscan                  [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
 [Forscan Website](https://forscan.org/)    
 [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
 [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
 As Built Data   
 [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
-## Technical Documents      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
+# Technical Documents      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
 [FG Github Wiki](https://github.com/jakka351/FG-Falcon/wiki)    
 [FG Falcon mkI Workshop Manual](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
 [FG Falcon](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
@@ -109,7 +109,7 @@ As Built Data
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
- ### Links 
+ # Links 
 [Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
 [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
 [Cluster Mods](http://clustermods.com/index.php)  - ba bf   
@@ -126,10 +126,10 @@ As Built Data
 [Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
 [Generic China MCP2515 board](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
    
-### Disclaimer 
+# Disclaimer 
 Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be 100% accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in anyway. 
 ![image](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/fgcartoon.png)  
-### Credit & License 
+# Credit & License 
 [Kyle May](https://www.kylemay.net.au/)   
 [Bull3time](https://github.com/Bull3time)  
 [Mitchell H](https://fordforums.com.au/member.php?u=2315299)      
