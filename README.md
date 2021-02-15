@@ -1,8 +1,9 @@
- # FG-Falcon
+ # Ford FG-Falcon
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 [Collection of resources relating to electronic and mechanical systems of the FG Falcon.](https://github.com/jakka351/FG-Falcon/wiki)  
 
-# Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  [![image](https://img.shields.io/badge/-14%2F01%2F2021-yellow)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) [![image](https://img.shields.io/badge/NEW-STUFF!-brightgreen)](https://github.com/jakka351/FG-Falcon/tree/master/resources/)  [![images](https://img.shields.io/badge/-WIKI-darkred)](https://github.com/jakka351/FG-Falcon/wiki)  
+# Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  [![image](https://img.shields.io/badge/-14%2F01%2F2021-yellow)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) [![image](https://img.shields.io/badge/NEW-STUFF!-brightgreen)](https://github.com/jakka351/FG-Falcon/tree/master/resources/)  [![images](https://img.shields.io/badge/-WIKI-darkred)](https://github.com/jakka351/FG-Falcon/wiki)    [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+
 
 
 ### [BA/BF/FG Specific Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)    [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
@@ -17,10 +18,10 @@
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
-### FG Falcon specific  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+### FG Falcon specific
  - [MitchellH's CarPC Download]() |  [Forum Link]()   ![image](https://img.shields.io/badge/Windows-VB-red)   
  - [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
- - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)  
+ - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)    [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)(untested)  
  - [can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)    [![image](https://img.shields.io/badge/testing-can0-yellow)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)
@@ -99,8 +100,8 @@ As Built Data
 [Remove ICC Assembly](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
 [Component View & Location](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
-
-### Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
+ 
+# Wiring Diagrams                   [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [ICC connector](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [Cruise Control Buttons](https://github.com/jakka351/FG-Falcon/wiki/Cruise-Control)  
  - [Interior Fuseboxe Diagram](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)
