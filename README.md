@@ -38,7 +38,8 @@
  - [Ford Mustang CAN2CLUSTER Project](https://github.com/thomastech/CAN2Cluster)  
   
 # FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
-
+### Module Comms Documents  
+ - [Workshop Manual Pages](http://fordforums.com.au/wsmpub/fgii/418-00.html) 
  - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
  - [HS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/FG%20HS%20CAN%20Decoded.xlsx)   
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls)
@@ -53,7 +54,7 @@
   
  ### 
 
-| Address | Data    |  | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
+| Address | Data    | Function | Byte1      | Byte2      | Byte3 | Byte4 | Byte5 | Byte6 | Byte7   | Byte8   |
 | ------- | ----    | -------- | -----      | -----      | ----- | ----- | ----- | ----- | -----   | -----   |
 | `0x000`   | 8 bytes |   | 0x00 | 0x01 | 0x02 | 0x03 | 0x04 | 0x05 | 0x06 | 0x07|
   
@@ -67,7 +68,7 @@
  - [More Background](http://vi.openxcplatform.com/)  
  - [Supported Vehicles](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=2)  
  - [Supported Data](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  
- - - Falcon is type 8
+    - Falcon is type 8
     
  
    
