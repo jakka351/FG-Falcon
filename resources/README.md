@@ -1,4 +1,4 @@
-# FG Reaources Folder  
+# FG Resources Folder  
 ## Table of Contents  
 
  - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
@@ -12,4 +12,4 @@
  - [CAN Frames ms-can](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) 
  - [ba,bf CAN spreadsheet](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx) - [from PCMTec Forums user Lukeyson](https://forum.pcmtec.com/topic/279-can-messages/)  
  - [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
- - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI
+ - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)
