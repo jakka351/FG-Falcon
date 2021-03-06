@@ -36,6 +36,8 @@
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller)   
  - [Python-OBDII Ford Reader](https://github.com/jakka351/python-fordreader)   
  - [Ford Mustang CAN2CLUSTER Project](https://github.com/thomastech/CAN2Cluster)  
+ - [Ford CD changer emulator with AUX audio](https://github.com/ansonl/FordACP-AUX)    
+ - [Ford CD changer emulator detailed instruction](http://ansonliu.com/2017/09/ford-acp-cd-changer-emulator-aux-audio/)  
   
 # FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
 ### Module Comms Documents  
