@@ -13,6 +13,7 @@
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/CANReader.ino) 
  - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Ford BA / BF SWC Adapter for Pioneer Stereo](https://github.com/bigevtaylor/arduino-swc)  
+ - [Ford BA / BF SWC Adapter for JVC](https://github.com/MarkSmithAU/FordBFJVCBridge)   
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)      
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
