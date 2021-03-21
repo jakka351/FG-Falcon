@@ -70,9 +70,7 @@
   Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  
   
     
- 
- - [ICC NoNac]()
-    
+
   ### OpenXC Platform - FoMoCo open source  
  - [OpenXC](https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
