@@ -22,7 +22,7 @@
 ### FG Python Scripts      [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)     
 - [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
  - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)
- - [jakka351's CAN-0-SWC](https://github.com/jakka351/can0swc) - RPI CAN-bus adapter for steering wheel controls mk1 fg [![image](https://img.shields.io/badge/headunit-project-red)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) 
+ - [jakka351's CAN-0-SWC](https://github.com/jakka351/can0swc)   [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/can0swc)      [![image](https://img.shields.io/badge/headunit-project-red)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) 
  - [can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
  - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)  
@@ -59,12 +59,15 @@
    
 ### Forscan                  [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
  - [Forscan Website](https://forscan.org/)    
- - [How to access MS CAN bus using FORScan and modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
+ - [Forscan Tutorial](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)  
+ - [How to use output control](https://forscan.org/forum/viewtopic.php?f=6&t=844)    
+ - [Modify Module As-Built Data](http://www.2gfusions.net/showthread.php?tid=4573)  
+ - [How to access MS CAN bus with modified ELM327](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
  - [How to run FORScan on Linux](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
- - [s]As Built Data[/s]   
  - [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
-
-
+ - [Helpful Links](https://forscan.org/forum/viewtopic.php?f=16&t=4393)  
+   
+  
 ### OpenXC Platform - FoMoCo open source  
  - [OpenXC](https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
