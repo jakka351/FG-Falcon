@@ -68,7 +68,7 @@
  - [Helpful Links](https://forscan.org/forum/viewtopic.php?f=16&t=4393)  
    
   
-### OpenXC Platform - FoMoCo open source  
+![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)
  - [OpenXC](https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
  - [Ford Developers](https://developer.ford.com/)  
@@ -77,7 +77,10 @@
  - [Supported Vehicles](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=2)  
  - [Supported Data](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  
     `Falcon is type 8`  
-     
+ - [Smart Windscreen Wiper](https://github.com/openxc/smart-wiper)  
+ - [Nighttime Forward Collision Warning ](https://github.com/openxc/nightvision)  
+
+
  ### ICC Splash Graphics 
  - [FPV Splash](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)
  - [Ford ICC Splash](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
