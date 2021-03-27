@@ -11,26 +11,30 @@
  - [ICC Can Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
  - [ECU HSCAN Interface](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)      
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/CANReader.ino) 
+ - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)      
+ - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
+ - [Goochy12's BA Custom Climate Control](https://github.com/Goochy12/BA-Falcon-Custom-Climate-Control)
  - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Ford BA / BF SWC Adapter for Pioneer Stereo](https://github.com/bigevtaylor/arduino-swc)  
  - [Ford BA / BF SWC Adapter for JVC](https://github.com/MarkSmithAU/FordBFJVCBridge)   
- - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)      
- - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
 ### FG Python Scripts      [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)     
-- [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
  - [Kyle May's HVAC Python GUI](https://github.com/KyleMay/Ford-FG-ICC/tree/master/Unmaintained/PythonGUI)
  - [jakka351's CAN-0-SWC](https://github.com/jakka351/can0swc)   [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/can0swc)      [![image](https://img.shields.io/badge/headunit-project-red)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) 
- - [can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
- - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
- - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py)  
+ - [Display HVAC info can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
+ - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) 
+ - [Generic PythonCAN](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)      
+
+     
+### C, Bash, Shell, random  
+ - [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
  - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
  - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
-   
-
-   
+ - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
+ 
+ 
 ### Ford not-so-specific [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller)   
  - [Python-OBDII Ford Reader](https://github.com/jakka351/python-fordreader)   
@@ -38,10 +42,12 @@
  - [Ford CD changer emulator with AUX audio](https://github.com/ansonl/FordACP-AUX)    
  - [Ford CD changer emulator detailed instruction](http://ansonliu.com/2017/09/ford-acp-cd-changer-emulator-aux-audio/)  
  - [FORD EEC-IV diagnostic scanner](https://github.com/babroval/ford-eec-iv-diagnostic)
+   
+  
  *** 
+   
  
- 
-# FG CAN bus decoded                       [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)   
+# FG CAN bus decoded                          
 ### Module Comms Documents  
  - [Workshop Manual Pages](http://fordforums.com.au/wsmpub/fgii/418-00.html) 
  - [Controller Area Network 101](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)  
@@ -58,7 +64,8 @@
  
    
 
-### Forscan <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"></img>  
+### Forscan 
+ <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"></img>    
  - [Forscan Website](https://forscan.org/)    
  - [Forscan Tutorial](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)  
  - [How to use output control](https://forscan.org/forum/viewtopic.php?f=6&t=844)    
@@ -71,10 +78,9 @@
    
      
        
-       
+### FoMoCo Open Source       
 ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)
-### FoMoCo Open Source
- - [OpenXC](https://openxcplatform.com/)  
+ - [OpenXC]l(https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
  - [Ford Developers](https://developer.ford.com/)  
  - [OpenXC Background Information](https://developer.ford.com/pages/openxc)  
@@ -100,9 +106,7 @@
   Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  
  
    
-
-     
-# Raspberry Pi, Linux, SocketCAN, Python-CAN Links.         
+# Raspberry Pi, Linux, SocketCAN, Python-CAN Links.  [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)         
 <img src="https://wewalab.com/wp-content/uploads/2017/08/Raspberry-Pi-Logo-01.png" height="200" width="200"></img>
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
