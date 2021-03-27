@@ -57,7 +57,8 @@
  - [Steering wheel media buttons](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
  
    
-### Forscan                  [![image](https://img.shields.io/badge/%23-Forscan-lightblue)](https://forscan.org/)     
+
+### Forscan <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"></img>  
  - [Forscan Website](https://forscan.org/)    
  - [Forscan Tutorial](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)  
  - [How to use output control](https://forscan.org/forum/viewtopic.php?f=6&t=844)    
