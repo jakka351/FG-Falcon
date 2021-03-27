@@ -13,8 +13,9 @@
  - [HVAC CAN Reader](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/CANReader.ino) 
  - [Kyle May's FG ICC Repo](https://github.com/KyleMay/Ford-FG-ICC)      
  - [Bull3time's FG ICC Fork](https://github.com/Bull3time/Ford-FG-ICC)  
+ - [jakka351's FG ICC Fork](https://github.com/jakka351/Ford-FG-ICC)  
  - [Goochy12's BA Custom Climate Control](https://github.com/Goochy12/BA-Falcon-Custom-Climate-Control)
- - [Nathaniels Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
+ - [Nathaniel's Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Ford BA / BF SWC Adapter for Pioneer Stereo](https://github.com/bigevtaylor/arduino-swc)  
  - [Ford BA / BF SWC Adapter for JVC](https://github.com/MarkSmithAU/FordBFJVCBridge)   
  - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
@@ -80,7 +81,7 @@
        
 ### FoMoCo Open Source       
 ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)
- - [OpenXC]l(https://openxcplatform.com/)  
+ - [OpenXC](https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
  - [Ford Developers](https://developer.ford.com/)  
  - [OpenXC Background Information](https://developer.ford.com/pages/openxc)  
