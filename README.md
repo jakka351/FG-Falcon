@@ -99,9 +99,10 @@
   Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  
  
    
-***  
+
      
-# Raspberry Pi, Linux, SocketCAN, Python-CAN Links.          [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/FG-Falcon/wiki/CAN-Interface-in-Progress)     
+# Raspberry Pi, Linux, SocketCAN, Python-CAN Links.         
+<img src="https://wewalab.com/wp-content/uploads/2017/08/Raspberry-Pi-Logo-01.png" height="200" width="200"></img>
  - [Crankshaft NG](https://getcrankshaft.com/)    
  - [OpenDash](https://github.com/openDsh/dash)      
  - [Openauto - Android Auto](https://github.com/f1xpl/openauto)  
