@@ -26,6 +26,7 @@
  - [jakka351's CAN-0-SWC](https://github.com/jakka351/can0swc)   [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://github.com/jakka351/can0swc)      [![image](https://img.shields.io/badge/headunit-project-green)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351) 
  - [Display HVAC info can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) 
+ - [FG-Python-CANbus scripts](https://github.com/jakka351/fg-python)  
  - [Generic PythonCAN](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)      
 
      
