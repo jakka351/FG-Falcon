@@ -18,7 +18,6 @@
  - [Nathaniel's Arduino Climate Code](https://github.com/nkg-io/arduino-climate)  
  - [Ford BA / BF SWC Adapter for Pioneer Stereo](https://github.com/bigevtaylor/arduino-swc)  
  - [Ford BA / BF SWC Adapter for JVC](https://github.com/MarkSmithAU/FordBFJVCBridge)   
- - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
  
   
 ### FG Python Scripts      [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)     
@@ -27,15 +26,7 @@
  - [Display HVAC info can0hvac.py](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
  - [Python3/can0 SWC Adapter for FG](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) 
  - [FG-Python-CANbus scripts](https://github.com/jakka351/fg-python)  
- - [Generic PythonCAN](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)      
-
-     
-### C, Bash, Shell, random  
- - [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
- - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
- - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
- - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
- 
+      
  
 ### Ford not-so-specific [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
  - [FDIM Controller project](https://github.com/p1ne/fdim-controller)   
@@ -43,7 +34,18 @@
  - [Ford Mustang CAN2CLUSTER Project](https://github.com/thomastech/CAN2Cluster)  
  - [Ford CD changer emulator with AUX audio](https://github.com/ansonl/FordACP-AUX)    
  - [Ford CD changer emulator detailed instruction](http://ansonliu.com/2017/09/ford-acp-cd-changer-emulator-aux-audio/)  
- - [FORD EEC-IV diagnostic scanner](https://github.com/babroval/ford-eec-iv-diagnostic)
+ - [FORD EEC-IV diagnostic scanner](https://github.com/babroval/ford-eec-iv-diagnostic)  
+
+### Libraries  
+ - [(KIVY installation aid)](https://github.com/techcoder20/RPI-Kivy-Installer)  
+ - [Generic PythonCAN](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
+ - [mcp2515 can library](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
+  
+### C, Bash, Shell, random  
+ - [MitchellH's C source code](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
+ - [cansend can0 swc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/swc)  
+ - [cansend can0 icc commands](https://github.com/jakka351/FG-Falcon/tree/master/mscan/icc)  
+
    
  
 # FG CAN bus decoded         
@@ -145,23 +147,26 @@
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
-### Links 
+### Other Information  
+ - [Infrared Communication Introduction](https://www.sbprojects.net/knowledge/ir/) - sbprojects.net  
+ - [iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
+ - [CANBus Gist](https://gist.github.com/jackm/f33d6e3a023bfcc680ec3bfa7076e696) - CAN Tools and Software List 
+ - [MCP2515 data sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
+ - [Raspberry Pi PiCAN2 hat](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
+ - [Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
+ - [Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
+ - [Generic MCP2515 SPI board](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
+  - [CANBUSv1](https://github.com/DefinitiveDiagnosis-hub/CANBUSv1) - training module  
+  
+   
+### Sites, Stores & Forums
  - [Ford Forums AU](https://fordforums.com.au/) - Ford Forums Australia.  
  - [Forscan](https://forscan.org/) - Forscan is a Ford specific software compatible with various scantools.    
  - [Cluster Mods](http://clustermods.com/index.php)  - ba bf   
  - [ASL Automedia](https://www.aslautomedia.com.au/) - OEM Replacement Parts for FG ICC  
  - [PCMTec](https://pcmtec.com/) - Australian Ford Tuning Software  
- - [CANBUSv1](https://github.com/DefinitiveDiagnosis-hub/CANBUSv1) - canbus training module  
  - [CANBarra CANBUS Translator](https://www.tiperformance.com.au/products/canbarra-canbus-translator/) - converts the CANBUS signals from BA BF FG PCMs  
- - [FG Mods](https://fgmods.com.au/)   
- - [MCP2515 microchip.com data sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)  
- - [iDoka's Awesome CANBUS](https://github.com/iDoka/awesome-canbus) - A curated list of awesome tools, hardware and resources for CAN bus.  
- - [CAN-BUS Gist](https://gist.github.com/jackm/f33d6e3a023bfcc680ec3bfa7076e696) - CAN Tools and Software List  
- - [Raspberry Pi PiCAN2 board](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
- - [Arduino CAN-Bus shield](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
- - [Seeed Arduino CAN library](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
- - [Generic China MCP2515 board](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
-   
+ - [FG Mods](https://fgmods.com.au/)      
   
 # Credit & License 
  - [Kyle May](https://www.kylemay.net.au/)   
