@@ -1,6 +1,6 @@
  # Ford FG-Falcon
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
-[Collection of resources relating to electronic and mechanical systems of the FG Falcon.](https://github.com/jakka351/FG-Falcon/wiki)  
+[`Collection of resources relating to electronic and mechanical systems of the FG Falcon.`](https://github.com/jakka351/FG-Falcon/wiki)  
 
 # Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]() [![image](https://img.shields.io/badge/mkI-mkII-green)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)   [![images](https://img.shields.io/badge/-WIKI-darkred)](https://github.com/jakka351/FG-Falcon/wiki)   
 
@@ -70,8 +70,8 @@
  
    
 
-### Forscan 
- <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"></img>    
+ <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"> </img>
+### Forscan     
  - [Forscan Website](https://forscan.org/)    
  - [Forscan Tutorial](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)  
  - [How to use output control](https://forscan.org/forum/viewtopic.php?f=6&t=844)    
@@ -83,9 +83,8 @@
    
    
      
-       
+ ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
 ### FoMoCo Open Source       
-![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)
  - [OpenXC](https://openxcplatform.com/)  
  - [OpenXC on GitHub](https://github.com/openxc)    
  - [Ford Developers](https://developer.ford.com/)  
@@ -108,7 +107,7 @@
  - [ICC NoNav](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)
  - [ICC Gauges Voltaage](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)
   
-`  Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  `
+[`Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9`](http://www.fordforums.com.au/showthread.php?t=11479908&page=9)
  
  
 # Raspberry Pi, Linux, SocketCAN, Python-CAN Links.  [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)         
