@@ -61,7 +61,7 @@
  - [MS-Can spreadsheet](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls)
  - [ICC Can codes](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx) 
  - [fg_controller_area_network.xlsx](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area_network.xlsx) -  ![image](https://img.shields.io/badge/Feb-05-red)      
- - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) - in progress 01/01/2021   
+ - [fg_controller_area.dbc](https://github.com/jakka351/FG-Falcon/blob/master/resources/fg_controller_area.dbc) ` in progress 01/01/2021   `
  - [fg fpv 5.4 tr6060 candump log mscan](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)  
  - [fg fpv 5.4 tr6060 candump log hscan](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)  
  - [CAN Frames ms-can](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database) 
@@ -92,8 +92,7 @@
  - [OpenXC Background Information](https://developer.ford.com/pages/openxc)  
  - [More Background](http://vi.openxcplatform.com/)  
  - [Supported Vehicles](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=2)  
- - [Supported Data](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  
-    `Falcon is type 8`  
+ - [Supported Data](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  `Falcon is type 8`    
  - [Smart Windscreen Wiper](https://github.com/openxc/smart-wiper)  
  - [Nighttime Forward Collision Warning ](https://github.com/openxc/nightvision)  
 
@@ -109,7 +108,7 @@
  - [ICC NoNav](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)
  - [ICC Gauges Voltaage](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)
   
-  Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  
+`  Thanks to http://www.fordforums.com.au/showthread.php?t=11479908&page=9  `
  
  
 # Raspberry Pi, Linux, SocketCAN, Python-CAN Links.  [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)         
@@ -145,7 +144,7 @@
  - [Engine Bay Fuse Diagram](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
  - [Audio Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
  - [Bluetooth & Phone](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
- - [DIAGNOSTIC PORT](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
+ - [Diagnostic Port](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
 ### Other Information  
  - [Infrared Communication Introduction](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
