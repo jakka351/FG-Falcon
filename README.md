@@ -26,6 +26,8 @@
  - [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   
  - [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) 
  - [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  
+  - [`Turbocharger Boost Script`](https://github.com/jakka351/fg-python) `need can data to finish`  
+  -
       
  
 ### Ford not-so-specific [![image](https://img.shields.io/badge/Ford-USA-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
