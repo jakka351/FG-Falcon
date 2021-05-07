@@ -166,11 +166,13 @@
   
    
 ### Sites, Stores & Forums
- - [Ford Forums AU](https://fordforums.com.au/)   
-`Ford Forums Australia.  `
+ - [`Ford Forums AU`](https://fordforums.com.au/)   
+ - [`XR6 Turbo Forums`](https://www.fordxr6turbo.com/)  
+ - [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
+ - [`Oz Falcon`](https://http://www.ozfalcon.com.au/)  
  - [`Cluster Mods`](http://clustermods.com/index.php)    
 `ba bf   `
- - [FG Mods](https://fgmods.com.au/)      
+ - [`FG Mods`](https://fgmods.com.au/)      
   
 # Credit & License 
  - [`Kyle May`](https://www.kylemay.net.au/)   
