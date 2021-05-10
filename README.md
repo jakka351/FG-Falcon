@@ -5,7 +5,6 @@
 # Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
 [`>>> fg_controller_area_network_latest.xlsx <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx) -  ![image](https://img.shields.io/badge/May-11th-green)   
 
-
 ### [BA/BF/FG Arduino Sketches](thttps://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino)    [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
 
  - [`ICC Can Interface`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
@@ -104,6 +103,9 @@
    
  ### Interior Command Centre  / Entertainment System
  - [`Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares)  
+ - [`Enable FPV Logo on ICC`]()    
+ - [`Enable Reverse Camera`]()    
+ - [``]()  
  - [`ASL Automedia`](https://www.aslautomedia.com.au/)   
   ` OEM Replacement Parts for FG ICC  `
   
@@ -174,7 +176,6 @@
  - [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
  - [`Oz Falcon`](https://http://www.ozfalcon.com.au/)  
  - [`Cluster Mods`](http://clustermods.com/index.php)    
-`ba bf   `
  - [`FG Mods`](https://fgmods.com.au/)      
   
 # Credit & License 
@@ -190,6 +191,5 @@
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way.
 
 ***
-<img src="https://github.com/jakka351/FG-Falcon/blob/master/resources/images/fgcartoon.png" height="200" width="200" />
 
 ***
