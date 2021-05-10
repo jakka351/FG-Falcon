@@ -79,7 +79,9 @@
  - [`Modify Module As-Built Data`](http://www.2gfusions.net/showthread.php?tid=4573)  
  - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
  - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
- - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
+ - [`Police Mode Guide`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
+ - [`Lost AUX input after changing module configuration`](https://forscan.org/forum/viewtopic.php?t=14072)  
+ - - [`Lost AUX input after changing module configuration [Forum Post]`](https://forscan.org/forum/viewtopic.php?t=14072)  
  - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)  
    
  ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
