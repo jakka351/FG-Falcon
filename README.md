@@ -51,7 +51,10 @@
 ![image](https://cdn-images-1.medium.com/max/2000/1*1RhxsC0V8HqYAVw7AAopEw.png)      
  ***  
 # FG CAN bus decoded         
-  
+  #### To Do:
+       - `Decode As Built Data and add to spreadsheet`  
+       - `Complete Module Comms sheet`  
+       
    
 ### Module Comms Documents  
  - [`Workshop Manual Pages`](http://fordforums.com.au/wsmpub/fgii/418-00.html) 
