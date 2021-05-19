@@ -33,35 +33,34 @@ NS_ :
 
 BS_: 
 BU_: Audio_Control_Module Audio_Interface_Module Bluetooth_Phone_Module Body_Electric_Module Front_Display_Interface_Module HVAC_Integrated_Module Instrustment_Cluster Parking_Aid_Module Powertrain_Control_Module Restraints_Control_Module Transmission_Control_Module On_Board_Diagnostics 
-BO_ 754 SWC: 8 Front_Display_Interface_Module
-   SG_ AudioVolumeLevel : 0|16@1+ (2,0) [0|15] "Vol" Audio_Control_Module
-   SG_ SWCPhoneBtn : 56|8@0+ (1,0) [0|0] "" Bluetooth_Phone_Module
+BO_ 754 SWC_Media_Control_Btns: 8 Front_Display_Interface_Module
+   SG_ AudioVolumeLevel : 0|8@1+ (2,0) [0|15] "Vol" Audio_Control_Module
+   SG_ SWCPhoneBtn : 48|8@1+ (1,0) [0|0] "" Bluetooth_Phone_Module
    SG_ SWCVolUpBtn : 56|8@1+ (1,0) [0|0] "" Audio_Control_Module
    SG_ SWCVolDownBtn : 56|8@1+ (1,0) [0|0] "" Audio_Control_Module
    SG_ SWCModeBtn : 48|16@1+ (1,0) [0|0] "" Audio_Control_Module
    SG_ AudioCurrentMediaMode : 48|8@1+ (1,0) [0|0] "" Audio_Control_Module
    SG_ SWCSeekBtn : 56|8@1+ (1,0) [0|0] "" Audio_Control_Module
 
-BO_ 764 MSG1: 8 Front_Display_Interface_Module
+BO_ 764 Interior_Command_Centre_Btns: 8 Front_Display_Interface_Module
 
 BO_ 718 ASCII_DATA: 8 Bluetooth_Phone_Module
    SG_ BPM_Pair : 0|16@4- (1,0) [0|0] "" Bluetooth_Phone_Module
 
 BO_ 851 HVAC: 8 HVAC_Integrated_Module
-   SG_ FanSpeed M : 56|63@1- (10,0) [0|0] "FanSpeed" HVAC_Integrated_Module
-   SG_ VentStatus : 0|1@1+ (10,0) [0|0] "VentStatus" HVAC_Integrated_Module
-   SG_ CabinTemp : 0|1@1+ (10,0) [0|0] "CabinTemp" HVAC_Integrated_Module
-   SG_ ExternalTemp : 0|1@1+ (1,0) [0|0] "External Temp - Sense in LH mirror" HVAC_Integrated_Module
+   SG_ FanSpeed M : 56|8@1+ (1,0) [0|255] "FanSpeed" HVAC_Integrated_Module
+   SG_ VentStatus : 0|8@1+ (1,0) [0|0] "VentStatus" HVAC_Integrated_Module
+   SG_ CabinTemp : 24|8@1+ (10,0) [0|0] "CabinTemp" HVAC_Integrated_Module
+   SG_ ExternalTemp : 32|8@1+ (1,0) [0|0] "External Temp - Sense in LH mirror" HVAC_Integrated_Module
 
-BO_ 296 MSG1: 8 Instrustment_Cluster
-   SG_ HighBeamStatus : 29|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+BO_ 296 Instrument_Cluster: 8 Instrustment_Cluster
+   SG_ IllumLevelDisplay : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ TurnStalkSwitchStatus : 16|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ RearBeltMinderStatus : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ IllumLevelSwitch : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ HighBeamStatus : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
    SG_ FogLampStatus : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
-   SG_ HeadLightsOn : 0|8@1+ (1,0) [0|1] "" Instrustment_Cluster
-   SG_ HeadLightsAutoOn : 2|1@1+ (1,0) [2|2] "" Instrustment_Cluster
-   SG_ IndicatorRight : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
-   SG_ IndicatorLeft : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
-   SG_ IllumLevelDisplay : 0|1@1+ (1,0) [0|0] "" Vector__XXX
-   SG_ TurnStalkSwitchStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ ParkAndLowBeamStatus : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
 
 BO_ 724 MSG1: 8 Audio_Control_Module
 
@@ -77,18 +76,21 @@ BO_ 761 MSG7_MP3_Track_Folder: 8 Audio_Control_Module
    SG_ MP3_Folder : 0|1@1+ (1,0) [0|0] "" Front_Display_Interface_Module
    SG_ MP3_Track : 0|1@1+ (1,0) [0|0] "" Front_Display_Interface_Module
 
-BO_ 512 MSG1: 8 Powertrain_Control_Module
+BO_ 512 CrankStatusPCM_HS: 8 Powertrain_Control_Module
+   SG_ CrankStatusPCM_HS : 0|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 519 MSG2: 8 Powertrain_Control_Module
+BO_ 519 PCM_ENGINE_DATA: 8 Powertrain_Control_Module
+   SG_ SIGNAL18880 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ Engine_RPM_HS : 0|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 528 MSG3: 8 Powertrain_Control_Module
+BO_ 528 ABS_DSC: 8 Powertrain_Control_Module
 
-BO_ 560 MSG4: 8 Powertrain_Control_Module
+BO_ 560 TRANS: 8 Powertrain_Control_Module
 
-BO_ 832 MSG5: 8 Powertrain_Control_Module
+BO_ 832 RCM: 8 Powertrain_Control_Module
 
 BO_ 787 INTACTTEMP: 8 HVAC_Integrated_Module
-   SG_ INTACTTEMP : 0|63@1- (100,2) [-255|255] "Degrees_C" HVAC_Integrated_Module
+   SG_ INTACTTEMP : 7|8@0- (-100,2) [-255|255] "Degrees_C" HVAC_Integrated_Module
 
 BO_ 737 MSG1: 8 Audio_Control_Module
 
@@ -96,18 +98,16 @@ BO_ 739 MSG2: 8 Audio_Control_Module
 
 BO_ 748 MSG3: 8 Audio_Control_Module
 
-BO_ 775 MSG4: 8 Body_Electric_Module
-   SG_ SIGNAL19212 : 0|1@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ SIGNAL31203 : 0|1@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ SIGNAL1921220 : 0|1@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ SIGNAL1921297 : 0|1@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ SIGNAL1921250 : 0|1@1+ (1,0) [0|0] "" Body_Electric_Module
-
-BO_ 777 MSG5: 8 Body_Electric_Module
+BO_ 775 IllumBatsaverRequest_MS: 8 Body_Electric_Module
+   SG_ IllumBatsaverRequest_MS : 32|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ HazardSwitch : 24|8@1+ (1,0) [0|0] "" Body_Electric_Module
 
 BO_ 779 MSG6: 8 Body_Electric_Module
 
-BO_ 781 MSG7: 8 Body_Electric_Module
+BO_ 781 CD_TRACK_TYPE_PLAYING: 8 Body_Electric_Module
+   SG_ CD_TrackNumber : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ CD_PlayingNow : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 783 MSG8: 8 Body_Electric_Module
 
@@ -117,9 +117,14 @@ BO_ 789 MSG10: 8 Body_Electric_Module
 
 BO_ 791 MSG11: 8 Body_Electric_Module
 
-BO_ 816 MSG12: 8 Body_Electric_Module
+BO_ 816 ParkBrakeOn_MS: 8 Body_Electric_Module
+   SG_ ParkBrakeOn_MS : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1030 MSG13: 8 Body_Electric_Module
+BO_ 1030 SeatBeltStatus: 8 Body_Electric_Module
+   SG_ SeatBeltStatusFrontRight : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ SeatBeltStatusFrontLeft : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ SeatBeltStatusRearLeft : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
+   SG_ SeatBeltStatusRearRight : 0|8@1+ (1,0) [0|0] "" Instrustment_Cluster
 
 BO_ 1033 MSG14: 8 Body_Electric_Module
 
@@ -137,7 +142,8 @@ BO_ 1372 MSG20: 8 Body_Electric_Module
 
 BO_ 1600 MSG21: 8 Body_Electric_Module
 
-BO_ 1782 MSG22: 8 Body_Electric_Module
+BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 Body_Electric_Module
+   SG_ ImmobTransfer_PCM_1_to_8_PATS : 0|63@4- (1,0) [0|0] "" Body_Electric_Module
 
 BO_ 1788 MSG23: 8 Body_Electric_Module
 
@@ -149,14 +155,14 @@ BO_ 1001 MSG2: 8 Powertrain_Control_Module
 
 BO_ 1031 MSG3: 8 Powertrain_Control_Module
 
-BO_ 1061 MSG4: 8 Powertrain_Control_Module
+BO_ 1061 PCM_CRS_ECON: 8 Powertrain_Control_Module
    SG_ Cruise : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ CruiseTargetSetSpeed : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ InstantEconomy : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ InstantEconomyMode : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ TurboBoostPressure : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 1063 MSG5: 8 Powertrain_Control_Module
+BO_ 1063 PCM_ENGINE_DATA: 8 Powertrain_Control_Module
    SG_ EngineCoolantTemperature : 62|1@0+ (1,0) [0|150] "Degrees_C" Powertrain_Control_Module
    SG_ EngineOverheat : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ EngineOilPressure : 15|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
@@ -169,25 +175,36 @@ BO_ 1063 MSG5: 8 Powertrain_Control_Module
    SG_ SEATBELT_INDICATOR_STAT : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ ODO_COUNT : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 1079 MSG6: 8 Powertrain_Control_Module
+BO_ 1079 PCM_: 8 Powertrain_Control_Module
    SG_ InstFuelValue : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ FuelSenderFail : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ ParkBrakeOn_HS : 32|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ MaxLitres : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ DampedFuelLevel : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 1101 MSG7: 8 Powertrain_Control_Module
-   SG_ EngineOilTemperature : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
+BO_ 1101 PCM_EOT_: 8 Powertrain_Control_Module
+   SG_ EngineCoolantTemperature_[4] : 32|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
+   SG_ EngineCoolantTemperature_[5] : 40|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
+   SG_ AtmosphericPressure_[7] : 48|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
+   SG_ EngineCoolantTemperature_[6]78 : 48|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
-BO_ 1107 MSG8: 8 Powertrain_Control_Module
+BO_ 1107 ODO: 8 Powertrain_Control_Module
 
-BO_ 1200 MSG9: 8 Powertrain_Control_Module
+BO_ 1200 PCM_WHEEL_SPEED: 8 Powertrain_Control_Module
+   SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
+   SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
+   SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
+   SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
 
-BO_ 76 MSG10: 0 Powertrain_Control_Module
+BO_ 76 PCM_: 0 Powertrain_Control_Module
 
 BO_ 1216 MSG1: 8 Powertrain_Control_Module
 
-BO_ 1571 MSG2: 8 Powertrain_Control_Module
+BO_ 1571 PCM_ENG_VINSPEC: 8 Powertrain_Control_Module
+   SG_ EngineCapacityLitres : 0|8@1+ (0.1,0) [0|0] "Litres" Powertrain_Control_Module
+   SG_ EngineCylindersValves : 8|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
+   SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
+   SG_ EnginePeakTorque : 24|8@1+ (4,1) [0|0] "NM" Powertrain_Control_Module
 
 BO_ 1616 MSG1: 8 Powertrain_Control_Module
 
@@ -356,29 +373,70 @@ BO_ 742 RDS_PSN_State: 8 Audio_Control_Module
 
 BO_ 758 RDS___MESSAGE: 8 Audio_Control_Module
 
+BO_ 714 MSG1: 8 Bluetooth_Phone_Module
+
+BO_ 864 MSG1: 8 Parking_Aid_Module
+   SG_ PAM_ : 40|8@1+ (1,0) [0|0] "" Parking_Aid_Module
+   SG_ PAM_1 : 0|8@1+ (1,0) [0|0] "" Parking_Aid_Module
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "isj1939dbc" INT 0 0;
-BA_ "GenMsgBackgroundColor" BO_ 754 "#ff01dd";
+BA_ "GenMsgBackgroundColor" BO_ 754 "#ff1433";
+BA_ "GenMsgBackgroundColor" BO_ 764 "#0505ff";
+BA_ "GenMsgBackgroundColor" BO_ 851 "#00aa00";
 BA_ "GenMsgForegroundColor" BO_ 296 "#00ffff";
 BA_ "GenMsgBackgroundColor" BO_ 296 "#000000";
 BA_ "GenMsgBackgroundColor" BO_ 761 "#ff1433";
+BA_ "GenMsgBackgroundColor" BO_ 787 "#ff5500";
 BA_ "GenMsgBackgroundColor" BO_ 775 "#aa007f";
+BA_ "GenMsgBackgroundColor" BO_ 779 "#aa0000";
+BA_ "GenMsgBackgroundColor" BO_ 781 "#aaff7f";
+BA_ "GenMsgBackgroundColor" BO_ 783 "#ffff00";
+BA_ "GenMsgBackgroundColor" BO_ 785 "#07ff1b";
+BA_ "GenMsgBackgroundColor" BO_ 789 "#ff01dd";
+BA_ "GenMsgBackgroundColor" BO_ 791 "#aaaa00";
+BA_ "GenMsgBackgroundColor" BO_ 816 "#0055ff";
+BA_ "GenMsgBackgroundColor" BO_ 1030 "#00ff7f";
+BA_ "GenMsgForegroundColor" BO_ 1033 "#aaaaff";
+BA_ "GenMsgBackgroundColor" BO_ 1033 "#aa007f";
+BA_ "GenMsgBackgroundColor" BO_ 1281 "#ff1433";
+BA_ "GenMsgBackgroundColor" BO_ 1292 "#ff1433";
+BA_ "GenMsgBackgroundColor" BO_ 1297 "#aaaaff";
+BA_ "GenMsgBackgroundColor" BO_ 1345 "#aa5500";
+BA_ "GenMsgBackgroundColor" BO_ 1365 "#aa0000";
+BA_ "GenMsgBackgroundColor" BO_ 1372 "#ffaaff";
+BA_ "GenMsgBackgroundColor" BO_ 1600 "#ff00ff";
+BA_ "GenMsgBackgroundColor" BO_ 1782 "#ff0000";
+BA_ "GenMsgBackgroundColor" BO_ 1788 "#55aa7f";
+BA_ "GenMsgBackgroundColor" BO_ 1200 "#00aa7f";
+BA_ "GenMsgForegroundColor" BO_ 1200 "#ffffff";
 BA_ "GenMsgBackgroundColor" BO_ 742 "#ff7403";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "isj1939dbc" 0;
+CM_ BU_ Audio_Control_Module "ACM";
+CM_ BU_ Audio_Interface_Module "AIM";
+CM_ BU_ Bluetooth_Phone_Module "BPM";
+CM_ BU_ Body_Electric_Module "BEM";
+CM_ BU_ Front_Display_Interface_Module "FDIM";
+CM_ BU_ HVAC_Integrated_Module "HIM";
+CM_ BU_ Instrustment_Cluster "IC";
+CM_ BU_ Parking_Aid_Module "PAM";
+CM_ BU_ Powertrain_Control_Module "PCM";
+CM_ BU_ Restraints_Control_Module "RCM";
+CM_ BU_ Transmission_Control_Module "TCM";
+CM_ BU_ On_Board_Diagnostics "OBDII";
 CM_ BO_ 754 "AudioCurrentMediaMode";
 CM_ SG_ 754 AudioVolumeLevel "Volume";
+CM_ BO_ 764 "ICC Buttons";
 CM_ BO_ 851 "HVAC DATA";
 CM_ SG_ 851 FanSpeed "FanSpeed";
-CM_ SG_ 296 FogLampStatus "Fog_Lamp_Status";
-CM_ SG_ 296 HeadLightsOn "HeadLightsOn";
 CM_ BO_ 787 "Cabin Temperature Sensor";
 CM_ SG_ 787 INTACTTEMP "Interior_Temperature_Sensor_-_Integral_to_ICC._INTACTTEMP_=_Message.Data[0]_=_Temperature_-_100_/_2_L";
 CM_ BO_ 775 "ICC HVAC Buttons";
-CM_ BO_ 777 "RadioStationNameData [ASCII Data ICC]";
 CM_ BO_ 1782 "Passive Anti Theft System";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS "PATS";
 CM_ SG_ 1063 EngineCoolantTemperature "EngCoolantTempSense";
 CM_ SG_ 1063 EngineOverheat "EngineOverheat";
 CM_ SG_ 1063 EngineOilPressure "EngOilPres";
@@ -387,26 +445,48 @@ CM_ SG_ 1063 ETC_Warning "ThrottleWarnETC";
 CM_ SG_ 1063 FuelPulse "FuelPulse";
 CM_ SG_ 1063 MIL_Lamp "Malfunction_Ind_Lamp";
 CM_ SG_ 1063 ImmobLamp "Immobilised_Lamp";
+CM_ BO_ 714 "unsure of TX module";
 VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30";
-VAL_ 754 SWCPhoneBtn 97 "PhoneBtn" 101 "PhoneBtn" 104 "PhoneBtn";
+VAL_ 754 SWCPhoneBtn 97 "PhoneBtn" 101 "PhoneBtn" 104 "PhoneBtn" 65 "" 69 "" 72 "No Description";
 VAL_ 754 SWCVolUpBtn 24 "VolDownBtn" 25 "VolDownBtn";
 VAL_ 754 SWCVolDownBtn 17 "VolUpBtn" 18 "VolUpBtn" 20 "VolUpBtn";
-VAL_ 754 SWCModeBtn 1 "0X2EF#XXXXXXXXXXXX0FXX+_0x2F2#XXXXXXXXXXXX0F01_=_ModeBtn" 15 "0X2EF#XXXXXXXXXXXX0FXX+_0x2F2#XXXXXXXXXXXX0F01_=_ModeBtn";
-VAL_ 754 AudioCurrentMediaMode 65 "No Description" 69 "" 72 "";
-VAL_ 754 SWCSeekBtn 8 "SeekBtn" 9 "SeekBtn" 12 "SeekBtn";
+VAL_ 754 SWCModeBtn 1 "MODE_BUTTON_ACTIVE" 15 "MODE_BUTTON_ACTIVE" 0 "No Description";
+VAL_ 754 AudioCurrentMediaMode 65 "RADIO_MODE_ACTIVE" 69 "AUX_MODE_ACTIVE" 72 "";
+VAL_ 754 SWCSeekBtn 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "";
 VAL_ 718 BPM_Pair 0 "No Description" 0 "No Description";
-VAL_ 296 HighBeamStatus 14 "HighBeamsON";
-VAL_ 296 FogLampStatus 6 "FogLampsOn";
-VAL_ 296 HeadLightsOn 2 "HeadLightsON";
-VAL_ 296 HeadLightsAutoOn 1 "HeadLightsAUTO";
-VAL_ 296 IndicatorRight 0 "" 16 "IndicatingRight";
-VAL_ 296 IndicatorLeft 0 "" 8 "IndicatingLeft";
+VAL_ 851 VentStatus 0 "" 0 "No Description";
+VAL_ 296 IllumLevelDisplay 14 "HighBeamStatus" 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLampsOn";
+VAL_ 296 TurnStalkSwitchStatus 16 "Indicating_Right" 8 "Indicating_Left";
 VAL_ 761 MP3_Folder 0 "No Description";
 VAL_ 761 MP3_Track 0 "No Description";
+VAL_ 787 INTACTTEMP 0 "No Description" 1 "" 2 "No Description" 125 "Cabin_Temperature";
+VAL_ 775 IllumBatsaverRequest_MS 0 "";
+VAL_ 775 HazardSwitch 1 "Hazard_Switch_Active" 128 "Hazard_Switch_Active" 0 "Hazard_Switch_Inactive";
+VAL_ 781 CD_TrackNumber 0 "No Description";
+VAL_ 781 CD_Type 0 "" 0 "No Description";
+VAL_ 781 CD_PlayingNow 0 "No Description";
+VAL_ 1030 SeatBeltStatusFrontRight 0 "No Description";
+VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
+VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
 VAL_ 1063 EngineCoolantTemperature 0 "No Description";
 VAL_ 1063 OilPressureWarning 0 "No Description";
 VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOFF" 17 "HandBrakeOn";
+VAL_ 1101 EngineCoolantTemperature_[4] 0 "";
+VAL_ 1101 EngineCoolantTemperature_[5] 0 "";
+VAL_ 1101 AtmosphericPressure_[7] 0 "";
+VAL_ 1101 EngineCoolantTemperature_[6]78 0 "";
+VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
+VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEnginei" 0 "Unknown" 0 "No Description";
+VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
 VAL_ 742 AudioTunedFreqency 0 "No Description";
 VAL_ 742 AudioFMFrequencyStep 0 "No Description";
 VAL_ 742 AudioTunerBandPreset 0 "No Description";
 VAL_ 742 RDS_PSN_State 0 "No Description";
+VAL_ 864 PAM_ 0 "Sonar_INACTIVE" 255 "SONAR_ACTIVE";
+VAL_ 864 PAM_1 0 "Sonar_INACTIVE" 5 "SONAR_ACTIVE";
