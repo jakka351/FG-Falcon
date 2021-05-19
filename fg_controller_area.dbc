@@ -43,14 +43,19 @@ BO_ 754 SWC_Media_Control_Btns: 8 Front_Display_Interface_Module
    SG_ SWCSeekBtn : 56|8@1+ (1,0) [0|0] "" Audio_Control_Module
 
 BO_ 764 Interior_Command_Centre_Btns: 8 Front_Display_Interface_Module
+   SG_ ICC_Switch_Signals_[0] : 35|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ ICC_Switch_Signals_[1] : 8|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ ICC_Switch_Signals_[2] : 16|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ ICC_Switch_Signals_[3] : 24|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ ICC_Switch_Signals_[4] : 32|8@1+ (1,0) [0|0] "" Audio_Control_Module
 
 BO_ 718 ASCII_DATA: 8 Bluetooth_Phone_Module
    SG_ BPM_Pair : 0|16@4- (1,0) [0|0] "" Bluetooth_Phone_Module
 
 BO_ 851 HVAC: 8 HVAC_Integrated_Module
-   SG_ FanSpeed M : 56|8@1+ (1,0) [0|255] "FanSpeed" HVAC_Integrated_Module
+   SG_ FanSpeed M : 56|8@1+ (1,0) [0|255] "" HVAC_Integrated_Module
    SG_ VentStatus : 0|8@1+ (1,0) [0|0] "VentStatus" HVAC_Integrated_Module
-   SG_ CabinTemp : 24|8@1+ (10,0) [0|0] "CabinTemp" HVAC_Integrated_Module
+   SG_ CabinSetTemp : 24|8@1+ (0.5,0) [0|0] "Degrees_C" HVAC_Integrated_Module
    SG_ ExternalTemp : 32|8@1+ (1,0) [0|0] "External Temp - Sense in LH mirror" HVAC_Integrated_Module
 
 BO_ 296 Instrument_Cluster: 8 Instrustment_Cluster
@@ -69,8 +74,10 @@ BO_ 738 MSG2: 8 Audio_Control_Module
 BO_ 751 MSG4: 8 Audio_Control_Module
 
 BO_ 756 RDS_MESSAGE: 8 Audio_Control_Module
+   SG_ RDS_MESSAGE : 0|63@4- (1,0) [0|0] "[ASCII]" Front_Display_Interface_Module
 
 BO_ 757 RDS__MESSAGE: 8 Audio_Control_Module
+   SG_ RDS_MESSAGE : 0|63@4- (1,0) [0|0] "" Front_Display_Interface_Module
 
 BO_ 761 MSG7_MP3_Track_Folder: 8 Audio_Control_Module
    SG_ MP3_Folder : 0|1@1+ (1,0) [0|0] "" Front_Display_Interface_Module
@@ -90,7 +97,7 @@ BO_ 560 TRANS: 8 Powertrain_Control_Module
 BO_ 832 RCM: 8 Powertrain_Control_Module
 
 BO_ 787 INTACTTEMP: 8 HVAC_Integrated_Module
-   SG_ INTACTTEMP : 7|8@0- (-100,2) [-255|255] "Degrees_C" HVAC_Integrated_Module
+   SG_ INTACTTEMP : 7|8@0+ (0.166667,0) [0|255] "Degrees_C" HVAC_Integrated_Module
 
 BO_ 737 MSG1: 8 Audio_Control_Module
 
@@ -100,7 +107,10 @@ BO_ 748 MSG3: 8 Audio_Control_Module
 
 BO_ 775 IllumBatsaverRequest_MS: 8 Body_Electric_Module
    SG_ IllumBatsaverRequest_MS : 32|8@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ HazardSwitch : 24|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ ICC_Switch_Signals_[0] : 0|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ ICC_Switch_Signals_[1] : 8|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ ICC_Switch_Signals_[2] : 16|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ ICC_Switch_Signals_[3] : 24|8@1+ (1,0) [0|0] "" Body_Electric_Module
 
 BO_ 779 MSG6: 8 Body_Electric_Module
 
@@ -183,10 +193,6 @@ BO_ 1079 PCM_: 8 Powertrain_Control_Module
    SG_ DampedFuelLevel : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
 BO_ 1101 PCM_EOT_: 8 Powertrain_Control_Module
-   SG_ EngineCoolantTemperature_[4] : 32|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
-   SG_ EngineCoolantTemperature_[5] : 40|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
-   SG_ AtmosphericPressure_[7] : 48|8@1+ (1,0) [0|0] "Degree_C" Powertrain_Control_Module
-   SG_ EngineCoolantTemperature_[6]78 : 48|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
 
 BO_ 1107 ODO: 8 Powertrain_Control_Module
 
@@ -372,32 +378,35 @@ BO_ 742 RDS_PSN_State: 8 Audio_Control_Module
    SG_ RDS_PSN_State : 0|1@1+ (1,0) [0|0] "" Front_Display_Interface_Module
 
 BO_ 758 RDS___MESSAGE: 8 Audio_Control_Module
+   SG_ RDS_MESSAGE : 0|63@1+ (1,0) [0|0] "" Front_Display_Interface_Module
 
 BO_ 714 MSG1: 8 Bluetooth_Phone_Module
 
-BO_ 864 MSG1: 8 Parking_Aid_Module
+BO_ 864 ReverseSenseSystem: 8 Parking_Aid_Module
    SG_ PAM_ : 40|8@1+ (1,0) [0|0] "" Parking_Aid_Module
    SG_ PAM_1 : 0|8@1+ (1,0) [0|0] "" Parking_Aid_Module
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "isj1939dbc" INT 0 0;
-BA_ "GenMsgBackgroundColor" BO_ 754 "#ff1433";
-BA_ "GenMsgBackgroundColor" BO_ 764 "#0505ff";
-BA_ "GenMsgBackgroundColor" BO_ 851 "#00aa00";
-BA_ "GenMsgForegroundColor" BO_ 296 "#00ffff";
-BA_ "GenMsgBackgroundColor" BO_ 296 "#000000";
-BA_ "GenMsgBackgroundColor" BO_ 761 "#ff1433";
-BA_ "GenMsgBackgroundColor" BO_ 787 "#ff5500";
-BA_ "GenMsgBackgroundColor" BO_ 775 "#aa007f";
-BA_ "GenMsgBackgroundColor" BO_ 779 "#aa0000";
-BA_ "GenMsgBackgroundColor" BO_ 781 "#aaff7f";
-BA_ "GenMsgBackgroundColor" BO_ 783 "#ffff00";
-BA_ "GenMsgBackgroundColor" BO_ 785 "#07ff1b";
-BA_ "GenMsgBackgroundColor" BO_ 789 "#ff01dd";
-BA_ "GenMsgBackgroundColor" BO_ 791 "#aaaa00";
-BA_ "GenMsgBackgroundColor" BO_ 816 "#0055ff";
-BA_ "GenMsgBackgroundColor" BO_ 1030 "#00ff7f";
+BA_ "GenMsgBackgroundColor" BO_ 754 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 764 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 851 "#36896e";
+BA_ "GenMsgForegroundColor" BO_ 296 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 296 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 756 "#00aa7f";
+BA_ "GenMsgBackgroundColor" BO_ 757 "#5dbc8b";
+BA_ "GenMsgBackgroundColor" BO_ 761 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 787 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 775 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 779 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 781 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 783 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 785 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 789 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 791 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 816 "#36896e";
+BA_ "GenMsgBackgroundColor" BO_ 1030 "#36896e";
 BA_ "GenMsgForegroundColor" BO_ 1033 "#aaaaff";
 BA_ "GenMsgBackgroundColor" BO_ 1033 "#aa007f";
 BA_ "GenMsgBackgroundColor" BO_ 1281 "#ff1433";
@@ -411,7 +420,9 @@ BA_ "GenMsgBackgroundColor" BO_ 1782 "#ff0000";
 BA_ "GenMsgBackgroundColor" BO_ 1788 "#55aa7f";
 BA_ "GenMsgBackgroundColor" BO_ 1200 "#00aa7f";
 BA_ "GenMsgForegroundColor" BO_ 1200 "#ffffff";
-BA_ "GenMsgBackgroundColor" BO_ 742 "#ff7403";
+BA_ "GenMsgBackgroundColor" BO_ 742 "#5dbc8b";
+BA_ "GenMsgBackgroundColor" BO_ 758 "#5dbc8b";
+BA_ "GenMsgBackgroundColor" BO_ 864 "#00aa7f";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "isj1939dbc" 0;
@@ -451,17 +462,27 @@ VAL_ 754 SWCPhoneBtn 97 "PhoneBtn" 101 "PhoneBtn" 104 "PhoneBtn" 65 "" 69 "" 72 
 VAL_ 754 SWCVolUpBtn 24 "VolDownBtn" 25 "VolDownBtn";
 VAL_ 754 SWCVolDownBtn 17 "VolUpBtn" 18 "VolUpBtn" 20 "VolUpBtn";
 VAL_ 754 SWCModeBtn 1 "MODE_BUTTON_ACTIVE" 15 "MODE_BUTTON_ACTIVE" 0 "No Description";
-VAL_ 754 AudioCurrentMediaMode 65 "RADIO_MODE_ACTIVE" 69 "AUX_MODE_ACTIVE" 72 "";
+VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 0 "No Description";
 VAL_ 754 SWCSeekBtn 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "";
+VAL_ 764 ICC_Switch_Signals_[0] 1 "AUDIO_PWR_ON_SW_ACTIVE" 4 "SEEK_UP_SW_ACTIVE" 8 "SEEK_DOWN_SW_ACTIVE" 32 "FM_AM_SW_ACTIVE" 64 "SCN_AS_SW_ACTIVE" 128 "CD_AUX_SW_ACTIVE" 0 "No Description";
+VAL_ 764 ICC_Switch_Signals_[1] 128 "EJECT_CD_SW_ACTIVE" 64 "LOAD_CD_SW_ACTIVE";
+VAL_ 764 ICC_Switch_Signals_[2] 1 "MENU_SW_ACTIVE" 1 "MENU_SELECTED" 0 "No Description";
+VAL_ 764 ICC_Switch_Signals_[3] 65 "ROTVOLENCD_RT_ACTIVE" 129 "ROTVOLENCD_LFT_ACTIVE";
+VAL_ 764 ICC_Switch_Signals_[4] 4 "MENU_SW_ACTIVE" 4 "MENU_SELECTED";
 VAL_ 718 BPM_Pair 0 "No Description" 0 "No Description";
+VAL_ 851 FanSpeed 1 "FanSpeed_1" 2 "FanSpeed_2" 3 "FanSpeed_3" 4 "FanSpeed_4" 5 "FanSpeed_5" 6 "FanSpeed_6" 7 "FanSpeed_7" 8 "FanSpeed_8" 9 "FanSpeed_9" 10 "FanSpeed_Max" 128 "Auto_Mode" 0 "No Description";
 VAL_ 851 VentStatus 0 "" 0 "No Description";
+VAL_ 851 CabinSetTemp 0 "CabinSetTemperature";
 VAL_ 296 IllumLevelDisplay 14 "HighBeamStatus" 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLampsOn";
 VAL_ 296 TurnStalkSwitchStatus 16 "Indicating_Right" 8 "Indicating_Left";
 VAL_ 761 MP3_Folder 0 "No Description";
 VAL_ 761 MP3_Track 0 "No Description";
-VAL_ 787 INTACTTEMP 0 "No Description" 1 "" 2 "No Description" 125 "Cabin_Temperature";
+VAL_ 787 INTACTTEMP 0 "No_Data" 1 "" 2 "" 125 "Cabin_Temperature";
 VAL_ 775 IllumBatsaverRequest_MS 0 "";
-VAL_ 775 HazardSwitch 1 "Hazard_Switch_Active" 128 "Hazard_Switch_Active" 0 "Hazard_Switch_Inactive";
+VAL_ 775 ICC_Switch_Signals_[0] 64 "RECIRC_SW_ACTIVE" 128 "AC_ON_SW_ACTIVE" 2 "FRNT_DEMIST_SW_ACTIVE" 32 "REAR_DEMIST_SW_ACTIVE";
+VAL_ 775 ICC_Switch_Signals_[1] 16 "AC_OFF_SW_ACTIVE" 32 "AUTO_SW_ACTIVE" 128 "CYCLE_VENT_SW_ACTIVE" 1 "PSNGR_TEMP_DOWN_SW_ACTIVE" 2 "PSNGR_TEMP_UP_SW_ACTIVE" 4 "FAN_SPEED_DOWN_SW_ACTIVE" 8 "FAN_SPEED_UP_SW_ACTIVE" 0 "No Description";
+VAL_ 775 ICC_Switch_Signals_[2] 1 "HAZARD_SW_ACTIVE" 64 "DRIVER_TEMP_DOWN_SW_ACTIVE" 128 "DRIVER_TEMP_UP_SW_ACTIVE" 0 "No Description";
+VAL_ 775 ICC_Switch_Signals_[3] 160 "DOME_LIGHT_SW_ACTIVE" 144 "DSC_SW_ACTIVE" 132 "UNLOCK_SW_ACTIVE" 192 "LOCK_SW_ACTIVE";
 VAL_ 781 CD_TrackNumber 0 "No Description";
 VAL_ 781 CD_Type 0 "" 0 "No Description";
 VAL_ 781 CD_PlayingNow 0 "No Description";
@@ -473,16 +494,12 @@ VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
 VAL_ 1063 EngineCoolantTemperature 0 "No Description";
 VAL_ 1063 OilPressureWarning 0 "No Description";
 VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOFF" 17 "HandBrakeOn";
-VAL_ 1101 EngineCoolantTemperature_[4] 0 "";
-VAL_ 1101 EngineCoolantTemperature_[5] 0 "";
-VAL_ 1101 AtmosphericPressure_[7] 0 "";
-VAL_ 1101 EngineCoolantTemperature_[6]78 0 "";
 VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
 VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
 VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
 VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
 VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
-VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEnginei" 0 "Unknown" 0 "No Description";
+VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
 VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
 VAL_ 742 AudioTunedFreqency 0 "No Description";
 VAL_ 742 AudioFMFrequencyStep 0 "No Description";
