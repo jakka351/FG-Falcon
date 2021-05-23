@@ -43,6 +43,9 @@ BO_ 754 SWC_Media_Control_Btns: 8 Front_Display_Interface_Module
    SG_ SWCSeekBtn : 56|8@1+ (1,0) [0|0] "" Audio_Control_Module
 
 BO_ 764 Interior_Command_Centre_Btns: 8 Front_Display_Interface_Module
+   SG_ Interior_Command_Centre_[0] : 0|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ Interior_Command_Centre_[1] : 8|8@1+ (1,0) [0|0] "" Audio_Control_Module
+   SG_ Interior_Command_Centre_[2] : 16|8@1+ (1,0) [0|0] "" Audio_Control_Module
 
 BO_ 724 MSG1: 8 Audio_Control_Module
 
@@ -83,7 +86,13 @@ BO_ 739 MSG2: 8 Audio_Control_Module
 BO_ 748 MSG3: 8 Audio_Control_Module
 
 BO_ 775 IllumBatsaverRequest_MS: 8 Body_Electric_Module
-   SG_ IllumBatsaverRequest_MS : 32|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ IllumBatsaverRequest_MS_0x307_ : 56|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[0] : 0|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[1] : 8|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[2] : 16|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[3] : 24|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[4] : 32|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ Interior_Command_Centre_[5] : 40|8@1+ (1,0) [0|0] "" Body_Electric_Module
 
 BO_ 779 MSG6: 8 Body_Electric_Module
 
@@ -360,6 +369,22 @@ BO_ 1027 MSG1: 0 Front_Display_Interface_Module
 
 BO_ 1824 IC_DiagSig_Rx: 8 Instrustment_Cluster
 
+BO_ 296 Instrument_Cluster: 8 Instrustment_Cluster
+   SG_ HighBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ FogLampStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ ParkAndLowBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ AutoHeadlampSwitchStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ IllumLevelDisplay : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ IllumLevelSwitch : 0|8@1+ (1,0) [0|0] "" Body_Electric_Module
+   SG_ TurnStalkSwitchSatus : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ RearBeltMinderStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 851 HVAC_DATA: 8 HVAC_Integrated_Module
+   SG_ VentStatus : 0|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
+   SG_ FanSpeed : 56|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
+   SG_ ExteriorTemperature : 32|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
+   SG_ InteriorACTemperature : 24|8@1+ (1,0) [0|0] "Degrees_C" HVAC_Integrated_Module
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "isj1939dbc" INT 0 0;
@@ -394,6 +419,7 @@ BA_ "GenMsgForegroundColor" BO_ 1200 "#ffffff";
 BA_ "GenMsgBackgroundColor" BO_ 742 "#5dbc8b";
 BA_ "GenMsgBackgroundColor" BO_ 758 "#5dbc8b";
 BA_ "GenMsgBackgroundColor" BO_ 864 "#00aa7f";
+BA_ "GenMsgForegroundColor" BO_ 851 "#000000";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "isj1939dbc" 0;
@@ -415,7 +441,7 @@ CM_ BO_ 764 "ICC Buttons";
 CM_ BO_ 787 "Cabin Temperature Sensor";
 CM_ SG_ 787 INTACTTEMP "Interior_Temperature_Sensor_-_Integral_to_ICC_INTACTTEMP_=_Message.Data[0]_=_Temperature_-_100_/_2_L";
 CM_ BO_ 775 "ICC HVAC Buttons";
-CM_ SG_ 775 IllumBatsaverRequest_MS "checkthissignal";
+CM_ SG_ 775 IllumBatsaverRequest_MS_0x307_ "checkthissignal";
 CM_ BO_ 1782 "Passive Anti Theft System";
 CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS "PATS";
 CM_ SG_ 1063 EngineCoolantTemperature "EngCoolantTempSense";
@@ -434,10 +460,16 @@ VAL_ 754 SWCVolDownBtn 17 "VolUpBtn" 18 "VolUpBtn" 20 "VolUpBtn";
 VAL_ 754 SWCModeBtn 1 "MODE_BUTTON_ACTIVE" 15 "MODE_BUTTON_ACTIVE" 0 "No Description";
 VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 0 "No Description";
 VAL_ 754 SWCSeekBtn 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "";
+VAL_ 764 Interior_Command_Centre_[0] 1 "Menu_SW_FDM_ACTIVE" 8 "Seek_Down_SW_ACTIVE" 32 "AM_FM_SW_ACTIVE" 64 "SCAN_SW_ACTIVE" 128 "CD_AUX_SW_ACTIVE";
+VAL_ 764 Interior_Command_Centre_[1] 128 "Eject_CD_SW_ACTIVE" 0 "No Description";
 VAL_ 761 MP3_Folder 0 "No Description";
 VAL_ 761 MP3_Track 0 "No Description";
 VAL_ 787 INTACTTEMP 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
-VAL_ 775 IllumBatsaverRequest_MS 0 "";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
+VAL_ 775 Interior_Command_Centre_[0] 2 "Window_Defog_SW_ACTIVE" 16 "AC_Off_SW_ACTIVE" 32 "Rear_Demister_SW_ACTIVE" 64 "Cabin_Recirc_SW_ACTIVE" 0 "No Description";
+VAL_ 775 Interior_Command_Centre_[1] 4 "Fan_Speed_Down_SW_ACTIVE" 8 "Fan_Speed_Up_SW_ACTIVE" 16 "AC_SW_ACTIVE" 32 "AUTO_AC_SW_ACTIVE" 128 "Cycle_Vent_SW_ACTIVE";
+VAL_ 775 Interior_Command_Centre_[2] 64 "Temp_Down_SW_ACTIVE" 128 "Temp_Up_SW_ACTIVE" 1 "Hazard_SW_ACTIVE";
+VAL_ 775 Interior_Command_Centre_[3] 128 "" 132 "Unlock_SW_ACTIVE" 192 "Lock_SW_ACTIVE" 144 "DSC_SW_ACTIVE";
 VAL_ 781 CD_TrackNumber 0 "No Description";
 VAL_ 781 CD_Type 0 "" 0 "No Description";
 VAL_ 781 CD_PlayingNow 0 "No Description";
@@ -464,3 +496,6 @@ VAL_ 742 AudioTunerBandPreset 0 "No Description";
 VAL_ 742 RDS_PSN_State 0 "No Description";
 VAL_ 864 PAM_ 0 "Sonar_INACTIVE" 255 "SONAR_ACTIVE";
 VAL_ 864 PAM_1 0 "Sonar_INACTIVE" 5 "SONAR_ACTIVE";
+VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 14 "HighBeamsOn";
+VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
+VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
