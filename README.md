@@ -149,23 +149,9 @@
 [`FG wiring 700-06 conector location views.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700-06%20conector%20location%20views.pdf)    
 [`FG wiring 700.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700.pdf)    
 [`FG wiring diagram.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20diagram.pdf)    
-  
-***
- 
-# Raspberry Pi, Linux, SocketCAN, Python-CAN Links.  [![image](https://img.shields.io/badge/cansend-can0-orange)](https://github.com/jakka351/FG-Falcon/wiki/Socketcan)         
-<img src="https://wewalab.com/wp-content/uploads/2017/08/Raspberry-Pi-Logo-01.png" height="200" width="200"></img>
- - [`Crankshaft NG`](https://getcrankshaft.com/)    
- - [`OpenDash`](https://github.com/openDsh/dash)      
- - [`Openauto - Android Auto Emulator`](https://github.com/f1xpl/openauto)  
- - [`Adding CAN to  Raspberry Pi`](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)  
- - [`Socketcan`](https://python-can.readthedocs.io/en/master/interfaces/socketcan.html)   
- - [`Socketcan Linux Documentation`](https://github.com/jakka351/FG-Falcon/blob/master/socketcan/can.txt)   
- - [`Python-CAN PiCAN2 Examples`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
- - [`omxplayer pi splash video`](https://github.com/jakka351/omx-pi-splash)  
-  
-***
+   
 
-# Technical Documents      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
+# [Technical Documents](https://canbus.com.au/technical/)      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
  ### Workshop Manuals
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)    
  - [`FG Falcon mkI Workshop Manual`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
