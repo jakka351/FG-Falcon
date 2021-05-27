@@ -150,18 +150,14 @@
 [`FG wiring 700-06 conector location views.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700-06%20conector%20location%20views.pdf)    
 [`FG wiring 700.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700.pdf)    
 [`FG wiring diagram.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20diagram.pdf)    
-   
-### Articles
+[`Supplement`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
+[`Module Comms Network`](http://fordforums.com.au/wsmpub/fgii/418-00.html)  
+[`HVAC General Info`](http://fordforums.com.au/wsmpub/fgfpv50/412-00.html)   
+[`ICC`](http://fordforums.com.au/wsmpub/fg/413-08.html)  
+[`Remove ICC Assembly`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
+[`Component View & Location`](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
+[`FG Falcon mkI Workshop Manual` @ FordForums.com.au](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
 
- - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)    
- - [`FG Falcon mkI Workshop Manual` @ FordForums.com.au](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
- - [`FG Falcon`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1813)  
- - [`Supplement`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
- - [`Module Comms Network`](http://fordforums.com.au/wsmpub/fgii/418-00.html)  
- - [`HVAC General Info`](http://fordforums.com.au/wsmpub/fgfpv50/412-00.html)   
- - [`ICC`](http://fordforums.com.au/wsmpub/fg/413-08.html)  
- - [`Remove ICC Assembly`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
- - [`Component View & Location`](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
 
  
 ### Wiring Diagrams & Pinouts                  [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
@@ -173,7 +169,12 @@
  - [`Bluetooth & Phone`](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [`Diagnostic Port`](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
    
-### Other Information  
+   
+### Articles  
+ - [`SocketCAN Setup for Raspberry Pi`]()
+ - [`Aftermarket Gauges`]()
+ - [`Police Mode`]()
+ - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
  - [`Infrared Communication Introduction`](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
  - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.`  
  - [`CANBus Gist`](https://gist.github.com/jackm/f33d6e3a023bfcc680ec3bfa7076e696) - `CAN Tools and Software List `
@@ -191,7 +192,8 @@
  - [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
  - [`Oz Falcon`](https://http://www.ozfalcon.com.au/)  
  - [`Cluster Mods`](http://clustermods.com/index.php)    
- - [`FG Mods`](https://fgmods.com.au/)      
+ - [`FG Mods`](https://fgmods.com.au/)  
+ - [`Specialist Automotive Service | CANBus.com.au`](https://canbus.com.au/)      
   
 # Credit & License 
  - [`Kyle May`](https://www.kylemay.net.au/)   
