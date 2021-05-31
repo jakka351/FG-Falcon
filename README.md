@@ -40,7 +40,7 @@
  - [`Ford CD changer emulator with AUX audio`](https://github.com/ansonl/FordACP-AUX)    
  - [`Ford CD changer emulator detailed instruction`](http://ansonliu.com/2017/09/ford-acp-cd-changer-emulator-aux-audio/)  
  - [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)  
-.
+  
 ### Libraries  
  - [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)  
  - [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
