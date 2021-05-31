@@ -45,6 +45,7 @@
  - [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)  
  - [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) 
  - [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515) 
+ - [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)
   
 ### C, Bash, Shell, random  
  - [`MitchellH's C source code`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/mitchellh.c)  
@@ -85,7 +86,7 @@
  - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
  - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
  - [`Police Mode Guide`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
- - [`Lost AUX input after changing module configuration`](https://forscan.org/forum/viewtopic.php?t=14072)  
+ - [`Lost AUX input after changing module configuration`](https://github.com/jakka351/FG-Falcon/wiki/Reset-Aux-Input)  
  - - [`Lost AUX input after changing module configuration [Forum Post]`](https://forscan.org/forum/viewtopic.php?t=14072)  
  - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)  
    
@@ -111,7 +112,6 @@
  - [`Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares)  
  - [`Enable FPV Logo on ICC`]()    
  - [`Enable Reverse Camera`]()    
- - [``]()  
  - [`ASL Automedia`](https://www.aslautomedia.com.au/)   
   ` OEM Replacement Parts for FG ICC  `
   
@@ -172,17 +172,20 @@
    
    
 ### Articles  
- - [`SocketCAN Setup for Raspberry Pi`]()
- - [`Aftermarket Gauges`]()
- - [`Police Mode`]()
+ - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
+ - [`Aftermarket Gauges`](https://github.com/jakka351/FG-Falcon/wiki/Installing-Aftermarket-Gauges-in-vehicles-that-transmit-sensor-data-over-CAN)
+ - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
  - [`Infrared Communication Introduction`](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
- - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.`  
+ - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.` 
+ - [`iDoka's Awesome LINBUS`](https://github.com/iDoka/awesome-linbus)
+ - [`iDoka's Awesome CAN ID`](https://github.com/iDoka/awesome-automotive-can-id)
+ - [`SocketCAN Demo Programs`](https://github.com/zhanglongqi/socketcan-demo)
+ - [`Socketcan C example software`](https://github.com/craigpeacock/CAN-Examples)
  - [`CANBus Gist`](https://gist.github.com/jackm/f33d6e3a023bfcc680ec3bfa7076e696) - `CAN Tools and Software List `
  - [`MCP2515 data sheet`](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
  - [`Raspberry Pi PiCAN2 hat`](https://www.elektormagazine.com/news/pican-2-can-bus-board-for-raspberry-pi)    
  - [`Arduino CAN-Bus shield`](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
- - [`Seeed Arduino CAN library`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)   
  - [`Generic MCP2515 SPI board`](https://www.ebay.com.au/i/383796813415?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=383796813415&targetid=921460872233&device=c&mktype=pla&googleloc=1000567&poi=&campaignid=10101784961&mkgroupid=102311923620&rlsatarget=pla-921460872233&abcId=9300367&merchantid=7364522&gclid=Cj0KCQiAoab_BRCxARIsANMx4S6cKtaHwxGH_U9m058T7V4VBV7SBE-QISec-tuDyB5hDgv58CXihvkaAlnnEALw_wcB)    
   - [`CANBUSv1`](https://github.com/DefinitiveDiagnosis-hub/CANBUSv1) - `training module `   
   
