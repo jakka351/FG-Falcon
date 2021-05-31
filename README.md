@@ -104,7 +104,7 @@
  ### PCM Programming  
  - [`PCMTec`](https://pcmtec.com/)   
 `   Australian Ford Tuning Software  `
- - [`CANBarra CANBUS Translator`](https://www.tiperformance.com.au/products/canbarra-canbus-translator/)   
+ - [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)  
 `   converts the CANBUS signals from BA BF FG PCMs  ` 
    
  ### Interior Command Centre  / Entertainment System
