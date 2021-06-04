@@ -110,6 +110,7 @@
    
  ### Interior Command Centre  / Entertainment System
  - [`Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares)  
+ - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`Enable FPV Logo on ICC`]()    
  - [`Enable Reverse Camera`]()    
  - [`ASL Automedia`](https://www.aslautomedia.com.au/)   
@@ -175,6 +176,7 @@
  - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
  - [`Aftermarket Gauges`](https://github.com/jakka351/FG-Falcon/wiki/Installing-Aftermarket-Gauges-in-vehicles-that-transmit-sensor-data-over-CAN)
  - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
+ - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
  - [`Infrared Communication Introduction`](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
  - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.` 
