@@ -85,9 +85,6 @@
  - [`Modify Module As-Built Data`](http://www.2gfusions.net/showthread.php?tid=4573)  
  - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)     
  - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)        
- - [`Police Mode Guide`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
- - [`Lost AUX input after changing module configuration`](https://github.com/jakka351/FG-Falcon/wiki/Reset-Aux-Input)  
- - - [`Lost AUX input after changing module configuration [Forum Post]`](https://forscan.org/forum/viewtopic.php?t=14072)  
  - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)  
    
  ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
@@ -110,11 +107,19 @@
  - [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)  
 `   converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  ` 
    
+   
+ ### Instrument Cluster  
+  - [`Police Mode Guide`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
+ 
  ### Interior Command Centre  / Entertainment System
  - [`Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares)  
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`Enable FPV Logo on ICC`]()    `Write up coming`
  - [`Enable Reverse Camera`]()    `Write up coming`
+ - [`DIY Module Replacement & Programming`]() `coming soon`
+ - [`How to fit the Ipod Integration Unit & Harness`]() `coming soon`
+ - [`Lost AUX input after changing module configuration`](https://github.com/jakka351/FG-Falcon/wiki/Reset-Aux-Input)  
+ - - [`Lost AUX input after changing module configuration [Forum Post]`](https://forscan.org/forum/viewtopic.php?t=14072)  
  - [`ASL Automedia`](https://www.aslautomedia.com.au/)   
   ` OEM Replacement Parts for FG ICC  `
   
