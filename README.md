@@ -139,7 +139,12 @@
 
 # [Technical Documents](https://canbus.com.au/technical/)      [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/)
  ### [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
-    
+[`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
+[`Owners Manual`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Ute_Owner_Manual.pdf)    
+[`Owners Reference Guide`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG_Falcon_OM_2010_AU.pdf)    
+[`Technical notes on the EEC-IV MCU`](https://github.com/jakka351/FG-Falcon/blob/master/resources/eectch98.pdf)  
+[`Ford Vehicle Communications Manual - Snap On`](https://github.com/jakka351/FG-Falcon/blob/master/resources/AUS_Ford_Vehicle_Communication_Software_Manual.pdf)     
+[`HVAC Integrated Module bf Bulletin`](https://github.com/jakka351/FG-Falcon/blob/master/resources/TSB%2038%208-10%20Ford%20HIM%20Part%201.pdf)  
 [`FG ICC MK1.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20ICC%20MK1(1).pdf)  
 [`FG Powertrain control module.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20Powertrain%20control%20module.pdf)    
 [`FG ZF 6hp26 6 speed auto.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20ZF%206hp26%206%20speed%20auto.pdf)    
