@@ -39,15 +39,17 @@ BO_ XXX IPOD_: 8 AudioInterfaceModule
    SG_ CON_DEVMODID : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ SEC_STAT : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    VAL_ 000 SgDESCIPTOR 0 "No Description";
-BO_ 0 VehicleDynamicsControl: 8 AntilockBrakingSystem
-   SG_ VDC_DisabledByOperator : 24|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
-   SG_ VDC_Event : 0|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
-   SG_ VDC_Failed : 0|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
-   SG_ VehicleSpeed_HS : 32|16@1+ (0.25,255) [0|260] "KM/H" AntilockBrakingSystem
 
-BO_ 76 PCM_: 0 PowertrainControlModule
+BO_ 0x70 AbsYaw_: 8 AntilockBrakingSystem
+
+BO_ 0x75 AbsYaw_: 8 AntilockBrakingSystem
+
+BO_ 0x76 PCM_: 8 PowertrainControlModule
+
 BO_ 133  YawSensor: 8 SteeringAngleSensor
   SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 80 SteeringAngleSensor:
 VAL_ 133 YAW_RATE 0 "Yaw";
 
 BO_ 144  SteeringAngle: 8 SteeringAngleSensor
@@ -61,9 +63,13 @@ VAL_ 144 hlRl_W_Meas 0 "hlRl_W_Meas";
 VAL_ 144 hlRr_W_Meas 0 "hlRr_W_Meas";
 
 BO_ 151  MessageLabel: 8 TxModuleLabel | 097 
+
 BO_ 252  MessageLabel: 8 TxModuleLabel | 0FC 
+
 BO_ 288 WheelAndEngineTorque: 8 Vector__XXX
+
 BO_ 288  MessageLabel: 8 TxModuleLabel | 120 
+
 BO_ 296  InstrumentCluster0x128: 8 InstrumentCluster
   SG_ HighBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ IllumLevelDisplay : 0|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -74,11 +80,11 @@ BO_ 296  InstrumentCluster0x128: 8 InstrumentCluster
   SG_ TurnStalkSwitchSatus : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 VAL_ 296 HighBeamStatus 0 "off";
 VAL_ 296 IllumLevelDisplay 0 "No Description";
-VAL_ 296 IllumLevelSwitch 0 "No Description";
 VAL_ 296 AutoHeadlampSwitchStatus 0 "No Description";
 VAL_ 296 FogLampStatus 0 "No Description";
 VAL_ 296 ParkAndLowBeamStatus 0 "No Description";
-VAL_ 296 TurnStalkSwitchSatus 0 "No Description";   
+VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 14 "HighBeamsOn";
+VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
 
 BO_ 301 EngineManagementData: 8 PowertrainControlModule | 12D |
    SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" PowertrainControlModule
@@ -113,6 +119,7 @@ BO_ 301 EngineManagementData: 8 PowertrainControlModule | 12D |
    VAL_ 301 FuelPulse  0 "";
    VAL_ 301 FuelSenderFail 0 "";
    VAL_ 301 PMPSTAT 0 "";
+VAL_ 301 BrakeHardwareStatus 0 "BrakeOff" 1 "BrakeOn";
 
 BO_ 512 CrankStatusPCM_HS: 8 PowertrainControlModule
    SG_ CrankStatusPCM_HS : 0|8@1+ (1,0) [0|0] "" PowertrainControlModule
@@ -141,6 +148,8 @@ VAL_ 519 AcceleratorPedalPosition2  0 "";
 VAL_ 519 AcceleratorPedalPosition3  0 "";
 VAL_ 519 BrakeHardwareStatus  0 "";
 VAL_ 519 BRAKPRES  0 "";
+VAL_ 519 EngineRPM_HS 0 "";
+VAL_ 519 ManifoldThrottlePosition 0 "Idle_Throttle" 200 "Full_Throttle";
 
   SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
   SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
@@ -148,10 +157,24 @@ VAL_ 519 BRAKPRES  0 "";
   SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
   SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 528  AntilockBrakingSystem0x210: 8 AntilockBrakingSystem | 210 |
-BO_ 560  TransmissionControl: 8 TxModuleLabel | 230 |
+BO_ 528 VehicleDynamicsControl: 8 AntilockBrakingSystem | 210 |
+   SG_ VDC_DisabledByOperator : 24|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
+   SG_ VDC_Event : 0|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
+   SG_ VDC_Failed : 0|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
+   SG_ VehicleSpeed_HS : 32|16@1+ (0.25,255) [0|260] "KM/H" AntilockBrakingSystem
+   SG_ ABS_Fault : 16|16@1+ (0.25,255) [0|260] "DTC" AntilockBrakingSystem
 
-BO_ 714 MSG1: 8 Bluetooth_honeModule
+BO_ 560  TransmissionControl: 8 PowertrainControlModule | 230 |
+   SG_ TransmissionOverheatCondition : 24|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ TransmissionFaultCondition : 32|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ TransmissionMode : 56|8@1+ (1,0) [0|0] "" PowertrainControlModule
+VAL_ 560 TransmissionOverheatCondition  0 "";
+VAL_ 560 TransmissionFaultCondition  0 "";
+VAL_ 560 TransmissionMode  0 "";
+
+
+
+BO_ 714 MSG1: 8 BluetoothPhoneModule
   SG_ CCNT : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ ECU : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ ONDEMDTC : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
@@ -162,6 +185,11 @@ BO_ 714 MSG1: 8 Bluetooth_honeModule
   VAL_ 714 ONDEMDTC 0 "";
   VAL_ 714 SEC_STAT_BPM 0 "";
   VAL_ 714 BTH_CONTD 0 "";
+VAL_ 714 BTH_CONTD 0 "BluetoothReceptionSignalStrength";
+VAL_ 714 CCNT 0 "NumberOfContinuousTroubleCodesSet";
+VAL_ 714 ECU 0 "ECUOperatingStates";
+VAL_ 714 ONDEMDTC 0 "NumberOfOnDemandDTCs";
+VAL_ 714 SEC_STAT_BPM 0 "SecurityStatus";
 
 BO_ 718 BluetoothPairCodeAscii: 8 BluetoothPhoneModule
   SG_ MESSAGE0 : 0|8@4- (1,0) [0|255] ""  Bluetooth_Phone_Module
@@ -172,6 +200,14 @@ BO_ 718 BluetoothPairCodeAscii: 8 BluetoothPhoneModule
   SG_ MESSAGE5 : 40|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ MESSAGE6 : 48|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ MESSAGE7 : 56|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
+VAL_ 718 BPM_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 725  MessageLabel: 8 TxModuleLabel | 2E2 |
 BO_ 742  AudioTunedFreqRadioDataService: 8 AudioControlModule | 2E6 |
@@ -179,6 +215,15 @@ BO_ 742  AudioTunedFreqRadioDataService: 8 AudioControlModule | 2E6 |
    SG_ AudioTunedFreqency : 0|8@1+ (2,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ AudioTunerBandPreset : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_PSN_State : 0|1@4- (1,0) [0|0] "" FrontDisplayInterfaceModule
+VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
+VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
+VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
+VAL_ 742 RDS_PSN_State 0 "No Description";
+VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
+VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
+VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
+VAL_ 742 RDS_PSN_State 0 "No Description";
+
 
 BO_ 748  MessageLabel: 8 TxModuleLabel | 2EC |
 BO_ 751	 MessageLabel: 8 TxModuleLabel | 2EF |
@@ -186,6 +231,9 @@ BO_ 754 SWCMediaControlBtns: 8 AudioControlModule
    SG_ AudioCurrentMediaMode : 48|8@1+ (1,0) [0|0] "" AudioControlModule
    SG_ SteeringWheelControlsLeft_ms : 56|8@1+ (1,0) [0|255] "ACTIVE/INACTIVE" FrontDisplayInterfaceModule
    SG_ AudioVolumeLevel : 0|8@1+ (2,0) [0|15] "Vol" FrontDisplayInterfaceModule
+VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 97 "SWC_PHONE_BTN_ACTIVE" 101 "SWC_PHONE_BTN_ACTIVE" 104 "SWC_PHONE_BTN_ACTIVE" 0 "No Description";
+VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30";
+VAL_ 754 SteeringWheelControlsLeft_ms 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "SEEK_BUTTON_ACTIVE" 17 "VOL_UP_BTN_ACTIVE" 18 "VOL_UP_BTN_ACTIVE" 20 "VOL_UP_BTN_ACTIVE" 24 "VOL_DOWN_BTN_ACTIVE" 25 "VOL_DOWN_BTN_ACTIVE" 0 "No Description";
 
 BO_ 756 RDS_MESSAGE: 8 AudioControlModule
     SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
@@ -196,6 +244,14 @@ BO_ 756 RDS_MESSAGE: 8 AudioControlModule
     SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
     SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
     SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+VAL_ 756 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 757 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule
@@ -206,6 +262,14 @@ BO_ 757 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+VAL_ 757 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 758 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule  
@@ -216,7 +280,14 @@ BO_ 758 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
-
+VAL_ 758 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 764 Interior_Command_Centre_Btns: 8 Front_Display_Interface_Module
 
@@ -224,6 +295,9 @@ BO_ 775 IllumBatsaverRequest_MS: 8 Body_Electric_Module
    SG_ IllumBatsaverRequest_MS_0x307_ : 0|8@1+ (1,0) [0|255] "" Body_Electric_Module
    SG_ IllumBatsaverRequest_MS_0x307_99 : 8|8@1+ (1,0) [0|0] "" Body_Electric_Module
    SG_ IllumBatsaverRequest_MS_0x307_9916 : 16|8@1+ (1,0) [0|255] "" Body_Electric_Module
+VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_99 0 "";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_9916 0 "";
 
 BO_ 779 MSG6: 8 Body_Electric_Module
    SG_ CCNTABS : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -235,6 +309,9 @@ BO_ 781 CD_TRACK_TYPE_PLAYING: 8 Audio_Control_Module
    SG_ CD_PlayingNow : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
    SG_ CD_TrackNumber : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
    SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
+VAL_ 781 CD_PlayingNow 0 "No Description";
+VAL_ 781 CD_TrackNumber 0 "No Description";
+VAL_ 781 CD_Type 0 "" 0 "No Description";
 
 BO_ 783 MSG8: 8 BodyElectricModule
      SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" Body_Electric_Module
@@ -250,6 +327,7 @@ BO_ 785 BeltMinderStatus: 8 BodyElectricModule
 BO_ 787 IntActTemp: 8 HvacIntegratedModule
    SG_ InteriorActualTemperature : 7|8@0+ (0.166667,0) [0|255] "Degrees_C" HvacIntegratedModule
    VAL_ 787 InteriorActualTemperature 0 "";
+VAL_ 787 IntActTemp 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
 
 BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
    SG_ CabLightSetting : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
@@ -262,6 +340,8 @@ BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
    VAL_ 789 Ignition 0 "";
    VAL_ 789 IgnitionState 0 "";
    VAL_ 789 InteriorLightStatus 0 ""; 
+VAL_ 789 CabLightSetting 64 "CabLightsResetSettings" 32 "CabLightsOnUnlock" 128 "CabLightsOnDoorOpen";
+VAL_ 789 CycleLockSetting 4 "CycleTwoStageUnlock" 8 "CycleConfirmUnlockIndicators" 64 "Cycle_Drive_Away_Locking" 128 "CycleConfirmUnlockIndicators";
 
 BO_ 791 VehicleIdentificationNumber: 8 Body_Electric_Module
    SG_ 
@@ -288,6 +368,7 @@ BO_ 851 HvacData: 8 HVACIntegratedModule
      VAL_ 851 ExternalAmbientTemp 0 "";
      VAL_ 851 FanSpeedActual 0 "";
      VAL_ 851 FanSpeedTarget 0 "";
+VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
 
 BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
    SG_ PRK_BRAKE : 16|8@1+ (1,0) [0|0] "" ParkingAidModule
@@ -312,24 +393,45 @@ BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
    VAL_ 864 SENSOR_SPL_V  0 "";
    VAL_ 864 RM_DIST  0 "";
    VAL_ 864 PARK_SYS  0 "";
+VAL_ 864 PARK_SYS 0 "ParkingAidSystemInactive" 5 "ParkingAidSystemActive";
+VAL_ 864 RC_DIST 0 "EchoValueForRightCornerSensor";
+VAL_ 864 REAR_SENS 0 "ParkingAidRearSensorStatus" 255 "Active";
+VAL_ 864 REAR_TONE 0 "ParkingAidSounder";
+VAL_ 864 RM_DIST 0 "EchoValueForRightMiddleSensor";
+VAL_ 864 SENSOR_SPL_V 0 "SensorSupplyVoltage";
+VAL_ 864 SPEED_DEACT 0 "VehicleSpeedAboveDeactivationThreshold";
+VAL_ 864 SYS_OZ 0 "SystemOutputZone";
+VAL_ 864 TRAILINS 0 "TrailerInstalled";
+VAL_ 864 TRANSRV 0 "TransmissionInREVERSE";
+VAL_ 864 VBAT 0 "BatteryVoltage";
 
 BO_ 864  MessageLabel: 8 TxModuleLabel | 360 |
 BO_ 869  MessageLabel: 8 TxModuleLabel | 365 |
 BO_ 869 ReverseGearEngaged: 8 Vector__XXX
+BO_ 1001 : 8 module
+
 BO_ 1027 BodyControlStatus: 8 BodyElectronicModule | 403 |
 BO_ 1027 BodyControlStatus: 8 BodyElectronicModule | 403 |
 BO_ 1030 BodyInformation: 8 BodyElectronicModule | 406 |
+VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No Description";
+VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff";
+VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusFrontRight 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
+
 BO_ 1033 AdditionalBodyInformation: 8 BodyElectronicModule | 409 |
 
 BO_ 1061 EngineDataForInstrumentCluster: 8 Vector__XXX
 
 BO_ 1063 EngineDiagnosticData: 8 Vector__XXX
+VAL_ 1063 BatteryVoltage 0 "LowVoltage" 0 "Voltage" 0 "HighVoltage";
+VAL_ 1063 EngineCoolantTemperature 0 "EngCoolTemp";
+VAL_ 1063 OilPressureWarning 0 "No Description";
 
 BO_ 1079 EngineFuelData: 8 Vector__XXX
+VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOff" 17 "HandBrakeOn";
 
-BO_ 1101 EngineOilTemperature: 8 Vector__XXX
-
-BO_ 1107 OdometerAndOverflowFlag: 8 Vector__XXX
 
 BO_ 1061 MessageLabel: 8 TxModuleLabel | 425 |
 BO_ 1063 MessageLabel: 8 TxModuleLabel | 427 |
@@ -337,6 +439,9 @@ BO_ 1079 MessageLabel: 8 TxModuleLabel | 437 |
 BO_ 1101 MessageLabel: 8 TxModuleLabel | 44D |
 BO_ 1107 MessageLabel: 8 TxModuleLabel | 453 |
 BO_ 1108 MessageLabel: 8 TxModuleLabel | 454 |
+BO_ 1101 EngineOilTemperature: 8 Vector__XXX
+
+BO_ 1107 OdometerAndOverflowFlag: 8 Vector__XXX
 
 BO_ 1200 PCM_WHEEL_SPEED: 8 AntilockBrakingSystem
   SG_ RF_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
@@ -344,11 +449,11 @@ BO_ 1200 PCM_WHEEL_SPEED: 8 AntilockBrakingSystem
   SG_ LAT_ACCL : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
   SG_ LF_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
   SG_ LR_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
-  VAL_ RF_WSPD  0 "";
-  VAL_ RR_WSPD   0 "";
-  VAL_ LAT_ACCL  0 "";
-  VAL_ LF_WSPD   0 "";
-  VAL_ LR_WSPD  0 "";
+VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ LAT_ACCL  0 "";
 
 BO_ 1216 MSG1: 8 Powertrain_Control_Module
    SG_ ManifoldThrottlePosition : 48|8@1+ (1,0) [0|100] "%" Powertrain_Control_Module
@@ -369,14 +474,27 @@ BO_ 1292 ACM_KeepAlive: 8 AudioControlModule
 BO_ 1297 MessageLabel: 8 TxModuleLabel | 511 |
 BO_ 1365 MessageLabel: 8 TxModuleLabel | 555 |
 BO_ 1372 MessageLabel: 8 TxModuleLabel | 55C |
+
 BO_ 1571 MessageLabel: 8 TxModuleLabel | 623 |
 BO_ 1571 PCM_ENG_VINSPEC: 8 Powertrain_Control_Module
+
+VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
+VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
+VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
+
 BO_ 1600 ManualTrans: 8 Body_Electric_Module
   SG_ ManualTrans : 0|8@1+ (1,0) [0|255] "" Instrustment_Cluster
+VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
+VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
+
 BO_ 1616 MessageLabel: 8 TxModuleLabel | 650 |
 BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
+
 BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
 BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 Body_Electric_Module
+
+VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
+
 BO_ 1784 MSG2: 8 Powertrain_Control_Module
    SG_ ImmobLamp : 48|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
    SG_ ImmobTransfer_PCM_1_to_8_PATS : 0|63@4- (1,0) [0|0] "" Body_Electric_Module
@@ -679,104 +797,3 @@ VAL_ 0 TCSSWI2 0 "Antilock_Braking_System Inactive TCS Switching Valve 2";
 VAL_ 0 TCYC_FS 0 "Antilock_Braking_System Off Traction control system";
 VAL_ 0 TCYC_SW 0 "Antilock_Braking_System Up Traction Control Switch Status";
 VAL_ 0 YAW_RATE 0 " Antilock_Braking_System -0 1/min ABS Yaw Rate Value";
-VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No Description";
-VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff";
-VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
-VAL_ 1030 SeatBeltStatusFrontRight 0 "No Description";
-VAL_ 1030 SeatBeltStatusRearLeft 0 "No Description";
-VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
-VAL_ 1063 BatteryVoltage 0 "LowVoltage" 0 "Voltage" 0 "HighVoltage";
-VAL_ 1063 EngineCoolantTemperature 0 "EngCoolTemp";
-VAL_ 1063 OilPressureWarning 0 "No Description";
-VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOff" 17 "HandBrakeOn";
-VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
-VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
-VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
-VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
-VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
-VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
-VAL_ 742 RDS_PSN_State 0 "No Description";
-VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
-VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
-VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 14 "HighBeamsOn";
-VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
-VAL_ 301 BrakeHardwareStatus 0 "BrakeOff" 1 "BrakeOn";
-VAL_ 519 EngineRPM_HS 0 "";
-VAL_ 519 ManifoldThrottlePosition 0 "Idle_Throttle" 200 "Full_Throttle";
-VAL_ 714 BTH_CONTD 0 "BluetoothReceptionSignalStrength";
-VAL_ 714 CCNT 0 "NumberOfContinuousTroubleCodesSet";
-VAL_ 714 ECU 0 "ECUOperatingStates";
-VAL_ 714 ONDEMDTC 0 "NumberOfOnDemandDTCs";
-VAL_ 714 SEC_STAT_BPM 0 "SecurityStatus";
-VAL_ 718 BPM_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
-VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
-VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
-VAL_ 742 RDS_PSN_State 0 "No Description";
-VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 97 "SWC_PHONE_BTN_ACTIVE" 101 "SWC_PHONE_BTN_ACTIVE" 104 "SWC_PHONE_BTN_ACTIVE" 0 "No Description";
-VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30";
-VAL_ 754 SteeringWheelControlsLeft_ms 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "SEEK_BUTTON_ACTIVE" 17 "VOL_UP_BTN_ACTIVE" 18 "VOL_UP_BTN_ACTIVE" 20 "VOL_UP_BTN_ACTIVE" 24 "VOL_DOWN_BTN_ACTIVE" 25 "VOL_DOWN_BTN_ACTIVE" 0 "No Description";
-VAL_ 756 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
-VAL_ 775 IllumBatsaverRequest_MS_0x307_99 0 "";
-VAL_ 775 IllumBatsaverRequest_MS_0x307_9916 0 "";
-VAL_ 781 CD_PlayingNow 0 "No Description";
-VAL_ 781 CD_TrackNumber 0 "No Description";
-VAL_ 781 CD_Type 0 "" 0 "No Description";
-VAL_ 787 IntActTemp 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
-VAL_ 789 CabLightSetting 64 "CabLightsResetSettings" 32 "CabLightsOnUnlock" 128 "CabLightsOnDoorOpen";
-VAL_ 789 CycleLockSetting 4 "CycleTwoStageUnlock" 8 "CycleConfirmUnlockIndicators" 64 "Cycle_Drive_Away_Locking" 128 "CycleConfirmUnlockIndicators";
-VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
-VAL_ 864 PARK_SYS 0 "ParkingAidSystemInactive" 5 "ParkingAidSystemActive";
-VAL_ 864 RC_DIST 0 "EchoValueForRightCornerSensor";
-VAL_ 864 REAR_SENS 0 "ParkingAidRearSensorStatus" 255 "Active";
-VAL_ 864 REAR_TONE 0 "ParkingAidSounder";
-VAL_ 864 RM_DIST 0 "EchoValueForRightMiddleSensor";
-VAL_ 864 SENSOR_SPL_V 0 "SensorSupplyVoltage";
-VAL_ 864 SPEED_DEACT 0 "VehicleSpeedAboveDeactivationThreshold";
-VAL_ 864 SYS_OZ 0 "SystemOutputZone";
-VAL_ 864 TRAILINS 0 "TrailerInstalled";
-VAL_ 864 TRANSRV 0 "TransmissionInREVERSE";
-VAL_ 864 VBAT 0 "BatteryVoltage";
-VAL_ 718 BPM_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
