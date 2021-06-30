@@ -8,7 +8,7 @@ NS_ :
         VAL_                  
         CAT_DEF_                  
         CAT_                  
-        FILTER                  
+          FILTER                  
         BA_DEF_DEF_                 
         EV_DATA_                  
         ENVVAR_DATA_                  
@@ -38,6 +38,8 @@ BO_ XXX IPOD_: 8 AudioInterfaceModule
    SG_ CON_DEVERR : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ CON_DEVMODID : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ SEC_STAT : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
+   SG_ NUM_DTC : 0|8@1+ (1,0) [0|0] "" Audio_Interface_Module
+   
    VAL_ 000 SgDESCIPTOR 0 "No Description";
 
 BO_ 0x70 AbsYaw_: 8 AntilockBrakingSystem
@@ -68,8 +70,6 @@ BO_ 252  MessageLabel: 8 TxModuleLabel | 0FC
 
 BO_ 288 WheelAndEngineTorque: 8 Vector__XXX
 
-BO_ 288  MessageLabel: 8 TxModuleLabel | 120 
-
 BO_ 296  InstrumentCluster0x128: 8 InstrumentCluster
   SG_ HighBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ IllumLevelDisplay : 0|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -87,75 +87,40 @@ VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 
 VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
 
 BO_ 301 EngineManagementData: 8 PowertrainControlModule | 12D |
-   SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ EngineCapacityLitres : 0|8@1+ (0.1,0) [0|0] "Litres" PowertrainControlModule
-   SG_ EngineCoolantTemperature : 0|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
-   SG_ EngineCylindersValves : 8|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ EngineOverheat : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ EnginePeakTorque : 24|8@1+ (4,1) [0|0] "NM" PowertrainControlModule
-   SG_ EngineRateOfChange0 : 0|8@1+ (1,0) [0|255] "" PowertrainControlModule
-   SG_ EngineRevolutionsPerMinute4 : 32|8@1+ (1,255) [0|0] "RPM" PowertrainControlModule
-   SG_ EngineRevolutionsPerMinute5 : 40|8@1+ (0.5,0) [0|0] "RPM" PowertrainControlModule
-   SG_ EngineRPM_HS : 0|16@1+ (1,255) [0|8000] "RPM" PowertrainControlModule
-   SG_ EngineSpeedCounter : 56|8@1+ (1,0) [0|255] "Count" PowertrainControlModule
-   SG_ ETC_Warning : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ Flags : 48|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ FuelPulse : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ FuelSenderFail : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ PMPSTAT : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
-   VAL_ 301 EngineAspirationFuelType 0 "";
-   VAL_ 301 EngineCapacityLitres 0 "";
-   VAL_ 301 EngineCoolantTemperature 0 "";
-   VAL_ 301 EngineCylindersValves 0 "";
-   VAL_ 301 EngineOverheat 0 "";
-   VAL_ 301 EnginePeakTorque 0 "";
-   VAL_ 301 EngineRateOfChange0 0 "";
-   VAL_ 301 EngineRevolutionsPerMinute4 0 ""; 
-   VAL_ 301 EngineRevolutionsPerMinute5 0 "";
-   VAL_ 301 EngineRPM_HS 0 "";
-   VAL_ 301 EngineSpeedCounter 0 ""; 
-   VAL_ 301 ETC_Warning 0 "";
-   VAL_ 301 Flags 0 "";
-   VAL_ 301 FuelPulse  0 "";
-   VAL_ 301 FuelSenderFail 0 "";
-   VAL_ 301 PMPSTAT 0 "";
+  SG_ AcceleratorPedalPosition1 : 8|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
+  SG_ AcceleratorPedalPosition2 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule 
+  SG_ AcceleratorPedalPosition3 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
+  SG_ EngineRevolutionsPerMinute4 : 32|8@1+ (1,255) [0|0] "RPM" PowertrainControlModule
+  SG_ EngineRevolutionsPerMinute5 : 40|8@1+ (0.5,0) [0|0] "RPM" PowertrainControlModule
+  SG_ Flags : 48|8@1+ (1,0) [0|0] "" PowertrainControlModule
+  SG_ BrakeHardwareStatus : 56|8@1+ (1,0) [0|1] "ON/OFF" PowertrainControlModule 
+VAL_ 301 AcceleratorPedalPosition1  0 "";
+VAL_ 301 AcceleratorPedalPosition2  0 "";
+VAL_ 301 AcceleratorPedalPosition3  0 "";
+VAL_ 301 EngineRevolutionsPerMinute4 0 ""; 
+VAL_ 301 EngineRevolutionsPerMinute5 0 "";
+VAL_ 301 Flags 0 "";
 VAL_ 301 BrakeHardwareStatus 0 "BrakeOff" 1 "BrakeOn";
 
 BO_ 512 CrankStatusPCM_HS: 8 PowertrainControlModule
    SG_ CrankStatusPCM_HS : 0|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ Cruise : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ CruiseTargetSetSpeed : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ DampedFuelLevel : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ TorqueReductionRequest : 0|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ TurboBoostPressure : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-   VAL_ 512 CrankStatusPCM_HS  0 "";
-   VAL_ 512 Cruise  0 "";
-   VAL_ 512 CruiseTargetSetSpeed  0 "";
-   VAL_ 512 DampedFuelLevel  0 "";
-   VAL_ 512 TorqueReductionRequest  0 "";
-   VAL_ 512 TurboBoostPressure  0 "";
+VAL_ 512 CrankStatusPCM_HS  0 "";
+VAL_ 512 TorqueReductionRequest  0 "";
 
 BO_ 519 PcmEngineData: 8 PowertrainControlModule
-  SG_ AC_Pressure : 8|16@1+ (1,0) [0|255] "KPa" PowertrainControlModule
-  SG_ AcceleratorPedalPosition1 : 8|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
-  SG_ AcceleratorPedalPosition2 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule 
-  SG_ AcceleratorPedalPosition3 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
-  SG_ BrakeHardwareStatus : 0|8@1+ (1,0) [0|1] "" PowertrainControlModule
-  SG_ BRAKPRES : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
-VAL_ 519 AC_Pressure  0 "";
-VAL_ 519 AcceleratorPedalPosition1  0 "";
-VAL_ 519 AcceleratorPedalPosition2  0 "";
-VAL_ 519 AcceleratorPedalPosition3  0 "";
-VAL_ 519 BrakeHardwareStatus  0 "";
-VAL_ 519 BRAKPRES  0 "";
+  SG_ EngineRPM_HS : 0|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
+  SG_ EngineRPM_HS2 : 8|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
+  SG_ VehicleSpeed : 0|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
+  SG_ VehicleSpeed2 : 8|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
+  SG_ ManifoldThrottlePosition : 48|16@1+ (1,255) [0|100] "&" PowertrainControlModule
 VAL_ 519 EngineRPM_HS 0 "";
+VAL_ 519 EngineRPM_HS 0 "";
+VAL_ VehicleSpeed
+VAL_ VehicleSpeed2
+VAL_ VehicleSpeedOutputStatus
+VAL_ Vehiclespeedsensorsignalstatus
 VAL_ 519 ManifoldThrottlePosition 0 "Idle_Throttle" 200 "Full_Throttle";
-
-  SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 528 VehicleDynamicsControl: 8 AntilockBrakingSystem | 210 |
    SG_ VDC_DisabledByOperator : 24|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
@@ -171,8 +136,6 @@ BO_ 560  TransmissionControl: 8 PowertrainControlModule | 230 |
 VAL_ 560 TransmissionOverheatCondition  0 "";
 VAL_ 560 TransmissionFaultCondition  0 "";
 VAL_ 560 TransmissionMode  0 "";
-
-
 
 BO_ 714 MSG1: 8 BluetoothPhoneModule
   SG_ CCNT : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
@@ -289,27 +252,31 @@ VAL_ 758 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56
 VAL_ 758 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 VAL_ 758 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
-BO_ 764 Interior_Command_Centre_Btns: 8 Front_Display_Interface_Module
+BO_ 764 Interior_Command_Centre_Btns: 8 FrontDisplayInterfaceModule
+VAL_	764	Interior_Command_Centre_[0]	1	Menu_SW_FDM_ACTIVE	8	Seek_Down_SW_ACTIVE	32	AM_FM_SW_ACTIVE	64	SCAN_SW_ACTIVE	128	CD_AUX_SW_ACTIVE
+VAL_	764	Interior_Command_Centre_[1]	128	Eject_CD_SW_ACTIVE	0	No Description						
 
-BO_ 775 IllumBatsaverRequest_MS: 8 Body_Electric_Module
-   SG_ IllumBatsaverRequest_MS_0x307_ : 0|8@1+ (1,0) [0|255] "" Body_Electric_Module
-   SG_ IllumBatsaverRequest_MS_0x307_99 : 8|8@1+ (1,0) [0|0] "" Body_Electric_Module
-   SG_ IllumBatsaverRequest_MS_0x307_9916 : 16|8@1+ (1,0) [0|255] "" Body_Electric_Module
+BO_ 775 IllumBatsaverRequest_MS: 8 BodyElectricModule
+   SG_ IllumBatsaverRequest_MS_0x307_ : 0|8@1+ (1,0) [0|255] "" BodyElectricModule
+   SG_ IllumBatsaverRequest_MS_0x307_99 : 8|8@1+ (1,0) [0|0] "" BodyElectricModule
+   SG_ IllumBatsaverRequest_MS_0x307_9916 : 16|8@1+ (1,0) [0|255] "" BodyElectricModule
 VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
 VAL_ 775 IllumBatsaverRequest_MS_0x307_99 0 "";
 VAL_ 775 IllumBatsaverRequest_MS_0x307_9916 0 "";
 
-BO_ 779 MSG6: 8 Body_Electric_Module
+BO_ 779 MSG6: 8 BodyElectricModule
    SG_ CCNTABS : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 783 MSG8: 8 Body_Electric_Module
-     SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" Body_Electric_Module
+     SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" BodyElectricModule
    
 BO_ 781 CD_TRACK_TYPE_PLAYING: 8 Audio_Control_Module
    SG_ CD_PlayingNow : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
    SG_ CD_TrackNumber : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
    SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
-VAL_ 781 CD_PlayingNow 0 "No Description";
+VAL_ 781 CD_PlayinVAL_	764	Interior_Command_Centre_[0]	1	Menu_SW_FDM_ACTIVE	8	Seek_Down_SW_ACTIVE	32	AM_FM_SW_ACTIVE	64	SCAN_SW_ACTIVE	128	CD_AUX_SW_ACTIVE
+VAL_	764	Interior_Command_Centre_[1]	128	Eject_CD_SW_ACTIVE	0	No Description						
+gNow 0 "No Description";
 VAL_ 781 CD_TrackNumber 0 "No Description";
 VAL_ 781 CD_Type 0 "" 0 "No Description";
 
@@ -326,7 +293,6 @@ BO_ 785 BeltMinderStatus: 8 BodyElectricModule
 
 BO_ 787 IntActTemp: 8 HvacIntegratedModule
    SG_ InteriorActualTemperature : 7|8@0+ (0.166667,0) [0|255] "Degrees_C" HvacIntegratedModule
-   VAL_ 787 InteriorActualTemperature 0 "";
 VAL_ 787 IntActTemp 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
 
 BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
@@ -335,19 +301,17 @@ BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
    SG_ Ignition : 16|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
    SG_ IgnitionState : 8|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
    SG_ InteriorLightStatus : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
-   VAL_ 789 CabLightSetting 0 "";
-   VAL_ 789 CycleLockSetting 0 "";
-   VAL_ 789 Ignition 0 "";
-   VAL_ 789 IgnitionState 0 "";
-   VAL_ 789 InteriorLightStatus 0 ""; 
+VAL_ 789 Ignition 0 "";
+VAL_ 789 IgnitionState 0 "";
+VAL_ 789 InteriorLightStatus 0 ""; 
 VAL_ 789 CabLightSetting 64 "CabLightsResetSettings" 32 "CabLightsOnUnlock" 128 "CabLightsOnDoorOpen";
 VAL_ 789 CycleLockSetting 4 "CycleTwoStageUnlock" 8 "CycleConfirmUnlockIndicators" 64 "Cycle_Drive_Away_Locking" 128 "CycleConfirmUnlockIndicators";
 
-BO_ 791 VehicleIdentificationNumber: 8 Body_Electric_Module
+BO_ 791 VehicleIdentificationNumber: 8 BodyElectricModule
    SG_ 
 
-BO_ 816 ParkBrakeOn_MS: 8 Body_Electric_Module
-   SG_ParkBrakeOn_MS
+BO_ 816 ParkBrakeOn_MS: 8 BodyElectricModule
+   SG_ ParkBrakeOn_MS
 
 BO_ 829 MSG1: 0 Audio_Control_Module
 
@@ -356,18 +320,18 @@ BO_ 832 RCM_STAT_DPLY_ENABLED_RCRD_MS: 8 RestraintsControlModule
 BO_ 848  MessageLabel: 8 TxModuleLabel | 350 |
 
 BO_ 851 HvacData: 8 HVACIntegratedModule
-     SG_ VentStatus : 0|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
-     SG_ PassengerTargetTemp : 24|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
-     SG_ DriverTargetTemp : 32|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
-     SG_ ExternalAmbientTemp : 40|8@4- (1,0) [0|255] "" Front_Display_Interface_Module
-     SG_ FanSpeedActual : 48|8@4- (1,0) [0|255] "" Front_Display_Interface_Module
-     SG_ FanSpeedTarget : 56|8@1+ (1,0) [0|0] "" HVAC_Integrated_Module
-     VAL_ 851 VentStatus 0 "";
-     VAL_ 851 PassengerTargetTemp 0 "";
-     VAL_ 851 DriverTargetTemp 0 "";
-     VAL_ 851 ExternalAmbientTemp 0 "";
-     VAL_ 851 FanSpeedActual 0 "";
-     VAL_ 851 FanSpeedTarget 0 "";
+     SG_ VentStatus : 0|8@1+ (1,0) [0|0] "" HVACIntegratedModule
+     SG_ PassengerTargetTemp : 24|8@1+ (1,0) [0|0] "" HvacIntegratedModule
+     SG_ DriverTargetTemp : 32|8@1+ (1,0) [0|0] "" HvacIntegratedModule
+     SG_ ExternalAmbientTemp : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+     SG_ FanSpeedActual : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+     SG_ FanSpeedTarget : 56|8@1+ (1,0) [0|0] "" HvacIntegratedModule
+VAL_ 851 VentStatus 0 "";
+VAL_ 851 PassengerTargetTemp 0 "";
+VAL_ 851 DriverTargetTemp 0 "";
+VAL_ 851 ExternalAmbientTemp 0 "";
+VAL_ 851 FanSpeedActual 0 "";
+VAL_ 851 FanSpeedTarget 0 "";
 VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
 
 BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
@@ -381,7 +345,7 @@ BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
    SG_ SYS_OZ : 16|8@1+ (1,0) [0|0] "" ParkingAidModule
    SG_ SENSOR_SPL_V : 32|8@1+ (1,0) [0|0] "" ParkingAidModule
    SG_ RM_DIST : 24|8@1+ (1,0) [0|0] "" ParkingAidModule
-   SG_ PARK_SYS : 0|8@1+ (1,0) [0|0] "" Parking_Aid_Module
+   SG_ PARK_SYS : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
    VAL_ 864 PRK_BRAKE 0 "";
    VAL_ 864 RC_DIST  0 "";
    VAL_ 864 REAR_SENS  0 "";
@@ -407,12 +371,12 @@ VAL_ 864 VBAT 0 "BatteryVoltage";
 
 BO_ 864  MessageLabel: 8 TxModuleLabel | 360 |
 BO_ 869  MessageLabel: 8 TxModuleLabel | 365 |
-BO_ 869 ReverseGearEngaged: 8 Vector__XXX
+BO_ 869 ReverseGearEngaged: 8 BodyElectricModule
 BO_ 1001 : 8 module
 
-BO_ 1027 BodyControlStatus: 8 BodyElectronicModule | 403 |
-BO_ 1027 BodyControlStatus: 8 BodyElectronicModule | 403 |
-BO_ 1030 BodyInformation: 8 BodyElectronicModule | 406 |
+BO_ 1027 BodyControlStatus: 8 BodyElectricModule | 403 |
+BO_ 1027 BodyControlStatus: 8 BodyElectricModule | 403 |
+BO_ 1030 BodyInformation: 8 BodyElectricModule | 406 |
 VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No Description";
 VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff";
 VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
@@ -423,25 +387,52 @@ VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
 BO_ 1033 AdditionalBodyInformation: 8 BodyElectronicModule | 409 |
 
 BO_ 1061 EngineDataForInstrumentCluster: 8 Vector__XXX
+   SG_ Cruise : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ CruiseTargetSetSpeed : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ DampedFuelLevel : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule  
+   SG_ TurboBoostPressure : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+VAL_ 1061 Cruise  0 "";
+VAL_ 1061 CruiseTargetSetSpeed  0 "";
+VAL_ 1061 DampedFuelLevel  0 "";
+VAL_ 1061 TurboBoostPressure  0 "";
 
-BO_ 1063 EngineDiagnosticData: 8 Vector__XXX
-VAL_ 1063 BatteryVoltage 0 "LowVoltage" 0 "Voltage" 0 "HighVoltage";
+BO_ 1063 EngineDiagnosticData: 8 PowertrainControlModule
+   SG_ EngineCoolantTemperatur: 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ AC_Pressure : 8|16@1+ (1,0) [0|255] "KPa" PowertrainControlModule
+   SG_ BatteryVoltage : 24|16@1+ (1,0) [0|16.0] "Volts" PowertrainControlModule
+   SG_ MIL_Lamp : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ ODO_COUNT : 32|8@1+ (1,0) [0|255] "" PowertrainControlModule
+   SG_ OilPressureWarning : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ ImmobLamp : 48|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ ETC_Warning : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
 VAL_ 1063 EngineCoolantTemperature 0 "EngCoolTemp";
+VAL_ 1063 AC_Pressure  0 "";
+VAL_ 1063 BatteryVoltage 10.9 "LowVoltage" 0 "Voltage" 15.1 "HighVoltage";
 VAL_ 1063 OilPressureWarning 0 "No Description";
+VAL_ 1063 MIL_Lamp   0 "";
+VAL_ 1063 NUM_DTC   0 "";
+VAL_ 1063 ODO_COUNT   0 "";
+VAL_ 1063 OilPressureWarning   0 "";
+VAL_ 1063 ETC_Warning 0 "";
 
-BO_ 1079 EngineFuelData: 8 Vector__XXX
+BO_ 1079 EngineFuelData: 8 PowertrainControlModule
+   SG_ MaxLitres : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ ImmobTransfer_PCM_1_to_8_PATS : 0|63@4- (1,0) [0|0] "" BodyElectricModule
+   SG_ InstantEconomy : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ InstantEconomyMode : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ InstFuelValue : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ FuelPulse : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ FuelSenderFail : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
+VAL_ 1079 MaxLitres   0 "";
 VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOff" 17 "HandBrakeOn";
+VAL_ 1079 FuelPulse  0 "";
+VAL_ 1079 FuelSenderFail 0 "";
+
+BO_ 1101 EngineOilTemperature: 8 PowertrainControlModule
 
 
-BO_ 1061 MessageLabel: 8 TxModuleLabel | 425 |
-BO_ 1063 MessageLabel: 8 TxModuleLabel | 427 |
-BO_ 1079 MessageLabel: 8 TxModuleLabel | 437 |
-BO_ 1101 MessageLabel: 8 TxModuleLabel | 44D |
-BO_ 1107 MessageLabel: 8 TxModuleLabel | 453 |
+BO_ 1107 OdometerAndOverflowFlag: 8 PowertrainControlModule
 BO_ 1108 MessageLabel: 8 TxModuleLabel | 454 |
-BO_ 1101 EngineOilTemperature: 8 Vector__XXX
-
-BO_ 1107 OdometerAndOverflowFlag: 8 Vector__XXX
 
 BO_ 1200 PCM_WHEEL_SPEED: 8 AntilockBrakingSystem
   SG_ RF_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
@@ -456,34 +447,49 @@ VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
 VAL_ LAT_ACCL  0 "";
 
 BO_ 1216 MSG1: 8 Powertrain_Control_Module
-   SG_ ManifoldThrottlePosition : 48|8@1+ (1,0) [0|100] "%" Powertrain_Control_Module
-   SG_ MaxLitres : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   SG_ MIL_Lamp : 40|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   SG_ NUM_DTC : 0|8@1+ (1,0) [0|0] "" Audio_Interface_Module
-   SG_ ODO_COUNT : 32|8@1+ (1,0) [0|255] "" Powertrain_Control_Module
-   SG_ OilPressureWarning : 40|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   VAL_ 1216 ManifoldThrottlePosition   0 "";
-   VAL_ 1216 MaxLitres   0 "";
-   VAL_ 1216 MIL_Lamp   0 "";
-   VAL_ 1216 NUM_DTC   0 "";
-   VAL_ 1216 ODO_COUNT   0 "";
-   VAL_ 1216 OilPressureWarning   0 "";
-
+   
 BO_ 1281 MessageLabel: 8 TxModuleLabel | 501 |
 BO_ 1292 ACM_KeepAlive: 8 AudioControlModule
+
+
 BO_ 1297 MessageLabel: 8 TxModuleLabel | 511 |
 BO_ 1365 MessageLabel: 8 TxModuleLabel | 555 |
-BO_ 1372 MessageLabel: 8 TxModuleLabel | 55C |
+BO_ 1372 FDIM_KeepAlive: 8 FrontDisplayInterfaceModule | 55C |
 
-BO_ 1571 MessageLabel: 8 TxModuleLabel | 623 |
 BO_ 1571 PCM_ENG_VINSPEC: 8 Powertrain_Control_Module
+   SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ EngineCapacityLitres : 0|8@1+ (0.1,0) [0|0] "Litres" PowertrainControlModule
+   SG_ EngineCoolantTemperature : 0|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
+   SG_ EngineCylindersValves : 8|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ EngineOverheat : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ EnginePeakTorque : 24|8@1+ (4,1) [0|0] "NM" PowertrainControlModule
+   SG_ EngineRateOfChange0 : 0|8@1+ (1,0) [0|255] "" PowertrainControlModule 
+   SG_ EngineSpeedCounter : 56|8@1+ (1,0) [0|255] "Count" PowertrainControlModule
+   SG_ PMPSTAT : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
+VAL_ 301 EngineAspirationFuelType 0 "";
+VAL_ 301 EngineCapacityLitres 0 "";
+VAL_ 301 EngineCoolantTemperature 0 "";
+VAL_ 301 EngineCylindersValves 0 "";
+VAL_ 301 EngineOverheat 0 "";
+VAL_ 301 EnginePeakTorque 0 "";
+VAL_ 301 EngineRateOfChange0 0 "";
+VAL_ 301 EngineSpeedCounter 0 ""; 
+
+VAL_ 301 PMPSTAT 0 "";
+ SG_ BRAKPRES : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
+ VAL_ 519 BRAKPRES  0 "";
+  SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s"  AntilockBrakingSystem
+  SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
+  SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
+  SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
+  SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
 VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
 VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
 
-BO_ 1600 ManualTrans: 8 Body_Electric_Module
-  SG_ ManualTrans : 0|8@1+ (1,0) [0|255] "" Instrustment_Cluster
+BO_ 1600 ManualTrans: 8 BodyElectricModule
+  SG_ ManualTrans : 0|8@1+ (1,0) [0|255] "" InstrustmentCluster
 VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
 VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
 
@@ -491,21 +497,16 @@ BO_ 1616 MessageLabel: 8 TxModuleLabel | 650 |
 BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
 
 BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
-BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 Body_Electric_Module
+BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 BodyElectricModule
 
 VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
 
-BO_ 1784 MSG2: 8 Powertrain_Control_Module
-   SG_ ImmobLamp : 48|8@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   SG_ ImmobTransfer_PCM_1_to_8_PATS : 0|63@4- (1,0) [0|0] "" Body_Electric_Module
-   SG_ InstantEconomy : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   SG_ InstantEconomyMode : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
-   SG_ InstFuelValue : 0|1@1+ (1,0) [0|0] "" Powertrain_Control_Module
-BO_ 1824 IC_DiagSig_Rx: 8 Instrustment_Cluster
+BO_ 1784 MSG2: 8 PowertrainControlModule
+BO_ 1824 IC_DiagSig_Rx: 8 InstrustmentCluster
 BO_ 2015 MessageLabel: 8 TxModuleLabel | 7DF |
-BO_ 2024 On_Board_Diagnostics: 8 On_Board_Diagnostics
-   SG_ S1_PID_00_PIDsSupported_01_20 m0 : 23|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_01_MonitorStatus m1 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
+BO_ 2024 On_Board_Diagnostics: 8 OnBoardDiagnostics
+   SG_ S1_PID_00_PIDsSupported_01_20 m0 : 23|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_01_MonitorStatus m1 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
    SG_ S1_PID_02_FreezeDTC m2 : 31|16@0+ (1,0) [0|65535] "" On_Board_Diagnostics
    SG_ S1_PID_03_FuelSystemStatus m3 : 31|16@0+ (1,0) [0|65535] "" On_Board_Diagnostics
    SG_ S1_PID_04_CalcEngineLoad m4 : 31|8@0+ (0.39216,0) [0|100] "%" On_Board_Diagnostics
@@ -797,3 +798,538 @@ VAL_ 0 TCSSWI2 0 "Antilock_Braking_System Inactive TCS Switching Valve 2";
 VAL_ 0 TCYC_FS 0 "Antilock_Braking_System Off Traction control system";
 VAL_ 0 TCYC_SW 0 "Antilock_Braking_System Up Traction Control Switch Status";
 VAL_ 0 YAW_RATE 0 " Antilock_Braking_System -0 1/min ABS Yaw Rate Value";
+
+070YAW
+075YAW
+080SAS
+097PCM
+0C9TCM
+0FCPCM
+120PCM
+12dPCM
+200PCM
+207PCM
+210ABS
+230PCM
+307ICC
+353HIM
+3E9TCM
+403BEM
+VAL_ 000 SecurityStatus
+VAL_ 000 AcSunloadSensorStatus
+VAL_ 000 AntiScanFunction
+VAL_ 000 AutoLampOutputStatus
+VAL_ 000 HeatedBacklightSwitch
+VAL_ 000 BatterySaverRelayStatus
+VAL_ 000 EcuOperatingStates
+VAL_ 000 ContinuousCodes
+VAL_ 000 LuggageCompartmentLid
+VAL_ 000 LuggageCompartmentAjar
+VAL_ 000 DriverDoorLockStatus
+VAL_ 000 RearDefrostRelayCircuit
+VAL_ 000 HoodAjarSwitch
+VAL_ 000 HornControlDriver
+VAL_ 000 IgnitionSwitchPosition
+VAL_ 000 IlluminatedEntrEelayCircuit
+VAL_ 000 LeftFrontDoorAjarSwitchStatus.
+VAL_ 000 LeftRearDoorAjarSwitchStatus.
+VAL_ 000 NumberOfKeysStored
+VAL_ 000 PcmIdStatusStored
+VAL_ 000 PcmRequestReceived
+VAL_ 000 PcmVerifyOK
+VAL_ 000 RightFrontDoorAjarSwitchStatus.
+VAL_ 000 RightRearDoorAjarSwitchStatus.
+VAL_ 000 RearWindowWiperWasherSwitchInput
+VAL_ 000 RearWiperInputSwitchStatus
+VAL_ 000 AntiTheftStatus
+VAL_ 000 GearSelected
+VAL_ 000 TrunkReleaseInputSwitch
+VAL_ 000 LiftgateAjarSwitchStatus
+VAL_ 000 WasherPumpRelayCircuit
+VAL_ 000 WasherPumpSwitchStatus
+VAL_ 000 WasherFluidLevel
+VAL_ 000 WindowDriverOutputState
+VAL_ 000 WiperMotorSwitch
+VAL_ 000 WiperInParkPosition
+VAL_ 000 WiperRunRelayDriverState
+VAL_ 000 FrontWipeDelay
+VAL_ 000 FrontWiperSystem
+AntilockBrakingSystem
+VAL_ LeftFrontInletValveState
+VAL_ LeftFrontOutletValveState
+VAL_ LeftRearInletValveState
+VAL_ LeftRearOutletValveState
+VAL_ ABSPumpMotorRelay
+VAL_ RightFrontInletValveState
+VAL_ RightFrontOutletValveState
+VAL_ RightRearInletValveState
+VAL_ RightRearOutletValveState
+VAL_ ABSRearInletValveStatus
+VAL_ ABSRearOutletValveStatus
+VAL_ ABSValveControlRelay
+VAL_ ABSProcessByte
+VAL_ ECUOperatingStates
+VAL_ BrakeON/OFF
+VAL_ BrakeFluidLineHydraulicPressure
+VAL_ ContinuousCodes
+VAL_ DisableSafetySoftware
+VAL_ HDCEnable
+VAL_ HDCSwitchStatus
+VAL_ Ignition
+VAL_ ABSLateralAccelerationRate
+VAL_ Leftfrontwheelspeedsensor
+VAL_ Leftrearwheelspeedsensor
+VAL_ ABSPumpMotorStatus
+VAL_ ParkingbrakeSwitch
+VAL_ Rightfrontwheelspeedsensor
+VAL_ Rightrearwheelspeedsensor
+VAL_ Steeringwheelanglesensor
+VAL_ TCSPrimingValve1
+VAL_ TCSPrimingValve2
+VAL_ TCSSwitchingValve1
+VAL_ TCSSwitchingValve2
+VAL_ Tractioncontrolsystem
+VAL_ TractionControlSwitchStatus
+VAL_ ABSYawRateValue
+BluetoothPhoneModule
+VAL_ ACCPosition
+VAL_ ECUOperatingStates
+VAL_ AntennaSignalStrength
+VAL_ ContinuousCodes
+AudioControlModule
+VAL_ IgnitionSwitchRunorAccessoryPosition
+VAL_ InvalidData
+VAL_ Menu
+VAL_ ModeSwitch
+VAL_ MicrophoneSignalStrength
+VAL_ Navigation
+VAL_ PhoneSwitch
+VAL_ PhoneTransceiverActive
+VAL_ IgnitionSwitch-RunPosition
+VAL_ SecurityStatus
+VAL_ (+)seekbutton
+VAL_ DiagnosticTroubleCodes
+VAL_ SubwooferAmplifier
+VAL_ Modulesupplyvoltage
+VAL_ (-)Volumebutton
+VAL_ (+)volumebutton
+AudioInterfaceModule
+VAL_ AuthenticationDeviceErrorCode
+VAL_ ConsumerDeviceErrorCount
+VAL_ ConsumerDeviceModelID
+VAL_ iPodFirmwareVersionNumber
+VAL_ NumberofcontinuousDTCsstored
+VAL_ SecurityStatus
+BodyElectricModule
+VAL_ A/CSunloadSensorStatus
+VAL_ Anti-ScanFunction
+VAL_ AutoLampOutputStatus
+VAL_ HeatedBacklightSwitch
+VAL_ BatterySaverRelayStatus.
+VAL_ ECUOperatingStates
+VAL_ ContinuousCodes
+VAL_ Luggagecompartmentlid/LuggagecompartmentAjar
+VAL_ DriverDoorLockStatus
+VAL_ RearDefrostRelayCircuit
+VAL_ HoodAjarSwitch
+VAL_ HornControlDriver
+VAL_ Ignitionswitchposition
+VAL_ Illuminatedentryrelaycircuit
+VAL_ Leftfrontdoorajarswitchstatus.
+VAL_ LeftReardoorajarswitchstatus.
+VAL_ Numberofkeysstored
+VAL_ PCMIDStatusStored
+VAL_ PCMRequestReceived
+VAL_ PCMVerifyOK
+VAL_ Rightfrontdoorajarswitchstatus.
+VAL_ Rightreardoorajarswitchstatus.
+VAL_ Rearwindowwiper/washerswitch,input
+VAL_ Rearwiperinputswitchstatus
+VAL_ Anti-TheftStatus
+VAL_ Gearselected
+VAL_ TrunkReleaseInputSwitch
+VAL_ Liftgateajarswitchstatus
+VAL_ WasherPumpRelayCircuit
+VAL_ Washerpumpswitchstatus
+VAL_ WasherFluidLevel
+VAL_ WindowDriverOutputState
+VAL_ WiperMotorSwitch
+VAL_ WiperinParkPosition
+VAL_ WiperRunRelayDriverState
+VAL_ FRONTWIPERDELAY
+VAL_ FrontWiperSystem
+FrontDisplayInterfaceModule
+VAL_ BluetoothReceptionSignalStrength
+VAL_ numberofcontinuoustroublecodesset
+VAL_ ECUOperatingStates
+VAL_ NumberofOnDemandDTCs
+VAL_ SecurityStatus
+VAL_ ActiveVideoInput
+VAL_ AirConditioningSwitchStatus
+VAL_ Airdistributionstatus
+VAL_ AMSwitch
+VAL_ Autoset
+VAL_ AirConditioningSwitchStatus
+VAL_ Back/HomeButtonPressed
+VAL_ ContinuousCodes
+VAL_ AirConditioningSwitchStatus
+VAL_ Fan+
+VAL_ Floor
+VAL_ Floor/Defrost
+VAL_ Down
+VAL_ OFF
+VAL_ PanelFace
+VAL_ PanelFaceorFloor
+VAL_ PassengerTemperatureIncrement
+VAL_ CDSwitch
+VAL_ CentralLockingSwitch(LOCK)
+VAL_ CentralLockingSwitch(UNLOCK)
+VAL_ DomeLampSwitch
+VAL_ DriverTempDown
+VAL_ DriverTempUp
+VAL_ EjectSwitch
+VAL_ BlowerDownSwitch
+VAL_ ECUOperatingStates
+VAL_ FMSwitch
+VAL_ FrontDemistSwitch
+VAL_ AirConditioningSwitch
+VAL_ LCDSegmentDisplay
+VAL_ LoadSwitch
+VAL_ MenuSwitch
+VAL_ OKSwitch
+VAL_ PlusSwitch
+VAL_ PowerSwitch
+VAL_ Preset1button
+VAL_ Preset2button
+VAL_ Preset3button
+VAL_ Preset4button
+VAL_ Preset5button
+VAL_ Preset6button
+VAL_ PassTempDown
+VAL_ RearDemistSwitch
+VAL_ RecirculationSwitch
+VAL_ RearTemperatureSelectInput
+VAL_ Scan/ASSwitch
+VAL_ SeekDownSwitch
+VAL_ SeekIncreaseSwitch
+VAL_ Tractioncontrolsystemdisableswitch
+VAL_ TuneDecreaseSwitch
+VAL_ TuneIncreaseSwitch
+VAL_ VolumeDecreaseSwitch
+VAL_ VolumeIncreaseSwitch
+HvacIntegratedModule
+VAL_ evaporatortemperature
+VAL_ Airconditioningcompressorcyclingswitch
+VAL_ MissingtheCANmessagefromBEM
+VAL_ BlendDoorPosition
+VAL_ BlendDoorTargetPosition
+VAL_ BlowerMotorSpeed-ActualPosition
+VAL_ BlowerMotorSpeed-TargetPosition
+VAL_ Blower/FanSenseVoltage
+VAL_ ClimateControlActuatorModes
+VAL_ ContinuousCodes
+VAL_ MissingtheCANmessagefromACM
+VAL_ ExternalTemperatureSensorFilteredData
+VAL_ Outsidetemperature
+VAL_ ECUOperatingStates
+VAL_ LHAirOutletTemperature
+VAL_ ReferenceVoltage
+VAL_ PassengerBlendDoorActualPosition
+VAL_ PassengerBlendDoorTargetPosition
+VAL_ MissingtheCANmessagefromthePCM.
+VAL_ RecirculationDoorStatus
+VAL_ RecirculationDoorTargetPosition
+VAL_ RHAirOutletTemperature
+Instrustment_Cluster
+VAL_ AutolampSwitchStatus
+VAL_ AverageFuelEconomy-Metric
+VAL_ BrakeHardwareInputStatus
+VAL_ numberofcontinuoustroublecodesset
+VAL_ ECUOperatingStates
+VAL_ DistancetoDestination
+VAL_ DOWNARROWButtonPressed
+VAL_ EnterButton
+VAL_ EngineOilTemperature
+VAL_ ExteriorLamp,Night(True)/Day(False)
+VAL_ FogLampSwitchTest
+VAL_ Fuellevel
+VAL_ FuelConsumed
+VAL_ InstantaneousFuelEconomy-Metric
+VAL_ FuelEconomyDisplayMode
+VAL_ Fuelsender
+VAL_ FuelType:Typeoffuelcurrentlyusedbythevehicle.
+VAL_ Hazardflasherswitch
+VAL_ HighBeamSwitchStatus
+VAL_ LCDSegmentDisplay
+VAL_ LCDIlluminationLevel
+VAL_ LHSideIndicatorCurrentDraw
+VAL_ leftturnswitch
+VAL_ Button'MENU'Pressed
+VAL_ Odometer
+VAL_ OilPressureGaugePointerPlacement
+VAL_ ParkBrakeAppliedLamp
+VAL_ PWMDutyCycle1
+VAL_ PWMDutyCycle2
+VAL_ IlluminationPWMValue
+VAL_ Parkinglamps
+VAL_ RHSideIndicatorCurrentDraw
+VAL_ rightturnswitch
+VAL_ SafetyBeltIndicatorStatus
+VAL_ NumberofTroubleCodesSetDuetoDiagnosticTest
+VAL_ SpeedometerGaugeIndicatorControl
+VAL_ TemperatureGauge
+VAL_ EngineTemperatureGaugePointerPlace
+VAL_ Gearselected
+VAL_ Gearselected
+VAL_ VehicleTripOdometer-B-Metric
+VAL_ Tripcomputer
+VAL_ VehicleTripOdometer-Metric
+VAL_ TripOdometerPressed
+VAL_ UPARROWButtonPressed
+VAL_ systembatteryvoltagevalue
+VAL_ VehicleSpeed
+VAL_ VehicleSpeed
+
+pcm 
+VAL_ 4x4Low
+VAL_ 4x4lowrangeinput
+VAL_ AmbientAirTemperature
+VAL_ MissingtheCANmessagefromtheABS.
+VAL_ A/Cpressureswitch
+VAL_ A/Cpressuresensor
+VAL_ AdaptiveFueltable1Status
+VAL_ AdaptiveFueltable2Status
+VAL_ SizeandFormatInformationAbouttheBank1AFT
+VAL_ SizeandFormatInformationAbouttheBank2AFT
+VAL_ SecondaryAirSystemEvaluated
+VAL_ Acceleratorpedalpositionsensor3
+VAL_ AcceleratorPedalPositionD
+VAL_ AcceleratorPedalPositionSensorStatus
+VAL_ AcceleratorPedalPosition
+VAL_ TimeSinceEngineStart
+VAL_ TimeSinceEngineStart
+VAL_ Avefuelconsumedlitresperhrthistrip
+VAL_ AxleRatio
+VAL_ Barometricpressure
+VAL_ BatteryvoltageatthetimeofJ1979Modefreezeframe.
+VAL_ MissingtheCANmessagefromBEM
+VAL_ BrakeON/OFF
+VAL_ BrakePressureAppliedswitch
+VAL_ CatalystMonitor
+VAL_ CatalystTemperatureBank1
+VAL_ CatalystTemperatureBank2
+VAL_ AllCCMFaultsMonitoredSincePower-up
+VAL_ CylinderHeadTemperature
+VAL_ CylinderHeadTemperatureSensorStatus
+VAL_ CylinderHeadTemperature
+VAL_ Closedloop-usingoxygensensor(s)asfeedbackforfuelcontrol
+VAL_ MissingtheCANmessagefromICM
+VAL_ ClutchPedalPositionSwitch/NeutralSwitchCircuit
+VAL_ ClutchPedalPositionSwitch.
+VAL_ Crankfuelingdisabled
+VAL_ DiffLockCommandOutput
+VAL_ DiffLockRequestInput
+VAL_ ValidDriveCounter
+VAL_ DesiredIdleSpeedRPM
+VAL_ DTCCount(includesthoseneedingnoaction)
+VAL_ DiffLockConfirmationInput
+VAL_ Exceptioncounter
+VAL_ ExceptionType
+VAL_ Enginecoolanttemperature
+VAL_ Enginecoolanttemperature
+VAL_ EngineCoolantTemperatureStatus
+VAL_ ExhaustGasRecirculationSystemEvaluated
+VAL_ EngineOilTemperatureStatus
+VAL_ ErrorToQuizzer
+VAL_ ErrorFromQuizzer
+VAL_ ElectronicThrottleControlActual
+VAL_ ElectronicThrottleControlDesired
+VAL_ EvaporativeEmissionPurgeMonitorComplete
+VAL_ EvaporativeEmissionCanisterPurgeValvedutycycle
+VAL_ Enginecoolingfanoperation
+VAL_ FreezeFrameData
+VAL_ FuelLevel
+VAL_ FuelLevelInputStatus
+VAL_ FootBrake-Footbrakestateusedbystrategy
+VAL_ FuelPulseWidth
+VAL_ FuelSystemStatus(Open/ClosedLoop)
+VAL_ Fuelsystemstatus(Open/Closedloop)-Bank1
+VAL_ Fuelsystemstatus(Open/Closedloop)-Bank2
+VAL_ InstantaneousFuelEconomy-Metric
+VAL_ FuelSystemMonitorEvaluated
+VAL_ MANUAL_GEAR_POSITION
+VAL_ GeneratorCommand
+VAL_ GeneratorFaultIndicatorLamp
+VAL_ GeneratorMonitor
+VAL_ GeneratorVoltageDesired
+VAL_ GeneratorOutputFault
+VAL_ Closedloop
+VAL_ Fancontrolhighspeed
+VAL_ FanControlHighFault
+VAL_ MissingtheCANmessagefromHIM
+VAL_ HighPressureCompressorCutOuts
+VAL_ HeatedExhaustGasOxygenSensorHeater(bank1
+VAL_ HeatercontrolforO2S11Fault
+VAL_ HeatedExhaustGasOxygenSensorHeater(bank1
+VAL_ HeatercontrolforO2S12Fault
+VAL_ HeatedExhaustGasOxygenSensorHeater(bank2
+VAL_ HeatercontrolforO2S21Fault
+VAL_ HeatedExhaustGasOxygenSensorHeater(bank2
+VAL_ HeatercontrolforO2S22Fault
+VAL_ RetriesexecutedforO2S11heater
+VAL_ RetriesexecutedforO2S21heater
+VAL_ AirflowTrimLearned(Neutral
+VAL_ AirflowTrimLearned(Neutral
+VAL_ ShortTermAirflowTrimBeforeKAMLearned(LBM/min)
+VAL_ IAChasbeenmonitoredsincepower-up.
+VAL_ IdleAirControl
+VAL_ IntakeAirTemperature
+VAL_ IntakeAirTemperature
+VAL_ InletAirTemperatureSensorStatus
+VAL_ IntakeAirTemperature-Voltage
+VAL_ Instantaneousfuelconsumption-litersperhour
+VAL_ IntermediateShaftSpeed
+VAL_ KeepAliveMemoryPower
+VAL_ Fancontrollowspeed
+VAL_ Avefuelconsumedlitresper100kmforthistrip
+VAL_ Engineload
+VAL_ CalculatedLoadValue
+VAL_ Longtermfueltrim1
+VAL_ Longtermfueltrim1
+VAL_ Longtermfueltrim2
+VAL_ Longtermfueltrim2
+VAL_ HighestvalueseenonMAFfaultfilter.
+VAL_ Manifoldabsolutepressuresensor
+VAL_ Manifoldabsolutepressuresensor
+VAL_ Manifoldabsolutepressuresensor
+VAL_ ManifoldAbsolutePressureSensorStatus
+VAL_ IntakeAirTemperatureAtTimeOfMisfire
+VAL_ EngineLoadAtTimeOfMisfire
+VAL_ Park/NeutralPositionAtTimeOfMisfire
+VAL_ EngineRunningTimeAtTimeOfMisfire
+VAL_ EngineRPMAtTimeOfMisfire
+VAL_ EngineOffSoakTimePriortoMisfire
+VAL_ ThrottlePositionAtTimeOfMisfire
+VAL_ NumberOfTripsSinceTheTimeOfMisfire
+VAL_ VehicleSpeedAtTimeOfMisfire
+VAL_ MalfunctionIndicatorLamp
+VAL_ ThedistancetravelledsincetheMILwasactivated.
+VAL_ EngineMisfirecurrentlydetected
+VAL_ MisfireMonitorEvaluated
+VAL_ MisfireOnBoardDiagnosticTripFlag
+VAL_ MisfireProfileCorrectionLearned
+VAL_ ManualShiftAutoDownshiftSwitch
+VAL_ ManualShiftAutoUpshiftSwitch
+VAL_ TotalNumberofMisfires
+VAL_ Numberoffiringsnotassessed
+VAL_ HeatedExhaustOxygenSensorSystemEvaluated
+VAL_ HeatedExhaustGasOxygenSensor(bank1
+VAL_ Shorttermfueltrim1
+VAL_ HeatedExhaustGasOxygenSensor(bank1
+VAL_ HeatedExhaustOxygenSensor11Status
+VAL_ HeatedExhaustGasOxygenSensor(bank1
+VAL_ HeatedExhaustGasOxygenSensor(bank2
+VAL_ HeatedExhaustGasOxygenSensor(bank2
+VAL_ Shorttermfueltrim2
+VAL_ HeatedExhaustGasOxygenSensor(bank2
+VAL_ HeatedExhaustOxygenSensor21Status
+VAL_ OnBoardDiagnosticRequirementsSupported
+VAL_ ODU_RAM$I
+VAL_ OverdriveCancelSwitch
+VAL_ EngineOilPressure
+VAL_ Openloopduetodrivingconditions
+VAL_ OpenloopfuelduetoFMEM
+VAL_ OpenLoop
+VAL_ OutputShaftSpeed.
+VAL_ OutputShaftSpeedFailureMode
+VAL_ ActualOutputShaftSpeed
+VAL_ Durationoflaststartermotoroperation
+VAL_ Outcode
+VAL_ PressureControlSolenoidA
+VAL_ PressureControlSolenoidB
+VAL_ PressureControlSolenoidC
+VAL_ Powersteeringpressureswitch
+VAL_ PowerSteeringStatus
+VAL_ SpeedControlActuatorSwitchRESUME
+VAL_ Estimatedrangetoempty
+VAL_ Addresstheblockofrangedataforusebytheoffboardequipmentwhichflashestheparameters(i.e.
+VAL_ RearO2FuelTrim-Bank1
+VAL_ RearO2FuelTrim-Bank2
+VAL_ EngineRevolutionsPerMinute
+VAL_ EngineRevolutionsPerMinute
+VAL_ SpeedControlCommandSwitch
+VAL_ SpeedControlCommandSwitch
+VAL_ SpeedControlNoSwitchInput
+VAL_ SpeedControlActuatorSwitchSET/ACCEL
+VAL_ SpeedControlCancelSwitch
+VAL_ SpeedControlActuatorSwitchCoast
+VAL_ SpeedControlErrorWarningIndicator
+VAL_ SpeedControlActuatorSwitchOff
+VAL_ SpeedControlActuatorSwitchOn
+VAL_ SpeedControlSwitchStatus
+VAL_ VehicleSecurityAccessStatus
+VAL_ DiagnosticTroubleCodes
+VAL_ Shorttermfueltrim1
+VAL_ Shorttermfueltrim1
+VAL_ Shorttermfueltrim2
+VAL_ Shorttermfueltrim2
+VAL_ ignitiontimingfortrailingcoil
+VAL_ SparkAdvance
+VAL_ SparkAdvance
+VAL_ ShiftSolenoid#1Electricalfault
+VAL_ ShiftSolenoid#2Electricalfault
+VAL_ CMPandCKPSynchronized
+VAL_ TorqueConverterClutchSolenoid
+VAL_ TorqueConverterClutchFault
+VAL_ TorqueConverterUnlockingDuetoSlipping
+VAL_ MissingCANmessagefromtheTCM
+VAL_ OverdriveCancelSwitch/HoldSwitch
+VAL_ Cumula.cylevents
+VAL_ TransmissionFluidTemperatureStatus
+VAL_ Anti-TheftStatus
+VAL_ TireSize(rev/mile)
+VAL_ ThrottlePosition
+VAL_ ThrottlePositionSensor1
+VAL_ ThrottlePositionSensor2
+VAL_ Intermittentfaultfilter
+VAL_ DigitalTransmissionRangeswitch1
+VAL_ DigitalTransmissionRangeswitch2
+VAL_ DigitalTransmissionRangeswitch3
+VAL_ DigitalTransmissionRangeswitch4
+VAL_ TransmissionSystemMILFault
+VAL_ Transmissionactualgear
+VAL_ On-BoardDiagnosticTripCompleted
+VAL_ NumberofOnBoardDiagnostictripscompleted
+VAL_ Avevehspeedwhileenginesrunningforthistrip
+VAL_ TransmissionRangestatus
+VAL_ TurbineSpeedSensorFailureMode
+VAL_ TurboBoostPressure
+VAL_ OctaneAdjust/SparkRetard
+VAL_ Modulesupplyvoltage
+VAL_ VehicleSpeedOutputStatus
+VAL_ VehicleSpeed
+VAL_ VehicleSpeed
+VAL_ Vehiclespeedsensorsignalstatus
+VAL_ Parkingaidsystemstatus
+VAL_ EchoValueforRightCornerSensor
+VAL_ Parkingaidrearsensorstatus
+VAL_ ParkingAidSounder
+VAL_ EchoValueforRightMiddleSensor
+VAL_ SensorSupplyVoltage
+VAL_ VehicleSpeedAboveDeactivationThreshold
+VAL_ SystemOutputZone
+VAL_ Trailerinstalled
+VAL_ TransmissionInREVERSE
+VAL_ BatteryVoltage
+
+427PCM
+437IC
+44dPCM
+4b0ABS
+4c0PCM
+500IC
+553IC
+623PCM
+640PCM
+650PCM
+6f6PCM
