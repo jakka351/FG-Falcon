@@ -108,7 +108,8 @@
    `Australian CAN Products  `       
  🔴 [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
  `   converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `          
- 🔴[`Ford Wreckers Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)    
+ 🔴[`Ford Wreckers Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
+ 🔴[`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
    
      
  ### Instrument Cluster    
