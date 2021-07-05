@@ -31,38 +31,26 @@ NS_ :
         SG_MUL_VAL_       
 
 BU_: AntilockBrakingSystem AudioControlModule  AudioInterfaceModule  BluetoothPhoneModule  BodyElectricModule  FrontDisplayInterfaceModule  HvacIntegratedModule  InstrustmentCluster  ParkingAidModule  PowertrainControlModule RestraintsControlModule TransmissionControlModule OnBoardDiagnostics  SteeringAngleSensor
+BS_: 125
 BS_: 500
-BO_ XXX IPOD_: 8 AudioInterfaceModule
+BO_ 000 IPOD_: 8 AudioInterfaceModule
    SG_ IPOD_FRMVER : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ AUTHENT_DEVER : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ CON_DEVERR : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ CON_DEVMODID : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    SG_ SEC_STAT : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
-   SG_ NUM_DTC : 0|8@1+ (1,0) [0|0] "" Audio_Interface_Module
+   SG_ NUM_DTC : 0|8@1+ (1,0) [0|0] "" AudioInterfaceModule
    
-   VAL_ 000 SgDESCIPTOR 0 "No Description";
-
-BO_ 0x70 AbsYaw_: 8 AntilockBrakingSystem
-
-BO_ 0x75 AbsYaw_: 8 AntilockBrakingSystem
-
-BO_ 0x76 PCM_: 8 PowertrainControlModule
-
 BO_ 133  YawSensor: 8 SteeringAngleSensor
   SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 80 SteeringAngleSensor:
-VAL_ 133 YAW_RATE 0 "Yaw";
 
 BO_ 144  SteeringAngle: 8 SteeringAngleSensor
-  SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-  SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" Powertrain_Control_Module
-VAL_ 144 hlFl_W_Meas 0 "hlFl_W_Meas";
-VAL_ 144 hlFr_W_Meas 0 "hlFr_W_Meas";
-VAL_ 144 hlRl_W_Meas 0 "hlRl_W_Meas";
-VAL_ 144 hlRr_W_Meas 0 "hlRr_W_Meas";
+  SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s" PowertrainControlModule
+  SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" PowertrainControlModule
+  SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" PowertrainControlModule
+  SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" PowertrainControlModule
 
 BO_ 151  MessageLabel: 8 TxModuleLabel | 097 
 
@@ -73,20 +61,14 @@ BO_ 288 WheelAndEngineTorque: 8 Vector__XXX
 BO_ 296  InstrumentCluster0x128: 8 InstrumentCluster
   SG_ HighBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ IllumLevelDisplay : 0|1@1+ (1,0) [0|0] "" Vector__XXX
-  SG_ IllumLevelSwitch : 0|8@1+ (1,0) [0|0] "" Body_Electric_Module
+  SG_ IllumLevelSwitch : 0|8@1+ (1,0) [0|0] "" BodyElectricModule
   SG_ AutoHeadlampSwitchStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ FogLampStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ ParkAndLowBeamStatus : 0|1@1+ (1,0) [0|0] "" Vector__XXX
   SG_ TurnStalkSwitchSatus : 16|8@1+ (1,0) [0|0] "" Vector__XXX
-VAL_ 296 HighBeamStatus 0 "off";
-VAL_ 296 IllumLevelDisplay 0 "No Description";
-VAL_ 296 AutoHeadlampSwitchStatus 0 "No Description";
-VAL_ 296 FogLampStatus 0 "No Description";
-VAL_ 296 ParkAndLowBeamStatus 0 "No Description";
-VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 14 "HighBeamsOn";
-VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
 
 BO_ 301 EngineManagementData: 8 PowertrainControlModule | 12D |
+  SG_ EngineRateOfChange0 : 0|8@1+ (1,0) [0|255] "" PowertrainControlModule 
   SG_ AcceleratorPedalPosition1 : 8|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
   SG_ AcceleratorPedalPosition2 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule 
   SG_ AcceleratorPedalPosition3 : 16|8@1+ (0.5,0) [0|200] "%" PowertrainControlModule
@@ -94,19 +76,10 @@ BO_ 301 EngineManagementData: 8 PowertrainControlModule | 12D |
   SG_ EngineRevolutionsPerMinute5 : 40|8@1+ (0.5,0) [0|0] "RPM" PowertrainControlModule
   SG_ Flags : 48|8@1+ (1,0) [0|0] "" PowertrainControlModule
   SG_ BrakeHardwareStatus : 56|8@1+ (1,0) [0|1] "ON/OFF" PowertrainControlModule 
-VAL_ 301 AcceleratorPedalPosition1  0 "";
-VAL_ 301 AcceleratorPedalPosition2  0 "";
-VAL_ 301 AcceleratorPedalPosition3  0 "";
-VAL_ 301 EngineRevolutionsPerMinute4 0 ""; 
-VAL_ 301 EngineRevolutionsPerMinute5 0 "";
-VAL_ 301 Flags 0 "";
-VAL_ 301 BrakeHardwareStatus 0 "BrakeOff" 1 "BrakeOn";
 
 BO_ 512 CrankStatusPCM_HS: 8 PowertrainControlModule
    SG_ CrankStatusPCM_HS : 0|8@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ TorqueReductionRequest : 0|8@1+ (1,0) [0|0] "" PowertrainControlModule
-VAL_ 512 CrankStatusPCM_HS  0 "";
-VAL_ 512 TorqueReductionRequest  0 "";
 
 BO_ 519 PcmEngineData: 8 PowertrainControlModule
   SG_ EngineRPM_HS : 0|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
@@ -114,13 +87,6 @@ BO_ 519 PcmEngineData: 8 PowertrainControlModule
   SG_ VehicleSpeed : 0|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
   SG_ VehicleSpeed2 : 8|16@1+ (1,255) [0|6500] "RPM" PowertrainControlModule
   SG_ ManifoldThrottlePosition : 48|16@1+ (1,255) [0|100] "&" PowertrainControlModule
-VAL_ 519 EngineRPM_HS 0 "";
-VAL_ 519 EngineRPM_HS 0 "";
-VAL_ VehicleSpeed
-VAL_ VehicleSpeed2
-VAL_ VehicleSpeedOutputStatus
-VAL_ Vehiclespeedsensorsignalstatus
-VAL_ 519 ManifoldThrottlePosition 0 "Idle_Throttle" 200 "Full_Throttle";
 
 BO_ 528 VehicleDynamicsControl: 8 AntilockBrakingSystem | 210 |
    SG_ VDC_DisabledByOperator : 24|1@1+ (1,0) [0|0] "" AntilockBrakingSystem
@@ -128,14 +94,16 @@ BO_ 528 VehicleDynamicsControl: 8 AntilockBrakingSystem | 210 |
    SG_ VDC_Failed : 0|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
    SG_ VehicleSpeed_HS : 32|16@1+ (0.25,255) [0|260] "KM/H" AntilockBrakingSystem
    SG_ ABS_Fault : 16|16@1+ (0.25,255) [0|260] "DTC" AntilockBrakingSystem
+VAL_
+VAL_
+VAL_
+VAL_
+VAL_
 
 BO_ 560  TransmissionControl: 8 PowertrainControlModule | 230 |
    SG_ TransmissionOverheatCondition : 24|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ TransmissionFaultCondition : 32|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ TransmissionMode : 56|8@1+ (1,0) [0|0] "" PowertrainControlModule
-VAL_ 560 TransmissionOverheatCondition  0 "";
-VAL_ 560 TransmissionFaultCondition  0 "";
-VAL_ 560 TransmissionMode  0 "";
 
 BO_ 714 MSG1: 8 BluetoothPhoneModule
   SG_ CCNT : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
@@ -143,16 +111,7 @@ BO_ 714 MSG1: 8 BluetoothPhoneModule
   SG_ ONDEMDTC : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ SEC_STAT_BPM : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module     
   SG_ BTH_CONTD : 0|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
-  VAL_ 714 CCNT 0 "";
-  VAL_ 714 ECU 0 "";
-  VAL_ 714 ONDEMDTC 0 "";
-  VAL_ 714 SEC_STAT_BPM 0 "";
-  VAL_ 714 BTH_CONTD 0 "";
-VAL_ 714 BTH_CONTD 0 "BluetoothReceptionSignalStrength";
-VAL_ 714 CCNT 0 "NumberOfContinuousTroubleCodesSet";
-VAL_ 714 ECU 0 "ECUOperatingStates";
-VAL_ 714 ONDEMDTC 0 "NumberOfOnDemandDTCs";
-VAL_ 714 SEC_STAT_BPM 0 "SecurityStatus";
+
 
 BO_ 718 BluetoothPairCodeAscii: 8 BluetoothPhoneModule
   SG_ MESSAGE0 : 0|8@4- (1,0) [0|255] ""  Bluetooth_Phone_Module
@@ -163,14 +122,6 @@ BO_ 718 BluetoothPairCodeAscii: 8 BluetoothPhoneModule
   SG_ MESSAGE5 : 40|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ MESSAGE6 : 48|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
   SG_ MESSAGE7 : 56|8@4- (1,0) [0|255] "" Bluetooth_Phone_Module
-VAL_ 718 BPM_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 718 BPM_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 725  MessageLabel: 8 TxModuleLabel | 2E2 |
 BO_ 742  AudioTunedFreqRadioDataService: 8 AudioControlModule | 2E6 |
@@ -178,15 +129,6 @@ BO_ 742  AudioTunedFreqRadioDataService: 8 AudioControlModule | 2E6 |
    SG_ AudioTunedFreqency : 0|8@1+ (2,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ AudioTunerBandPreset : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_PSN_State : 0|1@4- (1,0) [0|0] "" FrontDisplayInterfaceModule
-VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
-VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
-VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
-VAL_ 742 RDS_PSN_State 0 "No Description";
-VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
-VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
-VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
-VAL_ 742 RDS_PSN_State 0 "No Description";
-
 
 BO_ 748  MessageLabel: 8 TxModuleLabel | 2EC |
 BO_ 751	 MessageLabel: 8 TxModuleLabel | 2EF |
@@ -194,9 +136,6 @@ BO_ 754 SWCMediaControlBtns: 8 AudioControlModule
    SG_ AudioCurrentMediaMode : 48|8@1+ (1,0) [0|0] "" AudioControlModule
    SG_ SteeringWheelControlsLeft_ms : 56|8@1+ (1,0) [0|255] "ACTIVE/INACTIVE" FrontDisplayInterfaceModule
    SG_ AudioVolumeLevel : 0|8@1+ (2,0) [0|15] "Vol" FrontDisplayInterfaceModule
-VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 97 "SWC_PHONE_BTN_ACTIVE" 101 "SWC_PHONE_BTN_ACTIVE" 104 "SWC_PHONE_BTN_ACTIVE" 0 "No Description";
-VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30";
-VAL_ 754 SteeringWheelControlsLeft_ms 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "SEEK_BUTTON_ACTIVE" 17 "VOL_UP_BTN_ACTIVE" 18 "VOL_UP_BTN_ACTIVE" 20 "VOL_UP_BTN_ACTIVE" 24 "VOL_DOWN_BTN_ACTIVE" 25 "VOL_DOWN_BTN_ACTIVE" 0 "No Description";
 
 BO_ 756 RDS_MESSAGE: 8 AudioControlModule
     SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
@@ -207,14 +146,6 @@ BO_ 756 RDS_MESSAGE: 8 AudioControlModule
     SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
     SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
     SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
-VAL_ 756 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 756 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 757 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule
@@ -225,14 +156,6 @@ BO_ 757 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
-VAL_ 757 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 757 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
 
 BO_ 758 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE0 : 0|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule  
@@ -243,45 +166,61 @@ BO_ 758 RDS_MESSAGE: 8 AudioControlModule
    SG_ RDS_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
    SG_ RDS_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
-VAL_ 758 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
-VAL_ 758 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+
+BO_	764	Interior_Command_Centre_Btns:	8	FrontDisplayInterfaceModule						
+	SG_	IccMediaControl_message.data[0]	:	0|8@1+	(1,0)	[0|255]		FrontDisplayInterfaceModule
+	SG_	IccMediaControl_message.data[1]	:	8|8@1+	(1,0)	[0|255]		FrontDisplayInterfaceModule
+	SG_	IccMediaControl_message.data[2]	:	16|8@1+	(1,0)	[0|255]	ACTIVE/INACTIVE	FrontDisplayInterfaceModule
+	SG_	message.data[3]	:	24|8@1+	(1,0)	[0|255]		FrontDisplayInterfaceModule
+	SG_	message.data[4]	:	32|8@1+	(1,0)	[0|255]		FrontDisplayInterfaceModule
+    SG_	Interior_Command_Centre_[3]	:	24|8@1+	(1	0)	[0|0]		BodyElectricModule
+    SG_	Interior_Command_Centre_[5]	:	40|8@1+	(1	0)	[0|0]		BodyElectricModule
 
 BO_ 764 Interior_Command_Centre_Btns: 8 FrontDisplayInterfaceModule
 VAL_	764	Interior_Command_Centre_[0]	1	Menu_SW_FDM_ACTIVE	8	Seek_Down_SW_ACTIVE	32	AM_FM_SW_ACTIVE	64	SCAN_SW_ACTIVE	128	CD_AUX_SW_ACTIVE
+VAL_	764	Interior_Command_Centre_[1]	128	Eject_CD_SW_ACTIVE	0	No Description						
+AM_FM_SW	SCAN_SW	MENU_SW_FDM	SEEK_DW_SW	SEEK_UP_SW	CD_AUX_SW	PWR_SW	ICC Buttons	LoadCD	EjectCD 	ROTVOLENCD_RT	ROTENVOLENCD_LFT	BACK_HOME_SW	MENU_SW_FDM	AUDIO_OFF_SW	Menu Active	OK_SW_APIM							ROTVOLENCD_RT	ROTENVOLENCD_LFT	ICC Buttons	OK_SW_APIM					Menu Active	OK_SW_APIM
+0x20	0x40	0x01	0x08	0x04	0x80	0X01		0x40 	 0X80  						0x01								0x41	0x81							0x04	
+764	Interior_Command_Centre_[0]	1	Menu_SW_FDM_ACTIVE	8	Seek_Down_SW_ACTIVE	32	AM_FM_SW_ACTIVE	64	SCAN_SW_ACTIVE	128	CD_AUX_SW_ACTIVE
 VAL_	764	Interior_Command_Centre_[1]	128	Eject_CD_SW_ACTIVE	0	No Description						
 
 BO_ 775 IllumBatsaverRequest_MS: 8 BodyElectricModule
    SG_ IllumBatsaverRequest_MS_0x307_ : 0|8@1+ (1,0) [0|255] "" BodyElectricModule
    SG_ IllumBatsaverRequest_MS_0x307_99 : 8|8@1+ (1,0) [0|0] "" BodyElectricModule
    SG_ IllumBatsaverRequest_MS_0x307_9916 : 16|8@1+ (1,0) [0|255] "" BodyElectricModule
-VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
-VAL_ 775 IllumBatsaverRequest_MS_0x307_99 0 "";
-VAL_ 775 IllumBatsaverRequest_MS_0x307_9916 0 "";
+ ICC HVAC Buttons	 Close/Open Cabin	RearDemistOnOff	AcButton	AcOffBtn	WindowDefogBtn			 ICC HVAC Buttons	FanSpeedDown	FanSpeedUp	AcOffBtn	AutoACbtn	CycleVentButton				LowerTemp 	RaiseTemp					HazardSwitch			UnlockBtn	LockBtn	DSCButton
+0x40	0x40	0x20	0x80	0x10	0x02				0x04	0x08	0x10	0x20	0x80				0x40	0x80					0x01 | 0x80			0x84	0xC0	0x90
+
+BO_	775	IllumBatsaverRequest_MS:	8	BodyElectricModule							
+	SG_	IllumBatsaverRequest_MS_0x307_	:	56|8@1+	(1,0)	[0|255]		BodyElectricModule	
+	SG_	IccBodyControls[0]	:	0|8@1+	(1,0)	[0|255]		BodyElectricModule	
+	SG_	IccBodyControls[1]	:	8|8@1+	(1,0)	[0|255]		HVACIntegratedModule	
+									
+	SG_	IccBodyControls[2]	:	16|8@1+	(1,0)	[0|255]		FrontDisplayInterfaceModule
+	
+BO_	777	AudioRDS_PSName_1-_8	8	AudioControlModule
+   SG_ RDS_PSName_MESSAGE0 : 0|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule  
+   SG_ RDS_PSName_MESSAGE1 : 8|8@4- (1,0) [0|255] ""  FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE2 : 16|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE3 : 24|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE4 : 32|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE5 : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE6 : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
+   SG_ RDS_PSName_MESSAGE7 : 56|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
 
 BO_ 779 MSG6: 8 BodyElectricModule
    SG_ CCNTABS : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 783 MSG8: 8 Body_Electric_Module
+BO_ 783 MSG8: 8 BodyElectricModule
      SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" BodyElectricModule
    
-BO_ 781 CD_TRACK_TYPE_PLAYING: 8 Audio_Control_Module
-   SG_ CD_PlayingNow : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
-   SG_ CD_TrackNumber : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
-   SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" Front_Display_Interface_Module
-VAL_ 781 CD_PlayinVAL_	764	Interior_Command_Centre_[0]	1	Menu_SW_FDM_ACTIVE	8	Seek_Down_SW_ACTIVE	32	AM_FM_SW_ACTIVE	64	SCAN_SW_ACTIVE	128	CD_AUX_SW_ACTIVE
-VAL_	764	Interior_Command_Centre_[1]	128	Eject_CD_SW_ACTIVE	0	No Description						
-gNow 0 "No Description";
-VAL_ 781 CD_TrackNumber 0 "No Description";
-VAL_ 781 CD_Type 0 "" 0 "No Description";
+BO_ 781 CD_TRACK_TYPE_PLAYING: 8 AudioControlModule
+   SG_ CD_PlayingNow : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+   SG_ CD_TrackNumber : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+   SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
 
 BO_ 783 MSG8: 8 BodyElectricModule
-     SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" Body_Electric_Module
+     SG_ BatteryVoltage : 24|8@1+ (0.1,0) [0|255] "Volts" BodyElectricModule
 
 BO_ 785 BeltMinderStatus: 8 BodyElectricModule
    SG_ RearBeltMinderStatus : 0|1@1+ (1,0) [0|0] ""     BodyElectricModule
@@ -293,7 +232,6 @@ BO_ 785 BeltMinderStatus: 8 BodyElectricModule
 
 BO_ 787 IntActTemp: 8 HvacIntegratedModule
    SG_ InteriorActualTemperature : 7|8@0+ (0.166667,0) [0|255] "Degrees_C" HvacIntegratedModule
-VAL_ 787 IntActTemp 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
 
 BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
    SG_ CabLightSetting : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
@@ -301,21 +239,17 @@ BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
    SG_ Ignition : 16|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
    SG_ IgnitionState : 8|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
    SG_ InteriorLightStatus : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
-VAL_ 789 Ignition 0 "";
-VAL_ 789 IgnitionState 0 "";
-VAL_ 789 InteriorLightStatus 0 ""; 
-VAL_ 789 CabLightSetting 64 "CabLightsResetSettings" 32 "CabLightsOnUnlock" 128 "CabLightsOnDoorOpen";
-VAL_ 789 CycleLockSetting 4 "CycleTwoStageUnlock" 8 "CycleConfirmUnlockIndicators" 64 "Cycle_Drive_Away_Locking" 128 "CycleConfirmUnlockIndicators";
 
 BO_ 791 VehicleIdentificationNumber: 8 BodyElectricModule
    SG_ 
 
 BO_ 816 ParkBrakeOn_MS: 8 BodyElectricModule
-   SG_ ParkBrakeOn_MS
+			SG_	ParkBrakeOn_MS	:	0|8@1+	(1,0)	[0|0]		BodyElectricModule	
 
-BO_ 829 MSG1: 0 Audio_Control_Module
+BO_ 829 MSG1: 0 AudioControlModule
 
 BO_ 832 RCM_STAT_DPLY_ENABLED_RCRD_MS: 8 RestraintsControlModule
+AirBagWarningLight  AirBagFault SeatBeltWarningRequest  SeatBeltChineRequest
 
 BO_ 848  MessageLabel: 8 TxModuleLabel | 350 |
 
@@ -326,13 +260,6 @@ BO_ 851 HvacData: 8 HVACIntegratedModule
      SG_ ExternalAmbientTemp : 40|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
      SG_ FanSpeedActual : 48|8@4- (1,0) [0|255] "" FrontDisplayInterfaceModule
      SG_ FanSpeedTarget : 56|8@1+ (1,0) [0|0] "" HvacIntegratedModule
-VAL_ 851 VentStatus 0 "";
-VAL_ 851 PassengerTargetTemp 0 "";
-VAL_ 851 DriverTargetTemp 0 "";
-VAL_ 851 ExternalAmbientTemp 0 "";
-VAL_ 851 FanSpeedActual 0 "";
-VAL_ 851 FanSpeedTarget 0 "";
-VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
 
 BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
    SG_ PRK_BRAKE : 16|8@1+ (1,0) [0|0] "" ParkingAidModule
@@ -346,55 +273,29 @@ BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
    SG_ SENSOR_SPL_V : 32|8@1+ (1,0) [0|0] "" ParkingAidModule
    SG_ RM_DIST : 24|8@1+ (1,0) [0|0] "" ParkingAidModule
    SG_ PARK_SYS : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
-   VAL_ 864 PRK_BRAKE 0 "";
-   VAL_ 864 RC_DIST  0 "";
-   VAL_ 864 REAR_SENS  0 "";
-   VAL_ 864 REAR_TONE  0 "";
-   VAL_ 864 VBAT  0 "";
-   VAL_ 864 TRAILINS  0 "";
-   VAL_ 864 TRANSRV  0 "";
-   VAL_ 864 SYS_OZ  0 "";
-   VAL_ 864 SENSOR_SPL_V  0 "";
-   VAL_ 864 RM_DIST  0 "";
-   VAL_ 864 PARK_SYS  0 "";
-VAL_ 864 PARK_SYS 0 "ParkingAidSystemInactive" 5 "ParkingAidSystemActive";
-VAL_ 864 RC_DIST 0 "EchoValueForRightCornerSensor";
-VAL_ 864 REAR_SENS 0 "ParkingAidRearSensorStatus" 255 "Active";
-VAL_ 864 REAR_TONE 0 "ParkingAidSounder";
-VAL_ 864 RM_DIST 0 "EchoValueForRightMiddleSensor";
-VAL_ 864 SENSOR_SPL_V 0 "SensorSupplyVoltage";
-VAL_ 864 SPEED_DEACT 0 "VehicleSpeedAboveDeactivationThreshold";
-VAL_ 864 SYS_OZ 0 "SystemOutputZone";
-VAL_ 864 TRAILINS 0 "TrailerInstalled";
-VAL_ 864 TRANSRV 0 "TransmissionInREVERSE";
-VAL_ 864 VBAT 0 "BatteryVoltage";
 
-BO_ 864  MessageLabel: 8 TxModuleLabel | 360 |
-BO_ 869  MessageLabel: 8 TxModuleLabel | 365 |
-BO_ 869 ReverseGearEngaged: 8 BodyElectricModule
+BO_ 869 ReverseGearEngaged: 8 BodyElectricModule 0x365
 BO_ 1001 : 8 module
+BO_ 1027 BodyControlStatus: 8 BodyElectricModule 
+	SG_ DoorStatus0: 8 BodyElectricModule 0|8@1+ (1,0) [0|0] BodyElectricModule
+	SG_ DoorStatus1: 8 BodyElectricModule 8|8@1+ (1,0) [0|0] BodyElectricModule			
+	SG_ CabLightSettings: 16 BodyElectricModule 8|8@1+ (1,0) [0|0] BodyElectricModule			 
 
-BO_ 1027 BodyControlStatus: 8 BodyElectricModule | 403 |
-BO_ 1027 BodyControlStatus: 8 BodyElectricModule | 403 |
-BO_ 1030 BodyInformation: 8 BodyElectricModule | 406 |
-VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No Description";
-VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff";
-VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
-VAL_ 1030 SeatBeltStatusFrontRight 0 "No Description";
-VAL_ 1030 SeatBeltStatusRearLeft 0 "No Description";
-VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
+BO_	1030	SeatBeltStatus:	8	BodyElectricModule
+	SG_	SeatBeltStatusFrontRight	:	0|8@1+	(1,0)	[0|0]		InstrustmentCluster	
+	SG_	SeatBeltStatusFrontLeft	:	32|8@1+	(1,0)	[0|0]		InstrustmentCluster	
+	SG_	SeatBeltStatusRearLeft	:	16|8@1+	(1,0)	[0|0]		InstrustmentCluster	
+	SG_	SeatBeltStatusRearRight	:	24|8@1+	(1,0)	[0|0]		InstrustmentCluster	
+	SG_	IgnitionState	:	8|8@1+	(1,0)	[0|0]		BodyElectricModule	
+	SG_	InteriorLightStatus	:	0|8@1+	(1,0)	[0|0]		BodyElectricModule	
 
 BO_ 1033 AdditionalBodyInformation: 8 BodyElectronicModule | 409 |
 
-BO_ 1061 EngineDataForInstrumentCluster: 8 Vector__XXX
+BO_ 1061 EngineDataForInstrumentCluster: 8 PowertrainControlModule
    SG_ Cruise : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ CruiseTargetSetSpeed : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ DampedFuelLevel : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule  
    SG_ TurboBoostPressure : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-VAL_ 1061 Cruise  0 "";
-VAL_ 1061 CruiseTargetSetSpeed  0 "";
-VAL_ 1061 DampedFuelLevel  0 "";
-VAL_ 1061 TurboBoostPressure  0 "";
 
 BO_ 1063 EngineDiagnosticData: 8 PowertrainControlModule
    SG_ EngineCoolantTemperatur: 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
@@ -405,15 +306,16 @@ BO_ 1063 EngineDiagnosticData: 8 PowertrainControlModule
    SG_ OilPressureWarning : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ ImmobLamp : 48|8@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ ETC_Warning : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
-VAL_ 1063 EngineCoolantTemperature 0 "EngCoolTemp";
-VAL_ 1063 AC_Pressure  0 "";
-VAL_ 1063 BatteryVoltage 10.9 "LowVoltage" 0 "Voltage" 15.1 "HighVoltage";
-VAL_ 1063 OilPressureWarning 0 "No Description";
-VAL_ 1063 MIL_Lamp   0 "";
-VAL_ 1063 NUM_DTC   0 "";
-VAL_ 1063 ODO_COUNT   0 "";
-VAL_ 1063 OilPressureWarning   0 "";
-VAL_ 1063 ETC_Warning 0 "";
+
+BO_	1063	PCM_ENGINE_DATA:	8	PowertrainControlModule	:	0|8@1+	(1	0)	[0|0]		AudioControlModule
+   SG_	EngineCoolantTemperature:	0|1@0+	(1,0)	[0|150]	"Degrees_C"	PowertrainControlModule	
+   SG_	AC_Pressure1:	16|1@1+	(1,0)	[0|0]		PowertrainControlModule	
+   SG_	AC_Pressure2:	24|1@1+	(1,0)	[0|0]		PowertrainControlModule			
+   SG_	BatteryVoltage:	32|1@1+	(1,0)	[0|0]		PowertrainControlModule		
+   SG_ OdometerCounter: 40|8@1+ (1,0) [0|255] "" PowertrainControlModule
+   SG_ MIL_Lamp: 48|8@1+ (1,0) [0|0] "" PowertrainControlModule			
+   SG_	ImmobLamp	:	56|1@1+	(1,0)	[0|0]		PowertrainControlModule	
+
 
 BO_ 1079 EngineFuelData: 8 PowertrainControlModule
    SG_ MaxLitres : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
@@ -423,13 +325,19 @@ BO_ 1079 EngineFuelData: 8 PowertrainControlModule
    SG_ InstFuelValue : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ FuelPulse : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ FuelSenderFail : 0|1@1+ (1,0) [0|0] "" PowertrainControlModule
-VAL_ 1079 MaxLitres   0 "";
-VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOff" 17 "HandBrakeOn";
-VAL_ 1079 FuelPulse  0 "";
-VAL_ 1079 FuelSenderFail 0 "";
+   SG_ InstFuelValue : 0|1@1+  (1,0) [0|0]   PowertrainControlModule
+   SG_ FuelSenderFail  : 0|1@1+  (1,0) [0|0]   PowertrainControlModule 
+   SG_ ParkBrakeOn_HS  : 32|1@1+ (1,0) [0|0]   PowertrainControlModule 
+   SG_ MaxLitres : 0|1@1+  (1,0) [0|0]   PowertrainControlModule                   
+   SG_ DampedFuelLevel : 0|1@1+  (1,0) [0|0]   PowertrainControlodule  
+   SG_ SEATBELT_CHIME_RQST : 0|8@1+  (1  0)  [0|0]   BodyElectricModule      
+   SG_ BLTMINDR_PRGRAM_CNFRM_RQST  : 0|8@1+  (1  0)  [0|0]   BodyElectricModule
 
 BO_ 1101 EngineOilTemperature: 8 PowertrainControlModule
-
+   SG_ EngineCoolantTemperature4 : 0|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
+   SG_ EngineCoolantTemperature5 : 0|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
+   SG_ EngineOilTemperature6: 8 PowertrainControlModule
+   SG_ AtmosphericAbsolutePressure7: 8 PowertrainControlModule
 
 BO_ 1107 OdometerAndOverflowFlag: 8 PowertrainControlModule
 BO_ 1108 MessageLabel: 8 TxModuleLabel | 454 |
@@ -440,219 +348,183 @@ BO_ 1200 PCM_WHEEL_SPEED: 8 AntilockBrakingSystem
   SG_ LAT_ACCL : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
   SG_ LF_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
   SG_ LR_WSPD : 16|8@1+ (1,0) [0|0] "" AntilockBrakingSystem
-VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
-VAL_ LAT_ACCL  0 "";
 
-BO_ 1216 MSG1: 8 Powertrain_Control_Module
-   
-BO_ 1281 MessageLabel: 8 TxModuleLabel | 501 |
+BO_ 1216 MSG1: 8 PowertrainControlModule
+BO_ 1281 MessageLabel: 8 TxModuleLabel 
 BO_ 1292 ACM_KeepAlive: 8 AudioControlModule
+  SG_ KeepAliveACM: 0|8@1+ (0.1,0) [0|0] "" InstrustmentCluster
 
-
-BO_ 1297 MessageLabel: 8 TxModuleLabel | 511 |
-BO_ 1365 MessageLabel: 8 TxModuleLabel | 555 |
-BO_ 1372 FDIM_KeepAlive: 8 FrontDisplayInterfaceModule | 55C |
-
-BO_ 1571 PCM_ENG_VINSPEC: 8 Powertrain_Control_Module
-   SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" PowertrainControlModule
+BO_ 1297 MessageLabel: 8 TxModuleLabel 
+BO_ 1365 MessageLabel: 8 InstrustmentCluster
+BO_ 1372 FDIM_KeepAlive: 8 FrontDisplayInterfaceModule 
+  SG_ KeepAliveFDIM: 0|8@1+ (0.1,0) [0|0] "" InstrustmentCluster
+BO_ 1571 PcmEngineVinSpec: 8 PowertrainControlModule
    SG_ EngineCapacityLitres : 0|8@1+ (0.1,0) [0|0] "Litres" PowertrainControlModule
-   SG_ EngineCoolantTemperature : 0|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
-   SG_ EngineCylindersValves : 8|8@1+ (1,0) [0|0] "" PowertrainControlModule
-   SG_ EngineOverheat : 40|8@1+ (1,0) [0|0] "" PowertrainControlModule
+   SG_ EngineCylindersValves : 8|8@1+ (1,0) [0|0] "" PowertrainControlModule 
+   SG_ EngineAspirationFuelType : 16|8@1+ (1,0) [0|0] "" PowertrainControlModule
    SG_ EnginePeakTorque : 24|8@1+ (4,1) [0|0] "NM" PowertrainControlModule
-   SG_ EngineRateOfChange0 : 0|8@1+ (1,0) [0|255] "" PowertrainControlModule 
-   SG_ EngineSpeedCounter : 56|8@1+ (1,0) [0|255] "Count" PowertrainControlModule
-   SG_ PMPSTAT : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
-VAL_ 301 EngineAspirationFuelType 0 "";
-VAL_ 301 EngineCapacityLitres 0 "";
-VAL_ 301 EngineCoolantTemperature 0 "";
-VAL_ 301 EngineCylindersValves 0 "";
-VAL_ 301 EngineOverheat 0 "";
-VAL_ 301 EnginePeakTorque 0 "";
-VAL_ 301 EngineRateOfChange0 0 "";
-VAL_ 301 EngineSpeedCounter 0 ""; 
 
-VAL_ 301 PMPSTAT 0 "";
- SG_ BRAKPRES : 16|8@1+ (1,0) [0|0] ""  PowertrainControlModule
- VAL_ 519 BRAKPRES  0 "";
-  SG_ WhlFl_W_Meas : 6|15@0+ (0.01,0) [0|327.65] "rad/s"  AntilockBrakingSystem
-  SG_ WhlFr_W_Meas : 22|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
-  SG_ WhlRl_W_Meas : 38|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
-  SG_ WhlRr_W_Meas : 54|15@0+ (0.01,0) [0|327.65] "rad/s" AntilockBrakingSystem
-  SG_ YAW_RATE : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+BO_ 1600 ManualTrans: 8 InstrustmentCluster
+  SG_ TransmissionType : 0|8@1+ (1,0) [0|255] "" InstrustmentCluster
+  SG_ ManualTransBoolean : 0|8@1+ (1,0) [0|255] "" InstrustmentCluster
 
-VAL_ 1571 EngineCapacityLitres 54 "5.4_Litre" 18 "" 34 "";
-VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
-VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
+BO_ 1616 MessageLabel: 8 TxModuleLabel 
 
-BO_ 1600 ManualTrans: 8 BodyElectricModule
-  SG_ ManualTrans : 0|8@1+ (1,0) [0|255] "" InstrustmentCluster
-VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
-VAL_ 1600 ManualTrans 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
-
-BO_ 1616 MessageLabel: 8 TxModuleLabel | 650 |
-BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
-
-BO_ 1782 MessageLabel: 8 TxModuleLabel | 6F6 |
 BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 BodyElectricModule
 
-VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
 
 BO_ 1784 MSG2: 8 PowertrainControlModule
 BO_ 1824 IC_DiagSig_Rx: 8 InstrustmentCluster
 BO_ 2015 MessageLabel: 8 TxModuleLabel | 7DF |
-BO_ 2024 On_Board_Diagnostics: 8 OnBoardDiagnostics
+BO_ 2024 OnBoardDiagnostics: 8 OnBoardDiagnostics
    SG_ S1_PID_00_PIDsSupported_01_20 m0 : 23|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
    SG_ S1_PID_01_MonitorStatus m1 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
-   SG_ S1_PID_02_FreezeDTC m2 : 31|16@0+ (1,0) [0|65535] "" On_Board_Diagnostics
-   SG_ S1_PID_03_FuelSystemStatus m3 : 31|16@0+ (1,0) [0|65535] "" On_Board_Diagnostics
-   SG_ S1_PID_04_CalcEngineLoad m4 : 31|8@0+ (0.39216,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_05_EngineCoolantTemp m5 : 31|8@0+ (1,-40) [-40|215] "degC" On_Board_Diagnostics
-   SG_ S1_PID_06_ShortFuelTrimBank1 m6 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_07_LongFuelTrimBank1 m7 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_08_ShortFuelTrimBank2 m8 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_09_LongFuelTrimBank2 m9 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_0A_FuelPressure m10 : 31|8@0+ (3,0) [0|765] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_0B_IntakeManiAbsPress m11 : 31|8@0+ (1,0) [0|255] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_0C_EngineRPM m12 : 31|16@0+ (0.25,0) [0|16383.8] "rpm" On_Board_Diagnostics
-   SG_ S1_PID_0D_VehicleSpeed m13 : 31|8@0+ (1,0) [0|255] "km/h" On_Board_Diagnostics
-   SG_ S1_PID_0E_TimingAdvance m14 : 31|8@0+ (0.5,-64) [-64|63.5] "deg before TDC" On_Board_Diagnostics
-   SG_ S1_PID_0F_IntakeAirTemperature m15 : 31|8@0+ (1,-40) [-40|215] "degC" On_Board_Diagnostics
-   SG_ S1_PID_10_MAFAirFlowRate m16 : 31|16@0+ (0.01,0) [0|655.35] "grams/sec" On_Board_Diagnostics
-   SG_ S1_PID_11_ThrottlePosition m17 : 31|8@0+ (0.39216,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_12_CmdSecAirStatus m18 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_14_OxySensor1_STFT m20 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_14_OxySensor1_Volt m20 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_15_OxySensor2_STFT m21 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_15_OxySensor2_Volt m21 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_16_OxySensor3_STFT m22 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_16_OxySensor3_Volt m22 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_17_OxySensor4_STFT m23 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_17_OxySensor4_Volt m23 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_18_OxySensor5_STFT m24 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_18_OxySensor5_Volt m24 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_19_OxySensor6_STFT m25 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_19_OxySensor6_Volt m25 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_1A_OxySensor7_STFT m26 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_1A_OxySensor7_Volt m26 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_1B_OxySensor8_STFT m27 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_1B_OxySensor8_Volt m27 : 31|8@0+ (0.005,0) [0|1.275] "volts" On_Board_Diagnostics
-   SG_ S1_PID_1C_OBDStandard m28 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_1F_TimeSinceEngStart m31 : 31|16@0+ (1,0) [0|65535] "seconds" On_Board_Diagnostics
-   SG_ S1_PID_20_PIDsSupported_21_40 m32 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_21_DistanceMILOn m33 : 31|16@0+ (1,0) [0|65535] "km" On_Board_Diagnostics
-   SG_ S1_PID_22_FuelRailPres m34 : 31|16@0+ (0.079,0) [0|5177.27] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_23_FuelRailGaug m35 : 31|16@0+ (10,0) [0|655350] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_24_OxySensor1_FAER m36 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_24_OxySensor1_Volt m36 : 47|16@0+ (0.00012207,0) [0|2] "volts" On_Board_Diagnostics
-   SG_ S1_PID_25_OxySensor2_FAER m37 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_25_OxySensor2_Volt m37 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_26_OxySensor3_FAER m38 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_26_OxySensor3_Volt m38 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_27_OxySensor4_FAER m39 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_27_OxySensor4_Volt m39 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_28_OxySensor5_FAER m40 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_28_OxySensor5_Volt m40 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_29_OxySensor6_FAER m41 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_29_OxySensor6_Volt m41 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_2A_OxySensor7_FAER m42 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_2A_OxySensor7_Volt m42 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_2B_OxySensor8_FAER m43 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_2B_OxySensor8_Volt m43 : 47|16@0+ (0.00012207,0) [0|8] "volts" On_Board_Diagnostics
-   SG_ S1_PID_2E_CmdEvapPurge m46 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_2F_FuelTankLevel m47 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_30_WarmUpsSinceCodeClear m48 : 31|8@0+ (1,0) [0|255] "count" On_Board_Diagnostics
-   SG_ S1_PID_31_DistanceSinceCodeClear m49 : 31|16@0+ (1,0) [0|65535] "km" On_Board_Diagnostics
-   SG_ S1_PID_32_EvapSysVaporPres m50 : 31|16@0- (0.25,0) [-8192|8191.75] "Pa" On_Board_Diagnostics
-   SG_ S1_PID_33_AbsBaroPres m51 : 31|8@0+ (1,0) [0|255] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_34_OxySensor1_Crnt m52 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_34_OxySensor1_FAER m52 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_35_OxySensor2_Crnt m53 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_35_OxySensor2_FAER m53 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_36_OxySensor3_Crnt m54 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_36_OxySensor3_FAER m54 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_37_OxySensor4_Crnt m55 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_37_OxySensor4_FAER m55 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_38_OxySensor5_Crnt m56 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_38_OxySensor5_FAER m56 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_39_OxySensor6_Crnt m57 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_39_OxySensor6_FAER m57 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_3A_OxySensor7_Crnt m58 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_3A_OxySensor7_FAER m58 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_3B_OxySensor8_Crnt m59 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" On_Board_Diagnostics
-   SG_ S1_PID_3B_OxySensor8_FAER m59 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_3C_CatTempBank1Sens1 m60 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" On_Board_Diagnostics
-   SG_ S1_PID_3D_CatTempBank2Sens1 m61 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" On_Board_Diagnostics
-   SG_ S1_PID_3E_CatTempBank1Sens2 m62 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" On_Board_Diagnostics
-   SG_ S1_PID_3F_CatTempBank2Sens2 m63 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" On_Board_Diagnostics
-   SG_ S1_PID_40_PIDsSupported_41_60 m64 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_41_MonStatusDriveCycle m65 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_42_ControlModuleVolt m66 : 31|16@0+ (0.001,0) [0|65.535] "V" On_Board_Diagnostics
-   SG_ S1_PID_43_AbsLoadValue m67 : 31|16@0+ (0.392157,0) [0|25700] "%" On_Board_Diagnostics
-   SG_ S1_PID_44_FuelAirCmdEquiv m68 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_45_RelThrottlePos m69 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_46_AmbientAirTemp m70 : 31|8@0+ (1,-40) [-40|215] "degC" On_Board_Diagnostics
-   SG_ S1_PID_47_AbsThrottlePosB m71 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_48_AbsThrottlePosC m72 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_49_AbsThrottlePosD m73 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_4A_AbsThrottlePosE m74 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_4B_AbsThrottlePosF m75 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_4C_CmdThrottleAct m76 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_4D_TimeRunMILOn m77 : 31|16@0+ (1,0) [0|65535] "minutes" On_Board_Diagnostics
-   SG_ S1_PID_4E_TimeSinceCodeClear m78 : 31|16@0+ (1,0) [0|65535] "minutes" On_Board_Diagnostics
-   SG_ S1_PID_4F_Max_FAER m79 : 31|8@0+ (1,0) [0|255] "ratio" On_Board_Diagnostics
-   SG_ S1_PID_4F_Max_IntManiAbsPres m79 : 55|8@0+ (10,0) [0|2550] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_4F_Max_OxySensCrnt m79 : 47|8@0+ (1,0) [0|255] "mA" On_Board_Diagnostics
-   SG_ S1_PID_4F_Max_OxySensVol m79 : 39|8@0+ (1,0) [0|255] "V" On_Board_Diagnostics
-   SG_ S1_PID_50_Max_AirFlowMAF m80 : 31|8@0+ (10,0) [0|2550] "g/s" On_Board_Diagnostics
-   SG_ S1_PID_51_FuelType m81 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_52_EthanolFuelPct m82 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_53_AbsEvapSysVapPres m83 : 31|16@0+ (0.005,0) [0|327.675] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_54_EvapSysVapPres m84 : 31|16@0+ (1,-32767) [-32767|32768] "Pa" On_Board_Diagnostics
-   SG_ S1_PID_55_ShortSecOxyTrimBank1 m85 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_55_ShortSecOxyTrimBank3 m85 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_56_LongSecOxyTrimBank1 m86 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_56_LongSecOxyTrimBank3 m86 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_57_ShortSecOxyTrimBank2 m87 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_57_ShortSecOxyTrimBank4 m87 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_58_LongSecOxyTrimBank2 m88 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_58_LongSecOxyTrimBank4 m88 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" On_Board_Diagnostics
-   SG_ S1_PID_59_FuelRailAbsPres m89 : 31|16@0+ (10,0) [0|655350] "kPa" On_Board_Diagnostics
-   SG_ S1_PID_5A_RelAccelPedalPos m90 : 31|8@0+ (0.392157,0) [0|100] "%" On_Board_Diagnostics
-   SG_ S1_PID_5C_EngineOilTemp m92 : 31|8@0+ (1,-40) [-40|215] "degC" On_Board_Diagnostics
-   SG_ S1_PID_5D_FuelInjectionTiming m93 : 31|16@0+ (0.0078125,-210) [-210|301.992] "deg" On_Board_Diagnostics
-   SG_ S1_PID_5E_EngineFuelRate m94 : 31|16@0+ (0.05,0) [0|3276.75] "L/h" On_Board_Diagnostics
-   SG_ S1_PID_5F_EmissionReq m95 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_60_PIDsSupported_61_80 m96 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_61_DemandEngTorqPct m97 : 31|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_62_ActualEngTorqPct m98 : 31|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_63_EngRefTorq m99 : 31|16@0+ (1,0) [0|65535] "Nm" On_Board_Diagnostics
-   SG_ S1_PID_64_EngPctTorq_EP1 m100 : 39|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_64_EngPctTorq_EP2 m100 : 47|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_64_EngPctTorq_EP3 m100 : 55|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_64_EngPctTorq_EP4 m100 : 63|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_64_EngPctTorq_Idle m100 : 31|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_65_AuxInputOutput m101 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_66_MAFSensor m102 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_67_EngineCoolantTemp m103 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_68_IntakeAirTempSens m104 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_6B_ExhaustGasTemp m107 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_6C_CmdThrottleActRel m108 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_6D_FuelPresContrSys m109 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_6E_InjPresContrSys m110 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_6F_TurboComprPres m111 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_70_BoostPresCntrl m112 : 31|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ S1_PID_80_PIDsSupported_81_A0 m128 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_8E_EngFrictionPctTorq m142 : 31|8@0+ (1,-125) [-125|130] "%" On_Board_Diagnostics
-   SG_ S1_PID_A0_PIDsSupported_A1_C0 m160 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S1_PID_C0_PIDsSupported_C1_E0 m192 : 31|32@0+ (1,0) [0|4.29497e+09] "" On_Board_Diagnostics
-   SG_ S2_PID_02_FreezeDTC m2 : 31|16@0+ (1,0) [0|65535] "" On_Board_Diagnostics
-   SG_ response : 15|4@0+ (1,0) [0|15] "" On_Board_Diagnostics
-   SG_ length : 7|8@0+ (1,0) [0|255] "" On_Board_Diagnostics
-   SG_ service M : 11|4@0+ (1,0) [0|15] "" On_Board_Diagnostics
+   SG_ S1_PID_02_FreezeDTC m2 : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+   SG_ S1_PID_03_FuelSystemStatus m3 : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+   SG_ S1_PID_04_CalcEngineLoad m4 : 31|8@0+ (0.39216,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_05_EngineCoolantTemp m5 : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+   SG_ S1_PID_06_ShortFuelTrimBank1 m6 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_07_LongFuelTrimBank1 m7 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_08_ShortFuelTrimBank2 m8 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_09_LongFuelTrimBank2 m9 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_0A_FuelPressure m10 : 31|8@0+ (3,0) [0|765] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_0B_IntakeManiAbsPress m11 : 31|8@0+ (1,0) [0|255] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_0C_EngineRPM m12 : 31|16@0+ (0.25,0) [0|16383.8] "rpm" OnBoardDiagnostics
+   SG_ S1_PID_0D_VehicleSpeed m13 : 31|8@0+ (1,0) [0|255] "km/h" OnBoardDiagnostics
+   SG_ S1_PID_0E_TimingAdvance m14 : 31|8@0+ (0.5,-64) [-64|63.5] "deg before TDC" OnBoardDiagnostics
+   SG_ S1_PID_0F_IntakeAirTemperature m15 : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+   SG_ S1_PID_10_MAFAirFlowRate m16 : 31|16@0+ (0.01,0) [0|655.35] "grams/sec" OnBoardDiagnostics
+   SG_ S1_PID_11_ThrottlePosition m17 : 31|8@0+ (0.39216,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_12_CmdSecAirStatus m18 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_14_OxySensor1_STFT m20 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_14_OxySensor1_Volt m20 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_15_OxySensor2_STFT m21 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_15_OxySensor2_Volt m21 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_16_OxySensor3_STFT m22 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_16_OxySensor3_Volt m22 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_17_OxySensor4_STFT m23 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_17_OxySensor4_Volt m23 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_18_OxySensor5_STFT m24 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_18_OxySensor5_Volt m24 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_19_OxySensor6_STFT m25 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_19_OxySensor6_Volt m25 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_1A_OxySensor7_STFT m26 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_1A_OxySensor7_Volt m26 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_1B_OxySensor8_STFT m27 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_1B_OxySensor8_Volt m27 : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+   SG_ S1_PID_1C_OBDStandard m28 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_1F_TimeSinceEngStart m31 : 31|16@0+ (1,0) [0|65535] "seconds" OnBoardDiagnostics
+   SG_ S1_PID_20_PIDsSupported_21_40 m32 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_21_DistanceMILOn m33 : 31|16@0+ (1,0) [0|65535] "km" OnBoardDiagnostics
+   SG_ S1_PID_22_FuelRailPres m34 : 31|16@0+ (0.079,0) [0|5177.27] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_23_FuelRailGaug m35 : 31|16@0+ (10,0) [0|655350] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_24_OxySensor1_FAER m36 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_24_OxySensor1_Volt m36 : 47|16@0+ (0.00012207,0) [0|2] "volts" OnBoardDiagnostics
+   SG_ S1_PID_25_OxySensor2_FAER m37 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_25_OxySensor2_Volt m37 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_26_OxySensor3_FAER m38 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_26_OxySensor3_Volt m38 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_27_OxySensor4_FAER m39 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_27_OxySensor4_Volt m39 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_28_OxySensor5_FAER m40 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_28_OxySensor5_Volt m40 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_29_OxySensor6_FAER m41 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_29_OxySensor6_Volt m41 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_2A_OxySensor7_FAER m42 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_2A_OxySensor7_Volt m42 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_2B_OxySensor8_FAER m43 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_2B_OxySensor8_Volt m43 : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+   SG_ S1_PID_2E_CmdEvapPurge m46 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_2F_FuelTankLevel m47 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_30_WarmUpsSinceCodeClear m48 : 31|8@0+ (1,0) [0|255] "count" OnBoardDiagnostics
+   SG_ S1_PID_31_DistanceSinceCodeClear m49 : 31|16@0+ (1,0) [0|65535] "km" OnBoardDiagnostics
+   SG_ S1_PID_32_EvapSysVaporPres m50 : 31|16@0- (0.25,0) [-8192|8191.75] "Pa" OnBoardDiagnostics
+   SG_ S1_PID_33_AbsBaroPres m51 : 31|8@0+ (1,0) [0|255] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_34_OxySensor1_Crnt m52 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_34_OxySensor1_FAER m52 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_35_OxySensor2_Crnt m53 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_35_OxySensor2_FAER m53 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_36_OxySensor3_Crnt m54 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_36_OxySensor3_FAER m54 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_37_OxySensor4_Crnt m55 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_37_OxySensor4_FAER m55 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_38_OxySensor5_Crnt m56 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_38_OxySensor5_FAER m56 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_39_OxySensor6_Crnt m57 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_39_OxySensor6_FAER m57 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_3A_OxySensor7_Crnt m58 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_3A_OxySensor7_FAER m58 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_3B_OxySensor8_Crnt m59 : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+   SG_ S1_PID_3B_OxySensor8_FAER m59 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_3C_CatTempBank1Sens1 m60 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+   SG_ S1_PID_3D_CatTempBank2Sens1 m61 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+   SG_ S1_PID_3E_CatTempBank1Sens2 m62 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+   SG_ S1_PID_3F_CatTempBank2Sens2 m63 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+   SG_ S1_PID_40_PIDsSupported_41_60 m64 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_41_MonStatusDriveCycle m65 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_42_ControlModuleVolt m66 : 31|16@0+ (0.001,0) [0|65.535] "V" OnBoardDiagnostics
+   SG_ S1_PID_43_AbsLoadValue m67 : 31|16@0+ (0.392157,0) [0|25700] "%" OnBoardDiagnostics
+   SG_ S1_PID_44_FuelAirCmdEquiv m68 : 31|16@0+ (3.05176e-05,0) [0|2] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_45_RelThrottlePos m69 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_46_AmbientAirTemp m70 : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+   SG_ S1_PID_47_AbsThrottlePosB m71 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_48_AbsThrottlePosC m72 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_49_AbsThrottlePosD m73 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_4A_AbsThrottlePosE m74 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_4B_AbsThrottlePosF m75 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_4C_CmdThrottleAct m76 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_4D_TimeRunMILOn m77 : 31|16@0+ (1,0) [0|65535] "minutes" OnBoardDiagnostics
+   SG_ S1_PID_4E_TimeSinceCodeClear m78 : 31|16@0+ (1,0) [0|65535] "minutes" OnBoardDiagnostics
+   SG_ S1_PID_4F_Max_FAER m79 : 31|8@0+ (1,0) [0|255] "ratio" OnBoardDiagnostics
+   SG_ S1_PID_4F_Max_IntManiAbsPres m79 : 55|8@0+ (10,0) [0|2550] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_4F_Max_OxySensCrnt m79 : 47|8@0+ (1,0) [0|255] "mA" OnBoardDiagnostics
+   SG_ S1_PID_4F_Max_OxySensVol m79 : 39|8@0+ (1,0) [0|255] "V" OnBoardDiagnostics
+   SG_ S1_PID_50_Max_AirFlowMAF m80 : 31|8@0+ (10,0) [0|2550] "g/s" OnBoardDiagnostics
+   SG_ S1_PID_51_FuelType m81 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_52_EthanolFuelPct m82 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_53_AbsEvapSysVapPres m83 : 31|16@0+ (0.005,0) [0|327.675] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_54_EvapSysVapPres m84 : 31|16@0+ (1,-32767) [-32767|32768] "Pa" OnBoardDiagnostics
+   SG_ S1_PID_55_ShortSecOxyTrimBank1 m85 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_55_ShortSecOxyTrimBank3 m85 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_56_LongSecOxyTrimBank1 m86 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_56_LongSecOxyTrimBank3 m86 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_57_ShortSecOxyTrimBank2 m87 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_57_ShortSecOxyTrimBank4 m87 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_58_LongSecOxyTrimBank2 m88 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_58_LongSecOxyTrimBank4 m88 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+   SG_ S1_PID_59_FuelRailAbsPres m89 : 31|16@0+ (10,0) [0|655350] "kPa" OnBoardDiagnostics
+   SG_ S1_PID_5A_RelAccelPedalPos m90 : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+   SG_ S1_PID_5C_EngineOilTemp m92 : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+   SG_ S1_PID_5D_FuelInjectionTiming m93 : 31|16@0+ (0.0078125,-210) [-210|301.992] "deg" OnBoardDiagnostics
+   SG_ S1_PID_5E_EngineFuelRate m94 : 31|16@0+ (0.05,0) [0|3276.75] "L/h" OnBoardDiagnostics
+   SG_ S1_PID_5F_EmissionReq m95 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_60_PIDsSupported_61_80 m96 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_61_DemandEngTorqPct m97 : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_62_ActualEngTorqPct m98 : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_63_EngRefTorq m99 : 31|16@0+ (1,0) [0|65535] "Nm" OnBoardDiagnostics
+   SG_ S1_PID_64_EngPctTorq_EP1 m100 : 39|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_64_EngPctTorq_EP2 m100 : 47|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_64_EngPctTorq_EP3 m100 : 55|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_64_EngPctTorq_EP4 m100 : 63|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_64_EngPctTorq_Idle m100 : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_65_AuxInputOutput m101 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_66_MAFSensor m102 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_67_EngineCoolantTemp m103 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_68_IntakeAirTempSens m104 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_6B_ExhaustGasTemp m107 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_6C_CmdThrottleActRel m108 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_6D_FuelPresContrSys m109 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_6E_InjPresContrSys m110 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_6F_TurboComprPres m111 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_70_BoostPresCntrl m112 : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ S1_PID_80_PIDsSupported_81_A0 m128 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_8E_EngFrictionPctTorq m142 : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+   SG_ S1_PID_A0_PIDsSupported_A1_C0 m160 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S1_PID_C0_PIDsSupported_C1_E0 m192 : 31|32@0+ (1,0) [0|4.29497e+09] "" OnBoardDiagnostics
+   SG_ S2_PID_02_FreezeDTC m2 : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+   SG_ response : 15|4@0+ (1,0) [0|15] "" OnBoardDiagnostics
+   SG_ length : 7|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+   SG_ service M : 11|4@0+ (1,0) [0|15] "" OnBoardDiagnostics
   
 
 CM_ "DBC Template
@@ -661,26 +533,26 @@ CM_ BU_ Node0 "The 0th Node";
 CM_ BO_ 4321 "Multiplexed CAN-Message";
 CM_ SG_ 1234 Signal0 "First signal in this message";
 CM_ BO_ 1782 "Passive Anti Theft System";
-CM_ BO_ 39321 "IPOD_";
+CM_ BO_ 000 "IPOD_";
 CM_ BO_ 714 "unsure of TX module";
 CM_ BO_ 754 "AudioCurrentMediaMode";
 CM_ BO_ 764 "IccMediaControl";
 CM_ BO_ 775 "ICC HVAC Buttons";
 CM_ BO_ 787 "Cabin Temperature Sensor";
-CM_ BU_ Antilock_Braking_System "ABS";
-CM_ BU_ Audio_Control_Module "ACM";
-CM_ BU_ Audio_Interface_Module "AIM";
-CM_ BU_ Bluetooth_Phone_Module "BPM";
-CM_ BU_ Body_Electric_Module "BEM";
-CM_ BU_ Front_Display_Interface_Module "FDIM";
-CM_ BU_ HVAC_Integrated_Module "HIM";
-CM_ BU_ Instrustment_Cluster "IC";
-CM_ BU_ On_Board_Diagnostics "OBDII";
-CM_ BU_ Parking_Aid_Module "PAM";
-CM_ BU_ Powertrain_Control_Module "PCM";
-CM_ BU_ Restraints_Control_Module "RCM";
-CM_ BU_ Transmission_Control_Module "TCM";
-CM_ SG_ 0 ABSR_O "1Antilock_Braking_System ABS Rear Outlet Valve Status";
+CM_ BU_ AntilockBrakingSystem "ABS";
+CM_ BU_ AudioControlModule "ACM";
+CM_ BU_ AudioInterfaceModule "AIM";
+CM_ BU_ BluetoothPhoneModule "BPM";
+CM_ BU_ BodyElectricModule "BEM";
+CM_ BU_ FrontDisplayInterfaceModule "FDIM";
+CM_ BU_ HVACIntegratedModule "HIM";
+CM_ BU_ InstrustmentCluster "IC";
+CM_ BU_ OnBoardDiagnostics "OBDII";
+CM_ BU_ ParkingAidModule "PAM";
+CM_ BU_ PowertrainControlModule "PCM";
+CM_ BU_ RestraintsControlModule "RCM";
+CM_ BU_ TransmissionControlModule "TCM";
+CM_ SG_ 0 ABSR_O "1AntilockBrakingSystem ABS Rear Outlet Valve Status";
 CM_ SG_ 1063 AC_Pressure "acpress";
 CM_ SG_ 1063 BatteryVoltage "RefVolt";
 CM_ SG_ 1063 EngineCoolantTemperature "EngCoolantTempSense";
@@ -760,44 +632,233 @@ BA_ "BUIntAttribute" BU_ Node0 100;
 BA_ "BOStringAttribute" BO_ 1234 "MessageAttribute";
 BA_ "SGEnumAttribute" SG_ 1234 Signal0 2;
 
-
-VAL_TABLE_ Numbers 3 "Three" 2 "Two" 1 "One" 0 "Zero";
+VAL_TABLE_ AsciiTable 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_TABLE_ Numbers 0 "Zero" 1 "One" 2 "Two" 3 "Three" 4 "Four" 5 "Five" 6 "Six" 7 "Seven" 8 "Eight" 9 "Nine" 10 "Ten"
 VAL_ 4321 Value0 2 "Value2" 1 "Value1" 0 "Value0";
 VAL_ 4321 Value1 Numbers;
-VAL_ 0 ABS_BYTE 0 "Antilock_Braking_System 204 ABS Process Byte";
-VAL_ 0 ABS_STAT 0 "Antilock_Braking_System Diagnostic ECU Operating States";
-VAL_ 0 ABSLF_I 0 "1Antilock_Braking_System " 0 "1Antilock_Braking_System Left Front Inlet Valve State";
-VAL_ 0 ABSLF_O 0 "1Antilock_Braking_System Left Front Outlet Valve State";
-VAL_ 0 ABSLR_I 0 "1Antilock_Braking_System Left Rear Inlet Valve State";
-VAL_ 0 ABSLR_O 0 "1Antilock_Braking_System Left Rear Outlet Valve State";
-VAL_ 0 ABSPMPRLY 0 "Antilock_Braking_System ABS Pump Motor Relay";
-VAL_ 0 ABSR_I 0 "1Antilock_Braking_System ABS Rear Inlet Valve Status";
-VAL_ 0 ABSR_O 0 "1Antilock_Braking_System ABS Rear Outlet Valve Status";
-VAL_ 0 ABSRF_I 0 "1Antilock_Braking_System Right Front Inlet Valve State";
-VAL_ 0 ABSRF_O 0 "1Antilock_Braking_System Right Front Outlet Valve State";
-VAL_ 0 ABSRR_I 0 "1Antilock_Braking_System Right Rear Inlet Valve State";
-VAL_ 0 ABSVLVRLY 0 "Antilock_Braking_System ABS Valve Control Relay";
-VAL_ 0 BOO_ABS 0 "Antilock_Braking_System Inactive Brake ON/OFF";
-VAL_ 0 BRAKPRES 0 "Antilock_Braking_System 0.0 kPa Brake Fluid Line Hydraulic Pressure";
-VAL_ 0 CCNTABS 0 "Antilock_Braking_System0 Continuous Codes";
-VAL_ 0 DISABLE_SS 0 "Antilock_Braking_System No Disable Safety Software";
-VAL_ 0 HDC_ENABLE 0 "Antilock_Braking_System Inactive HDC Enable";
-VAL_ 0 HDC_SW 0 "1Antilock_Braking_System Inactive HDC Switch Status";
-VAL_ 0 Ignition 0 " Antilock_Braking_System 12.18 V Ignition";
-VAL_ 0 LAT_ACCL 0 " Antilock_Braking_System -0.02 G ABS Lateral Acceleration Rate";
-VAL_ 0 LF_WSPD 0 " Antilock_Braking_System 2.0 km/h Left front wheel speed sensor";
-VAL_ 0 LR_WSPD 0 " Antilock_Braking_System 2.0 km/h Left rear wheel speed sensor";
-VAL_ 0 PMPSTAT 0 " Antilock_Braking_System Inactive ABS Pump Motor Status";
-VAL_ 0 PRK_BRAKE 0 "Antilock_Braking_SystemInactive Parking brake Switch";
-VAL_ 0 RF_WSPD 0 "Antilock_Braking_System 2.0 km/h Right front wheel speed sensor";
-VAL_ 0 RR_WSPD 0 "Antilock_Braking_System 2.0 km/h Right rear wheel speed sensor";
-VAL_ 0 STEER_ANGL 0 " Antilock_Braking_System -4.10 ° Steering wheel angle sensor";
-VAL_ 0 TCSPRI1 0 "Antilock_Braking_System Inactive TCS Priming Valve 1";
-VAL_ 0 TCSSWI1 0 "Antilock_Braking_System Inactive TCS Switching Valve 1";
-VAL_ 0 TCSSWI2 0 "Antilock_Braking_System Inactive TCS Switching Valve 2";
-VAL_ 0 TCYC_FS 0 "Antilock_Braking_System Off Traction control system";
-VAL_ 0 TCYC_SW 0 "Antilock_Braking_System Up Traction Control Switch Status";
-VAL_ 0 YAW_RATE 0 " Antilock_Braking_System -0 1/min ABS Yaw Rate Value";
+VAL_ 0 ABS_BYTE 0 "AntilockBrakingSystem 204 ABS Process Byte";
+VAL_ 0 ABS_STAT 0 "AntilockBrakingSystem Diagnostic ECU Operating States";
+VAL_ 0 ABSLF_I 0 "1AntilockBrakingSystem " 0 "1AntilockBrakingSystem Left Front Inlet Valve State";
+VAL_ 0 ABSLF_O 0 "1AntilockBrakingSystem Left Front Outlet Valve State";
+VAL_ 0 ABSLR_I 0 "1AntilockBrakingSystem Left Rear Inlet Valve State";
+VAL_ 0 ABSLR_O 0 "1AntilockBrakingSystem Left Rear Outlet Valve State";
+VAL_ 0 ABSPMPRLY 0 "AntilockBrakingSystem ABS Pump Motor Relay";
+VAL_ 0 ABSR_I 0 "1AntilockBrakingSystem ABS Rear Inlet Valve Status";
+VAL_ 0 ABSR_O 0 "1AntilockBrakingSystem ABS Rear Outlet Valve Status";
+VAL_ 0 ABSRF_I 0 "1AntilockBrakingSystem Right Front Inlet Valve State";
+VAL_ 0 ABSRF_O 0 "1AntilockBrakingSystem Right Front Outlet Valve State";
+VAL_ 0 ABSRR_I 0 "1AntilockBrakingSystem Right Rear Inlet Valve State";
+VAL_ 0 ABSVLVRLY 0 "AntilockBrakingSystem ABS Valve Control Relay";
+VAL_ 0 BOO_ABS 0 "AntilockBrakingSystem Inactive Brake ON/OFF";
+VAL_ 0 BRAKPRES 0 "AntilockBrakingSystem 0.0 kPa Brake Fluid Line Hydraulic Pressure";
+VAL_ 0 CCNTABS 0 "AntilockBrakingSystem0 Continuous Codes";
+VAL_ 0 DISABLE_SS 0 "AntilockBrakingSystem No Disable Safety Software";
+VAL_ 0 HDC_ENABLE 0 "AntilockBrakingSystem Inactive HDC Enable";
+VAL_ 0 HDC_SW 0 "1AntilockBrakingSystem Inactive HDC Switch Status";
+VAL_ 0 Ignition 0 " AntilockBrakingSystem 12.18 V Ignition";
+VAL_ 0 LAT_ACCL 0 " AntilockBrakingSystem -0.02 G ABS Lateral Acceleration Rate";
+VAL_ 0 LF_WSPD 0 " AntilockBrakingSystem 2.0 km/h Left front wheel speed sensor";
+VAL_ 0 LR_WSPD 0 " AntilockBrakingSystem 2.0 km/h Left rear wheel speed sensor";
+VAL_ 0 PMPSTAT 0 " AntilockBrakingSystem Inactive ABS Pump Motor Status";
+VAL_ 0 PRK_BRAKE 0 "AntilockBrakingSystemInactive Parking brake Switch";
+VAL_ 0 RF_WSPD 0 "AntilockBrakingSystem 2.0 km/h Right front wheel speed sensor";
+VAL_ 0 RR_WSPD 0 "AntilockBrakingSystem 2.0 km/h Right rear wheel speed sensor";
+VAL_ 0 STEER_ANGL 0 " AntilockBrakingSystem -4.10 ° Steering wheel angle sensor";
+VAL_ 0 TCSPRI1 0 "AntilockBrakingSystem Inactive TCS Priming Valve 1";
+VAL_ 0 TCSSWI1 0 "AntilockBrakingSystem Inactive TCS Switching Valve 1";
+VAL_ 0 TCSSWI2 0 "AntilockBrakingSystem Inactive TCS Switching Valve 2";
+VAL_ 0 TCYC_FS 0 "AntilockBrakingSystem Off Traction control system";
+VAL_ 0 TCYC_SW 0 "AntilockBrakingSystem Up Traction Control Switch Status";
+VAL_ 0 YAW_RATE 0 " AntilockBrakingSystem -0 1/min ABS Yaw Rate Value";
+VAL_ 133 YAW_RATE 0 "Yaw";
+VAL_ 144 hlFl_W_Meas 0 "hlFl_W_Meas";
+VAL_ 144 hlFr_W_Meas 0 "hlFr_W_Meas";
+VAL_ 144 hlRl_W_Meas 0 "hlRl_W_Meas";
+VAL_ 144 hlRr_W_Meas 0 "hlRr_W_Meas";
+VAL_ 296 HighBeamStatus 0 "off";
+VAL_ 296 IllumLevelDisplay 0 "No Description";
+VAL_ 296 AutoHeadlampSwitchStatus 0 "No Description";
+VAL_ 296 FogLampStatus 0 "No Description";
+VAL_ 296 ParkAndLowBeamStatus 0 "No Description";
+VAL_ 296 IllumLevelSwitch 1 "HeadLightsOnAuto" 2 "HeadLightsOn" 6 "FogLightsOn" 14 "HighBeamsOn";
+VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight";
+VAL_ 301 EngineRateOfChange0 0 "";
+VAL_ 301 AcceleratorPedalPosition1  0 "";
+VAL_ 301 AcceleratorPedalPosition2  0 "";
+VAL_ 301 AcceleratorPedalPosition3  0 "";
+VAL_ 301 EngineRevolutionsPerMinute4 0 ""; 
+VAL_ 301 EngineRevolutionsPerMinute5 0 "";
+VAL_ 301 Flags 0 "";
+VAL_ 301 BrakeHardwareStatus 0 "BrakeOff" 1 "BrakeOn";
+VAL_ 512 CrankStatusPCM_HS  0 "";
+VAL_ 512 TorqueReductionRequest  0 "";
+VAL_ 519 EngineRPM_HS 0 "";
+VAL_ 519 EngineRPM_HS 0 "";
+VAL_ VehicleSpeed
+VAL_ VehicleSpeed2
+VAL_ VehicleSpeedOutputStatus
+VAL_ Vehiclespeedsensorsignalstatus
+VAL_ 519 ManifoldThrottlePosition 0 "Idle_Throttle" 200 "Full_Throttle";
+VAL_ 560 TransmissionOverheatCondition  0 "";
+VAL_ 560 TransmissionFaultCondition  0 "";
+VAL_ 560 TransmissionMode  0 "";
+VAL_ 714 BTH_CONTD 0 "BluetoothReceptionSignalStrength";
+VAL_ 714 CCNT 0 "NumberOfContinuousTroubleCodesSet";
+VAL_ 714 ECU 0 "ECUOperatingStates";
+VAL_ 714 ONDEMDTC 0 "NumberOfOnDemandDTCs";
+VAL_ 714 SEC_STAT_BPM 0 "SecurityStatus";
+VAL_ 718 BPM_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 718 BPM_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
+VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
+VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
+VAL_ 742 RDS_PSN_State 0 "No Description";
+VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No Description";
+VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "";
+VAL_ 742 AudioTunerBandPreset 0 "AM_Radio";
+VAL_ 742 RDS_PSN_State 0 "No Description";
+VAL_ 754 AudioCurrentMediaMode 65 "AUX_MODE_ACTIVE" 69 "FM_AM_MODE_ACTIVE" 72 "AUDIO_OFF_STATE" 97 "SWC_PHONE_BTN_ACTIVE" 101 "SWC_PHONE_BTN_ACTIVE" 104 "SWC_PHONE_BTN_ACTIVE" 0 "No Description";
+VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30";
+VAL_ 754 SteeringWheelControlsLeft_ms 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "SEEK_BUTTON_ACTIVE" 17 "VOL_UP_BTN_ACTIVE" 18 "VOL_UP_BTN_ACTIVE" 20 "VOL_UP_BTN_ACTIVE" 24 "VOL_DOWN_BTN_ACTIVE" 25 "VOL_DOWN_BTN_ACTIVE" 0 "No Description";
+VAL_ 756 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 756 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 757 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 758 RDS_PSName_MESSAGE7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_ 0 "";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_99 0 "";
+VAL_ 775 IllumBatsaverRequest_MS_0x307_9916 0 "";
+VAL_ 781 CD_PlayingNow 0 "No Description";
+VAL_ 781 CD_TrackNumber 0 "No Description";
+VAL_ 781 CD_Type 0 "" 0 "No Description";
+VAL_ 787 IntActTemp 0 "No_Data" 1 "" 2 "" 125 "CabinTemperatureSensor";
+VAL_ 789 Ignition 0 "";
+VAL_ 789 IgnitionState 0 "";
+VAL_ 789 InteriorLightStatus 0 ""; 
+VAL_ 789 CabLightSetting 64 "CabLightsResetSettings" 32 "CabLightsOnUnlock" 128 "CabLightsOnDoorOpen";
+VAL_ 789 CycleLockSetting 4 "CycleTwoStageUnlock" 8 "CycleConfirmUnlockIndicators" 64 "Cycle_Drive_Away_Locking" 128 "CycleConfirmUnlockIndicators";
+VAL_ 851 VentStatus 0 "";
+VAL_ 851 PassengerTargetTemp 0 "";
+VAL_ 851 DriverTargetTemp 0 "";
+VAL_ 851 ExternalAmbientTemp 0 "";
+VAL_ 851 FanSpeedActual 0 "";
+VAL_ 851 FanSpeedTarget 0 "";
+VAL_ 851 VentStatus 43 "Foot_Vent_Open_Cabin" 47 "Window_Foot_Vent_Open_Cabin" 79 "Window_and_Feet_Vents,_Close_Cabin" 91 "Face,_Foot,_Close_Cabin" 59 "Face,_Foot,_Open_Cabin" 51 "Face,_Open_Cabin" 83 "Face,_Close_Cabin" 38 "Window,_Auto_Fan" 131 "A/C_Off,_Open_Cabin" 139 "A/C_Off,_Foot_Vents,_Open_Cabin" 143 "A/C_Off,_Foot_and_Window_Vents,_Open_Cabin" 155 "A/C_Off,_Foot_and_Face_Vents,_Open_Cabin" 166 "A/C_Off,_Window_Vents,_Open_Cabin" 167 "A/C_Off,_Manual_Fan,_Open_Cabin";
+VAL_ 864 PARK_SYS 0 "ParkingAidSystemInactive" 5 "ParkingAidSystemActive";
+VAL_ 864 RC_DIST 0 "EchoValueForRightCornerSensor";
+VAL_ 864 REAR_SENS 0 "ParkingAidRearSensorStatus" 255 "Active";
+VAL_ 864 REAR_TONE 0 "ParkingAidSounder";
+VAL_ 864 RM_DIST 0 "EchoValueForRightMiddleSensor";
+VAL_ 864 SENSOR_SPL_V 0 "SensorSupplyVoltage";
+VAL_ 864 SPEED_DEACT 0 "VehicleSpeedAboveDeactivationThreshold";
+VAL_ 864 SYS_OZ 0 "SystemOutputZone";
+VAL_ 864 TRAILINS 0 "TrailerInstalled";
+VAL_ 864 TRANSRV 0 "TransmissionInREVERSE";
+VAL_ 864 VBAT 0 "BatteryVoltage";
+VAL_ 1027 DoorStatus0 0x82	"DriverDoorOpen" 0x42 "PsngrDoorOpen"	0x22 "RearRightDoorOpen	"	0x34 "RearDoorsOpen"	0xA2 "RightDoorsOpen" 0x52 "LeftDoorsOpen"	0xF2 "AllDoors";
+VAL_ 1027 DoorStatus1 0x72 "AllExceptDriverDoor" 0xB2	"AllExceptPassengerDoor"	0xE2 "AllExceptRearLeft";
+VAL_ 1027 CabLightSettings 0 "CabLightsResetSettings" 1 "IgnitionOffLightsOn" 2 "CabLightOnWithKeyOut" 3 "CabLightsOnDoorOpen" 4 "CabLightsOnUnlock"
+VAL_ 1027 0 "BootTailgateAjar"
+VAL_ 1027 0 "Head_lamp_fail"
+VAL_ 1027 0 "HazardOnRequest"
+VAL_ 1027 0 "Priority_key_1 and Priority_key_2"
+VAL_ 1027 0 "SmartShieldLED_Request"
+VAL_ 1027 0 "IllumMode"
+VAL_ 1027 0 "BonnetAjar"
+VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No Description";
+VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff";
+VAL_ 1030 SeatBeltStatusFrontLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusFrontRight 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearLeft 0 "No Description";
+VAL_ 1030 SeatBeltStatusRearRight 0 "No Description";
+VAL_ 1061 Cruise  0 "";
+VAL_ 1061 CruiseTargetSetSpeed  0 "";
+VAL_ 1061 DampedFuelLevel  0 "";
+VAL_ 1061 TurboBoostPressure  0 "";
+VAL_ SpeedControlCommandSwitch
+VAL_ SpeedControlCommandSwitch
+VAL_ SpeedControlNoSwitchInput
+VAL_ SpeedControlActuatorSwitchSET/ACCEL
+VAL_ SpeedControlCancelSwitch
+VAL_ SpeedControlActuatorSwitchCoast
+VAL_ SpeedControlErrorWarningIndicator
+VAL_ SpeedControlActuatorSwitchOff
+VAL_ SpeedControlActuatorSwitchOn
+VAL_ SpeedControlSwitchStatus
+VAL_ 1063 OilPressureWarning 0 "";	
+VAL_ 1063 ETC_Warning 0 "";
+VAL_ 1063 FuelPulse 0 "";	
+VAL_ 1063 MIL_Lamp	 0 "";
+VAL_ 1063 EngineOverheat 0 "";
+VAL_ 1063 SEATBELT_INDICATOR_STAT	 0 "";
+VAL_ 1063 EngineCoolantTemperature 0 "EngCoolTemp";
+VAL_ 1063 AC_Pressure  0 "";
+VAL_ 1063 BatteryVoltage 10.9 "LowVoltage" 0 "Voltage" 15.1 "HighVoltage";
+VAL_ 1063 OilPressureWarning 0 "No Description";
+VAL_ 1063 MIL_Lamp   0 "";
+VAL_ 1063 NUM_DTC   0 "";
+VAL_ 1063 ODO_COUNT   0 "";
+VAL_ 1063 OilPressureWarning   0 "";
+VAL_ 1063 ETC_Warning 0 "";
+VAL_ 1079 MaxLitres   0 "";
+VAL_ 1079 ParkBrakeOn_HS 1 "HandBrakeOff" 17 "HandBrakeOn";
+VAL_ 1079 FuelPulse  0 "";
+VAL_ 1079 FuelSenderFail 0 "";
+VAL_ 1101  EngineCoolantTemperature4 0 "";
+VAL_ 1101 EngineCoolantTemperature5 0 "";
+VAL_ 1101 EngineOilTemperature6 0 "";
+VAL_ 1101 AtmosphericAbsolutePressure7 0 "";
+VAL_ 1107 OverFlowFlagSet 0 "";
+VAL_ 1200 WhlFl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlFr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlRl_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ 1200 WhlRr_W_Meas 32767 "Fault" 32766 "Unknown";
+VAL_ LAT_ACCL  0 "";
+VAL_ 1292 KeepAliveACM 0 "0";
+VAL_ 1292 KeepAliveFDIM 0 "0";
+VAL_ 1571 EngineCapacityLitres 54 "5.4" 18 "" 34 "";
+VAL_ 1571 EngineCylindersValves 0 "";
+VAL_ 1571 EngineAspirationFuelType 18 "NaturallyAspiratedEngine" 34 "TurboChargedEngine" 0 "SuperChargedEngine" 0 "Unknown" 0 "No Description";
+VAL_ 1571 EnginePeakTorque 125 "500_Newton_Metres";
+VAL_ 1600 TransmissionType 80 "Manual" 68 "Automatic";
+VAL_ 1600 ManualTransBoolean 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
+VAL_ 1600 ManualTransBoolean 0 "DISPLAY_PRNDL_ON_CLUSTER_LCD" 1 "REMOVE_PRNDL_FROM_CLUSTER_LCD" 0 "";
+VAL_ 1782 ImmobTransfer_PCM_1_to_8_PATS 0 "No Description";
+
+
 
 070YAW
 075YAW
@@ -815,6 +876,7 @@ VAL_ 0 YAW_RATE 0 " Antilock_Braking_System -0 1/min ABS Yaw Rate Value";
 353HIM
 3E9TCM
 403BEM
+InstrumentCluster & BodyElectricModule
 VAL_ 000 SecurityStatus
 VAL_ 000 AcSunloadSensorStatus
 VAL_ 000 AntiScanFunction
@@ -1236,7 +1298,7 @@ VAL_ HeatedExhaustOxygenSensor21Status
 VAL_ OnBoardDiagnosticRequirementsSupported
 VAL_ ODU_RAM$I
 VAL_ OverdriveCancelSwitch
-VAL_ EngineOilPressure
+
 VAL_ Openloopduetodrivingconditions
 VAL_ OpenloopfuelduetoFMEM
 VAL_ OpenLoop
@@ -1255,18 +1317,7 @@ VAL_ Estimatedrangetoempty
 VAL_ Addresstheblockofrangedataforusebytheoffboardequipmentwhichflashestheparameters(i.e.
 VAL_ RearO2FuelTrim-Bank1
 VAL_ RearO2FuelTrim-Bank2
-VAL_ EngineRevolutionsPerMinute
-VAL_ EngineRevolutionsPerMinute
-VAL_ SpeedControlCommandSwitch
-VAL_ SpeedControlCommandSwitch
-VAL_ SpeedControlNoSwitchInput
-VAL_ SpeedControlActuatorSwitchSET/ACCEL
-VAL_ SpeedControlCancelSwitch
-VAL_ SpeedControlActuatorSwitchCoast
-VAL_ SpeedControlErrorWarningIndicator
-VAL_ SpeedControlActuatorSwitchOff
-VAL_ SpeedControlActuatorSwitchOn
-VAL_ SpeedControlSwitchStatus
+
 VAL_ VehicleSecurityAccessStatus
 VAL_ DiagnosticTroubleCodes
 VAL_ Shorttermfueltrim1
@@ -1288,9 +1339,7 @@ VAL_ Cumula.cylevents
 VAL_ TransmissionFluidTemperatureStatus
 VAL_ Anti-TheftStatus
 VAL_ TireSize(rev/mile)
-VAL_ ThrottlePosition
-VAL_ ThrottlePositionSensor1
-VAL_ ThrottlePositionSensor2
+
 VAL_ Intermittentfaultfilter
 VAL_ DigitalTransmissionRangeswitch1
 VAL_ DigitalTransmissionRangeswitch2
@@ -1303,24 +1352,13 @@ VAL_ NumberofOnBoardDiagnostictripscompleted
 VAL_ Avevehspeedwhileenginesrunningforthistrip
 VAL_ TransmissionRangestatus
 VAL_ TurbineSpeedSensorFailureMode
-VAL_ TurboBoostPressure
+
 VAL_ OctaneAdjust/SparkRetard
 VAL_ Modulesupplyvoltage
 VAL_ VehicleSpeedOutputStatus
 VAL_ VehicleSpeed
 VAL_ VehicleSpeed
 VAL_ Vehiclespeedsensorsignalstatus
-VAL_ Parkingaidsystemstatus
-VAL_ EchoValueforRightCornerSensor
-VAL_ Parkingaidrearsensorstatus
-VAL_ ParkingAidSounder
-VAL_ EchoValueforRightMiddleSensor
-VAL_ SensorSupplyVoltage
-VAL_ VehicleSpeedAboveDeactivationThreshold
-VAL_ SystemOutputZone
-VAL_ Trailerinstalled
-VAL_ TransmissionInREVERSE
-VAL_ BatteryVoltage
 
 427PCM
 437IC
@@ -1333,3 +1371,77 @@ VAL_ BatteryVoltage
 640PCM
 650PCM
 6f6PCM
+'
+        <...>: Required field [...]: Optional field | : Or (eg. <A|B>)
+        Supported Keywords
+
+        VERSION Version identifier of the DBC file. Format: VERSION
+        "<VersionIdentifier>" BS_ Bus configuration. Format:: BS_:
+        <Speed> Speed in kBit/s BU_ List of all CAN-Nodes, seperated
+        by whitespaces. BO_ Message definition. Format: BO_ <CAN-ID>
+        <MessageName>: <MessageLength> <SendingNode> MessageLength in
+        bytes. SG_ Signal definition. Format: SG_ <SignalName>
+        [M|m<MultiplexerIdentifier>] :
+        <StartBit>|<Length>@<Endianness><Signed> (<Factor>,<Offset>)
+        [<Min>|<Max>] "[Unit]" [ReceivingNodes] Length in bits.
+        Signed: + = unsigned; - = signed Endianness: 1 =
+        little-endian, Intel; 0 = big-endian, Motorola M: If M than
+        this signals contains a multiplexer identifier.
+        MultiplexerIdentifier: Signal definition is only used if the
+        value of the multiplexer signal equals to this value. CM_
+        Description field. Format: CM_ [<BU_|BO_|SG_> [CAN-ID]
+        [SignalName]] "<DescriptionText>"; BA_DEF_ Attribute
+        definition. Format: BA_DEF_ [BU_|BO_|SG_] "<AttributeName>"
+        <DataType> [Config]; DataType 	Description 	Config format INT
+        	integer 	<min> <max> FLOAT 	floating point 	<min> <max>
+        STRING 	string 	 ENUM 	enumeration 	"<Value0>","<Value1>"...
+        BA_DEF_DEF_ Attribute default value Format: BA_DEF_DEF_
+        "<AttributeName>" ["]<DefaultValue>["]; BA_ Attribute Format:
+        BA_ "<AttributeName>" [BU_|BO_|SG_] [Node|CAN-ID] [SignalName]
+        <AttributeValue>; VAL_ Value definitions for signals. Format:
+        VAL_ <CAN-ID> <SignalsName> <ValTableName|ValTableDefinition>;
+        VAL_TABLE_
+
+        Value table definition for signals. Format: VAL_TABLE_
+        <ValueTableName> <ValueTableDefinition>; ValueTableDefinition:
+        List of IntValue "StringValue" Pairs, seperated by whitespaces
+        Attributes
+
+        In this sections are standard attributes used by CANpy
+        defined. The attributes can be overwritten within a DBC file.
+        Message Attributes GenMsgSendType
+
+        Defines the send type of a message. Supported types:
+
+            cyclic triggered cyclicIfActive cyclicAndTriggered
+            cyclicIfActiveAndTriggered none Definition: BA_DEF BO_
+            "GenMsgSendType" ENUM
+            "cyclic","triggered","cyclicIfActive","cyclicAndTriggered","cyclicIfActiveAndTriggered","none"
+            Default: none Definition: BA_DEF_DEF "GenMsgSendType"
+            "none"
+
+        GenMsgCycleTime
+
+        Defines the cycle time of a message in ms. Definition: BA_DEF
+        BO_ "GenMsgCycleTime" INT 0 0 Default: 0 Definition:
+        BA_DEF_DEF "GenMsgCycleTime" 0 GenMsgStartDelayTime
+
+        Defines the allowed delay after startup this message must
+        occure the first time in ms. Definition: BA_DEF BO_
+        "GenMsgStartDelayTime" INT 0 0 Default: 0 (=GenMsgCycleTime)
+        Definition: BA_DEF_DEF "GenMsgStartDelayTime" 0
+        GenMsgDelayTime
+
+        Defines the allowed delay for a message in ms. Definition:
+        BA_DEF BO_ "GenMsgDelayTime" INT 0 0 Default: 0 Definition:
+        BA_DEF_DEF "GenMsgDelayTime" 0 Signal Attributes
+        GenSigStartValue
+
+        Defines the value as long as no value is set/received for this
+        signal. Definition: BA_DEF SG_ "GenSigStartValue" INT 0 0
+        Default: 0 Definition: BA_DEF_DEF "GenSigStartValue" 0 Sources
+
+        http://pisnoop.s3.amazonaws.com/snoop_help_dbc.htm
+        http://www.racelogic.co.uk/_downloads/vbox/Application_Notes/CAN%20Format%20for%20VBOXII%20and%20PRO%20v4.pdf
+        https://hackage.haskell.org/package/ecu-0.0.8/src/src/j1939_utf8.dbc
+        http://www.ingenieurbuerobecker.de/downloads/CANtool_Manual.pdf
