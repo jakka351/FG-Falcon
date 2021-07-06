@@ -121,7 +121,7 @@
  ### Interior Command Centre  / Entertainment System  
   🟠[`JasonACT's/Ford-Falcon-FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares)    
   🟠[`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`  
-  🟠[`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC) `mkI falcon fgs`    
+  🟠[`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC) `mkI falcon fg FDIM, this works on the Monochrome Displays as well as the Colour TFT.
   🟠[`Enable Reverse Camera`](https://github.com/jakka351/FG-Falcon/wiki/Enable-Reverse-Camera)  
    `DIY Module Replacement & Programming`  
    `How to fit the Ipod Integration Unit & Harness`  
