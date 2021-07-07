@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2009-2014 Stephan Raue (stephan@openelec.tv)
+# Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
+################################################################################
+# Bootloader configuration - config.txt
+################################################################################
+
+cmdline="boot=UUID=2410-0508 disk=UUID=09814adf-0b3e-462b-ad3f-abd8815b9b92 quiet splash logo.nologo loglevel=0 console=tty3 coherent_pool=6M smsc95xx.turbo_mode=N"
+
+# Overscan
+disable_overscan=0
+overscan_scale=1
+
+# ARM Frequency
+arm_freq=2000
+arm_freq_min=300
+
+# GPU Frequency
+gpu_freq=700
+gpu_freq_min=250
+
+# Turbo Mode/Initial/Over-Volt
+force_turbo=0
+over_voltage=6
+initial_turbo=60
+temp_limit=90
+temp_soft_limit=80
+avoid_warnings=2 
+
+# i2c spi
+dtparam=i2c_arm=on
+dtparam=spi=on
+
+# TV Hat
+dtoverlay=rpi-tv
+
+# fkms driver
+dtoverlay=vc4-fkms-v3d
+
+# HDMI force
+hdmi_force_hotplug=1
+
+# CEC
+hdmi_ignore_cec_init=0
+
+# GPU MEM
+#gpu_mem=256
+cma_lwm=128
+cma_hwm=512
+	
+# GPIO Fan 	
+dtoverlay=gpio-fan,gpiopin=18,temp=35000
