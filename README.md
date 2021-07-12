@@ -2,8 +2,7 @@
 ![image](https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png)  
 [`Collection of resources relating to electronic and mechanical systems of the FG Falcon.`](https://github.com/jakka351/FG-Falcon/wiki)    
 
-## FG CAN bus decoded                   
-### Module Comms Documents    
+### CANbus decoded                   
   🟠[`>>> fg_controller_area_network_latest.xlsx <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)     
   🟡[`>>> fg_controller_area.dbc <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area.dbc)  
   🟠[`FG CAN ID's`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)      
