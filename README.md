@@ -102,7 +102,7 @@
  🟣[`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
 ### PCM Programming  
-![https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png]  
+![image](https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png)  
  🔴[`PCMTec`](https://pcmtec.com/)         
  `   Australian Ford Tuning Software      `     
   
