@@ -102,12 +102,15 @@
  🟣[`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
 ### PCM Programming  
+![https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png]  
  🔴[`PCMTec`](https://pcmtec.com/)         
- `   Australian Ford Tuning Software      `   
+ `   Australian Ford Tuning Software      `     
+  
  🔴[`CAN Solutions`](https://store.cansolutions.com.au/)  
    `Australian CAN Products  `       
  🔴 [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
  `   converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `          
+  
  🔴[`Ford Wreckers Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
  🔴[`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
    
