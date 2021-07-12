@@ -40,11 +40,8 @@
  🟣[`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
 ### PCM Programming  
- <img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"> </img>  
-
- 🔴[`PCMTec`](https://pcmtec.com/)         
+ 🔴[<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/)           
  `   Australian Ford Tuning Software      `     
-  
  🔴[`CAN Solutions`](https://store.cansolutions.com.au/)  
    `Australian CAN Products  `       
  🔴 [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
