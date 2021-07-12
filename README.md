@@ -4,37 +4,27 @@
 
   [`>>> fg_controller_area_network_latest.xlsx <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)   ![image](https://img.shields.io/badge/July-11-red)     
   [`>>> Workshop Manuals  <<<<`](https://github.com/jakka351/FG-Falcon#technical-documents------)
-    
-***
-# Software  [![image](https://img.shields.io/badge/FG-Falcon-blue)]()   [![image](https://img.shields.io/badge/can0%20-SWC-purple)](https://github.com/jakka351/can0swc) [![image](https://img.shields.io/badge/POLICE-mode-black)](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
-🔴🟠🟡🟢🔵🟣🟤
-
- *** 
+ 
 ![image](https://cdn-images-1.medium.com/max/2000/1*1RhxsC0V8HqYAVw7AAopEw.png)        
  ***  
-# FG CAN bus decoded           
-  ####        
-   
+# FG CAN bus decoded                   
 ### Module Comms Documents    
-  🟣[`Workshop Manual Pages`](http://fordforums.com.au/wsmpub/fgii/418-00.html)       
-  🔵[`Controller Area Network 101`](https://github.com/jakka351/FG-Falcon/wiki/Controller-Area-Network)         
-  🟢[`FG CAN ID's`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)    
+  🟠[`>>> fg_controller_area_network_latest.xlsx <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)     
+  🟡[`>>> fg_controller_area.dbc <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area.dbc)  
+  🟠[`FG CAN ID's`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)      
   🟡[`HS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/FG%20HS%20CAN%20Decoded.xlsx)         
   🟠[`MS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls)     
-  🔴[`FG CAN Document`](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx)    
-  🟠[`>>> fg_controller_area_network_latest.xlsx <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx) -  ![image](https://img.shields.io/badge/May-11th-green)       
-  `This Spreadsheet Contains all the above spreadsheets + docs`     
-  🟡[`>>> fg_controller_area.dbc <<<`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area.dbc) ![image](https://img.shields.io/badge/.dbc-can%20database-lightgrey)     
-  🟢[`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)        
-  🔵[`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)       
-  🟣[`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)      
-  🔵[`CAN Frames ms-can`](https://github.com/jakka351/FG-Falcon/wiki/CAN_id,-frame-database)       
-  🟢[`ba,bf CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx) - [`from PCMTec Forums user Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)      
-  🟡[`Steering wheel media buttons`](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)      
+  🟠[`FG CAN Document`](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx)    
  
+  🟢[`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)        
+  🟢[`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)       
+  🟢[`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)      
+  🟢[`ba,bf CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx) - [`from PCMTec Forums user Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)      
+  🟢[`Steering wheel media buttons`](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)      
+   
+     
  <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"> </img>
-### Forscan     
-  
+### Forscan       
  🔵[`Forscan`](https://forscan.org/)  
 `Forscan is a Ford specific software compatible with various scantools. `   
  🔵[`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
@@ -81,8 +71,6 @@
   🟠[`Forum Post Link`](http://www.fordforums.com.au/showthread.php?t=11479908&page=9)    
  
  ### Interior Command Centre  / Entertainment System   [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan) [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  
-
- 
   🔵[`ICC Can Interface`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  
   🔵[`ECU HSCAN Interface`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ECU_HS_CAN_Interface.ino)        
   🔵[`HVAC CAN Reader`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/CANReader.ino)   
