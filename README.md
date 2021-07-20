@@ -18,7 +18,8 @@
  <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"> </img>
 ###  🔵 Forscan       
 [`Forscan`](https://forscan.org/)  
-[`Forscan is a Ford specific software compatible with various scantools. `   
+[`Forscan is a Ford specific software compatible with various scantools. `]  
+[`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
 [`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
 [`How to use output control`](https://forscan.org/forum/viewtopic.php?f=6&t=844)      
 [`Modify Module As-Built Data`](http://www.2gfusions.net/showthread.php?tid=4573)    
