@@ -75,7 +75,9 @@ Bus      | Modules | Speed | Function
    - [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)  |  |    
    - [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log) |  |     
 
+
 ##Software
+
 Description   | Platform      | Model     | Author
 --------|-----------|------------|--------
  [`ICC Can Interface`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ICC_CAN_Interface.ino)  | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)   | FG | [Mitchell H]()
@@ -172,6 +174,15 @@ resources/
         └── file4
 ```
 
+   
+## Libraries  
+  [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)    
+  [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+  [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
+  [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
+
+
+
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
@@ -230,13 +241,6 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
  - [`Audio Interface Module`](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
  - [`Bluetooth & Phone`](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [`Diagnostic Port`](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
-   
-
-## Libraries  
-  [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)    
-  [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
-  [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
-  [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
   
 ## Articles  
  - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
@@ -259,7 +263,7 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
   
    
 
-## 🟠 Sites, Stores & Forums
+## Sites, Stores & Forums
  [`Ford Forums AU`](https://fordforums.com.au/)   
  [`XR6 Turbo Forums`](https://www.fordxr6turbo.com/)  
  [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
