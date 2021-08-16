@@ -28,7 +28,7 @@
   - [Community](#Community)
   - [Libraries](#Libraries)
   - [Guides](#Guides)
-- [Work Shop Manuals](#Workshop Manuals)
+- [Work Shop Manuals](#workshop-manuals)
 - [Documents](#Documents)
 - [Wiring Diagrams]()
 - [Links, Stores, Misc]()
@@ -77,6 +77,7 @@ Bus      | Modules | Speed | Function
 
 
 ## Software
+Software Written by owners and enthusiasts. 
 
 Description   | Platform      | Model     | Author
 --------|-----------|------------|--------
@@ -147,32 +148,23 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
  ## PCM Programming    
    
- [<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/) 
- PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/  
+ [<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/)   
+ 
+    - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/  
  
  
- [## CAN Solutions](https://store.cansolutions.com.au/)  
-       Australian CanBus Products         
-  -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
+ [CAN Solutions](https://store.cansolutions.com.au/)    
+     Australian CanBus Products         
+      -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
        converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `    
        
-       ### Articles & Info on PCM Programming
+## Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
   -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
   -  [`Bosch J2534 FAQ`](https://www.boschdiagnostics.com/j2534-faq)  
   
   
   
-## InteriorCommandCentre
-
-
-Software Written by owners and enthusiasts. 
-
-- Instruc
-- Instruction 2
-- Instruction 3
-
-
 ## Resources Folder
 
 A lot of stuff that is not listed is contained within the Resources folder. 
@@ -188,27 +180,12 @@ resources/
         └── file4
 ```
 
-   
 ## Libraries  
   [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)    
   [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
   [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
   [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
 
-
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
-
-## Contributing
-
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
-
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
- 
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
   - [`Owners Manual`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Ute_Owner_Manual.pdf)    
@@ -243,9 +220,6 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
   - [`Remove ICC Assembly`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
   - [`Component View & Location`](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
   - [`FG Falcon mkI Workshop Manual` @ FordForums.com.au](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
-
-
-
 
 ## Wiring Diagrams & Pinouts                  [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [`ICC connector`](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
@@ -296,8 +270,12 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
  - [`ICC Replacement`](https://fordforums.com.au/showthread.php?p=6521457#post6521457)  
  - [`Ford Forums Australia`](https://fordforums.com.au)      
   
+
+## Contact  
+Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you cannot list your product here, unless you can demostrate that it actively contributes to the community that buys it.  
+ 
 ## Disclaimer 
-#### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way.
+#### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
 
 ***
 [![image](https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au)
