@@ -20,17 +20,17 @@
 
 ## Table of contents
 
-- [Orion's Bus](#Orion)
+- [Orion CanBus](#Orion)
 - [Powertrain](#PowerTrain)
 - [InteriorCommandCentre](#InteriorCommandCentre)
 - [InstrumentCluster](#InstrumentCluster)
 - [Software](#Software)
---[Forscan](#Forscan)
-  --[OpenXC](#OpenXC)
-  --[Community](#Community)
-  --[Libraries](#Libraries)
-  --[Guides](#Guides)
-- [WorkShopManuals](#WorkShopManuals)
+  - [Forscan](#Forscan)
+  - [OpenXC](#OpenXC)
+  - [Community](#Community)
+  - [Libraries](#Libraries)
+  - [Guides](#Guides)
+- [Work Shop Manuals](#WorkShop Manuals)
 - [Documents](#Documents)
 - [Wiring Diagrams]()
 - [Links, Stores, Misc]()
@@ -86,12 +86,44 @@ Please read through our [contributing guidelines](https://reponame/blob/master/C
 Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
 
 Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
+ 
+## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
+  - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
+  - [`Owners Manual`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Ute_Owner_Manual.pdf)    
+  - [`Owners Reference Guide`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG_Falcon_OM_2010_AU.pdf)    
+  - [`Technical notes on the EEC-IV MCU`](https://github.com/jakka351/FG-Falcon/blob/master/resources/eectch98.pdf)  
+  - [`Ford Vehicle Communications Manual - Snap On`](https://github.com/jakka351/FG-Falcon/blob/master/resources/AUS_Ford_Vehicle_Communication_Software_Manual.pdf)   
+  - [`HVAC Integrated Module bf Bulletin`](https://github.com/jakka351/FG-Falcon/blob/master/resources/TSB%2038%208-10%20Ford%20HIM%20Part%201.pdf)  
+  - [`FG ICC MK1.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20ICC%20MK1(1).pdf)  
+  - [`FG Powertrain control module.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20Powertrain%20control%20module.pdf)    
+  - [`FG ZF 6hp26 6 speed auto.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20ZF%206hp26%206%20speed%20auto.pdf)    
+  - [`FG engine I6.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20engine%20I6.pdf)   
+  - [`FG engine system general.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20engine%20system%20general.pdf)    
+  - [`FG engine v8 4v.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20engine%20v8%204v.pdf)    
+  - [`FG ent sys general(1).pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20ent%20sys%20general.pdf)  
+  - [`FG fuel chargine and controls turbo.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20fuel%20chargine%20and%20controls%20turbo.pdf)    
+  - [`FG fuel system.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20fuel%20system.pdf)    
+  - [`FG handles and locks.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20handles%20and%20locks.pdf)    
+  - [`FG horn.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20horn.pdf)    
+  - [`FG instrument cluster.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20instrument%20cluster.pdf)    
+  - [`FG instrument panel and console.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20instrument%20panel%20and%20console.pdf)    
+  - [`FG module communications network.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20module%20communications%20network.pdf)    
+  - [`FG parking aid.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20parking%20aid.pdf)    
+  - [`FG wiring 400 to 419.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20400%20to%20419.pdf)    
+  - [`FG wiring 501.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20501.pdf)    
+  - [`FG wiring 700-06 conector location views.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700-06%20conector%20location%20views.pdf)    
+  - [`FG wiring 700.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700.pdf)    
+  - [`FG wiring diagram.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20diagram.pdf)    
+  - [`Supplement`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
+  - [`Module Comms Network`](http://fordforums.com.au/wsmpub/fgii/418-00.html)  
+  - [`HVAC General Info`](http://fordforums.com.au/wsmpub/fgfpv50/412-00.html)   
+  - [`ICC`](http://fordforums.com.au/wsmpub/fg/413-08.html)  
+  - [`Remove ICC Assembly`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=855)    
+  - [`Component View & Location`](http://fordforums.com.au/wsmpub/wire/fgfpv/700-06.html)  
+  - [`FG Falcon mkI Workshop Manual` @ FordForums.com.au](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1812)    
 
-## Creators
 
-**Creator 1**
 
-- <https://github.com/usernamecreator1>
 
 ## Wiring Diagrams & Pinouts                  [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [`ICC connector`](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
