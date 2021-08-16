@@ -75,9 +75,42 @@ Description   | Platform      | Model     | Author
  [`Ford Mustang CAN2CLUSTER Project`](https://github.com/thomastech/CAN2Cluster)    |   | Mustang | https://github.com/thomastech/
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
  
- 
+  <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"> </img>
+###  🔵 Forscan       
+[`Forscan`](https://forscan.org/)  
+[`Forscan is a Ford specific software compatible with various scantools. `]  
+[`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
+[`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
+[`How to use output control`](https://forscan.org/forum/viewtopic.php?f=6&t=844)      
+[`Modify Module As-Built Data`](http://www.2gfusions.net/showthread.php?tid=4573)    
+[`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)       
+[`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)          
+[`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
+   
+ ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
+### 🟣FoMoCo Open Source         
+[`OpenXC`](https://openxcplatform.com/)    
+[`OpenXC on GitHub`](https://github.com/openxc)      
+[`Ford Developers`](https://developer.ford.com/)    
+[`OpenXC Background Information`](https://developer.ford.com/pages/openxc)    
+[`More Background`](http://vi.openxcplatform.com/)    
+[`Supported Vehicles`](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=2)    
+[`Supported Data`](https://docs.google.com/spreadsheets/d/1hOBi9-tFwR1KRFXfeaHTAddwJuSGx5Ir1ET4N2zWAiE/edit#gid=6)  `Falcon is type 8`      
+[`Smart Windscreen Wiper`](https://github.com/openxc/smart-wiper)    
+[`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
-## Powertrain
+ 
+ ##  PCM Programming  
+ [<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/)           
+ `   Australian Ford Tuning Software      `     
+  -  [`CAN Solutions`](https://store.cansolutions.com.au/)  
+       `Australian CAN Products  `       
+  -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
+       `   converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `          
+  -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
+  -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
+  -  [`2005 Mustang CAN Information`](https://github.com/karlyamashita/common_libraries/blob/master/FORD_CAN_ID.h)    
+
 
 Here goes all the budgets
 
