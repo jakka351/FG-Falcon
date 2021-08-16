@@ -71,9 +71,9 @@ Bus      | Modules | Speed | Function
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
  
   ## AsBuilt Data & Candump Logs:
-    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)        |  | 
-    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)  |  |    
-    [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log) |  |     
+    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt) 
+    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log) 
+    [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)  
 
 
 ## Software
@@ -273,7 +273,7 @@ resources/
   
 
 ## Contact  
-Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you cannot list your product here, unless you can demostrate that it actively contributes to the community that buys it.  
+Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you cannot list your product here, unless you can demonstrate that it actively contributes to the community that buys it.  
  
 ## Disclaimer 
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
