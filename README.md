@@ -1,7 +1,7 @@
 # FG
 <p align="center">
   <a href="https://canbus.com.au/">
-    <img src="https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png" alt="EFFGEE">
+    <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
   </a>
 
   <h3 align="center">FG-Falcon</h3>
