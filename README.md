@@ -28,11 +28,11 @@
   - [Community](#Community)
   - [Libraries](#Libraries)
   - [Guides](#Guides)
-- [Work Shop Manuals](#WorkShop Manuals)
+- [Work Shop Manuals](#Workshop Manuals)
 - [Documents](#Documents)
 - [Wiring Diagrams]()
 - [Links, Stores, Misc]()
-- [Articles]()#Articles)
+- [Articles](#Articles)
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)
 
@@ -105,10 +105,13 @@ Description   | Platform      | Model     | Author
  [`Python-OBDII Ford Reader`](https://github.com/jakka351/python-fordreader)     | OBDII | Ford |
  [`Ford Mustang CAN2CLUSTER Project`](https://github.com/thomastech/CAN2Cluster)    |   | Mustang | https://github.com/thomastech/
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
- 
-  <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50" />  
-  
+
+
+
 ## Forscan
+<p align="center">
+<img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50" />  
+  </p>
 Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. https://forscan.org for more information. Forums at https://forscan.org/forum/.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine [J2534](https://www.boschdiagnostics.com/j2534-faq) interface is the [preferred option](https://forscan.org/forum/viewtopic.php?f=4&t=867).   
 
   - [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
@@ -118,9 +121,14 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)       
   - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)          
   - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
+  
+  <br>
    
- ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
 ## FoMoCo Open Source         
+   <p align="center">  
+ ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
+  </p>  
+  
   - [`OpenXC`](https://openxcplatform.com/)    
   - [`OpenXC on GitHub`](https://github.com/openxc)      
   - [`Ford Developers`](https://developer.ford.com/)    
@@ -131,13 +139,19 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`Smart Windscreen Wiper`](https://github.com/openxc/smart-wiper)    
   - [`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
+  
+  
+***
+
+
+
  ## PCM Programming    
    
  [<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/) 
  PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/  
  
  
-    ###[CAN Solutions](https://store.cansolutions.com.au/)  
+ [## CAN Solutions](https://store.cansolutions.com.au/)  
        Australian CanBus Products         
   -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
        converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `    
