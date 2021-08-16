@@ -51,7 +51,7 @@ Bus      | Modules | Speed | Function
    OBDII   | EOBD | - | Emissions & Diagnostics  
   </p>
 
-### CanBus Decoded:
+## CanBus Decoded:
 
   Collection of FG-CAN Data from various sources 
    - [`fg_controller_area_network_latest.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
@@ -70,13 +70,13 @@ Bus      | Modules | Speed | Function
    [BA,BF CAN spreadsheet](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)  [`from Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)   
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
  
-  ### AsBuilt Data & Candump Logs:
+  ## AsBuilt Data & Candump Logs:
    - [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)        |  | 
    - [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)  |  |    
    - [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log) |  |     
 
 
-##Software
+## Software
 
 Description   | Platform      | Model     | Author
 --------|-----------|------------|--------
@@ -261,8 +261,6 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
  - [`Generic MCP2515 SPI board`](https://canbus.com.au/store-7/?model_number=mcp2515-sas)      
  - [`CANBUSv1`](https://github.com/DefinitiveDiagnosis-hub/CANBUSv1) - `training module `   
   
-   
-
 ## Sites, Stores & Forums
  [`Ford Forums AU`](https://fordforums.com.au/)   
  [`XR6 Turbo Forums`](https://www.fordxr6turbo.com/)  
