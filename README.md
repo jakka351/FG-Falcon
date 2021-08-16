@@ -1,3 +1,4 @@
+# FG
 <p align="center">
   <a href="https://canbus.com.au/">
     <img src="https://www.independentmotorsports.com.au/assets/images/Ford/Ford%20Coyote/FG_FGX%20Coyote%20banner.png" alt="EFFGEE">
@@ -8,8 +9,11 @@
   <p align="center">
     <a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a>
     <br>
-    <a href="https://canbus.com.au">Contact</a>
-    <a href="https://github.com/jakka351/fg-falcon/wiki">Wiki</a>
+    <a href="https://canbus.com.au">Contact</a> | 
+    <a href="https://github.com/jakka351/fg-falcon/wiki">Wiki</a> | 
+    <a href="https://fordforums.com.au/">FordForums</a> | 
+    <a href="https://canbus.com.au/">CANBus.com.au</a> | 
+  
   </p>
 </p>
 
