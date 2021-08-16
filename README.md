@@ -76,9 +76,9 @@ Description   | Platform      | Model     | Author
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
  
   <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50"> </img>
-###  🔵 Forscan       
-[`Forscan`](https://forscan.org/)  
-[`Forscan is a Ford specific software compatible with various scantools. `]  
+##Forscan
+Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. https://forscan.org for more information. Forums at https://forscan.org/forum/.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine [J2534](https://www.boschdiagnostics.com/j2534-faq) interface is the [preferred option](https://forscan.org/forum/viewtopic.php?f=4&t=867). 
+
 [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
 [`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
 [`How to use output control`](https://forscan.org/forum/viewtopic.php?f=6&t=844)      
@@ -88,7 +88,7 @@ Description   | Platform      | Model     | Author
 [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
    
  ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
-### 🟣FoMoCo Open Source         
+##FoMoCo Open Source         
 [`OpenXC`](https://openxcplatform.com/)    
 [`OpenXC on GitHub`](https://github.com/openxc)      
 [`Ford Developers`](https://developer.ford.com/)    
