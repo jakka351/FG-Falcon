@@ -40,7 +40,8 @@
 ## Orion 
 
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
-     <p align="center">
+     
+       
 ### Vehicle Network layout:
 Bus      | Modules | Speed | Function  
 ---------|---------|-------|--------|  
@@ -51,7 +52,7 @@ Bus      | Modules | Speed | Function
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    OBDII   | EOBD | - | Emissions & Diagnostics  |
   
-  </p>
+
 
 ## CanBus Decoded:
 
@@ -133,9 +134,9 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
    
 ## FoMoCo Open Source         
 
-   <p align="center">  
+  
  <img src="https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png" />      
-  </p>  
+ 
   
   - [`OpenXC`](https://openxcplatform.com/)    
   - [`OpenXC on GitHub`](https://github.com/openxc)      
