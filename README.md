@@ -197,26 +197,15 @@ Australian CanBus Products
 Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
   
  ### ICC Splash Graphics 
- - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)  
-
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />  
-  
- - [`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
-
- - [`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
- 
- - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)
-
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
-
-- [`GT Logo`]()
- - [`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)
- - [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)
- - [`ICC NoNav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)
- - [`ICC Gauges Voltage`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)
+[`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)[`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)[`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
+[`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)[`GT Logo`]()[`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)
+ [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)[`ICC NoNav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)[`ICC Gauges Voltage`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)
   
 Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
  
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />  
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
+
  
 ## Resources Folder
 
