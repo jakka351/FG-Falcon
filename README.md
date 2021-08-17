@@ -168,9 +168,9 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 Australian CanBus Products         
      <img src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="25%" width="25%" />
   -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
-   Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles
-    Outputs :  
-          
+   Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicle
+     Outputs : 
+     ```
         Tach Output – Programmable from 2-12 cylinder to suit your Application  
         Tach Correction – to fix those minor errors from the Factory  
         Vehicle Speed – programmable to suit most OEM Speedometers  
@@ -178,6 +178,7 @@ Australian CanBus Products
         Engine Over Temperature Lamp Output  
         Oil Pressure Lamp Output (BF Onwards)  
         Alternator Lamp Output (FG Onward)  
+     ```
 
  ### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
