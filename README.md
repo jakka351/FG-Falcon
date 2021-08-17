@@ -31,6 +31,7 @@
 - [Work Shop Manuals](#workshop-manuals)
 - [Documents](#Documents)
 - [Wiring Diagrams]()
+- [Wiki]()
 - [Links, Stores, Misc]()
 - [Articles](#Articles)
 - [Credit and license](#Credit-and-license)
@@ -106,14 +107,17 @@ Description   | Platform      | Model     | Author
  [`Python-OBDII Ford Reader`](https://github.com/jakka351/python-fordreader)     | OBDII | Ford |
  [`Ford Mustang CAN2CLUSTER Project`](https://github.com/thomastech/CAN2Cluster)    |   | Mustang | https://github.com/thomastech/
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
-
+ [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
+ [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
+ [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
+ 
 
 
 ## Forscan
 <p align="center">
 <img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50" />  
   </p>
-Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. [`https://forscan.org`](https://forscan.org) for more information. Forums at [`https://forscan.org/forum/`](https://forscan.org/forum/).  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine [`J2534`](https://www.boschdiagnostics.com/j2534-faq) interface is the [preferred option](https://forscan.org/forum/viewtopic.php?f=4&t=867)  
+Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. [`https://forscan.org`](https://forscan.org) for more information. Forums at [https://forscan.org/forum/`](https://forscan.org/forum/).  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine [`J2534`](https://www.boschdiagnostics.com/j2534-faq) interface is the [preferred option](https://forscan.org/forum/viewtopic.php?f=4&t=867)  
 
 
   - [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
@@ -127,8 +131,9 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   <br>
    
 ## FoMoCo Open Source         
+
    <p align="center">  
- ![image](https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png)      
+ <img src="https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png" />      
   </p>  
   
   - [`OpenXC`](https://openxcplatform.com/)    
@@ -149,23 +154,45 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
  ## PCM Programming    
    
- [<img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/)   
+ <a href=""><img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/</a>
  
     - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/  
  
  
- [CAN Solutions](https://store.cansolutions.com.au/)    
+### [CAN Solutions](https://store.cansolutions.com.au/)    
      Australian CanBus Products         
       -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
        converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `    
        
-## Articles & Info on PCM Programming
+       
+### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
   -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
   -  [`Bosch J2534 FAQ`](https://www.boschdiagnostics.com/j2534-faq)  
+ 
   
+ ## Interior Command Centre  / Entertainment System
+ - <a hreff="https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares"> `JasonACT Falcon-FG-MKII-ICC-Firmwares` </a>
+ - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  Recommended Reading
+  - [`Enable FPV Logo on ICC`]()    
+ - [`Enable Reverse Camera`]()    
+ ### ICC Splash Graphics 
+ - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)
+
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="10%" width="10%" />
+
+ - [`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
+ - [`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
+ - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)
+ - [`GT Logo`]()
+ - [`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)
+ - [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)
+ - [`ICC NoNav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)
+ - [`ICC Gauges Voltage`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)
   
-  
+Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
+ 
+ 
 ## Resources Folder
 
 A lot of stuff that is not listed is contained within the Resources folder. 
@@ -231,6 +258,18 @@ resources/
  - [`Bluetooth & Phone`](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [`Diagnostic Port`](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
   
+  
+## [Wiki](https://github.com/jakka351/FG-Falcon/wiki)  
+  - [Audio Interface Modules](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)  
+  - [Bluetooth Phone Module](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth-&-Phone)     
+  - [Diagnostic Port Pinout](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
+  - [Engine Bay Fuse Pinout](https://github.com/jakka351/FG-Falcon/wiki/Engine-Bay-Fuse-Pinout)  
+  - [Interior Command Centre Plugs](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)  
+  - [Cabin Fusebox Pinout](https://github.com/jakka351/FG-Falcon/wiki/Interior-Fuse-Pinout)  
+  - [Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)  
+  - [SWC Media Controls](https://github.com/jakka351/FG-Falcon/wiki/Steering-Wheel-Media-Controls)  
+  
+  
 ## Articles  
  - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
  - [`Aftermarket Gauges`](https://github.com/jakka351/FG-Falcon/wiki/Installing-Aftermarket-Gauges-in-vehicles-that-transmit-sensor-data-over-CAN)
@@ -261,6 +300,7 @@ resources/
  [`Matt's Ford Audio Page`](https://www.facebook.com/fordaudio)   `Bluetooth Audio Kits for FG`      
  [`ASL Automedia`](https://www.aslautomedia.com.au/)     
     ` OEM Replacement Parts for FG ICC  `  
+    
 ## Credit & License 
  - [`Kyle May`](https://www.kylemay.net.au/)   
  - [`Bull3time`](https://github.com/Bull3time)  
