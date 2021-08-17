@@ -63,6 +63,7 @@ Bus      | Modules | Speed | Function
   CAN .dbc Database File written by `Jakka351` 
    - [`fg_controller_area.dbc`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area.dbc)     
    - [`FG DBC git repo`](https://github.com/jakka351/fgdbc/)  
+   - [`CAN Overview`](https://github.com/jakka351/FG-Falcon/wiki/CANB101)  
    
   FG CAN Spreadsheets & Documents by [`Mitchell H`]()   
    - [`FG%20CAN%20ID%20List.xlsx`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)  
@@ -112,8 +113,9 @@ Description   | Platform      | Model     | Author
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
  [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
- 
-
+   
+<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="75%" width="75%" />  
+  
 
 ## Forscan
 <p align="center">
@@ -188,9 +190,11 @@ Australian CanBus Products
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  Recommended Reading
  - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)    
  - [`Enable Reverse Camera`](https://github.com/jakka351/FG-Falcon/wiki/Enable-Reverse-Camera)  
- - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)    
- - 
+ - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
 
+
+ <img src="https://raw.githubusercontent.com/jakka351/can0swc/main/test%20(1).jpg" height="30%" width="30%" /> 
+Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
   
  ### ICC Splash Graphics 
  - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)  
@@ -198,8 +202,6 @@ Australian CanBus Products
 <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />  
   
  - [`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
-       
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Ford41.jpg" height="20%" width="20%" />  
 
  - [`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
  
