@@ -178,12 +178,12 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
  - [`Enable Reverse Camera`]()    
  ### ICC Splash Graphics 
  - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)
-
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="10%" width="10%" />
-
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />
  - [`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Ford41.jpg" height="20%" width="20%" />
  - [`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
  - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
  - [`GT Logo`]()
  - [`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)
  - [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)
