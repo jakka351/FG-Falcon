@@ -114,7 +114,7 @@ Description   | Platform      | Model     | Author
  [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
    
-<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="75%" width="75%" />  
+<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" />  
   
 
 ## Forscan
