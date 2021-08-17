@@ -164,7 +164,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 ### [CAN Solutions](https://store.cansolutions.com.au/)    
 
    Australian CanBus Products         
-     <p align="center"><img src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="25%" width="25%" /></p>  
+     <p align="left"><img src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="25%" width="25%" /></p>  
      
   -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
       Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  ` 
@@ -193,15 +193,24 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  Recommended Reading
   - [`Enable FPV Logo on ICC`]()    
  - [`Enable Reverse Camera`]()    
+
+  
  ### ICC Splash Graphics 
- - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />
+ - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)  
+
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />  
+  
  - [`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Ford41.jpg" height="20%" width="20%" />
+       
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Ford41.jpg" height="20%" width="20%" />  
+
  - [`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)
+ 
  - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)
+
 <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
- - [`GT Logo`]()
+
+- [`GT Logo`]()
  - [`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)
  - [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)
  - [`ICC NoNav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)
