@@ -43,13 +43,14 @@
      <p align="center">
 ### Vehicle Network layout:
 Bus      | Modules | Speed | Function  
----------|---------|-------|--------  
-   CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  
-   CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  
-   CAN     | ABS, DSC, TSC | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM where fitted  
-   ISO9141 | 6 Speed Trans Man | - | Not directly accessible single wire bus  
-   LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master/slave  
-   OBDII   | EOBD | - | Emissions & Diagnostics  
+---------|---------|-------|--------|  
+   CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
+   CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  |
+   CAN     | ABS, DSC, TSC | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
+   ISO9141 | 6 Speed Trans Man | - | Not directly accessible single wire bus  |
+   LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
+   OBDII   | EOBD | - | Emissions & Diagnostics  |
+  
   </p>
 
 ## CanBus Decoded:
@@ -154,22 +155,38 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
  ## PCM Programming    
    
- <a href=""><img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img>](https://pcmtec.com/</a>
- 
-    - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/  
- 
+ <a href="https://pcmtec.com/"><img src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img></a>
+
+ - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/    
+   
+   
  
 ### [CAN Solutions](https://store.cansolutions.com.au/)    
-     Australian CanBus Products         
-      -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
-       converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  `    
-       
+
+   Australian CanBus Products         
+     <p align="center"><img src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="25%" width="25%" /></p>  
+     
+  -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
+      Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicles  ` 
+        Outputs :  
+          
+        Tach Output – Programmable from 2-12 cylinder to suit your Application  
+        Tach Correction – to fix those minor errors from the Factory  
+        Vehicle Speed – programmable to suit most OEM Speedometers  
+        Check Engine Lamp Output  
+        Engine Over Temperature Lamp Output  
+        Oil Pressure Lamp Output (BF Onwards)  
+        Alternator Lamp Output (FG Onward)  
+
+   
+   
+     
        
 ### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
   -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
   -  [`Bosch J2534 FAQ`](https://www.boschdiagnostics.com/j2534-faq)  
- 
+
   
  ## Interior Command Centre  / Entertainment System
  - <a hreff="https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares"> `JasonACT Falcon-FG-MKII-ICC-Firmwares` </a>
