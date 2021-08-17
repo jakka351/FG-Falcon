@@ -56,22 +56,22 @@ Bus      | Modules | Speed | Function
 
 ## CanBus Decoded:
 
-  Collection of FG-CAN Data from various sources 
+  **Collection of FG-CAN Data from various sources**
    - [`fg_controller_area_network_latest.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
        - Contains a list of all process identifiers, start of decoding as built data, Mitchell H's CAN Docs, Jakka351's CAN spreadsheet
    
-  CAN .dbc Database File written by `Jakka351` 
+  **CAN .dbc Database File written by** `Jakka351` 
    - [`fg_controller_area.dbc`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area.dbc)     
    - [`FG DBC git repo`](https://github.com/jakka351/fgdbc/)  
    - [`CAN Overview`](https://github.com/jakka351/FG-Falcon/wiki/CANB101)  
    
-  FG CAN Spreadsheets & Documents by [`Mitchell H`]()   
+  **FG CAN Spreadsheets & Documents by** [`Mitchell H`]()   
    - [`FG%20CAN%20ID%20List.xlsx`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)  
    - [`HS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/FG%20HS%20CAN%20Decoded.xlsx)        
    - [`MS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls) 
    - [`FG CAN Document`](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx)    
  
-   [BA,BF CAN spreadsheet](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)  [`from Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)   
+   [**BA,BF CAN spreadsheet**](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)  [`from Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)   
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
  
   ## AsBuilt Data & Candump Logs:
@@ -114,15 +114,14 @@ Description   | Platform      | Model     | Author
  [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
    
-<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" />  
+<a href="https://github.com/jakka351/can0swc"><img align="center" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
   
 
 ## Forscan
-<p align="center">
-<img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50" />  
-  </p>
-Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. [`https://forscan.org`](https://forscan.org) for more information. Forums at [https://forscan.org/forum/`](https://forscan.org/forum/).  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine [`J2534`](https://www.boschdiagnostics.com/j2534-faq) interface is the [preferred option](https://forscan.org/forum/viewtopic.php?f=4&t=867)  
 
+<img src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="50" width="50" />  
+
+Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. <a href="https://forscan.org">https://forscan.org</a> for more information. Forums at <a href="https://forscan.org/forum/">`https://forscan.org/forum/`</a>.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine <a href="https://www.boschdiagnostics.com/j2534-faq">J2534</a> interface is the <a href="https://forscan.org/forum/viewtopic.php?f=4&t=867">preferred option.</a>
 
   - [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
   - [`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
