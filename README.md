@@ -3,7 +3,8 @@
     <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
   </a>
 
-  <h3 align="center">FG-Falcon</h3><img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+  <h3 align="center">FG-Falcon</h3><img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"><a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+
    
   <p align="center">
     <a href="https://canbus.com.au"><img src="https://img.shields.io/badge/%23-Contact-maroon" /></a> | 
@@ -17,11 +18,6 @@
   </p>
 </p>
 
-## Hello World! </h2>
-
-
-<a href="https://github.com/jakka351">
-  <img align="left" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
 </a>
 <br />
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
