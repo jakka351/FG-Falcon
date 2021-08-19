@@ -118,8 +118,21 @@ Description   | Platform      | Model     | Author
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
  [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
-   
+  
 
+<br />
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
+
+## can0swc
+
+  - `FG Steering Wheel Controls for Raspberry Pi`
+      - Uses python-can library and SPI-CAN interface
+      - Emit keypresses which are picked up by Android Auto
+      
+    
+      
+      
+***
   
 
 ## Forscan
@@ -340,20 +353,14 @@ Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you
 ## Disclaimer 
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
 
+
+
 ***
 [![image](https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au)  
 ![image](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-
-
-<br />
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
-
-## can0swc
-
-  - Python-CAN script to pickup the Steering Wheel Controls 
-  - 
-
-
 <a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" /></a>
+
+
+
