@@ -3,7 +3,7 @@
     <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
   </a>
 
-  <h3 align="center">FG-Falcon</h3>
+  <h3 align="center">FG-Falcon</h3><img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
    
   <p align="center">
     <a href="https://canbus.com.au"><img src="https://img.shields.io/badge/%23-Contact-maroon" /></a> | 
@@ -16,15 +16,15 @@
     <br>
   </p>
 </p>
-## Hello World! <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"></h2>
+
+## Hello World! </h2>
 
 
 <a href="https://github.com/jakka351">
   <img align="left" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
 </a>
 <br />
-<img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
-
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
 ### Heading
 
 - bulletpoint
@@ -132,7 +132,7 @@ Description   | Platform      | Model     | Author
  [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
    
-<a href="https://github.com/jakka351/can0swc"><img align="center" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
+
   
 
 ## Forscan
