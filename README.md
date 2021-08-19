@@ -134,7 +134,7 @@ Description   | Platform      | Model     | Author
 <br/>
 <br/>
 <br/>
-<a href="https://forscan.org"><img align="right"src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="70" width="70" /></a>
+<a href="https://forscan.org"><img align="right" src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="70" width="70" /></a>
 
 ## Forscan
 
