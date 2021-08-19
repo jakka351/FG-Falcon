@@ -3,8 +3,7 @@
     <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
   </a>
 
-  <h3 align="center">FG-Falcon</h3><img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"><a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
-
+  <h3 align="center">FG-Falcon</h3>
    
   <p align="center">
     <a href="https://canbus.com.au"><img src="https://img.shields.io/badge/%23-Contact-maroon" /></a> | 
@@ -19,9 +18,7 @@
 </p>
 
 </a>
-<br />
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
-
+***
 
 ### Table of contents
 - [Orion CanBus](#Orion)
@@ -346,6 +343,12 @@ Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
 
 ***
-[![image](https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au)
+[![image](https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au)  
+![image](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-***
+
+
+
+<br />
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a><a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+<a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
