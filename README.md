@@ -21,13 +21,9 @@
 </a>
 <br />
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
-### Heading
 
-- bulletpoint
-- bulletpoint2
-- bulletpoint3
 
-## Table of contents
+### Table of contents
 - [Orion CanBus](#Orion)
 - [Powertrain](#PowerTrain)
 - [InteriorCommandCentre](#InteriorCommandCentre)
@@ -50,7 +46,7 @@
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)
 
-## Orion 
+### Orion 
 
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
      
@@ -68,7 +64,7 @@ Bus      | Modules | Speed | Function  |
   
 
 
-## CanBus Decoded:
+### CanBus Decoded:
 
   **Collection of FG-CAN Data from various sources**
    - [`fg_controller_area_network_latest.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
