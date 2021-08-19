@@ -348,5 +348,12 @@ Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you
 
 
 <br />
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a><a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
-<a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="45%" width="45%" /></a>
+
+## can0swc
+
+  - Python-CAN script to pickup the Steering Wheel Controls 
+  - 
+
+
+<a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" /></a>
