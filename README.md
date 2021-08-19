@@ -14,7 +14,6 @@
       <p align="center">
     <a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a>  
   </p>
-<p></p></a>
 
   
 ## Table of contents  
