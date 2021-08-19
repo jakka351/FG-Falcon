@@ -12,7 +12,6 @@
     <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a></p></br/><br/>
 
-  
 ## Table of contents  
 - [Orion CanBus](https://github.com/jakka351/fg-falcon#orion)
 - [Module Comms Overview](https://github.com/jakka351/fg-falcon#vehicle-network-layout)
@@ -213,8 +212,7 @@ Australian CanBus Products
 
 Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
 
-<br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg" height="20%" width="20%" />  
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
+<br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
   
  ### ICC Splash Graphics 
  
@@ -225,6 +223,16 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
  
   
 Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
+
+
+<br/><img align="right" src="https://raw.githubusercontent.com/linux-can/can-logos/master/png/SocketCAN-logo-60dpi.png" />
+## Libraries  
+  [`SocketCAN`](https://github.com/linux-can/can-utils)
+  [`Python-CAN`](https://python-can.readthedocs.io/en/master/)
+  [`KIVY installation aid`](https://github.com/techcoder20/RPI-Kivy-Installer)    
+  [`Generic PythonCAN Examples`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
+  [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
+  [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
 
  
 ## Resources Folder
@@ -242,11 +250,6 @@ resources/
         └── file4
 ```
 
-## Libraries  
-  [`(KIVY installation aid)`](https://github.com/techcoder20/RPI-Kivy-Installer)    
-  [`Generic PythonCAN`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
-  [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
-  [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
 
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
@@ -354,12 +357,12 @@ Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you
 
 
 
-***
-[![image](https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au)  
-![image](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<br/>
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+<img aligh="centre" src="https://canbus.com.au/tiki-download_file.php?display&fileId=48)](https://canbus.com.au"/><br/>
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
 
-<a href="https://github.com/jakka351"><img align="right" alt="Jakka351's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" /></a>
 
 
 
