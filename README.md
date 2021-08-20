@@ -12,7 +12,6 @@
     <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
     <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a></p></br/><br/>
-<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
 
 ## Table of contents  
@@ -187,7 +186,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
 ## `PCM Programming`    
 
-<br /><a href="https://pcmtec.com/"><img align="right" src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img></a>
+<br /><a href="https://pcmtec.com/"><img align="right" src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22%" width="22%"></img></a>
  ### <a href="https://pcmtec.com/">`PCMTec`</a>
 
  - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/    
@@ -227,7 +226,7 @@ Australian CanBus Products
 
 
 Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
-
+ 
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
   
  ### ICC Splash Graphics 
