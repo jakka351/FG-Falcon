@@ -7,12 +7,13 @@
 </p>
   <h3 align="center">FG-Falcon</h3>
    
-  <p align="center">
-    <a href="https://canbus.com.au"><img src="https://img.shields.io/badge/%23-Contact-maroon" /></a> |  
+  <p align="center"> 
     <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
     <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
     <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a></p></br/><br/>
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+
 
 ## Table of contents  
 - [Orion CanBus](https://github.com/jakka351/fg-falcon#orion)
