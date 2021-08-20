@@ -122,7 +122,7 @@ Description   | Platform      | Model     | Author
 <br />
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="35%" width="35%" /></a>
 
-## can0swc
+## [`can0swc`](https://github.com/jakka351/can0swc)  
 
   - `FG Steering Wheel Controls for Raspberry Pi`
       - Uses python-can library and SPI-CAN interface
@@ -131,9 +131,9 @@ Description   | Platform      | Model     | Author
 <br/>
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/software/jakka351/hvacscript.png" height="10%" width="10%" />
 
-## python-can hvac script  
+## [`python hvac script`](https://github.com/jakka351/fg-falcon/resources/software/jakka351)
 
- - `python-CAN script to filter frames from can id 0x353 and prints AC Temp, Outside Temp, Vent Status and Fan Speed.  Planning to be the base for a proper GUI program with graphics.
+ - python-CAN script to filter frames from can id 0x353 and prints AC Temp, Outside Temp, Vent Status and Fan Speed.  Planning to be the base for a proper GUI program with graphics.
 
 
 <br/>
@@ -141,9 +141,9 @@ Description   | Platform      | Model     | Author
 <br/>
 <a href="https://forscan.org"><img align="right" src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="70" width="70" /></a>
 
-## Forscan
+## [`Forscan`](https://forscan.org)
 
-Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. <a href="https://forscan.org">https://forscan.org</a> for more information. Forums at <a href="https://forscan.org/forum/">`https://forscan.org/forum/`</a>.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine <a href="https://www.boschdiagnostics.com/j2534-faq">J2534</a> interface is the <a href="https://forscan.org/forum/viewtopic.php?f=4&t=867">preferred option.</a>
+Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. <a href="https://forscan.org">`https://forscan.org`</a> for more information. Forums at <a href="https://forscan.org/forum/">`https://forscan.org/forum/`</a>.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine <a href="https://www.boschdiagnostics.com/j2534-faq">J2534</a> interface is the <a href="https://forscan.org/forum/viewtopic.php?f=4&t=867">preferred option.</a>
 
   - [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
   - [`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
@@ -158,7 +158,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 <br/>
 <a href="https://openxcplatform.com/"><img align="right" src="https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png" /></a>    
     
-## FoMoCo Open Source         
+## `FoMoCo Open Source`         
 
   
   - [`OpenXC`](https://openxcplatform.com/)    
@@ -172,20 +172,21 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
   
-  
+  <br/>
+  <br/>
 
 
-## PCM Programming    
+## `PCM Programming`    
 
 <br /><a href="https://pcmtec.com/"><img align="right" src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22" width="120"></img></a>
- ### <a href="https://pcmtec.com/">PCMTec</a>
+ ### <a href="https://pcmtec.com/">`PCMTec`</a>
 
  - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/    
    
    
  <br/><img align="right" src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="20%" width="20%" />
 
-### [CAN Solutions](https://store.cansolutions.com.au/)    
+### [`CAN Solutions`](https://store.cansolutions.com.au/)    
 Australian CanBus Products     
 -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
    Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicle
@@ -240,19 +241,21 @@ Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9
   [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
 
  
-## Resources Folder
+### Resources
 
 A lot of stuff that is not listed is contained within the Resources folder. 
 
 ```github.com/jakkka351/fg-falcon
 resources/
-└── folder2/
-    ├── folder3/
-    │   ├── file1
-    │   └── file2
-    └── folder4/
-        ├── file3
-        └── file4
+└── software/
+|    ├── /
+|    │   ├── file1
+|    │   └── file2
+|    └── folder4/
+|        ├── file3
+|        └── file4
+|____
+     |
 ```
 
 
