@@ -129,7 +129,7 @@ Description   | Platform      | Model     | Author
       - Emit keypresses which are picked up by Android Auto
       
 <br/>
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/software/jakka351/hvacscript.png" height="20%" width="20%" />
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/software/jakka351/hvacscript.png" height="10%" width="10%" />
 
 ## python-can hvac script  
 
