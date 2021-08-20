@@ -43,6 +43,10 @@
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)
 
+<br/>
+<br/>
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+
 ### Orion CanBus
 
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
@@ -81,10 +85,12 @@ Bus      | Modules | Speed | Function  |
    [**BA,BF CAN spreadsheet**](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)  [`from Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)   
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
  
-  ## AsBuilt Data & Candump Logs:
+  ### AsBuilt Data & Candump Logs:
    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt) 
    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log) 
    [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)  
+<br/>
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
 
 ## Software
@@ -261,6 +267,8 @@ resources/
 |____
      |
 ```
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+
 
 
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
