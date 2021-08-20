@@ -1,3 +1,5 @@
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+
 <p align="center">
   <a href="https://canbus.com.au/">
     <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
@@ -183,6 +185,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
  - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/    
    
+   <br/>
    
  <br/><img align="right" src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="20%" width="20%" />
 
