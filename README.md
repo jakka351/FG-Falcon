@@ -154,6 +154,9 @@ Description   | Platform      | Model     | Author
 
 Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Mazda Vehicles. It is primarily used by the DIYer and in the modification scene. <a href="https://forscan.org">`https://forscan.org`</a> for more information. Forums at <a href="https://forscan.org/forum/">`https://forscan.org/forum/`</a>.  Forscan is compatible with basic cheap ELM327 OBDII Readers, but a genuine <a href="https://www.boschdiagnostics.com/j2534-faq">J2534</a> interface is the <a href="https://forscan.org/forum/viewtopic.php?f=4&t=867">preferred option.</a>
 
+<br/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/ACM.png" width="50%" height="50%"/>
+                                                                                                              
   - [`Australian FORSCAN Users Facebook Group`](https://www.facebook.com/groups/australianforscanusersgroup)  
   - [`Forscan Tutorial`](https://docs.google.com/document/d/1-8dKaS_Spu4Zw4hV_CrKC4tLoP9G8yejqegF1wxIqxY/edit)    
   - [`How to use output control`](https://forscan.org/forum/viewtopic.php?f=6&t=844)      
@@ -161,7 +164,6 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)       
   - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)          
   - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
-  
   <br>
 
 <br/>
