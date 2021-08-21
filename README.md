@@ -165,7 +165,10 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)          
   - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
   <br>
-
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <a href="https://openxcplatform.com/"><img align="right" src="https://raw.githubusercontent.com/openxc/openxc-python/master/docs/_static/logo.png" /></a>    
     
