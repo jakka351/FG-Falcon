@@ -30,7 +30,7 @@
   - [Libraries](https://github.com/jakka351/fg-falcon#libraries)  
 - [Resources](https://github.com/jakka351/fg-falcon#resources-folder)
 - [Guides](https://github.com/jakka351/fg-falcon#guides) 
-    - [The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan]() - Will be finished in a few days 21/08/2021
+    - [The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan](https://github.com/jakka351/FG-Falcon/wiki/The-Ultimate-Guide-to-Re-Coding-Fg-Module-VIN-numbers-with-Forscan) 
     - [Instrument CLuster Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
     - [Enable FPV Logo on the Front Display Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)
 - [Work Shop Manuals](#workshop-manuals)
