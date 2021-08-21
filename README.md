@@ -229,6 +229,7 @@ Australian CanBus Products
  - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)    
  - [`Enable Reverse Camera`](https://github.com/jakka351/FG-Falcon/wiki/Enable-Reverse-Camera)  
  - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
+ - [`The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan`](https://github.com/jakka351/FG-Falcon/wiki/The-Ultimate-Guide-to-Re-Coding-Fg-Module-VIN-numbers-with-Forscan) 
 
 
 Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
