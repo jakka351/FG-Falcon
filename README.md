@@ -163,7 +163,9 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`Modify Module As-Built Data`](http://www.2gfusions.net/showthread.php?tid=4573)    
   - [`How to access MS CAN bus with modified ELM327`](https://forscan.org/forum/viewtopic.php?f=4&t=4)       
   - [`How to run FORScan on Linux`](https://forscan.org/forum/viewtopic.php?f=4&t=6)          
-  - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)    
+  - [`Helpful Links`](https://forscan.org/forum/viewtopic.php?f=16&t=4393)     
+  - [`Forum Write up - Good introduction to forscan`](http://www.2gfusions.net/showthread.php?tid=4573) `thanks John`  
+
   <br>
 <br/>
 <br/>
