@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 - name: GitHub Pages v3
   uses: peaceiris/actions-github-pages@v3.1.12
+- name: Repo Visualizer
+  uses: githubocto/repo-visualizer@0.6.1
