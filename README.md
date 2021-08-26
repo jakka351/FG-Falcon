@@ -227,8 +227,7 @@ Australian CanBus Products
 
   -  Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. 
 
-  
-  
+ 
  ### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
   -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
@@ -258,11 +257,43 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
  
   
 Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
+<br/>
 
 
-<br/><img align="right" src="https://raw.githubusercontent.com/linux-can/can-logos/master/png/SocketCAN-logo-60dpi.png" />
 ## Libraries  
-  [`SocketCAN`](https://github.com/linux-can/can-utils)
+
+
+<br/>
+<br/><img align="right" src="https://raw.githubusercontent.com/linux-can/can-logos/master/png/SocketCAN-logo-60dpi.png" />
+
+### [`Can-Utils(socketcan)`](https://github.com/linux-can/can-utils)  
+
+  -  candump
+
+candump let you sniff CAN packets from one or more CAN interfaces with lots of other useful options to filter, redirect messages etc. Here just a small example:
+```
+ candump vcan0
+ vcan0  123   [4]  01 AA BB 22
+ vcan0  123   [4]  01 AA BB 23
+ vcan0  123   [4]  01 AA BB 24
+```
+
+ for more information, use the help file
+```
+    candump -help
+```
+cansniffer
+
+cansniffer is a tool that organizes can information by Arbitration ID and allows users to determine what values are changing. by default, if any arbitration ID doesn't receive "Different" information in the packet after 5 seconds, the data will be cleared from the screen.
+```
+* cansniffer can0
+
+for more information, use the help file
+
+* cansniffer -help
+```
+
+
   [`Python-CAN`](https://python-can.readthedocs.io/en/master/)
   [`KIVY installation aid`](https://github.com/techcoder20/RPI-Kivy-Installer)    
   [`Generic PythonCAN Examples`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
@@ -352,7 +383,8 @@ resources/
  - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
- - [`Benny Ryan's Aussie Tech Blog - https://benryanau.wordpress.com/`](https://benryanau.wordpress.com/)  
+ - [`Benny Ryan's Aussie Tech Blog - https://benryanau.wordpress.com/`](https://benryanau.wordpress.com/)    
+ - [`Playing with Socketcan`](https://dayba.wordpress.com/2017/05/25/playing-with-socketcan-using-can-utils/)  
  - [`Infrared Communication Introduction`](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
  - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.` 
  - [`iDoka's Awesome LINBUS`](https://github.com/iDoka/awesome-linbus)
