@@ -352,6 +352,7 @@ resources/
  - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
+ - [`Benny Ryan's Aussie Tech Blog - https://benryanau.wordpress.com/`](https://benryanau.wordpress.com/)  
  - [`Infrared Communication Introduction`](https://www.sbprojects.net/knowledge/ir/) - `sbprojects.net`
  - [`iDoka's Awesome CANBUS`](https://github.com/iDoka/awesome-canbus) - `A curated list of awesome tools, hardware and resources for CAN bus.` 
  - [`iDoka's Awesome LINBUS`](https://github.com/iDoka/awesome-linbus)
