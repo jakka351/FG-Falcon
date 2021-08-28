@@ -108,7 +108,7 @@ Description   | Platform      | Model     | Author
  [`can0swc`](https://github.com/jakka351/can0swc) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
  [`ICC Emulator`](https://github.com/jakka351/ICC) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
  [`Instrument Cluster ReadFlash.ino`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ReadFlash.ino.txt) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  | FGII | [JasonACT]()  
- [`FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares) | [![https://img.shields.io/badge/%23-QNX-orange](https://blackberry.qnx.com/en) | FGII | [JasonACT]()
+ [`FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares) | [![https://img.shields.io/badge/%23-QNX-orange](https://blackberry.qnx.com/en)] | FGII | [JasonACT]()
  [`JasonACT's FF Uploads`]() | [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) | FG/FGII/FGX | [JasonACT]()
  [`Android Climate App`](https://github.com/Goochy12/BA-Falcon-Custom-Climate-Control) | [![images](https://img.shields.io/badge/%23-Android-purple)](https://www.android.com/intl/en_au/)| BA | [Goochy12](https://github.com/Goochy12)
  [`Arduino Climate Code`](https://github.com/nkg-io/arduino-climate) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)   | AU/FG | [Nathaniel](https://github.com/nkg-io/) 
