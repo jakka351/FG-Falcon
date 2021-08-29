@@ -1,3 +1,220 @@
+
+ 
+Join Date: Jun 2014
+Posts: 53
+	
+Default Re: FORD technical service bulletin : ICC touch screen display
+The seed key alg is the same as the pcm uses. I posted it up here. You will need to brute force the 5 byte seed key though. You should be able to read and erase/write to your hearts content if you enter the level 1 security unlock mode.
+
+https://pcmhacking.net/forums/viewtopic.php?t=4940
+
+The vbf format is relatively simple to unpack and repack. Your issue will be finding and checksums it needs.
+
+You might be able to imagine, I'm pretty chuffed with myself at the moment. And I don't even have any photos to share...
+
+static eep eeprom [] = {
+{ 0x0000, 0x02, 0x00 }, // 0 Header
+{ 0x0002, 0x26, 0x00 }, // 1 ODO
+{ 0x0028, 0x14, 0x01 }, // 2 VIN (Full)
+{ 0x003c, 0x0a, 0x01 }, // 3 VIN Again, Only Last 6 Letters/Digits
+{ 0x0046, 0x08, 0x01 }, // 4 ID C00C
+{ 0x004e, 0x12, 0x00 }, // 5 IDs C105, C199 & C19E reference this
+{ 0x0060, 0x1c, 0x00 }, // 6 ID DE04
+{ 0x007c, 0x02, 0x00 }, // 7 ID DE03
+{ 0x007e, 0x04, 0x00 }, // 8 ? Values: 0x78 0x78 0x78 0x4A
+{ 0x0082, 0x08, 0x01 }, // 9 ? 511
+{ 0x008a, 0x1c, 0x00 }, // 10 ?
+{ 0x00a6, 0x32, 0x01 }, // 11 ID DE00
+{ 0x00d8, 0x24, 0x01 }, // 12 TACHO TABLES (RPM*4, DialPos 0..4349)
+{ 0x00fc, 0x34, 0x01 }, // 13 SPEEDO TABLES (Speed/2, Corrected/2+1, DialPos 0..4286)
+{ 0x0130, 0x24, 0x01 }, // 14 ID DE05
+{ 0x0154, 0x2e, 0x01 }, // 15 ?
+{ 0x0182, 0x18, 0x01 }, // 16 ?
+{ 0x019a, 0x36, 0x01 }, // 17 ID EE25 & D902
+{ 0x01d0, 0x0c, 0x01 }, // 18 ? Divisor of 194
+{ 0x01dc, 0x14, 0x01 }, // 19 ? Flags
+{ 0x01f0, 0x04, 0x01 }, // 20 ?
+{ 0x01f4, 0x14, 0x01 }, // 21 ?
+{ 0x0208, 0x02, 0x00 }, // 22 ODO Checksum
+{ 0x020a, 0x06, 0x01 }, // 23 ?
+{ 0x0210, 0x04, 0x00 }, // 24 ? (May have a boot counter)
+{ 0x0214, 0x06, 0x01 }, // 25 ID DE01
+{ 0x021a, 0x02, 0x00 }, // 26 ? (May be options)
+{ 0x021c, 0x2e, 0x01 }, // 27 ?
+{ 0x024a, 0x1c, 0x01 }, // 28 ?
+{ 0x0266, 0x1c, 0x01 }, // 29 ?
+{ 0x0282, 0x1c, 0x01 }, // 30 ?
+{ 0x029e, 0x1c, 0x01 }, // 31 ?
+{ 0x02ba, 0x04, 0x00 }, // 32 ? (May be to do with the VIN)
+};
+
+EEP_000D8_CHECKSUM_0x94,_0x70
+EEP_000DA
+0x00,_0x00,_____0_?____0
+0xA0,_0x0F,__4000_?_1000
+0x40,_0x1F,__8000_?_2000
+0xE0,_0x2E,_12000_?_3000
+0x80,_0x3E,_16000_?_4000
+0x20,_0x4E,_20000_?_5000
+0xC0,_0x5D,_24000_?_6000
+0x60,_0x6D,_28000_?_7000
+
+EEP_000EA
+0x00,_0x00,_____0
+0x65,_0x02,___613
+0x0B,_0x05,__1291_(+678)
+0x6B,_0x07,__1899_(+608)
+0xCF,_0x09,__2511_(+612)
+0x34,_0x0C,__3124_(+613)
+0x98,_0x0E,__3736_(+612)
+0xFD,_0x10,__4349_(+613)
+
+0x02,_0x00,__?????
+
+*****_IF_THIS_IS_RPM_***
+!!!_4349_now_is_8000_while_before_it_was_7000
+!!!_4349_/_8_=_543.625
+
+0x00_0x00____0
+0x1F_0x02____543
+0x3F_0x04____1087
+0x5E_0x06____1630
+0x7E_0x08____2174
+0x9E_0x0A____2718
+0xBD_0x0C____3261
+0xDD_0x0E____3805_<<_This_is_the_new_MAX!
+_____________4349_<<_AS.._This_can't_happen now.
+*************************
+
+
+I've just recalibrated my XR6T 7K tacho to match an FPV 8K tacho fascia and it appears to work perfectly (on the bench).
+JasonACT is offline Report Post   	Reply With Quote
+
+But that damn tacho, nothing yet, even with the unit now not complaining about any edits I do.
+
+Things I've noticed:
+
+Speedo needle not moving (and digital readout of 0) is because the checksum doesn't match the calibration data.
+
+Lights in the digital readout not working, you may have a corruption in areas between 0x19A to 0x1DB (checksum didn't match).
+
+Speedo calibration table values are 1/2 the KMs actual value. EG: 0x0014 (20) really means decimal 40. 0x82 (130) really means 260 (max speed).
+
+There's a +1 difference in one table vs another, that makes a +2 difference in KMs speed - but I've played around a bit and set them to be the same (except for that 320KMs image I posted, where I went wild) like what you get in Police mode. Seems to be working well.
+
+The FG2 and FGX differs at around 140 KMs (and you can see the fascia's are slightly different at 140). 
+
+I do have an FG(I) EEPROM dump (someone was doing it, a long time ago, far far away)...
+The EEPROM is 512 bytes (0x000 to 0x1FF) on these. The one I just looked at has 99128KMs on it.
+
+Seems to be offset 0x006 for the 32 bytes ODO value. Offset 0x1F8 for the 2 byte checksum. Not sure about the 0x80's for the >= 1M KMs.
+
+But they were right, nothing ever changes. 
+
+Someone had to go and press the like button... So you asked for it, whatever "it" is...
+
+The first 8 bytes of my EEPROM read:
+
+0x09, 0x00, 0x04, 0x00, 0x04, 0x00, 0x00, 0x00
+
+The first 8 bytes of the FGX test unit read:
+
+0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
+So there's not much going on there that you can decipher. However, I can say these 2 things:
+
+1/ Byte 7 (counting from 1, so the 2nd last one, where in a C program it would be counting from 0 - making it byte position 6 in an array) is the count of "re-programs" done to increase the KMs - of which you get 3 unless you clear it with an EEPROM programmer - which I've done many times now as a single edit.
+
+2/ Bytes 4, 6 & 8 are 0 unless you hit 1,000,000 KMs where all 3 turn into 0x80 and the main counter resets.
+
+You see, the algorithm "clocks" at 1,048,560 back to what was zero - so the Ford people decided to reset it a bit early and set something else to signify >=1M KMs. You want to clear bytes 4, 6, 7 & 8. May the force be with you, always...
+
+The next 32 bytes are the ODO value, which I assume they did this way so each KM added to the car updates a different byte in the EEPROM, in a round-robin sequence, making it last 10 times longer than if it was coded in the minimum number of bytes (3) you could do it in. This is ZERO:
+
+0x0A, 0xF5, 0x15, 0xEA, 0x2B, 0xD4, 0x57, 0xA8,
+0xAF, 0x50, 0x5E, 0xA1, 0xBD, 0x42, 0x7A, 0x85,
+0xF5, 0x0A, 0xEA, 0x15, 0xD4, 0x2B, 0xA8, 0x57,
+0x50, 0xAF, 0xA1, 0x5E, 0x42, 0xBD, 0x85, 0x7A
+
+But... Bytes at 0x208 & 0x209 (hex positions, counting from zero) are special... Every so often when the ODO increases by 0x6000 or 0x4000 KMs, it recalculates these two bytes. I assume this long period between needed updates is to prevent the EEPROM from wearing out, after all the effort spent on the 32 bytes of ODO value. If you have the wrong values entered, you get "ERROR" displayed in the ODO section.
+
+Set byte 0x208 to 0x00, and byte 0x209 to 0xFF. I don't have the exact algorithm worked out, but this part is a bit weak, in that it allows quite a few values to pass the check. I could see (from counting up, with the FGX unit at 38K and mine at 49K) that it was working a particular way. I concluded 0x00, 0xFF were the right values. That worked right away for an ODO of zero. 0x00, 0x00 also worked, as did 0x80, 0x80, so as I say it's a bit weak, but when I told the unit to increase by 1 KM, it recalculated those two bytes as 0x00, 0xFF.
+
+After entering security mode 3, security seed 3, reply key 4...
+
+You want to execute a Write-by-ID command 0x2E, 0x61, 0xBB with 3 more bytes with the ODO value you want. In terms of the ELM327:
+
+2E61BB000001
+
+Sets the KMs to 1.
+
+2E61BB00C15A
+
+Sets the KMs to 49497. I've checked the bytes at 0x208 & 0x209 when doing this, they are recalculated to my actual EEPROM snapshot values, which were 0x18, 0xE7.
+
+I say I haven't worked out those two bytes exactly, but I can say, it subtracts or adds to the first byte, then does the opposite to the second byte. EG "-8"...
+
+0x18, 0xE7
+0x10, 0xEF
+0x08, 0xF7
+0x00, 0xFF
+
+And that's how I concluded 0x00, 0xFF were the correct values, before confirming it by settings the KMs to 1 (after first resetting to 0).
+JasonACT is offline Report Post   	Reply With Quote
+
+Are you absolutely sure?
+
+The IPC, like most modules, boots in mode 1 (or 0x81 in some modules like the ICC).
+
+I've been tinkering with mode 2 (the security key for this mode is request 1 [key-response-2] with secret key DoWZy) up until two days ago. This mode turns off most of the IPC and I know think this is firmware update mode. So I wasn't able to write any data using "those" commands.
+
+There's also mode 3, which I didn't find at first, being in mode 2 didn't help - as I hadn't returned to mode 1 before continuing to search. Rookie mistake. You enter security mode with request 3 [key-response-4] and secret key DRVFl (of course I'm making this up, there are 65K of them to choose from, so I just pick the one which looks the best out of the alpha-only key search I coded up)...
+
+Ah, I can now write data (though the list is pretty short, looking at the decompiled firmware). One of the functions allows you to write (up to 3 times, unless you can re-program it again using an Arduino!) a new ODO value (as long as it's greater than the current one):
+
+
+
+
+nyway, I reconstructed the "last" FGX flash memory block data along with running the checksum routines of the V850. I did the same on my PC with the data I had to see if they matched. They didn't. That was performed over 4096 bytes (the block size) and I thought I'd try smaller requests (the V850 chip really shouldn't let me do that, it's a bit of a security hole - but I'm sure you can't request a single byte - otherwise you would be able to just read out the protected data) and I was able to do 512 byte checks successfully.
+
+I could see the first 512 bytes had data, and all the other 512 byte sectors were erased (0xFF) because the checksum algorithm is pretty basic and it's easy to guess. Now my data extracted from UDS 22F106 & 22F114 commands is almost 512 bytes (only 3 bytes were unknown) so it wasn't hard to work out their values (0x00) and get matching checksums.
+
+With all this, I put together the data I now had, and ran the V850 verify flash command (it takes 4096 bytes and tells you if it matches what's in the flash memory block)... Succcess, it matches perfectly.
+
+Next to do... Flash in my data using the V850 flash programming mode because...
+
+I CAN'T WORK OUT HOW TO DO IT VIA OBDII !!!
+
+All the CAN-BUS related stuff is in the firmware parts I don't have. It looks like the firmware part I do have is just an extension module, sort of like an operating system running an executable.
+
+Still, if the block write command isn't locked out on the V850, I think I'm getting closer. I have not written up the logic to do/attempt a block write yet, but I [only] very vaguely recall reading the protection flags all that time ago and it was only boot-block-write and read-block protected. Here's hoping.
+
+EDIT:
+
+I forgot to mention the data in that 512 byte sector in the last block:
+
+FC 59 A1 00 01 00 FC 06 04 02 47 02 02
+
+FC = Initialised check byte
+59 = Checksum (calculated over the following ~252 bytes of data - so not including the VIN data which starts at position ~256 onwards)
+A1 = Start of data... These seem to be referenced by various data structures used by the code, probably options like 2 extra gauges, and 7K vs 8K RPM on the dial (I hope). 
+
+
+Originally Posted by JasonACT View Post
+In unrelated research, entering security mode (UDS function 0x27) which I've now got keys for the ICC and Cluster, may have different "levels" where you can request a 2nd function 0x27... Both the ICC and Cluster respond with "give me the key to 00 00 00" which to me looks like a fixed key is needed. I did this by accident on the ICC and the normal generated key "works" (though I'm not sure if that unlocked anything extra) but the Cluster tells me "Invalid key" so I'm doing another brute force scan.
+
+Apparently, this 2nd unlock request enables the write functions (which I've so far been unsuccessful in performing).
+Still here?
+
+```Ok, so the ICC accepted the key generated from seed 00 00 00, but the Cluster didn't.```
+
+Many attempts were made over many days (and program changes made also, mostly because the Cluster has some strange timing going on, so I needed a more chain like approach to guessing keys rather than timed based messages [I'll probably post a link to Fleetwood Mac's "The Chain" sometime] because I clocked the 3 byte key a couple of times without a match)...
+
+It struck me though, when it asks for the key to seed 00 00 00 - maybe I should send in the last key I used again. And that works, no more "Invalid key" error. But I'm not sure if it unlocks anything extra, yet.
+
+Interesting though, this little quirk, so I thought I'd post about it. Anyway, back to getting no-where with dumping the firmware on the Cluster (but, anyone who somehow already has the FG2 Cluster firmware, feel free to give it to me!!!). 
+
+
 Well, I own a few (or more) ICC units (many more than the one Falcon I own) and the ones that "fit" I've recoded to my car using Forscan... That's the ACM module (radio/cd/amp). I "recorded" the CAN signals of two of them (this was 18 months ago - and I had no idea what to make of what I saw at the time) but I went back to check today...
 
 Calibration - Reset Radio Code Error
@@ -34,5 +251,25 @@ Calibration - Reset Radio Code Error
 And the secret 5 byte code is:
 
 Janis
+
+I've had a "spare" FG2 instrument cluster circuit board (without its speaker/alarm, I desoldered it, to keep my sanity) sitting on the dining room table for the past 4 (solid) days. Hitting it with keys to its seeds on the security request. Didn't get a single duplicate request in that time, so unlike the ICC it "goes through" all combinations. Still, my program should actually like this better, in that it took 3 weeks to get an ICC match, but it should only take 2 weeks on this unit.
+
+Got a match today. Seed BA 3F B8 is unlocked by key 00 00 00 <-- you see it never got to try 00 00 01 on any seed. And "my chosen" secret key is: (out of 65K of them)
+
+DoWZy
+
+Now, I have no idea what that might unlock in the cluster. I spent the whole weekend trying to read the firmware and memory locations on the ICC while it was unlocked - AND GOT NOTHING! Even some of the "protected" blocks and "memory by IDs" (which I can read) still can't be written (like the VIN number) while unlocked.
+
+Hopefully, the Cluster is a little more friendly to my tinkering (since the ICC doesn't really care about VINs, but the cluster certainly does).
+
+Anyway, some more thoughts on the ICC...
+
+. I said not to do this because, these units "seem to break" due to the battery being changed, but I reckon it's just the reset and re-boot that fails. So I don't want to be responsible for anyone doing a reset on a unit that has already lost its marbles. (Just before a battery change is a good time to save the firmware though.)
+. Comparing files to known good ones: if the file size is different on any particular file, it's a different firmware version.
+. If you have a corrupt file, you will probably see the start and end of the file are identical, but somewhere in the middle you will see obvious corruption - like a misspelt word in there somewhere, though with binary bits you may not notice it so obviously.
+. To copy back files from the USB stick, you don't need the two stage shell script (recore.sh -> z.sh). It can all go in the recore.sh... Just like the cp command to copy z.sh to /packages - you would create a list of cp (-f = force, in case it's an in-use file) commands to do each one.
+. The Terry unit I got that was dead had a lot of theme file errors, and I have to admit, I just copied the whole lot back with the -R (recursive) flag for cp.
+
+
 
 https://www.fordforums.com.au/showthread.php?t=11479908&page=2
