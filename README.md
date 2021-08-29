@@ -238,7 +238,8 @@ Australian CanBus Products
 ## Interior Command Centre  / Entertainment System
  - <a href="https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares"> `JasonACT Falcon-FG-MKII-ICC-Firmwares` </a>
  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  Recommended Reading
- - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)    
+ - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)   
+ - [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
  - [`Enable Reverse Camera`](https://github.com/jakka351/FG-Falcon/wiki/Enable-Reverse-Camera)  
  - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
  - [`The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan`](https://github.com/jakka351/FG-Falcon/wiki/The-Ultimate-Guide-to-Re-Coding-Fg-Module-VIN-numbers-with-Forscan) 
