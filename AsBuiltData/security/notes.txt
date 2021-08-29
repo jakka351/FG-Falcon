@@ -1,4 +1,83 @@
-    This should work... Will know more in few weeks... But you still need right magic UDS messages to write eeprom. Will have to search jakes tip for better standard doc than just wiki...
+
+OK, here's the drill for a Low Series cluster.
+
+The Module ID for the IC is 720.
+
+The mode for reading the current IC settings byte is 21 - read by offset (See J2190). The offset is 03.
+
+So on an elm:
+
+atsh720
+ath1
+
+2103
+
+Gives me:
+
+728 03 61 03 03
+
+So the byte of interest is the last 03.
+
+So bitwise, this is 00000011
+
+I know that the 2nd bit from the right is the Traction Control bit. The 3rd bit from the right is the Police Mode bit.
+
+So to turn on Police Mode I need to write the value 00000111 to the IC, or 07.
+
+To write to offset 3 I need to issue a Mode 3b command - Write Data Block (J2190 again) - writing to Block 03.
+
+So assuming the headers are set as above, the command is:
+
+3b0307
+
+I check this by reading it again:
+
+2103
+
+Which gives me:
+
+728 03 61 03 07
+
+So the bit has been set.
+
+To change it back, simply do the Mode 3b command again using 03.
+
+To turn off the TC jewel on the IC, write 01. To turn it on use 03.
+
+The DSC Jewel is set on high series clusters in the 2nd Byte. So it's not covered in this quick write-up.
+
+
+Lukeyson
+
+Last edited by Lukeyson on Sat Oct 20, 2007 8:00 pm, edited 1 time in total.
+Top 	
+ Profile     
+
+Yeah, you've got a high series cluster haven't you. Different rules on that one. The key is Counter Byte.
+
+When you issue a query with the header set to 720, the response will always come back with a header that is 0x8 higher. This is true for all CAN queries. So you got 728, which means we've got one step right.
+
+When you sent 2103 you got the response 04 - saying that you have data in the next 4 bytes. Then you got 6103 saying it was valid response to a Mode21 query to Offset 03. Last, you got 030C. The 03 is telling me that the TC jewel is active and Police Mode is off (I only know 2 bits so far), and 0C is telling me that you have the DSC jewel inactive (to turn the DSC jewel on requires that byte to be set to 0E - and I only know what 1 bit does in that byte anyway).
+
+When you issue a query of any sort, and you get a response back of 7F, the bytes after the 7F will tell you what the problem was. In this case, 3b12. We know the 3b was the query mode, so the code itself is 12 - and from J2190 that translates to 'Sub Function Not Supported or Invalid Format'. So it looks simply like you need to issue a 2-byte write.
+
+So for you to just toggle the Police Mode bit, you need to enter two bytes following the 3b03, not the one you entered on my initial advice for the Low Series Cluster.
+
+So, since you got 6103030C, use this instead:
+
+3b 03 07 0C
+
+Which should just toggle the Police Mode bit in the first byte.
+
+To turn it off set it back to the way it was before:
+
+3b 03 03 0C
+
+
+Lukeyson
+   
+   
+   This should work... Will know more in few weeks... But you still need right magic UDS messages to write eeprom. Will have to search jakes tip for better standard doc than just wiki...
 
     Sent from my A0001 using Tapatalk
 
