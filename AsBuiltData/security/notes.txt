@@ -1,4 +1,38 @@
 
+I have some motivation to understand the inhale/exhale bit a little better, but for a different reason.
+
+The SX Territory, which is an AWD version of our cars, has a feature called 'Hill Descent Control' that is only available on some models. However the only real difference between those with or without this feature appears to be in the software, as the hardware is the same.
+
+The Bosch 8.0 Module without this feature has the code:
+3R73-2C405-AA
+
+And the Bosch 8.0 Module with this feature has the code:
+3R73-2C405-BA 
+
+By the way, you can read the current ODO value from the IC by doing the following:
+
+Set the header to 720, and display response headers:
+
+atsh720
+ath1
+
+Then issue a mode 22 (request by PID) to PID 6180
+
+22 61 80
+
+Also, remember that if you change your ODO after the first 100km, or more than 3 times within the first 100km, the system registers a permanent DTC. DTC's can be read from the IC by the following:
+
+Set header to 720 (atsh720)
+Display headers (ath1)
+
+22 02 00
+
+(Cheeky mode on) This responds with the number of DTC's that you have. To get the DTC's you have to do more work, and I've described this before. (Cheeky mode off)
+
+
+Lukeyson
+
+
 OK, here's the drill for a Low Series cluster.
 
 The Module ID for the IC is 720.
