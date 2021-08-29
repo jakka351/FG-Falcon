@@ -1,3 +1,29 @@
+    This should work... Will know more in few weeks... But you still need right magic UDS messages to write eeprom. Will have to search jakes tip for better standard doc than just wiki...
+
+    Sent from my A0001 using Tapatalk
+
+
+"Magic" UDS comands to read/write e2p is so easy to figure out,.. guys. We talking about way harder stuff here in this thread, which my intention was to talk about. It is about getting a control unit, it this case ic204, to intentionally go into seed key level. If you do have the algo, no prob. But if you don't, there are still workarounds by using the tools that rely on the diagnostic data files (cbf,...), which are able to ask for seed and answer it right. once they did and got control unit into that state you can just use the comands that are easily figured out.
+
+So, once again, to me as the thread owner the only intention was to find a routine that hooks up the control unit into seed key state that is not left so that afterwards requests in that state can be send manually.
+
+
+
+UDS is a standard that defines CAN messages first byte, to my knowledge.
+Automotive industries prevent manipulation and wrong use of UDS messages with access levels that can be anything. 
+
+
+And that is where you are wrong. The security acess is based on seed and key procedure Wink
+
+Nearly all ecus have seed & key inside, you just didn't discover what's possible because you (with you I mean all ppl) are just so focused on the cbf, let me tell you, the cbf is just a collection of UDS comands, not all possible comands which the software of the ecu is able to respond is in the cbf, so look a little beyond the horizont and beyond the stupid cbf's and go to the ground of UDS comands.
+Thanks given by: 7 users 
+
+
+
+
+But my expectation was wrong: writing variant coding is done by 0x2E (WriteDataByIdentifier), there is no SNK necessary for it, and thus vediamo is not setting up SNK connection to do so. Correspondingly it is reading variant coding with 0x22 (ReadDataByIdentifier). These are common services for identification data etc.
+
+Will now analyse the diagnostic data containers. 
 Setting it to 1 (binary 00000001) displays this splash screen. Setting it to 3 (binary 00000011) does the same, but also enables the 2 extra gauges. Setting it to 0x0B (binary 00001011) is what I'm settling on. The boost gauge can also act as a oil-pressure gauge on some FPVs (FG1 V8 non supercharged ones only I think)...
 
 Once I worked this out on the FGX test unit running my FG2 EEPROM, I pulled out my G6E MK1 Cluster circuit board and did the whole EEPROM socket thing again (full size EEPROM socket for testing)...
