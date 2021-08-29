@@ -1,4 +1,14 @@
+Setting it to 1 (binary 00000001) displays this splash screen. Setting it to 3 (binary 00000011) does the same, but also enables the 2 extra gauges. Setting it to 0x0B (binary 00001011) is what I'm settling on. The boost gauge can also act as a oil-pressure gauge on some FPVs (FG1 V8 non supercharged ones only I think)...
 
+Once I worked this out on the FGX test unit running my FG2 EEPROM, I pulled out my G6E MK1 Cluster circuit board and did the whole EEPROM socket thing again (full size EEPROM socket for testing)...
+
+Location 0x1CE (protected by a checksum at 0x1CC, which needs to be fixed in my sample FG2 EEPROM editing code, if you want it to work on a MK1) can be set to 0x0B to do the same thing.
+
+Finally, on the FG2, location 0x062 is the options (Police mode = 0x01) but you can set 0x02 for the FPV 6K-RPM Alarm to go off. That's probably too late really, as I think the rev-limiter is 6K - but I've not found a way to lower it to something better like 5.5K - I'm not sure I really care though.
+
+I've done what I came here to do.
+
+Oh, sound volume was on my list, well... I think that's coded into the firmware raw sound data - so it would be far easier to do a circuit mod for that. Interestingly, there's a pretty big difference between the sound from the G6E MKI (think early 80's 8 bit micro) to what comes out of the FG2/X unit (proper chimes). 
  
 Join Date: Jun 2014
 Posts: 53
