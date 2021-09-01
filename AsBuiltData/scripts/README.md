@@ -6,3 +6,4 @@
 ## usage
     sudo chmod + x *.sh  
     ./scriptname.sh
+domt use these
