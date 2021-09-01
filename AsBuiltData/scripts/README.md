@@ -4,6 +4,6 @@
   - `MidSpeed Can @ 125 KBPS`
   -
 ## usage
-    sudo chmod + x *.sh  
-    ./scriptname.sh
-domt use these
+    dont use these
+
+
