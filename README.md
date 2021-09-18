@@ -137,7 +137,7 @@ Description   | Platform      | Model     | Author
   
 
 <br />
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="30%" width="30%" /></a>
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="70%" width="37%" /></a>
 
 ## [`can0swc`](https://github.com/jakka351/can0swc)  
 
@@ -146,6 +146,14 @@ Description   | Platform      | Model     | Author
       - Emit keypresses which are picked up by Android Auto
       
 <br/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/software/jakka351/hvacscript.png" height="10%" width="10%" />
 
 ## [`python hvac script`](https://github.com/jakka351/fg-falcon/resources/software/jakka351)
