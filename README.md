@@ -137,7 +137,7 @@ Description   | Platform      | Model     | Author
   
 
 <br />
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can.jpg" height="30%" width="30%" /></a>
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="30%" width="30%" /></a>
 
 ## [`can0swc`](https://github.com/jakka351/can0swc)  
 
