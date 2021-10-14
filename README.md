@@ -24,7 +24,8 @@
   - [Forscan](https://github.com/jakka351/fg-falcon#forscan)
   - [OpenXC](https://github.com/jakka351/fg-falcon#fomoco-open-source)
   - [Powertrain](https://github.com/jakka351/fg-falcon#pcm-programming) 
-    - [PCM Articles](https://github.com/jakka351/fg-falcon#articles--info-on-pcm-programming)  
+    - [PCM Articles](https://github.com/jakka351/fg-falcon#articles--info-on-pcm-programming)    
+    - [Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/). 
   - [Interior Command Centre](https://github.com/jakka351/fg-falcon#interior-command-centre---entertainment-system)
       - [ICC Splash Images](https://github.com/jakka351/fg-falcon#interior-command-centre---entertainment-system)  
   - [Libraries](https://github.com/jakka351/fg-falcon#libraries)  
@@ -251,7 +252,9 @@ Australian CanBus Products
  
  ### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
-  -  [`ABS Reprogramming on PCMTec forums`](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming)  
+  
+  - [`Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion`](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)
+      
   -  [`Bosch J2534 FAQ`](https://www.boschdiagnostics.com/j2534-faq)  
 
 
