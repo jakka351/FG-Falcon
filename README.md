@@ -28,6 +28,7 @@
     - [Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/). 
   - [Interior Command Centre](https://github.com/jakka351/fg-falcon#interior-command-centre---entertainment-system)
       - [ICC Splash Images](https://github.com/jakka351/fg-falcon#interior-command-centre---entertainment-system)  
+      - [FGX FoA Wallpapers]()  
   - [Libraries](https://github.com/jakka351/fg-falcon#libraries)  
 - [Resources](https://github.com/jakka351/fg-falcon#resources-folder)
 - [Guides](https://github.com/jakka351/fg-falcon#guides) 
@@ -60,7 +61,7 @@ Bus      | Modules | Speed | Function  |
    CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
    CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  |
    CAN     | ABS, DSC, TSC | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
-   ISO9141 | 6 Speed Trans Man | - | Not directly accessible single wire bus  |
+   ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    OBDII   | EOBD | - | Emissions & Diagnostics  |
   
@@ -117,7 +118,7 @@ Description   | Platform      | Model     | Author
  [`can0swc`](https://github.com/jakka351/can0swc) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
  [`ICC Emulator`](https://github.com/jakka351/ICC) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
  [`Instrument Cluster ReadFlash.ino`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ReadFlash.ino.txt) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  | FGII | [JasonACT]()  
- [`FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares) | [![https://img.shields.io/badge/%23-QNX-orange](https://blackberry.qnx.com/en)] | FGII | [JasonACT]()
+ [`FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares) | [![image](https://img.shields.io/badge/%23-QNX-orange)](https://blackberry.qnx.com/en)] | FGII | [JasonACT]()
  [`JasonACT's FF Uploads`]() | [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) | FG/FGII/FGX | [JasonACT]()
  [`Android Climate App`](https://github.com/Goochy12/BA-Falcon-Custom-Climate-Control) | [![images](https://img.shields.io/badge/%23-Android-purple)](https://www.android.com/intl/en_au/)| BA | [Goochy12](https://github.com/Goochy12)
  [`Arduino Climate Code`](https://github.com/nkg-io/arduino-climate) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)   | AU/FG | [Nathaniel](https://github.com/nkg-io/) 
@@ -146,30 +147,21 @@ Description   | Platform      | Model     | Author
       - Uses python-can library and SPI-CAN interface
       - Emit keypresses which are picked up by Android Auto
      
+<br/>
+<br/>
 
 <br/>
 <br />
 <br />
 <br />
-<br />
 <br/>
-<br />
-<br />
-<br />
 <br/>
-<br />
-<br />
-<br />
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/software/jakka351/hvacscript.png" height="20%" width="20%" />
-
-## [`python hvac script`](https://github.com/jakka351/fg-falcon/resources/software/jakka351)
-
- - python-CAN script to filter frames from can id 0x353 and prints AC Temp, Outside Temp, Vent Status and Fan Speed.  Planning to be the base for a proper GUI program with graphics.
-
 
 <br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
+
 <a href="https://forscan.org"><img align="right" src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="70" width="70" /></a>
 
 ## [`Forscan`](https://forscan.org)
@@ -283,7 +275,43 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
   
 Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
 <br/>
+<br/>
+### FGX FoA Backgrounds, found hiding on Ford.com.au 
 
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-1.jpeg" height="30%" width="30%" />
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-2.jpeg" height="30%" width="30%" />
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-3.jpeg" height="30%" width="30%" />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+ 
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-1.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-1.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-2.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-2.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-3.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-3.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-4.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-4.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-5.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-5.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-6.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-6.jpeg)
+
+
+  - [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-7.jpeg)
 
 ## Libraries  
 
