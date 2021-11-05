@@ -374,7 +374,9 @@ resources/
    
 ## [Troubleshooting Tips]()  
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)  
-  
+  - [`Ford Mods Technical Document Archive`](http://www.fordmods.com/ford-technical-documents.html)  
+
+http://www.fordmods.com/ford-technical-documents.html
 
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
