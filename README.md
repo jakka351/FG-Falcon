@@ -45,6 +45,14 @@
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)
 
+
+  <br />
+  
+  <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/6fpalong.png" />   
+  
+[`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/fg-falcon)
+`coming soon`
+
 <br/>
 <br/>
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
@@ -65,7 +73,6 @@ Bus      | Modules | Speed | Function  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    OBDII   | EOBD | - | Emissions & Diagnostics  |
   
-
 
 ### CanBus Decoded:
 
@@ -138,7 +145,9 @@ Description   | Platform      | Model     | Author
  [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
   
 
+
 <br />
+
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="60%" width="60%" /></a>
 
 ## [`can0swc`](https://github.com/jakka351/can0swc)  
@@ -364,7 +373,7 @@ resources/
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)    
   - [`Ford Mods Technical Document Archive`](http://www.fordmods.com/ford-technical-documents.html)      
   - [`Ford Mods Forum List`](http://www.fordmods.com/fordmods-tech-f57/)    
-  - [`Diagnostics & Maintenance FORScan Forum`](Diagnostics and Maintenance using FORScan)  
+  - [`Diagnostics & Maintenance FORScan Forum`]()  
   - [``]()
 
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
