@@ -45,15 +45,6 @@
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)
 
-
-  <br />
-  
-  <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/6fpalong.png" />   
-  
-[`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/fg-falcon)
-`coming soon`
-
-<br/>
 <br/>
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
@@ -80,7 +71,7 @@ Bus      | Modules | Speed | Function  |
 ![image](https://user-images.githubusercontent.com/57064943/132037394-deb88ca6-98f8-4df3-b704-7e7479dd947a.png)
 
   **Collection of FG-CAN Data from various sources**
-   - [`fg_controller_area_network_latest.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
+   - [`fg_controller_area_network_latepst.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
        - Contains a list of all process identifiers, start of decoding as built data, Mitchell H's CAN Docs, Jakka351's CAN spreadsheet
    
   **CAN .dbc Database File written by** `Jakka351` 
@@ -148,7 +139,7 @@ Description   | Platform      | Model     | Author
 
 <br />
 
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="60%" width="60%" /></a>
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="40%" width="40%" /></a>
 
 ## [`can0swc`](https://github.com/jakka351/can0swc)  
 
@@ -165,6 +156,7 @@ Description   | Platform      | Model     | Author
 <br/>
 <br />
 <br /><br/>
+<br />
 <br />
 <br />
 <br />
@@ -208,9 +200,17 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   - [`Smart Windscreen Wiper`](https://github.com/openxc/smart-wiper)    
   - [`Nighttime Forward Collision Warning `](https://github.com/openxc/nightvision)     
 
+  <br/>
+
+
+<br />
+<br />  
+
+### [`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/6fpa-util)
+
+<a href="https://github.com/jakka351/6FPA-util"><img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/6fpalong.png" /></a>     
   
-  <br/>
-  <br/>
+<br/>
 
 
 ## `PCM Programming`    
@@ -241,20 +241,23 @@ Australian CanBus Products
 
 <br/>
 <br/>
+
 <br/>
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/Attach0_20210824_184348.jpg" height="30%" width="30%" />
-
+  
 ### [`Whiteford Tech`](https://m.facebook.com/Whiteford-Tech-168145224027606/)  
 
   -  Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. 
 
- 
- ### Articles & Info on PCM Programming
+
+### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
   
   - [`Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion`](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)
       
   -  [`Bosch J2534 FAQ`](https://www.boschdiagnostics.com/j2534-faq)  
+
+
 
 
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/test%20(1).jpg" height="20%" width="20%" /> 
