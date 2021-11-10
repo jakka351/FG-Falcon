@@ -204,7 +204,6 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
 
 <br />
-<br />  
 
 ### [`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/6fpa-util)
 
