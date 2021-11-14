@@ -1,3 +1,3 @@
 # FDIM Display Hacks
 
-### Display the manual transmission current gear on the FDIM screen.
+### Display current gear on FDIM screen.
