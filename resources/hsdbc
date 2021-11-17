@@ -1,0 +1,633 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Inst_Econ_Mode 1 "L per Hr" 0 "L per 100Km" ;
+VAL_TABLE_ Transmission_Configuration 1 "Copperhead" 0 "Barra_E265" ;
+VAL_TABLE_ Fuel_Type_And_Delivery 12 "Petrol LPG Dual Fuel" 11 "LPG EFI" 2 "Petrol EFI" ;
+VAL_TABLE_ Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_TABLE_ Dash_Ind_State 2 "Flash" 1 "On" 0 "Off" ;
+VAL_TABLE_ Gear_Position_Target 15 "Invalid" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Required_NotRequired 1 "Not Required" 0 "Required" ;
+VAL_TABLE_ Engaged_Disengaged 1 "Engaged" 0 "Disengaged" ;
+VAL_TABLE_ Transmission_Shift_Map 7 "Cruise " 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not Used" 1 "Sports" 0 "Normal" ;
+VAL_TABLE_ Gear_Position_Actual 15 "Gear Shift In Progress" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Gear_Position_Selected 15 "Intermediate" 7 "Fifth" 6 "Second" 5 "Third" 4 "Fourth" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_TABLE_ Off_On 1 "On" 0 "Off" ;
+VAL_TABLE_ Transmission_Mode 6 "Reserved - Creep" 5 "Economy" 4 "Reserved - Winter" 3 "Manual Shift Mode" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_TABLE_ Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward Gear 9" 18 "Forward Gear 8" 17 "Forward Gear 7" 16 "Forward Gear 6" 11 "Reserved" 10 "Reverse" 6 "Forward Gear D" 5 "Forward Gear 5" 4 "Forward Gear 4" 3 "Forward Gear 3" 2 "Forward Gear 2" 1 "Forward Gear 1" 0 "Blank" ;
+VAL_TABLE_ Eng_Crank_Status 3 "Low Voltage Crank Attempt" 2 "Crank In Progress" 1 "Crank Pending" 0 "No Action" ;
+VAL_TABLE_ Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_TABLE_ Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake Pedal Pressed" 0 "Brake Pedal Off" ;
+VAL_TABLE_ Cruise_Status 7 "Cruise Active" 2 "Cruise Resume" 1 "Cruise On" 0 "Cruise Off" ;
+VAL_TABLE_ Active_Inactive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ True_False 1 "True" 0 "False" ;
+
+
+BO_ 133 YAW_MSG_3: 8 Vector__XXX
+
+BO_ 296 BEM_MSG_3: 8 Vector__XXX
+ SG_ Interior_Dimmer_Low : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Interior_Dimmer_High : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Auto : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Fog : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Parker : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_HighBeam : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Right_Indicator : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Left_Indicator : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 144 SAS_MSG_2: 8 Vector__XXX
+ SG_ Steering_Wheel_Angle : 7|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+
+BO_ 1107 ODO_MSG_1: 8 Vector__XXX
+ SG_ Odometer : 39|24@0+ (1,0) [0|0] "km" Vector__XXX
+
+BO_ 1061 PCM_MSG_15: 8 Vector__XXX
+ SG_ Fuel_Level : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Inst_Fuel_Consumption : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Enable : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set_Speed : 15|16@0+ (1,0) [0|0] "km/h" Vector__XXX
+ SG_ Boost_Pressure : 31|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+
+BO_ 848 CLU_MSG_3: 8 Vector__XXX
+
+BO_ 832 CLU_MSG_2: 8 Vector__XXX
+
+BO_ 117 YAW_MSG_2: 8 Vector__XXX
+
+BO_ 112 YAW_MSG_1: 8 Vector__XXX
+
+BO_ 128 SAS_MSG_1: 8 Vector__XXX
+
+BO_ 1200 TCS_MSG_1: 8 Vector__XXX
+ SG_ Wheel_Speed_RR : 55|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_RL : 39|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_FR : 23|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_FL : 7|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 528 ABS_MSG_1: 8 Vector__XXX
+ SG_ Gear_Shift_Inhibit : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BTM_Clear_EngOff_Timer : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Failed : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Active : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Enabled : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Failed : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Active : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Disabled_ByUser : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Failed : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Active : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Disabled_ByUser : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Failed : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_Failed : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Active : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Split_SlowFast_Torque_Req : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABD_Fitted : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Fitted : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Fitted : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Fitted : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_Fitted : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Type : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Desired_Torque_Command_Slow : 47|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Desired_Torque_Command : 7|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+
+BO_ 851 HIM_MSG_1: 8 Vector__XXX
+ SG_ Blower_Speed : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Max_Request : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Clutch_Request : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Blower_Voltage : 55|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Evap_Temp : 47|8@0+ (0.33333333333333,-30) [0|0] "C" Vector__XXX
+ SG_ Ambient_Temp : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Passenger_Temp : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Off_Seg : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Semi_Seg : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_Seg : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Seg : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Seg : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Seg : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Seg : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OS_Temp_Seg : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fanblade_Seg : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Person_Seg : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Seg : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Floor_Seg : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Seg : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fresh_Seg : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Recirc_Seg : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Seg : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1363 CLU_MSG_5: 8 Vector__XXX
+ SG_ Odometer : 39|24@0+ (1,0) [0|0] "km" Vector__XXX
+ SG_ Inst_Econ : 31|8@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ Inst_Econ_Mode : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Range : 7|16@0+ (1,0) [0|0] "km" Vector__XXX
+
+BO_ 1280 CLU_MSG_4: 8 Vector__XXX
+ SG_ Travel_Time : 55|16@0+ (1,0) [0|0] "min" Vector__XXX
+ SG_ Average_Economy_Mode : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Average_Economy : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Average_Speed : 7|8@0+ (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1079 CLU_MSG_1: 8 Vector__XXX
+ SG_ Max_Fuel_Level : 63|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+ SG_ Illumination_Level_High : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Illumination_Level_Low : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cluster_Voltage : 31|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ MIL_Strategy_On : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Park_Brake_Ind : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Park_Lights : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Sender_Fault : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Low_Fuel_Ind : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Level_Instant : 15|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+ SG_ Fuel_Level_Damped : 7|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+
+BO_ 775 ICC_MSG_1: 8 Vector__XXX
+ SG_ Reset_Trip_Timer : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Fuel : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Speed : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Down : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Up : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ M_Overspeed_On : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Active_Adjust : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Blower_Position : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Temperature_Position : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Diff_Lock_Switch : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Traction_VDC_Switch : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Down_Switch : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Up_Switch : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Down_Switch : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Up_Switch : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Down_Switch : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Up_Switch : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Climate_Ctrl_Off_Switch : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_ACC_On_Switch : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Down_Switch : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Up_Switch : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Floor_Switch : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Switch : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Floor_Switch : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Floor_Switch : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Switch : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Recirc_Switch : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Switch : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1784 BEM_MSG_2: 8 Vector__XXX
+ SG_ Immobiliser_Byte_7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1027 BEM_MSG_1: 8 Vector__XXX
+ SG_ Sun_Load_Passenger : 39|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ Sun_Load_Driver : 31|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ Cabin_Temperature : 23|8@0+ (0.5,-40) [0|0] "C" Vector__XXX
+ SG_ Priority_Key_1 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Priority_Key_2 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_On_Warning : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Trailer_Connected : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Accessories_Switch : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rear_Demist : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rear_Door_Ajar : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LR_Door_Ajar : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RR_Door_Ajar : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_Door_Ajar : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RF_Door_Ajar : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1001 TCM_MSG_2: 8 Vector__XXX
+ SG_ Tq_Conv_Multi_Factor : 63|8@0+ (0.01,0.01) [0|0] "ratio" Vector__XXX
+ SG_ Gear_Position_Target : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ J_Gate_Selection_Fault : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Gearbox_Losses : 39|8@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Trans_Malfunction : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCM_Config_Flag : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Converter_Status : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Selection_Fault : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Neutral_Control : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Perf_Mode_Indication : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCM_DTC_MIL_Status : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OBD_TCM_Clear_Ack : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Oil_Temperature : 23|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Transmission_Shift_Map : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Position_Actual : 3|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Position_Selected : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 201 TCM_MSG_1: 8 Vector__XXX
+ SG_ Transmission_Output_Speed : 55|16@0+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ Transmission_Input_Speed : 39|16@0+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ Torque_Conv_Slip : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Torque_Limit : 23|8@0+ (4,0) [0|0] "Nm" Vector__XXX
+ SG_ Torque_Reduction : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1782 PCM_MSG_14: 8 Vector__XXX
+ SG_ Immobiliser_Byte_7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1616 PCM_MSG_13: 8 Vector__XXX
+ SG_ Engine_Displacement m16 : 15|8@0+ (0.1,0) [0|0] "L" Vector__XXX
+ SG_ RWD_Flag m17 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FWD_Flag m17 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AWD_Flag m17 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Select_Shift_Manual_Flag m17 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutoTransTCMControl_Flag m17 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutoTransPCMControl_Flag m17 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ManualTrans_Flag m17 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCM_Cal_Level m16 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Induction_Type m16 : 27|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Valve_Count m16 : 18|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cylinder_Count m16 : 23|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Multiplex_Header_ID M : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1600 PCM_MSG_12: 8 Vector__XXX
+ SG_ RWD_Flag : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Forward_Gear_Count : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Configuration : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Base_Torque_Split : 47|8@0+ (0.0078125,0) [0|0] "ratio" Vector__XXX
+ SG_ Fraction_Portion_Ratio : 15|16@0+ (0.00012207,0) [0|0] "ratio" Vector__XXX
+ SG_ Axle_Ratio : 31|16@0+ (0.00012207,0) [0|0] "ratio" Vector__XXX
+ SG_ AutoTransTCMControl_Flag : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutoTransPCMControl_Flag : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ManualTrans_Flag : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AWD_Flag : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FWD_Flag : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1571 PCM_MSG_11: 8 Vector__XXX
+ SG_ RWD_Flag : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Aux_Vehicle_Id : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Peak_Engine_Torque : 31|8@0+ (4,0) [0|0] "Nm" Vector__XXX
+ SG_ Fuel_Type_And_Delivery : 23|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Induction_Type : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Valve_Count : 10|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cylinder_Count : 15|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Displacement : 7|8@0+ (0.1,0) [0|0] "L" Vector__XXX
+
+BO_ 1216 PCM_MSG_10: 8 Vector__XXX
+ SG_ Odometer : 7|24@0+ (0.1,0) [0|0] "Km" Vector__XXX
+
+BO_ 1101 PCM_MSG_9: 8 Vector__XXX
+ SG_ Baro_Pressure : 63|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Eng_Oil_Temperature : 55|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Coolant_Temperature : 39|12@0+ (0.1,-40) [0|0] "C" Vector__XXX
+ SG_ MIL_Status : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1063 PCM_MSG_8: 8 Vector__XXX
+ SG_ Immobiliser_Ind : 53|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Pulse : 63|8@0+ (7.88519E-005,0) [0|0] "L" Vector__XXX
+ SG_ DTC_Logging : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Shed_Load : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MIL_Ind : 51|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ETC_Warning_Ind : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Compressor_State : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Mode : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Diff_Lock_Ind : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Overheat_Warn_Ind : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Oil_Pressure_Warn_Ind : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Alternator_Fail_Ind : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set_Ind : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Oil_Low_Ind : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Odometer_Count : 39|8@0+ (0.000201167,0) [0|0] "km" Vector__XXX
+ SG_ PCM_Battery_Voltage : 31|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ AC_Pressure : 11|12@0+ (1,-100) [0|0] "kPa" Vector__XXX
+ SG_ Eng_Oil_Pressure : 15|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Coolant_Temperature : 7|8@0+ (1,-40) [0|0] "C" Vector__XXX
+
+BO_ 560 PCM_MSG_7: 8 Vector__XXX
+ SG_ Tq_Conv_Multi_Factor : 31|16@0+ (6.1035E-005,0.01) [0|0] "ratio" Vector__XXX
+ SG_ Transmission_Losses : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Ratio : 15|16@0+ (6.1035E-005,0) [0|0] "ratio" Vector__XXX
+ SG_ Transmission_Mode : 58|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Fault : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Overheat : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Shift_In_Progress : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Conv_Locked : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Trans_Gear_Pos : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 519 PCM_MSG_6: 8 Vector__XXX
+ SG_ Throttle_Position_ROC : 63|8@0- (1,0) [0|0] "%/s" Vector__XXX
+ SG_ Throttle_Position : 55|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Vehicle_Speed : 39|16@0+ (0.0078125,0) [0|0] "km/h" Vector__XXX
+ SG_ Engine_Speed_ROC : 23|16@0- (0.25,0) [0|0] "rpm/s" Vector__XXX
+ SG_ Engine_Speed : 7|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+
+BO_ 512 PCM_MSG_5: 8 Vector__XXX
+ SG_ Key_Off_Timer : 63|8@0+ (1,0) [0|0] "Min" Vector__XXX
+ SG_ Eng_Crank_Status : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cat_Protection_Active : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Inertial_Loss_Type : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Type : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Max_Avail_Torque : 39|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Min_Avail_Torque : 23|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Actual_Eng_Torque : 7|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+
+BO_ 301 PCM_MSG_4: 8 Vector__XXX
+ SG_ Brake_State : 57|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Eng_Crank : 58|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Status : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OBD_ClearDTC : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Speed : 39|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+ SG_ HDC_Status : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedal_Position : 23|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Throttle_Position : 15|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Engine_Speed_ROC : 7|8@0+ (0.015625,-2) [0|0] "rpm/s" Vector__XXX
+
+BO_ 288 PCM_MSG_3: 8 Vector__XXX
+ SG_ Indicated_Eng_Torque : 7|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Estimated_Eng_Torque : 23|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 252 PCM_MSG_2: 8 Vector__XXX
+ SG_ TCS_ShiftMapDesired : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_BrakeActive : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Active : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TC_RequestedOff : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_ECM : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Fitted : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 151 PCM_MSG_1: 8 Vector__XXX
+ SG_ Indicated_Eng_Torque : 7|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Eng_Friction_Torque : 23|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Driver_Demand_Torque : 55|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Actual_Eng_Torque : 39|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+
+
+
+CM_ SG_ 296 Interior_Dimmer_Low "00=5%
+1A= 100%";
+CM_ SG_ 296 Interior_Dimmer_High "66=5%
+ff= 100%";
+CM_ SG_ 851 Ambient_Temp "Units=DegC
+ 00=Blank
+ 01=C
+ 02=reading
+ FE=H
+ FF=Blank";
+CM_ SG_ 851 Driver_Temp "Units=DegC
+ 00=Blank
+ 01=C
+ 02=reading
+ FE=H
+ FF=Blank";
+CM_ SG_ 851 Passenger_Temp "Units=DegC
+ 00=Blank
+ 01=C
+ 02=reading
+ FE=H
+ FF=Blank";
+CM_ SG_ 1079 Illumination_Level_High "ACC Illumination
+ Light Level set gradually from 8000 to FFFF (Bytes from 2 3 combined)
+ MCC - set to 00							
+";
+CM_ SG_ 1079 Illumination_Level_Low "Switches Illumination Level
+ 80 Low, 
+ B3 Lower Mid, 
+ D9 Upper Mid
+ FF Full";
+CM_ SG_ 775 Blower_Position "00 = Stop
+01 = Slow
+0E = Fast
+EF=Invalid
+FF = ACC";
+CM_ SG_ 775 Temperature_Position "00 = Max Cold
+01 = Cold
+0E = Hot
+EF=Invalid
+FF = ACC";
+CM_ SG_ 1001 Gear_Position_Target "0=Park
+1=Reverse
+2=Neutral
+3=Drive
+4=Fourth
+5=Third
+6=Second
+7=Fifth
+F=Intermediate";
+CM_ SG_ 1001 Transmission_Shift_Map "0=Normal_mode
+ 1=Sports_mode
+ 2=Not_used
+ 3=Hot_mode
+ 4=Gradient_mode
+ 5=Traction_map
+ 6=Manual_mode
+ 7=Cruisemap";
+CM_ SG_ 1001 Gear_Position_Selected "0=Park
+1=Reverse
+2=Neutral
+3=Drive
+4=Fourth
+5=Third
+6=Second
+7=Fifth
+F=Intermediate";
+CM_ SG_ 201 Transmission_Output_Speed "7F = Invalid";
+CM_ SG_ 201 Transmission_Input_Speed "7F = Invalid";
+CM_ SG_ 1101 Baro_Pressure " 0=Sector_0
+ E=Sector_14
+ F=Invalid";
+CM_ SG_ 1101 Eng_Oil_Temperature " 0=Sector_0
+ E=Sector_14
+ F=Invalid";
+CM_ SG_ 1063 Eng_Oil_Pressure " 0=Sector_0
+ E=Sector_14
+ F=Invalid";
+CM_ SG_ 301 Pedal_Position "This affects the shift points of the transmission
+";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "";
+VAL_ 296 Lights_Auto 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Fog 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Parker 1 "On" 0 "Off" ;
+VAL_ 296 Lights_HighBeam 1 "On" 0 "Off" ;
+VAL_ 296 Right_Indicator 1 "On" 0 "Off" ;
+VAL_ 296 Left_Indicator 1 "On" 0 "Off" ;
+VAL_ 1061 Cruise_Set 1 "On" 0 "Off" ;
+VAL_ 1061 Cruise_Enable 1 "On" 0 "Off" ;
+VAL_ 528 Gear_Shift_Inhibit 1 "True" 0 "False" ;
+VAL_ 528 BTM_Clear_EngOff_Timer 1 "True" 0 "False" ;
+VAL_ 528 HDC_Failed 1 "True" 0 "False" ;
+VAL_ 528 HDC_Active 1 "True" 0 "False" ;
+VAL_ 528 HDC_Enabled 1 "True" 0 "False" ;
+VAL_ 528 VDC_Failed 1 "True" 0 "False" ;
+VAL_ 528 VDC_Active 1 "True" 0 "False" ;
+VAL_ 528 VDC_Disabled_ByUser 1 "True" 0 "False" ;
+VAL_ 528 TCS_Failed 1 "True" 0 "False" ;
+VAL_ 528 TCS_Active 1 "True" 0 "False" ;
+VAL_ 528 TCS_Disabled_ByUser 1 "True" 0 "False" ;
+VAL_ 528 ABS_Failed 1 "True" 0 "False" ;
+VAL_ 528 EBD_Failed 1 "True" 0 "False" ;
+VAL_ 528 ABS_Active 1 "True" 0 "False" ;
+VAL_ 528 Split_SlowFast_Torque_Req 1 "True" 0 "False" ;
+VAL_ 528 ABD_Fitted 1 "True" 0 "False" ;
+VAL_ 528 VDC_Fitted 1 "True" 0 "False" ;
+VAL_ 528 TCS_Fitted 1 "True" 0 "False" ;
+VAL_ 528 ABS_Fitted 1 "True" 0 "False" ;
+VAL_ 528 EBD_Fitted 1 "True" 0 "False" ;
+VAL_ 528 Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 851 AC_Max_Request 1 "On" 0 "Off" ;
+VAL_ 851 AC_Clutch_Request 1 "On" 0 "Off" ;
+VAL_ 851 Off_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Semi_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Auto_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Driver_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Pass_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Driver_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Pass_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 OS_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Fanblade_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Person_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Screen_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Floor_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Face_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Fresh_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Recirc_Seg 1 "On" 0 "Off" ;
+VAL_ 851 AC_Seg 1 "On" 0 "Off" ;
+VAL_ 1363 Inst_Econ_Mode 1 "L per Hr" 0 "L per 100Km" ;
+VAL_ 1079 MIL_Strategy_On 1 "On" 0 "Off" ;
+VAL_ 1079 Park_Brake_Ind 1 "On" 0 "Off" ;
+VAL_ 1079 Park_Lights 1 "On" 0 "Off" ;
+VAL_ 1079 Fuel_Sender_Fault 1 "True" 0 "False" ;
+VAL_ 1079 Low_Fuel_Ind 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Trip_Timer 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Fuel 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Speed 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Down 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Up 1 "On" 0 "Off" ;
+VAL_ 775 M_Overspeed_On 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Active_Adjust 1 "On" 0 "Off" ;
+VAL_ 775 Diff_Lock_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Traction_VDC_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Climate_Ctrl_Off_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Auto_ACC_On_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Recirc_Switch 1 "On" 0 "Off" ;
+VAL_ 775 AC_Switch 1 "On" 0 "Off" ;
+VAL_ 1027 Priority_Key_1 1 "On" 0 "Off" ;
+VAL_ 1027 Priority_Key_2 1 "On" 0 "Off" ;
+VAL_ 1027 Lights_On_Warning 1 "On" 0 "Off" ;
+VAL_ 1027 Trailer_Connected 1 "On" 0 "Off" ;
+VAL_ 1027 Accessories_Switch 1 "On" 0 "Off" ;
+VAL_ 1027 Rear_Demist 1 "On" 0 "Off" ;
+VAL_ 1027 Rear_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 LR_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 RR_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 LF_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 RF_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1001 Gear_Position_Target 15 "Invalid" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_ 1001 J_Gate_Selection_Fault 1 "True" 0 "False" ;
+VAL_ 1001 Trans_Malfunction 1 "True" 0 "False" ;
+VAL_ 1001 TCM_Config_Flag 1 "Not Required" 0 "Required" ;
+VAL_ 1001 Torque_Converter_Status 1 "Engaged" 0 "Disengaged" ;
+VAL_ 1001 Gear_Selection_Fault 1 "On" 0 "Off" ;
+VAL_ 1001 Idle_Neutral_Control 1 "On" 0 "Off" ;
+VAL_ 1001 Perf_Mode_Indication 1 "On" 0 "Off" ;
+VAL_ 1001 TCM_DTC_MIL_Status 1 "On" 0 "Off" ;
+VAL_ 1001 OBD_TCM_Clear_Ack 1 "On" 0 "Off" ;
+VAL_ 1001 Transmission_Shift_Map 7 "Cruise " 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not Used" 1 "Sports" 0 "Normal" ;
+VAL_ 1001 Gear_Position_Actual 15 "Gear Shift In Progress" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_ 1001 Gear_Position_Selected 15 "Intermediate" 7 "Fifth" 6 "Second" 5 "Third" 4 "Fourth" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 1616 RWD_Flag 1 "True" 0 "False" ;
+VAL_ 1616 FWD_Flag 1 "True" 0 "False" ;
+VAL_ 1616 AWD_Flag 1 "True" 0 "False" ;
+VAL_ 1616 Select_Shift_Manual_Flag 1 "True" 0 "False" ;
+VAL_ 1616 AutoTransTCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1616 AutoTransPCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1616 ManualTrans_Flag 1 "True" 0 "False" ;
+VAL_ 1616 Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_ 1600 RWD_Flag 1 "True" 0 "False" ;
+VAL_ 1600 Transmission_Configuration 1 "Copperhead" 0 "Barra_E265" ;
+VAL_ 1600 AutoTransTCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1600 AutoTransPCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1600 ManualTrans_Flag 1 "True" 0 "False" ;
+VAL_ 1600 AWD_Flag 1 "True" 0 "False" ;
+VAL_ 1600 FWD_Flag 1 "True" 0 "False" ;
+VAL_ 1571 RWD_Flag 1 "True" 0 "False" ;
+VAL_ 1571 Fuel_Type_And_Delivery 12 "Petrol LPG Dual Fuel" 11 "LPG EFI" 2 "Petrol EFI" ;
+VAL_ 1571 Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_ 1101 MIL_Status 1 "On" 0 "Off" ;
+VAL_ 1063 Immobiliser_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 DTC_Logging 1 "On" 0 "Off" ;
+VAL_ 1063 AC_Shed_Load 1 "True" 0 "False" ;
+VAL_ 1063 MIL_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 ETC_Warning_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 AC_Compressor_State 1 "On" 0 "Off" ;
+VAL_ 1063 Idle_Mode 1 "On" 0 "Off" ;
+VAL_ 1063 Diff_Lock_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Engine_Overheat_Warn_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Oil_Pressure_Warn_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Alternator_Fail_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Cruise_Set_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Oil_Low_Ind 1 "On" 0 "Off" ;
+VAL_ 560 Transmission_Mode 6 "Reserved - Creep" 5 "Economy" 4 "Reserved - Winter" 3 "Manual Shift Mode" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_ 560 Transmission_Fault 1 "True" 0 "False" ;
+VAL_ 560 Transmission_Overheat 1 "True" 0 "False" ;
+VAL_ 560 Shift_In_Progress 1 "True" 0 "False" ;
+VAL_ 560 Torque_Conv_Locked 1 "True" 0 "False" ;
+VAL_ 560 Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward Gear 9" 18 "Forward Gear 8" 17 "Forward Gear 7" 16 "Forward Gear 6" 11 "Reserved" 10 "Reverse" 6 "Forward Gear D" 5 "Forward Gear 5" 4 "Forward Gear 4" 3 "Forward Gear 3" 2 "Forward Gear 2" 1 "Forward Gear 1" 0 "Blank" ;
+VAL_ 512 Eng_Crank_Status 3 "Low Voltage Crank Attempt" 2 "Crank In Progress" 1 "Crank Pending" 0 "No Action" ;
+VAL_ 512 Cat_Protection_Active 1 "True" 0 "False" ;
+VAL_ 512 Inertial_Loss_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 512 Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 301 Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake Pedal Pressed" 0 "Brake Pedal Off" ;
+VAL_ 301 Eng_Crank 1 "Active" 0 "Inactive" ;
+VAL_ 301 Cruise_Status 7 "Cruise Active" 2 "Cruise Resume" 1 "Cruise On" 0 "Cruise Off" ;
+VAL_ 301 OBD_ClearDTC 1 "True" 0 "False" ;
+VAL_ 301 HDC_Status 1 "Active" 0 "Inactive" ;
+VAL_ 252 TCS_ShiftMapDesired 1 "True" 0 "False" ;
+VAL_ 252 HDC_BrakeActive 1 "Active" 0 "Inactive" ;
+VAL_ 252 VDC_Active 1 "Active" 0 "Inactive" ;
+VAL_ 252 TC_RequestedOff 1 "True" 0 "False" ;
+VAL_ 252 EBD_ECM 1 "True" 0 "False" ;
+VAL_ 252 TCS_Fitted 1 "True" 0 "False" ;
+
