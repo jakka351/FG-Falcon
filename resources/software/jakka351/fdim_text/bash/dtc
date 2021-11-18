@@ -1,0 +1,273 @@
+A979	AC Compressor Clutch cycling due to ACPT cutout.
+B1201	Fuel Sender Circuit Failure
+B1213	Anti-Theft Number of Programmed Keys Is Below Minimum (Less than 2)
+B1231	Crash Data Memory Full
+B1250	Air temperature internal (cabin) sensor circuit failure
+B1251	Air temperature internal (cabin) sensor circuit open
+B1253	Air temperature internal (cabin) sensor circuit short ot gnd
+B1255	Air temperature external sensor circuit open
+B1257	Air temperature external sensor circuit short to ground
+B1259	Solar radiation sensor circuit open
+B1261	Solar radiation sensor circuit short to gnd
+B1299	Power Supply Sensor Circuit Short to GND
+B1300	Power Door Lock Circuit Failure
+B1317	Battery Voltage High
+B1318	Battery voltage low
+B1342	ECU is faulted / EE checksum failure
+B1348	Heated Backlite Relay Circuit Open
+B1349	Heated Backlite Relay Short to Battery
+B1466	Wiper Park Sense Circuit Failure
+B1458	Wiper Washer Pump Motor Relay Failure
+B1499	Lamp Turn Signal Left Circuit failure
+B1503	Lamp Turn Signal Right Circuit failure
+B1548	Power Window Master Circuit Open
+B1549	Power Window Master Circuit Short to Battery
+B1597	Dim Panel Increase Input Circuit failure
+B1583	Dim Panel Increase Input Circuit failure
+B1875	Dim Panel Decrease Input Circuit failure
+B1600	PATS Ignition Key Transponder Signal Is Not Received
+B1601	PATS Received Incorrect Key-Code From Ignition Key Transponder
+B1602	PATS Received Invalid Format Of Key-Code From Ignition Key Transponder
+B1693	Autolamp On Circuit Failure
+B1790	Autolamp Sensor Input Circuit Failure
+B1791	Autolamp Sensor Input Circuit Open
+B1869	Lamp Airbag Warning Indicator Circuit Open or Short to GND
+B1870	Airbag Warning Indicator Circuit Short to Battery
+B1891	Airbag Tone Warning Indicator Circuit Short to Battery
+B1892	Airbag Tone Warning Indicator Circuit Open or Shorted to GND
+B1921	Airbag Diagnostic Monitor Ground Circuit Open
+B1947	Climate Control A/C Post-Evaporator Sensor short to ground
+B1982	Driver’s Door Unlock Relay Circuit Failure
+B2005	Climate Control Temperature Switch out of range
+B2006	Blower Motor Switch out of range
+B2007	(Driver/Passenger) Solar radiation out of range
+B2014	Climate Control A/C Post-Evaporator Sensor open circuit
+B2072	Seat Memory Module Data Line Short to Battery
+B2073	Seat Memory Module Data Line Open or Short to Ground
+B2074	Seat Memory Module Enable Line Short to Battery
+B2075	B Seat Memory Module Enable Line Open or Short to Ground
+B2103	Antenna not connected
+B2139	PCM or BEM substtuted on vehicle BEM does not recgnise ignition key
+B2141	Incomplete BEM/PCM training
+B2203	CD Error
+B2292	Restraint System - Safety Belt Pretensioner Status (Driver or Passenger Pretensioner Circuit Fault)
+B2293	Restraint System - Airbag Status (Driver or Passenger Front Airbag Circuit Fault)
+B2295	Restraint System - Side Airbag Module Status (Driver or Passenger Side Side Airbag Circuit Fault)
+B2296	Restraint System - Impact Sensor Status (Front, Driver or Passenger Side Front Row Impact Severity Sensor Circuit Fault)
+B2403	Multi CD Mechanical Error
+B2404	Audio steering wheel switches faulty
+B2406	Single CD mechanical error
+B2408	Speaker line short
+B2409	AM Tuner Fault
+B2410	FM Tuner Fault
+B2413	Transponder Programming Failed
+B2434	Driver Safety Belt Buckle Switch Circuit Short To Ground
+B2435	Driver Safety Belt Buckle Switch Circuit Resistance Out Of Range
+B2438	Passenger Safety Belt Buckle Switch Circuit Short to Ground
+B2439	Passenger Safety Belt Buckle Switch Circuit Resistance Out of Range
+B2477	Module Configuration Failure
+B2511	Horn Output Relay Circuit Short to Ground
+B2513	Blower (Fan) circuit failure
+B2675	Trip reset button stuck Trip reset circuit failure or button stuck.
+B2680	Odometer Changed
+B2681	PRND Sender Failure
+B2682	PCM Communication Fault
+B2691	Driver Safety Belt Buckle Switch Circuit Fault
+B2692	Passenger Safety Belt Buckle Switch Circuit Fault
+B2849	Horn Output Relay Circuit Open
+B2890	(Driver/Passenger) Solar radiation out of range
+B2891	Front Wiper Switch Potentiometer Circuit Failure
+B2894	Decklid Release Circuit Failure
+B2895	Trip Computer Mode Switch Circuit failure
+B2896	Odometer Data Failure
+B2911	Trip Computer Data Invalid
+B2922	Auxillary Button Stuck
+B2923	Climate Control Button Stuck
+B2924	Audio Button Stuck
+B2925	Subwoofer speaker short
+B2929	Transmit Data Line Short to Battery
+B2930	Transmit Data Line Open Circuit orShort to GND
+C1414	Incorrect Vehicle ID
+C1699	Left Rear Sensor Circuit Short to Vbat
+C1700	Left Rear Sensor Circuit Failure
+C1701	Left Rear Sensor Circuit Fault
+C1702	Right Rear Sensor Circuit Short to Vbat
+C1703	Right Rear Sensor Circuit Failure
+C1704	Right Rear Sensor Circuit Fault
+C1705	Left Rear Center Sensor Circuit Short to Vbat
+C1706	Left Rear Center Circuit Failure
+C1707	Left Rear Center Circuit Fault
+C1708	Right Rear Center Sensor Circuit Short to Vbat
+C1709	Right Rear Center Sensor Circuit Failure
+C1710	Right Rear Center Sensor Circuit Fault
+C1943	Airbag Deployment Indication Input Fault
+C1947	Seat Track Position Sensor Circuit Short to Ground
+C1948	Seat Track Position Sensor Circuit Resistance Out of Range
+C1981	Seat Track Position Sensor Circuit Fault
+P0106	MAP Circuit range/performance problem
+P0107	MAP circuit low input
+P0108	MAP circuit high input
+P0112	Temperatore Circuit range/performance problem
+P0112	Temperature Circuit low input
+P0113	Temperature circuit high input
+P0121	Throttle Position Sensor (TP) <TPS> circuit/range performance problem 
+P0122	TP1-NS fails - out of range low
+P0123	TP1-NS fails - out of range high
+P0124	TP1-NS fails - intermittent out of range
+P0124 P0224	intermittent sensor disagreement - in range
+P0124 P0224	Btoh TPS fail - out of range intermitten
+P0171	I6, Bank1 V8 Fuel too lean
+P0172	I6, Bank1 V8 Fuel too rich
+P0174	V8 bank 2 V8 Fuel to lean
+P0175	V8 bank 2 V8 Fuel to rich
+P0196	Engine Oil Temperature Sensor is inconsistent with Engine Temperature
+P0201	INJ1 circuit malfunction
+P0202	INJ2 circuit malfunction
+P0203	INJ3 circuit malfunction
+P0204	INJ4 circuit malfunction
+P0205	INJ5 circuit malfunction
+P0206	INJ6 circuit malfunction
+P0207	INJ7 circuit malfunction
+P0208	INJ8 circuit malfunction
+P0221	TP2-NS fails - out of range at commanded settings
+P0222	TP2-NS fails - out of range low
+P0223	TP2-NS fails - out of range high
+P0224	TP2-NS fails - intermittent out of range
+P0230	Fuel Pump Relay primary circuit malfunction
+P0236	Turbo Charger Boost Sensor Circuit Range/Performance
+P0237	Turbo Charger Boost Sensor Circuit Low
+P0238	Turbo Charger Boost Sensor Circuit high
+P0243	Wastegate Solenoid Circuit
+P0243	Wastegate Solenoid Circuit Malfunctoin
+P0320	Ignition engine speed input circuit Malfunction
+P0325	Knock Sensor or Circuit Malfunction
+P0340	Camshaft Position Sensor One (CID1)
+P0351	Ignition Coil 1 Prim/Sec Circuit Failure
+P0352	Ignition Coil 3 Prim/Sec Circuit Failure
+P0353	Ignition Coil 7 Prim/Sec Circuit Failure
+P0354	Ignition Coil 2 Prim/Sec Circuit Failure
+P0355	Ignition Coil 6 Prim/Sec Circuit Failure
+P0356	Ignition Coil 5 Prim/Sec Circuit Failure
+P0357	Ignition Coil 4 Prim/Sec Circuit Failure
+P0358	Ignition Coil 8 Prim/Sec Circuit Failure
+P0443	Evaporative Emission System Purge Control Valve Circuit malfunction
+P0500	Missing/erratic speed signal from ABS, ASR or OSS
+P0503	Vehicle Speed signal fault DTC P0503 is reported if the vehicle speed signal is not received at the Powertrain Control Module (PCM). The signal may be missing or intermittent.
+P0505	Idle Air Control System 
+P0506	idle speed is lower than the expected high idle speed
+P0507	idle speed is higher than the expected low idle speed
+P0532	ACPT sensor low input
+P0533	ACPT sensor high input
+P0534	A/C refrigerant loss or A/C blockage
+P0562	System Voltage Low (Below  9V)
+P0563	System Voltage High (Above 16V)
+P0602	PCM Vehicle ID Block Programming Error
+P0603	PCM KAPWR has been reset since the last key on event
+P0605	PCM ROM checksum test fails
+P0606	PCM CPU or RAM check fails
+P0707	TRS-A1 Circuit Low Input
+P0708	TRS-A1 Circuit High Input
+P0712	TFT Circuit Low Input
+P0713	TFT Circuit High Input
+P0743	Lock Up Solenoid 7 (LUS) fault
+P0746	Solenoid 5 (SS5) <VPS> open circuit fault
+P0747	Solenoid 5 (SS5) <VPS> short circuit fault
+P0748	Solenoid 5 (SS5) <VPS> circuit fault
+P0752	Shift Solenoid 1 (SS1) (Auto) Stuck On
+P0753	Shift Solenoid 1 (SS1) (Auto) Electrical Problem
+P0757	Shift Solenoid 2 (SS2) (Auto) Stuck On
+P0758	Shift Solenoid 2 (SS2) (Auto) Electrical Problem
+P0762	Shift Solenoid 3 (SS3) (Auto) Stuck On
+P0763	Shift Solenoid 3 (SS3) (Auto) Electrical Problem
+P0768	Shift Solenoid 4 (SS4) (MCS1) electrical problem
+P0773	Shift Solenoid 6 (SS6) <PCS> electrical problem
+P0778	Shift Solenoid 6 (SS6) <PCS> electrical problem
+P0812	Reverse Switch or Circuit Faulty
+P0826	ESS Switch Input Circuit Performance
+P0827	ESS Switch Input Circuit Low
+P0828	ESS Switch Input Circuit High
+P1001	KOER not able to complete, KOER aborted
+P1124	Throttle out of self-test range
+P1128	Connection for Bank1 and Bank2 HEGO Sensors Swapped
+P1130	Lack Of HO2S11 Switches - Fuel Trim At Limit
+P1131	Lack Of HO2S11 Switches - Sensor indicates Lean
+P1132	Lack Of HO2S11 Switches - Sensor indicates Rich
+P1150	Lack Of HO2S21 Switches - Fuel Trim at Limit
+P1151	Lack Of HO2S21 Switches - Sensor indicates Lean
+P1152	Lack Of HO2S21 Switches - Sensor indicates Rich
+P1159	air fuel ratio cannot be changed by the PCM during the OTM test
+P1182	LPG GCO relay circuit malfunction
+P1183	EOT out of range
+P1184	EOT out of range at startup
+P1213	LPG Prime Solenoid Circuit malfunctioning
+P1227	Wastegate Control System Failed - Wastegate Closed (Over Pressure)
+P1228	Wastegate Control System Failed - Wastegate Open (Under Pressure)
+P1260	Vehicle immobilized
+P1270	Engine RPM or Vehicle Speed Limiter Reached DTC P1270 is reported if the engine rpm limit or vehicle speed limit has been reached, resulting in torque intervention by the PCM.
+P1285	Cylinder Head Over temperature Condition DTC P1285 is reported if the CHT sensor indicates over-temperature
+P1288	Cylinder Head Temperature Sensor Out Of Self Test Range
+P1289	Cylinder Head Temperature Sensor Circuit High Input
+P1290	Cylinder Head Temperature Sensor Circuit Low Input
+P1299	Cylinder Head Over Temperature Protection Active
+P1340	CID2 Malfunction
+P1340	Camshaft Position Sensor One (CID2)
+P1380	Camshaft Position Actuator 1 (VCT1)
+P1381	Camshaft Position Timing Over Advance - I6 Intake Cam or V8 Bank 1
+P1383	Camshaft Position Timing Over Retarded - I6 Intake Cam or V8 Bank 1
+P1385	Camshaft Position Actuator 2 (VCT2)
+P1386	Camshaft Position Timing Over Advance - I6 Exhaust Cam or V8 Bank 2
+P1388	Camshaft Position Timing Over Retarded - I6 Exhaust Cam or V8 Bank 2
+P1463	Insufficient Pressure change when AC compressor commanded on
+P1465	A/C Circuit Malfunction
+P1474	EDF1 Fan Control Relay Circuit
+P1479	EDF2 Fan Control Relay Circuit
+P1506	Idle Air Control Over Speed Error
+P1507	Idle Air Control Under Speed Error
+P1520	Variable Intake Charge Controller Circuit Malfunction
+P1534	TAS signal outside of allowable frequency range or not present  (CAN bus message 427 bit 6 if bad)
+P1549	IMCC Circuit Malfunction
+P1565	SCCS out of range hi
+P1566	SCCS out of range low
+P1572	Brake Switch Circuit Faulty
+P1635	Tire/Axle Out of Acceptable Range
+P1639	Vehicle ID Block Corrupted, not programmed
+P1650	PSPS Failure
+P1651	PSPS did not switch
+P1703	Brake Switch out of self test range
+P1705	TRS-A1 Not in Park or Neutral during self-test
+P1708	Clutch not depress during KOEO self test
+P1709	Not in Park or Neutral during KEOE self test
+P1746	SS5 - VPS
+P1747	SS5 - VPS
+P1748	SS5 - VPS
+P2100	Throttle Actuator Control Motor Circuit /Open
+P2101	Throttle Actuator Control Motor Circuit Range/Performance
+P2102	ETB motor current is lower than expected
+P2103	ETB motor current is higher than expected
+P2105	Throttle Actuator Control System - Forced Engine Shutdown
+P2107	Throttle Actuator Control System - Intermittent TPPC Fault
+P2110	Two or three PPS fail pedal position > or = no pedal)
+P2111	Throttle Actuator Control System - Higher throttle opening than driver demanded
+P2112	Throttle Actuator Control System - Lower throttle opening than driver demanded
+P2122	PPS1 fails - Out-of-range low
+P2123	PPS1 fails - Out-of-range high
+P2124	PPS1 fails - intermittent, out-of-range
+P2127	PPS2 fails - Out-of-range low
+P2128	PPS2 fails - Out-of-range high
+P2129	PPS2 fails - intermittent, out-of-range
+P2132	PPS3 fails - Out-of-range low
+P2133	PPS3 fails - Out-of-range high
+P2134	PPS3 fails - intermittent, out-of-range
+P2135	Sensor disagreement - in range
+P2138 P2139	PPS1 fails - In-range (one sensor disagrees)  (1 and 2) (1 and 3)
+P2138 P2140	(1 and 2) PPS2 fails - In-range (one sensor disagrees) (2 and 3)
+P2139 P2140	(1 and 3) PPS3 fails - In-range (one sensor disagrees)
+U1147	 Unsuccessful BEM/PCM ID training
+U1900	CAN Communication Bus Fault - Receive Error
+U2014	Audio Subwoofer not connected
+U2196	Invalid ‘Engine RPM’ data
+U2197	Invalid ‘Vehicle Speed’ data
+U2198	Invalid ‘Fuel Pulse’ data
+U2199	Invalid ‘Engine Coolant Temperature’ data
+U2200	Invalid ‘ODO Count’ data
+U2201	Ambient temperature data invali

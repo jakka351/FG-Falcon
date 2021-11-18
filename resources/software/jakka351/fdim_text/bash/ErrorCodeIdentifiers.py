@@ -1,0 +1,23 @@
+
+generalReject                                                                              =  0x10
+serviceNotSupported                                                                        =  0x11
+subFunctionNotSupported                                                                    =  0x12
+responseTooLong                                                                            =  0x14
+busyRepeatRequest                                                                          =  0x21
+conditionsNotCorrect                                                                       =  0x22
+requestSequenceError                                                                       =  0x24
+requestOutOfRange                                                                          =  0x31
+securityAccessDenied                                                                       =  0x33
+invalidKey                                                                                 =  0x35
+exceedNumberOfAttempts                                                                     =  0x36
+requiredTimeDelayNotExpired                                                                =  0x37
+uploadDownloadNotAccepted                                                                  =  0x70
+generalProgrammingFailure                                                                  =  0x72
+requestCorrectlyReceived_ResponsePending                                                   =  0x78
+subFuncionNotSupportedInActiveSession                                                      =  0x7E
+serviceNotSupportedInActiveSession                                                         =  0x7F
+rpmTooHigh                                                                                 =  0x81
+rpmTooLow                                                                                  =  0x82
+engineIsRunning                                                                            =  0x83
+engineIsNotRunning                                                                         =  0x84
+shifterLeverNotInPark                                                                      =  0x90	
