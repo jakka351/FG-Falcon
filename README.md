@@ -36,7 +36,8 @@
     - [Instrument CLuster Police Mode](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)
     - [Enable FPV Logo on the Front Display Interface Module](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)
 - [Work Shop Manuals](#workshop-manuals)
-    - [List of WSM](https://github.com/jakka351/FG-Falcon/tree/master/resources) 
+    - [List of WSM](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
+    - Added All WSM 81 files 27/11/21  
 - [Documents](#Documents)
 - [Wiring Diagrams]()
 - [Wiki](#wiki)
