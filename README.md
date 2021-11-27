@@ -377,9 +377,14 @@ resources/
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)    
   - [`Ford Mods Technical Document Archive`](http://www.fordmods.com/ford-technical-documents.html)      
   - [`Ford Mods Forum List`](http://www.fordmods.com/fordmods-tech-f57/)    
-  - [`Diagnostics & Maintenance FORScan Forum`]()  
-  - [``]()
-
+  - [`Diagnostics & Maintenance FORScan Forum`](https://forscan.org/forum/viewforum.php?f=6) 
+  - [`PCMTec Vehicle Diagnostics Forum`](https://forum.pcmtec.com/forum/18-diagnostics/)
+  - [`Perfomance tech CANBus 101`](https://dsportmag.com/the-tech/education/performance-tech-can-bus-101/)
+  - [`CAN Bus communication explained in 5 minutes`](https://www.youtube.com/watch?v=PEI5EWSgaRk)
+  - [`Understandinng CANBUS faults`](https://www.mechanic.com.au/news/understanding-can-bus-faults/)
+  - [`Common CAN faults`](https://www.meridiancableassemblies.com/2021/01/common-can-bus-problems/) 
+  -  
+  
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
   - [`Owners Manual`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Ute_Owner_Manual.pdf)    
@@ -456,6 +461,12 @@ resources/
  - [`Arduino CAN-Bus shield`](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)  
  - [`Generic MCP2515 SPI board`](https://canbus.com.au/store-7/?model_number=mcp2515-sas)      
  - [`CANBUSv1`](https://github.com/DefinitiveDiagnosis-hub/CANBUSv1) - `training module `   
+ 
+ ***
+ 
+<br /> 
+<a href="https://www.fordforums.com.au/"><img src="https://www.fordforums.com.au/banners/AFF_fordforums_banner.jpg" /></a><br/>  
+
   
 ## Sites, Stores & Forums
  [`Ford Forums AU`](https://fordforums.com.au/)   
