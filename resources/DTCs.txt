@@ -1,0 +1,45 @@
+ID	Name	Value	Stock	Units	Description
+auF0389	Activate/Deactivate VID Block Parameters for Final Drive/Tire etc	1	Enable		Switch to Enable/Disable the use of the VID block parameters
+auF0366	Ambient IAT Delta - Update	1	1		Minimum difference between ambient and IAT to enable ambient updates.
+auF0370	Ambient Inferred Time	300	300		Time constant for calculating ambient temp changes.
+auF0369	Ambient Update Max VSS	35	35		Maximum speed to allow update
+auF0368	Ambient Update Minimum ECT 	0	0		Minimum ECT to start updates.
+auF1013	AUTO TRNS Switch	1	1		Calibratiion switch to allow selection between auto and manual transmission logi
+auF0371	Baro Max Pressure	31	31		Maximum Barometric Pressure Clip
+auF0372	Baro Min Pressure	21	21		Minimum Barometric Pressure Clip
+auF0283	Boost Pressure Sensor switch	1	1		Boost pressure sensor is fitted?
+auF0361	Brake Pedal Switch	1	1		Brake Pedal switch installed
+auF0390	Cruise Control Switch	1	1		Hardware present switch for Vehicle Speed Control system (Cruise Control)
+auF0004	Cylinder Head Temprature Sensor switch	1	1		Cylinder Head Temperature (CHT) sensor fitted.
+auF0005	ECT Sensor	0	0		Engine Coolant Temperature (ECT) sensor fitted.
+auF0009	EGR Type	0	0		0 = Sonic, 1 = PFE (Pressure feedback), 2 = Do not use any EGR
+auF0003	Electronic Throttle Control Switch	1	1		Electronic Throttle Control (ETC) Enable/Disable
+auF0008	Engine Displacement in lb Air	0.0017225	0.0017225		Aircharge for a single cylinder
+auF0002	ETC IPC ROM Enable	1	1		ROM checksum test enable switch
+auF0001	ETC IPC ROM Switch	0	0		Calibration ROM checksum test enable switch
+auF2408	FFG MAP Switch	1	1		map sensor indicator: 0 = no map sensor_ 1 = map sensor present.
+auF0013	IMRC Sensor	0	0		IMRC Position Sensor is fitted?
+auF0012	IMRC Switch	0	0		Enable/disable switch for Intake Manifold Runner Control.
+auF0367	Intake temprature ambient min diff	19	19		The minimum difference between ambient and IAT.
+auF0006	MAP Sensor	1	1		Manifold Absolute Pressure (MAP) sensor fitted.
+auF0396	N/V Base (i.e RPM/Velocity)	36.31	36.3100014		N = RPM and V = Speed, this is base value used in calculate for the vehicle. Allows the PCM to determine which gear it is in.
+auF2306	NEUTRAL Switch	0	0		Switch to force ndsflg into neutral_ 1 -> force to neutral
+auF0007	Number of Cylinders	6	6		Number of cylinders in the engine.
+auF0010	Number of O2 Sensors number fitted	1	1		Number of O2 Sensors fitted to the vehicle.
+auF0011	O2 Rear Configuration type	1	1		0 = No Rear sensor, 1 = Bank 1,2 = Dual Bank, 3 = y-Pipe config
+auF0362	PATS Alternate Cluster Switch	0	0		BETS enable/disable switch.
+auF16527	PATS Alternate Switch	0	0		BETS enable/disable switch.
+auF16595	PATS Switch	1	1		Enable/disable for PATS. 
+auF0364	Power Steering Pressure Switch	1	1		Power steering pressure switch installed
+auF0365	Power Steering Pressure Transducer	0	0		Power steering transducer switch fitted, another form of pressure sensor.
+auF1681	PRG FLOW Switch	0	0		Calibration switch indicating if Purge Flow test is present.
+auF2753	TCIL FL Switch	1	1		Switch to enable/disable flashing the TCIL
+auF0260	Torque Module Switch	1	1		Enable/disable Torque control logic.
+auF2532	TQ OSC Switch	1	1		Calibration switch to enable/disable oscmod tipin control.
+auF1451	TSS Switch	1	1		Turbine speed sensor hardware present switch_ 1 -> TSS present
+auF0281	Turbo Logic switch	1	1		Enable/Disable turbo logic.
+auF0282	Turbo Wastegate switch	1	1		Wastegate fitted?
+auF0391	Vehicle Speed Sensor out via PCM	0	0		Enable/disable VSS output signal via PCM pin.
+auF0393	Vehicle Speed Sensor Pulses Per Rev	12	12		Number of pulses from the VSS per output shaft revolution.
+auF16617	Vehicle Speed Source (VSS) via SCP	1	1		Enable/disable VSS to be sent over the SCP network (CAN Bus).
+auF16589	Vehicle Speed Source when VID BLock is not selected	68	TCM via CAN		Vehicle Speed Source when VID block not selected

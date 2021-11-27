@@ -1,0 +1,78 @@
+// Defaults for curved surfaces
+$fa=0.5; // default minimum facet angle is now 0.5
+$fs=0.5; // default minimum facet size is now 0.5 mm
+
+usbx=9;
+usby=7.8;
+
+wall=1.2;
+
+module nano() {
+    translate ([0,0,3]) {
+        color("lightblue") cube ([45.5,18.7,1.5]);
+        translate ([-2, 18/2-usby/2, 1.5]) color("grey") cube ([usbx+1,usby,4]);
+    }
+}
+
+module can() {
+    translate ([0,0,3]) {
+        color("lightblue") cube ([41,29.2,1.5]);
+        translate ([40-9, 28.2/2-10/2, 1.5]) color("blue") cube ([9+3,10,10]);
+    }
+}
+
+module am3x() {
+    translate ([0,0,3]) {
+        color("yellow") cube ([23,16,1.8]);
+    }
+}
+
+module shifter() {
+    translate ([0,0,3]) {
+        color("red") cube ([17,14,1.8]);
+    }
+}
+
+module cap() {
+    color("grey") cylinder (d=16,h=28);
+}
+
+module parts () {
+    translate ([20,0,0]) {
+        rotate ([0,0,90]) translate ([0,-18.7,0]) nano ();
+        rotate ([0,0,90]) translate ([44.2,-29.2,0]) can ();
+        rotate ([0,0,90]) translate ([1,-36,0]) am3x ();
+        rotate ([0,0,90]) translate ([25,-35,0]) shifter ();
+    }
+    translate ([9,85,8]) rotate ([90,0,0]) cap ();
+}
+
+module everything () {
+    difference () {
+        union () {
+            translate ([-wall,-wall,-wall]) {
+                difference () {
+                    cube ([60,87.6,9]);
+                    translate ([wall,wall,wall]) cube ([60-2*wall,87.6-2*wall,20]);
+                }
+                difference () {
+                    translate ([19,0,0]) cube ([wall, 87, 9]);
+                    translate ([18,30,21]) rotate ([0,90,0]) cylinder (r=15, h=3);
+                }
+            }
+            translate ([36,0,0]) cube ([22.5,44.2,4]);
+            translate ([18,0,0]) cube ([4,86,4]);
+            translate ([46,44,0]) difference () {
+                cube ([12,42,4]);
+                translate ([0,30,0]) cylinder (r=5,h=4.1);
+            }
+            translate ([0,58,0]) cube ([8,27,4]);
+            translate ([10,58,0]) cube ([8,27,4]);
+        }
+        parts ();
+    }
+
+    *#parts ();
+}
+
+translate ([wall,wall,wall]) everything ();

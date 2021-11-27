@@ -1,0 +1,193 @@
+ID	Name	Value	Stock	Units	Description
+auF10997	B2139 - Target ID mismatch	1	No MIL		MIL switch for B2139 - 0=cal_out_ 1=non_mil_ 2=mil
+auF12591	B2979 - A/C compressor cycling on over pressure_ fault.	1	1		Switch to enable Pcode b2979 output.
+auF10302	P000A - Fault code_ intake cam stuck during crank (non-MIL.)_	1	No MIL		Intake cam not  locked in - 0=cal_out_ 1=non_mil_ 2=mil
+auF12798	P000D - Fault code_ exhaust (bank 2) cam stuck during crank (non-MIL.)_	1	No MIL		Exhaust cam not  locked in - 0=cal_out_ 1=non_mil_ 2=mil
+auF10763	P0107 - Manifold Absolute Pressure/Barometric Pressure Circuit Low Input	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF12556	P0109 - Intake Air Temperature Circuit Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF10233	P0116 - Engine Coolant Temperature Circuit Range/Performance Problem	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11712	P0121 - Throttle Position Sensor/Switch A Circuit Range/Performance Problem	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12659	P0122 - Throttle Position Sensor/Switch A Circuit Low Input	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10820	P0123 - Throttle Position Sensor/Switch A Circuit High Input	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11961	P0124 - Throttle Position Sensor/Switch A Circuit Intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil_ TP1 intermittent fault.
+auF12966	P0125 - Insufficient Coolant Temperature for Closed Loop Fuel Control	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11553	P0132 - Oxygen Sensor Circuit High Voltage (Bank 1 Sensor 1)	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11547	P0133 - Oxygen Sensor Circuit Slow Response (Bank 1 Sensor 1)	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10505	P0135 - Oxygen Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10174	P0152 - Oxygen Sensor Circuit High Voltage (Bank 2 Sensor 1)	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12553	P0153 - Oxygen Sensor Circuit Slow Response (Bank 2 Sensor 1)	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10634	P0196 - Engine Oil Temperature Sensor Range/Performance	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10860	P0197 - Engine Oil Temperature Sensor Low	2	MIL Light		EOT sensor circuit low DTC type: 0=cal_out_ 1=non_mil_ 2=mil
+auF10411	P0198 - Engine Oil Temperature Sensor High	2	MIL Light		EOT sensor circuit high DTC type: 0=cal_out_ 1=non_mil_ 2=mil
+auF11357	P0221 - Throttle/Pedal Position Sensor/Switch B Circuit Range/Performance Problem	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11685	P0223 - Throttle/Pedal Position Sensor/Switch B Circuit High Input	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil_ TP2 sensor high input.
+auF12613	P0224 - Throttle/Pedal Position Sensor/Switch B Circuit Intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil_ TP2 sensor intermittent.
+auF10021	P0230 - Fuel Pump Primary Circuit Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11232	P0231 - Fuel Pump Secondary Circuit Low	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10290	P0237 - Turbocharger Boost Sensor A Circuit Low	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11986	P0298 - Engine oil overtemp strategy active	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12348	P0320 - Ignition/Distributor Engine Speed Input Circuit Malfunction	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10167	P0325 - Knock Sensor 1 Circuit Malfunction (Bank 1 or Single Sensor)	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11065	P0330 - Knock Sensor 2 Circuit Malfunction (Bank 2)	1	No MIL		P0330 fault code switch. 0=cal_out_ 1=non_mil_ 2=mil
+auF10485	P0335 - Crankshaft Position Sensor A Circuit Malfunction	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF12694	P0503 - Vehicle Speed Sensor Intermittent/Erratic/High	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12739	P0504 - Brake Pedal Switch Compare Test	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12455	P0505 - Idle Control System Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF12354	P0520 - Engine Oil Pressure Sensor/Switch Circuit Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12054	P0524 - Engine oil pressure too low	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10120	P0532 - A/C Refrigerant Pressure Sensor Circuit Low Input	1	1		Calibration switch to enable Fault /MIL code generation
+auF12008	P0533 - A/C Refrigerant Pressure Sensor Circuit High Input	1	1		Calibration switch to enable Fault /MIL code generation
+auF10442	P0534 - Air Conditioner Refrigerant Charge Loss	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11855	P0552 - Power Steering Pressure Sensor Circuit Low Input	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11300	P0553 - Power Steering Pressure Sensor Circuit High Input	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11304	P0572 - Cruise Control/Brake Switch A Circuit Low	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10029	P0573 - Cruise Control/Brake Switch A Circuit High	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11544	P0603 - Internal Control Module Keep Alive Memory (KAM) Error	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10292	P0622 - Generator Field "F" Control Circuit Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11276	P0630 - VIN Not Programmed or Incompatible	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10443	P0633 - Immobolizer Key Not Programmed	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11377	P0701 - Transmission Control System Range/Performance	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11157	P0704 - Clutch Switch Input Circuit Malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15644	P0705 - Transmission Range Sensor Circuit malfunction (PRNDL Input)	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10930	P0711 - Transmission Fluid Temperature Sensor Circuit Range/Performance	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12065	P0712 - Transmission Fluid Temperature Sensor Circuit Low Input	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12787	P0715 - Input/Turbine Speed Sensor Circuit Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12511	P0717 - Input/Turbine Speed Sensor Circuit No Signal	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12969	P0718 - Input/Turbine Speed Sensor Circuit Intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10403	P0720 - Output Speed Sensor Circuit Malfunction	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10723	P0721 - Output Speed Sensor Range/Performance	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14172	P0731 - Gear 1 Incorrect ratio	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14960	P0732 - Gear 2 Incorrect ratio	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15496	P0733 - Gear 3 Incorrect ratio	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15514	P0734 - Gear 4 Incorrect ratio	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15138	P0735 - Gear 5 Incorrect ratio	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14657	P0740 - Torque Converter Clutch Circuit Malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF13090	P0741 - Torque Converter Clutch Circuit Performance or Stuck Off	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13182	P0743 - Torque Converter Clutch Circuit Electrical	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14067	P0745 - Pressure Control Solenoid Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14984	P0748 - Pressure Control Solenoid Electrical	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF14236	P0750 - Shift Solenoid A Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13378	P0753 - Shift Solenoid A Electrical	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF14571	P0755 - Shift Solenoid B Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13433	P0757 - Shift Solenoid B Stuck On	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13323	P0758 - Shift Solenoid B Electrical	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15556	P0760 - Shift Solenoid C Malfunction	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13418	P0762 - Shift Solenoid C Stuck On	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF13026	P0763 - Shift Solenoid C Electrical	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF13322	P0768 - Shift Solenoid D Electrical	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15605	P0775 - Pressure Control Solenoid -B- functional failure.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14756	P0778 - Pressure Control Solenoid B Electrical.	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF14044	P0791 - Intermediate Shaft Speed Sensor Circuit Malfunction.  NON-MIL.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15385	P0794 - Intermediate Shaft Speed Sensor Intermittent.  NON-MIL.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14595	P0795 - Pressure Control Solenoid -C- functional failure.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14099	P0798 - Pressure Control Solenoid C Electrical.	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12461	P0801 - Reverse Inhibit Control Circuit Malfunction	0	0		Switch to control the setting of p0801
+auF11875	P0811 - Excessive clutch slippage	0	0		CAL switch for p0811 - 0=disabled   1=non mil  2=mil  3=one trip mil
+auF11498	P0812 - Reverse input switch circuit malfunction_ for manual transmission indicating Rev	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11966	P0815 - SAE Upshift Switch Circuit fault code.  Used for Manual Shift Automatic switchs	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10047	P0850 - IMRC bank 1 input error.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15453	P0962 - Pressure Control Solenoid A Control Circuit Low.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14500	P0963 - Pressure Control Solenoid A Control Circuit High.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14494	P0964 - Pressure Control Solenoid B Control Circuit / Open.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15285	P0966 - Pressure Control Solenoid B Control Circuit Low.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14553	P0967 - Pressure Control Solenoid B Control Circuit High.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14137	P0968 - Pressure Control Solenoid C Control Circuit / Open.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF15101	P0970 - Pressure Control Solenoid C Control Circuit Low.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14667	P0971 - Pressure Control Solenoid C Control Circuit High.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12489	P0A0F - Engine Failed to Start	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11920	P1001 - KOER Test Cannot Be Completed	1	No MIL		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF12471	P1100 - Mass Air Flow Sensor Intermittent	0	No Error		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF12003	P1112 - Intake Air Temperature Sensor Intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF11872	P1117 - Engine Coolant Temperature Sensor Intermittent	0	No Error		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF10600	P1120 - Throttle Position Sensor Out of Range	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10260	P1124 - Throttle Position Sensor Out of Self-Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11312	P1125 - Throttle Position Sensor Intermittent	0	No Error		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF11715	P1127 - Exhaust Not Warm Enough - Downstream O2 Sensor Not Tested	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12339	P1128 - Upstream Heated Oxygen Sensor Signals Reversed	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10960	P1129 - Downstream Heated Oxygen Sensor Signals Reversed	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10667	P1131 - Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank 1	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10087	P1132 - Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank 1	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10390	P1137 - Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank 1	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10416	P1138 - Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank 1	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11344	P1151 - Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank 2	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12090	P1152 - Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank 2	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10970	P1157 - Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank 2	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10370	P1158 - Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank 2	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12929	P1184 - Engine Oil Temperature Out Of Self Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12449	P1269 - Immobilizer code not programmed	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11905	P1285 - Cylinder head over temp sensed	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11225	P1288 - Cylinder Head Temperature Sensor Out of Self-Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10509	P1289 - Cylinder Head Temperature Sensor Signal Greater Than Self-Test Range	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11147	P1290 - Cylinder Head Temperature Sensor Signal Less Than Self-Test Range	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF12554	P1299 - Cylinder Head Temperature Sensor Detected Engine Overheating Condition	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11216	P1336 - Fault code_ HDR misfire IC overflow failure.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11504	P1340 - Camshaft Position Sensor B Circuit Malfunction	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF10142	P1385 - Variable Cam Timing Solenoid B Malfunction	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11415	P1386 - Variable Cam Timing Overadvanced (Bank #2)	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11615	P1388 - Variable Cam Timing Overretarded (Bank #2)	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF12264	P145A - A/C pressure insufficient - A/C clutch disabled.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11980	P145B - A/C demand not activated during self test.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12432	P1461 - Air Conditioning Pressure Sensor Circuit Low Input	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12541	P1462 - Air Conditioning Pressure Sensor Circuit high Input	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12974	P1463 - Air Conditioning Pressure Sensor Insufficient Pressure change	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11854	P1465 - A/C Relay Circuit Malfunction	1	1		Error code 1465 enable switch.
+auF12735	P1500 - Vehicle Speed Sensor Intermittent	0	No Error		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF12208	P1501 - Programmable Speedometer & Odometer Module/Vehicle Speed Sensor Intermittent Circuit-failure	1	No MIL		0=cal_out_ 1=non_mil_ 2=2-trip mil_ 5=1-trip mil_ 6=selectable 1/2-trip mil
+auF10637	P1504 - Intake Air Control Circuit malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12857	P1506 - Idle Air Control Over Speed Error	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12859	P1507 - Idle Air Control Under Speed Error	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12911	P1549 - Intake Manifold Temperature Valve Vacuum Actuator Connection	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12691	P1550 - Power Steering Pressure Sensor Out of Self-Test Range	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11817	P1565 - Speed Control Command Switch Out of Range High	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12555	P1566 - Speed Control Command Switch Out of Range Low	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11103	P1567 - Speed Control Output Circuit Continuity	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11959	P1573 - Throttle Position Not Available	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11810	P1621 - Fault code for  Immobilizer Code Words don't match (73)	1	1		0=CAL_OUT_ 1=NON_MIL_ 2=MIL
+auF15049	P1636 - Inductive Signature Chip Communication Error	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11729	P1650 - Power Steering Pressure Switch Out of Self-Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11896	P1651 - Power Steering Pressure Switch Input Fault	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12593	P1655 - FIP communications with PCM	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14666	P1700 - Transmission system problems	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14432	P1704 - Transmission system problems	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11441	P1708 - Clutch switch input circuit malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10475	P1709 - Park or Neutral Position Switch Out of Self-Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF14522	P1714 - SSA Inductive Signature Malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15202	P1715 - SSB Inductive Signature Malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15456	P1716 - SSC Inductive Signature Malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12007	P1722 - Gear 2 Incorrect Ratio	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF15420	P1740 - Transmission system problems	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF14018	P1744 - Torque Converter Clutch System Stuck in Off Position	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12816	P1780 - Transmission Control Switch Circuit is Out of Self-Test Range	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10425	P1783 - Transmission Over-Temperature Condition	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12497	P1935 - Brake Switch/Sensor Signal	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11032	P1936 - Clutch switch input circuit malfunction	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10306	P2100 - TPPC Reports Motor Circuit OPEN	1	1		TPPC Reports Motor Circuit OPEN
+auF12109	P2101 - TPPC Reports Miswire FMEM	1	1		TPPC Reports Miswire FMEM
+auF10460	P2107 - TPPC Reports Failed Self Test OR TP Command Fault OR H-Bridge Fault	1	1		TPPC Reports Failed Self Test OR TP Command Fault OR H-Bridge Fault
+auF10564	P2110 - ETC FMEM Reports Maintain Default Throttle with RPM Guard Mode	1	1		ETC FMEM Reports Maintain Default Throttle with RPM Guard Mode
+auF12394	P2111 - TPPC Reports: Power Limiting Mode_ Plate > TP command	1	1		TPPC Reports: Power Limiting Mode_ Plate > TP command
+auF11904	P2112 - TPPC Reports: Power Limiting Mode_ Plate < TP command	1	1		TPPC Reports: Power Limiting Mode_ Plate < TP command
+auF12297	P2122 - Pedal Position sensor #1 out of range low	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12766	P2123 - Pedal Position sensor #1 out of range high	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12363	P2124 - Pedal Position sensor #1 out of range intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11935	P2127 - Pedal Position sensor #2 out of range low	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12362	P2128 - Pedal Position sensor #2 out of range high	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12604	P2129 - Pedal Position sensor #2 out of range intermittent	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12112	P2132 - Pedal Position Sensor F circuit low input	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF10439	P2133 - Pedal Position sensor #3 out of range high	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11109	P2134 - Pedal Position Sensor F circuit intermittent	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF11626	P2135 - TP sensor disagreement	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12419	P2138 - PPS1 and PPS2 disagree	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10454	P2139 - PPS1 and PPS3 disagree	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12726	P2140 - PPS2 and PPS3 disagree	0	No Error		0=cal_out_ 1=non_mil_ 2=mil
+auF12835	P2500 - Generator Lamp Terminal Circuit Low	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF12602	P2501 - Generator Lamp Terminal Circuit High	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11937	P2535 - PCODE for ISP-RS is high fault	1	No MIL		Fault Code Switch - "ISP-RS is high" fault: 0=cal_out_ 1=non_mil_ 2=mil
+auF11046	U0302 - Software Incompatibility with Transmission Control Module	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF11601	U0323 - SCP Fault Code_ Software not compatible with instrument panel module	1	1		Diagnostic code u0323 switch
+auF12095	U1039 - SCP Fault Code_ Vehicle Speed message missing or supplying invalid data.	2	MIL Light		0=cal_out_ 1=non_mil_ 2=mil
+auF11866	U1146 - SCP Fault Code_ PATS Status message missing or supplying invalid data.	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil
+auF10852	U1900 - CAN reception error	1	No MIL		0=cal_out_ 1=non_mil_ 2=mil_ 3 = instant mil
+auF11435	U2197 - Invalid data for Vehicle Speed	1	1		Invalid vehicle speed data DTC switch
+auF10257	U2473 - Unexpected Vehicle Speed VSS	1	1		Unexpected vehicle speed DTC switch
+auF10732	U2514 - Vehicle speed signal missing or incorrect	1	1		Missing message for vehicle speed DTC switch
