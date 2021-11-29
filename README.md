@@ -56,7 +56,7 @@
        
 ### Vehicle Network layout:
 
-Bus      | Modules | Speed | Function  |
+Protocol  | Modules | Speed | Function  |
 ---------|---------|-------|--------|  
    CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
    CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  |
@@ -65,6 +65,8 @@ Bus      | Modules | Speed | Function  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    EOBD | PCM | - | Emissions & Diagnostics  |
    UART | AIM/Ipod | - | Apple Accessory Protool |
+   Bluetooth | BPM | - | Serial Port Profile |
+   Infrared | NAV | Lightspeed! | Navigation Remote mk1 |
   
   
     
