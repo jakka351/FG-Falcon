@@ -64,9 +64,15 @@ Bus      | Modules | Speed | Function  |
    ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    EOBD | PCM | - | Emissions & Diagnostics  |
-   UART | AIM/Ipod | Apple Accessory Protool |
+   UART | AIM/Ipod | - | Apple Accessory Protool |
   
-
+  
+    
+  
+Module      | Chip | Memory | Diagnostics |  Security |
+---------|---------|-------|--------|--------|
+AIM | V850 | EEPROM | Y | N |
+  
 ### CanBus Decoded:
 
 				
