@@ -63,7 +63,7 @@ Bus      | Modules | Speed | Function  |
    CAN     | ABS, DSC, TSC | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
    ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
-   OBDII   | EOBD | - | Emissions & Diagnostics  |
+   EOBD | PCM | - | Emissions & Diagnostics  |
   
 
 ### CanBus Decoded:
@@ -72,7 +72,7 @@ Bus      | Modules | Speed | Function  |
 ![image](https://user-images.githubusercontent.com/57064943/132037394-deb88ca6-98f8-4df3-b704-7e7479dd947a.png)
 
   **Collection of FG-CAN Data from various sources**
-   - [`latest and greatest fg can sheet`](https://). 
+   - [`latest and greatest fg can sheet`](https://github.com/jakka351/FG-Falcon/blob/master/6FPA.xlsx) 
    - [`fg_controller_area_network_latest.xlsx`](https://github.com/jakka351/FG-Falcon/raw/master/fg_controller_area_network_latest.xlsx)    
        - Contains a list of all process identifiers, start of decoding as built data, Mitchell H's CAN Docs, Jakka351's CAN spreadsheet
    
