@@ -60,7 +60,7 @@ Bus      | Modules | Speed | Function  |
 ---------|---------|-------|--------|  
    CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
    CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  |
-   CAN     | ABS, DSC, TSC | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
+   CAN     | ABS, DSC, SAS, YRS, RCM | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
    ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
    EOBD | PCM | - | Emissions & Diagnostics  |
