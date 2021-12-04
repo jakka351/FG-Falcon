@@ -150,28 +150,20 @@ Description   | Platform      | Model     | Author
 
 <br />
 
-<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/can0swc.gif" height="40%" width="40%" /></a>
+<a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can0swc.png" height="30%" width="30%" /></a>
 
 ## [`can0swc`](https://github.com/jakka351/can0swc)  
 
   - `FG Steering Wheel Controls for Raspberry Pi`
       - Uses python-can library and SPI-CAN interface
-      - Emit keypresses which are picked up by Android Auto
+      - Emit keypresses which are picked up by Android Auto  
+
+<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can0swc.gif" height="80%" width="80%" />
      
 <br/>
-<br/>
-
-<br/>
 
 
 <br/>
-<br />
-<br /><br/>
-<br />
-<br />
-<br />
-<br />
-
 <a href="https://forscan.org"><img align="right" src="https://forscan.org/images/FORScanLiteAppIconRoundCorners144.png" height="70" width="70" /></a>
 
 ## [`Forscan`](https://forscan.org)
