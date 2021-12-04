@@ -143,8 +143,8 @@ Description   | Platform      | Model     | Author
  [`Ford Mustang CAN2CLUSTER Project`](https://github.com/thomastech/CAN2Cluster)    |   | Mustang | https://github.com/thomastech/
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
- [`Python3/can0 SWC Adapter for FG`](https://github.com/jakka351/FG-Falcon/blob/master/gs302/swc_seek2.py) | |   |
- [`FG-Python-CANbus scripts`](https://github.com/jakka351/fg-python)  |  |  |
+ [`Police Mode Enabler`](https://github.com/jakka351/FG-Falcon/) | Windows | BA-FG  | ??? |
+ [`AsBuiltExplorer.exe`](https://github.com/jakka351/fg-python)  | Windows | Ford | ??? |
   
 
 
