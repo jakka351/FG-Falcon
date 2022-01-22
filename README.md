@@ -127,9 +127,6 @@ Description   | Platform      | Model     | Author
  [`FG ICC Fork`](https://github.com/jakka351/Ford-FG-ICC) |  [![image](https://img.shields.io/badge/python-v3.7-blue)](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)| FG |Jakka351
  [`can0swc`](https://github.com/jakka351/can0swc) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
  [`ICC Emulator`](https://github.com/jakka351/ICC) | [![image](https://img.shields.io/badge/%23-Raspberry%20Pi-red)](https://raspberrypi.org/) | FG | Jakka351
- [`Instrument Cluster ReadFlash.ino`](https://github.com/jakka351/FG-Falcon/blob/master/resources/software/arduino/ReadFlash.ino.txt) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)  | FGII | [JasonACT]()  
- [`FG-MKII-ICC-Firmwares`](https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares) | [![image](https://img.shields.io/badge/%23-QNX-orange)](https://blackberry.qnx.com/en)] | FGII | [JasonACT]()
- [`JasonACT's FF Uploads`]() | [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) | FG/FGII/FGX | [JasonACT]()
  [`Android Climate App`](https://github.com/Goochy12/BA-Falcon-Custom-Climate-Control) | [![images](https://img.shields.io/badge/%23-Android-purple)](https://www.android.com/intl/en_au/)| BA | [Goochy12](https://github.com/Goochy12)
  [`Arduino Climate Code`](https://github.com/nkg-io/arduino-climate) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)   | AU/FG | [Nathaniel](https://github.com/nkg-io/) 
  [`SWC Adapter for Pioneer`](https://github.com/bigevtaylor/arduino-swc) | [![image](https://img.shields.io/badge/%23-Arduino-lightgrey)](https://arduino.cc/)   | BA/BF | [bigevtaylor](https://github.com/bigevtaylor/arduino-swc)
@@ -265,8 +262,6 @@ Australian CanBus Products
 
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/test%20(1).jpg" height="20%" width="20%" /> 
 ## Interior Command Centre  / Entertainment System
- - <a href="https://github.com/Jasoroony/Ford-Falcon-FG-MKII-ICC-Firmwares"> `JasonACT Falcon-FG-MKII-ICC-Firmwares` </a>
- - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  Recommended Reading
  - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)   
  - [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
  - [`Enable Reverse Camera`](https://github.com/jakka351/FG-Falcon/wiki/Enable-Reverse-Camera)  
