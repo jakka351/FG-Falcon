@@ -380,7 +380,7 @@ resources/
   - [`CAN Bus communication explained in 5 minutes`](https://www.youtube.com/watch?v=PEI5EWSgaRk)
   - [`Understandinng CANBUS faults`](https://www.mechanic.com.au/news/understanding-can-bus-faults/)
   - [`Common CAN faults`](https://www.meridiancableassemblies.com/2021/01/common-can-bus-problems/) 
-  -  
+  -  Hint: You can test the entire CANbus system in an Fg falcon without any tool by checking if the FDIM buttons are functioning correctly. 
   
 ## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
