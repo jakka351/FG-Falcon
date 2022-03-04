@@ -142,7 +142,7 @@ Description   | Platform      | Model     | Author
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
  [`Police Mode Enabler`](https://github.com/jakka351/FG-Falcon/) | Windows | BA-FG  | ??? |
- [`AsBuiltExplorer.exe`](https://github.com/jakka351/fg-python)  | Windows | Ford | ??? |
+ [`AsBuiltExplorer.exe`](https://github.com/jakka351/fg-python)  | Windows | Ford | Jesse Yeager www.compulsivecode.com |
   
 
 
