@@ -418,6 +418,7 @@ resources/
   - [`FG wiring 400 to 419.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20400%20to%20419.pdf)    
   - [`FG wiring 501.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20501.pdf)    
   - [`FG wiring 700-06 conector location views.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700-06%20conector%20location%20views.pdf)    
+  - [`FG wiring 700-7-connector-views.pdf(courtesy @ fordforums.com.au)`](https://github.com/jakka351/FG-Falcon/blob/5249578a72c928d7a21c77b2d8b7d5a108b30a5b/resources/wsm/FG%20wiring%20700_07_Connector%20views_(Courtesy%20of%20FordForumsAustralia).pdf)  
   - [`FG wiring 700.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20700.pdf)    
   - [`FG wiring diagram.pdf`](https://github.com/jakka351/FG-Falcon/blob/master/resources/wsm/FG%20wiring%20diagram.pdf)    
   - [`Supplement`](https://www.fordforums.com.au/vbportal/viewarticle.php?articleid=1884)   
