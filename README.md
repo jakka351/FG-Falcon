@@ -87,7 +87,7 @@ HIM | - | EEPROM | Y | N | | |
 
 
 ### CanBus Decoded:
-![image](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
+[`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
 
 			
   **Collection of FG-CAN Data from various sources**
