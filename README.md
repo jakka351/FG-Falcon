@@ -70,11 +70,22 @@ Protocol  | Modules | Speed | Function  |
   
   
     
-  
-Module      | Chip | Memory | Diagnostics |  Security |
----------|---------|-------|--------|--------|
-AIM | V850 | EEPROM | Y | N |
-  
+
+
+Module      | CPU | BOOTLOADER | FLASH | EEPROM | Rx Diag | Tx Diag |
+---------|---------|-------|--------|--------|--------|--------|
+AIM | V850 | EEPROM | Y | N | | | 
+ACM | -| EEPROM | Y | N | | |
+BEM | - | EEPROM | Y | N | | |
+BPM | V850 | EEPROM | Y | N | | | 
+FDIM | V850 | EEPROM | Y | N | | |
+IPC | V850 | EEPROM | Y | | | 
+ABS | - | EEPROM | Y | N | | | 
+PCM | - | EEPROM | Y | N | | |
+TCM | - | EEPROM | Y | N | | | 
+HIM | - | EEPROM | Y | N | | |
+
+
 ### CanBus Decoded:
 ![image](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
 
