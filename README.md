@@ -315,11 +315,11 @@ Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9
 No.   | FGX FoA Backgrounds   
 --------|----------- 
 Sprint |  [`cars-falconxr6sprint-gallery-trigger-large-1.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-1.jpeg)   
-Dashboard | [`cars-falconxr6sprint-gallery-trigger-large-2.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-2.jpeg)   
-Engine | [`cars-falconxr6sprint-gallery-trigger-large-3.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-3.jpeg)   
-Headlights | [`cars-falconxr6sprint-gallery-trigger-large-4.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-4.jpeg)   
+Dashboard | [`cars-falconxr6sprint-gallery-trigger-large-2.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-dashboard.jpeg)   
+Engine | [`cars-falconxr6sprint-gallery-trigger-large-3.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-engine.jpeg)   
+Headlights | [`cars-falconxr6sprint-gallery-trigger-large-4.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-headlight.jpeg)   
 Sprint |  [`cars-falconxr6sprint-gallery-trigger-large-5.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-5.jpeg)   
-Sprint |  [`cars-falconxr6sprint-gallery-trigger-large-6.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-6.jpeg)     
+XR6 Front Grill |  [`cars-falconxr6sprint-gallery-trigger-large-6.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-xr6-front-grill.jpeg)     
 Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-7.jpeg) 
 
 ## Libraries  
