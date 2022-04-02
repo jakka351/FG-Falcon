@@ -488,6 +488,7 @@ resources/
  [`Matt's Ford Audio Page`](https://www.facebook.com/fordaudio)   `Bluetooth Audio Kits for FG`      
  [`ASL Automedia`](https://www.aslautomedia.com.au/)     
     ` OEM Replacement Parts for FG ICC  `  
+ [`MackieElec Industries`](https://mackieelecindustries.com.au)  
     
 ## Credit & License 
  - [`Kyle May`](https://www.kylemay.net.au/)   
