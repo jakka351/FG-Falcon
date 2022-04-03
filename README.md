@@ -483,12 +483,14 @@ resources/
  [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
  [`Oz Falcon`](https://http://www.ozfalcon.com.au/)  
  [`Cluster Mods`](http://clustermods.com/index.php)    
- [`FG Mods`](https://fgmods.com.au/)  
+ [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website` Jakka351
  [`Specialist Automotive Service | CANBus.com.au`](https://canbus.com.au/)      
  [`Matt's Ford Audio Page`](https://www.facebook.com/fordaudio)   `Bluetooth Audio Kits for FG`      
  [`ASL Automedia`](https://www.aslautomedia.com.au/)     
     ` OEM Replacement Parts for FG ICC  `  
- [`MackiElec Industries`](https://mackielecindustries.com.au)  
+ [`MackiElec Industries`](https://mackielecindustries.com.au)   
+ [`Hooton's Harnesses`](https://www.facebook.com/hootonsharnesses)  
+  
     
 ## Credit & License 
  - [`Kyle May`](https://www.kylemay.net.au/)   
