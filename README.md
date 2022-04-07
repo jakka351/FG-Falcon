@@ -63,27 +63,29 @@ Protocol  | Modules | Speed | Function  |
    CAN     | ABS, DSC, SAS, YRS, RCM | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
    ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
    LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
-   EOBD | PCM | - | Emissions & Diagnostics  |
+   EOBD | PCM | 500kbps | Emissions & Diagnostics  |
    UART | AIM/Ipod | - | Apple Accessory Protool |
    Bluetooth | BPM | - | Serial Port Profile |
+   RF Comm | BEM | - | Keyfob |
    Infrared | NAV | Lightspeed! | Navigation Remote mk1 |
   
   
     
 
 
-Module      | CPU | BOOTLOADER | FLASH | EEPROM | Rx Diag | Tx Diag |
+Module      | CPU | FLASH | EEPROM | BUS | DiagSig_Rx  | DiagSig_Tx |
 ---------|---------|-------|--------|--------|--------|--------|
-AIM | V850 | EEPROM | Y | N | | | 
-ACM | -| EEPROM | Y | N | | |
-BEM | - | EEPROM | Y | N | | |
-BPM | V850 | EEPROM | Y | N | | | 
-FDIM | V850 | EEPROM | Y | N | | |
-IPC | V850 | EEPROM | Y | | | 
-ABS | - | EEPROM | Y | N | | | 
-PCM | - | EEPROM | Y | N | | |
-TCM | - | EEPROM | Y | N | | | 
-HIM | - | EEPROM | Y | N | | |
+AIM | V850 |  | Y | Midspeed | 0x767 | 0x76F | 
+ACM | -|  | Y | Midspeed | 0x727| 0x72F |
+BEM | - |  | Y | Midspeed | 0x726 | 0x72E |
+BPM | V850 |  | Y | Midspeed | 0x781 | 0x789 | 
+FDIM | V850 | | Y | Midspeed | 0x7A6 | 0x7AE |
+IPC | V850 |  | Midspeed | 0x720 | 0x728 | 
+ABS | - |  |  Y | High Speed | 0x766 | 0x76E |
+PAM | - |  | Y | Midspeed | 0x736 | 0x73E|
+PCM | ,- |  | Y | High Speed | 0x7E0 | 0x7E8 |
+TCM | - |  | Y | High Speed | 0x7E1| 0x7E9 | 
+HIM | - |  | Y | High Speed | 0x733 | 0x73A |
 
 
 ### CanBus Decoded:
