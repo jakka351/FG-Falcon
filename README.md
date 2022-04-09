@@ -73,19 +73,19 @@ Protocol  | Modules | Speed | Function  |
     
 
 
-Module      | CPU | BUS | DiagSig_Rx  | DiagSig_Tx | 
----------|---------|-------|--------|--------|
-AIM | V850 | Midspeed | 0x767 | 0x76F | 
-ACM | - |    Midspeed | 0x727| 0x72F |
-BEM | - |    Midspeed | 0x726 | 0x72E |
-BPM | V850  | Midspeed | 0x781 | 0x789 | 
-FDIM | V850 | Midspeed | 0x7A6 | 0x7AE |
-IPC | V850  | Midspeed | 0x720 | 0x728 | 
-ABS | - |  High Speed | 0x766 | 0x76E |
-PAM | - |  Midspeed | 0x736 | 0x73E|
-PCM | - |  High Speed | 0x7E0 | 0x7E8 |
-TCM | - |  High Speed | 0x7E1| 0x7E9 | 
-HIM | - |  High Speed | 0x733 | 0x73A |
+Module      | CPU | BUS | DiagSig_Rx  | DiagSig_Tx | Supported Diagnostic Sessions | SecurityAcess Levels |
+---------|---------|-------|--------|--------|--------|--------|
+AIM | V850 | Midspeed | 0x767 | 0x76F |  |   |
+ACM | - |    Midspeed | 0x727| 0x72F |  |   |
+BEM | - |    Midspeed | 0x726 | 0x72E |  |  |
+BPM | V850  | Midspeed | 0x781 | 0x789 |  |  |
+FDIM | V850 | Midspeed | 0x7A6 | 0x7AE |  |  |
+IPC | V850  | Midspeed | 0x720 | 0x728 | 0x1081, 0x1087, 0x10FA  | Multiple Secure States, Up to Component Manufacturer State |
+ABS | - |  High Speed | 0x766 | 0x76E |  |  |
+PAM | - |  Midspeed | 0x736 | 0x73E|  0x1081, 0x1087, 0x10FA  | 0x2701 UnSuppported, module not secured |
+PCM | - |  High Speed | 0x7E0 | 0x7E8 |  |  |
+TCM | - |  High Speed | 0x7E1| 0x7E9 |   |  |  
+HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 
 ### CanBus Decoded:
