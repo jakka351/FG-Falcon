@@ -484,17 +484,17 @@ resources/
  [`XR6 Turbo Forums`](https://www.fordxr6turbo.com/)  
  [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
  [`Oz Falcon`](https://http://www.ozfalcon.com.au/)  
- [`Whiteford Tech`](https://www.facebook.com/pages/category/Product-service/Whiteford-Tech-168145224027606/) - `Engineer`  
- [`CAN Solutions`](https://cansolutions.com.au/)
- [`PCMtec`](https://pcmtec.com)
- [`Cluster Mods`](http://clustermods.com/index.php)    
- [`Matt's Ford Audio Page`](https://www.facebook.com/fordaudio)     
- [`ASL Automedia`](https://www.aslautomedia.com.au/)      
- [`MackiElec Industries`](https://mackielecindustries.com.au)   
- [`Hooton's Harnesses`](https://www.facebook.com/hootonsharnesses)  
- [`XR6 Turbo Developments`](https://www.xr6turbodevelopments.com.au/)  
- [`Australian FORScan Users Group`](https://www.facebook.com/groups/344706629955641/)  
- [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website` `Jakka351 says NO to TSHIRT sellers.`
+ [`Whiteford Tech`](https://www.facebook.com/pages/category/Product-service/Whiteford-Tech-168145224027606/) - `Engineer`    
+ [`CAN Solutions`](https://cansolutions.com.au/)  
+ [`PCMtec`](https://pcmtec.com)  
+ [`Cluster Mods`](http://clustermods.com/index.php)      
+ [`Matt's Ford Audio Page`](https://www.facebook.com/fordaudio)       
+ [`ASL Automedia`](https://www.aslautomedia.com.au/)        
+ [`MackiElec Industries`](https://mackielecindustries.com.au)     
+ [`Hooton's Harnesses`](https://www.facebook.com/hootonsharnesses)    
+ [`XR6 Turbo Developments`](https://www.xr6turbodevelopments.com.au/)    
+ [`Australian FORScan Users Group`](https://www.facebook.com/groups/344706629955641/)    
+ [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website` `Jakka351 says NO to TSHIRT sellers.`  
 
 
 ## Credit & License 
