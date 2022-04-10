@@ -510,9 +510,11 @@ resources/
  - [`Ford Forums Australia`](https://fordforums.com.au)      
   
 
-## Contact  
-Any queries, concerns, submissions, etc's email service@canbus.com.au. Nope, you cannot list your product here, unless you can demonstrate that it actively contributes to the community that buys it.  
- 
+## Contributors
+For queries, concerns, submissions, etc please message on fordforums.com.au.
+[`Jakka351`](https://github.com/jakka351)      
+[`Gokhandilek`](https://github.com/gokhandilek)    
+
 ## Disclaimer 
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
 
