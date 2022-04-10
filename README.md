@@ -511,7 +511,7 @@ resources/
   
 
 ## Contributors
-For queries, concerns, submissions, etc please message on fordforums.com.au.
+For queries, concerns, submissions, etc please message on fordforums.com.au.    
 [`Jakka351`](https://github.com/jakka351)      
 [`Gokhandilek`](https://github.com/gokhandilek)    
 
