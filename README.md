@@ -395,7 +395,9 @@ resources/
   - [`Common CAN faults`](https://www.meridiancableassemblies.com/2021/01/common-can-bus-problems/) 
   -  Hint: You can test the entire CANbus system in an Fg falcon without any tool by checking if the FDIM buttons are functioning correctly. 
   
-## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)   
+## [Workshop Manuals](https://github.com/jakka351/FG-Falcon/tree/master/resources/wsm)     
+[Utility to download from ford after purchasing subscription](https://github.com/iamtheyammer/fetch-ford-service-manuals)  
+  
   - [`Owners Manual sedan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Sedan_Owner_Manual%20(1).pdf)  
   - [`Owners Manual`](https://github.com/jakka351/FG-Falcon/blob/master/resources/E240_MCA_CYS_Ute_Owner_Manual.pdf)    
   - [`Owners Reference Guide`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG_Falcon_OM_2010_AU.pdf)    
