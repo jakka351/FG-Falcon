@@ -513,7 +513,7 @@ resources/
 ## Contributors
 For queries, concerns, submissions, etc please message on fordforums.com.au.    
 [`Jakka351`](https://github.com/jakka351)      
-[`Gokhandilek`](https://github.com/gokhandilek)    
+[`GokhanDeveloper`](https://github.com/gokhandeveloper)    
 
 ## Disclaimer 
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
