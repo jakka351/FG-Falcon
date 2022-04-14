@@ -270,8 +270,15 @@ Australian CanBus Products
   
 ### [`Whiteford Tech`](https://m.facebook.com/Whiteford-Tech-168145224027606/)  
 
-  -  Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. 
+  -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
+  -  `FPV Engine Calibrations`    
+  -  `Custom Insrument Cluster Start Up Logos` `AKA Bootsplashes`  
+  -  `MKII Custom ICC Gauges and Graphix, GT-F 351 Gauges`  
+  -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
+  -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
+<img align="centre" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940036096.jpg" height="30%" width="30%" /><img align="centre" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940003245.jpg" height="30%" width="30%" />
+  
 
 ### Articles & Info on PCM Programming
   -  [`Ford Wreckrs Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
