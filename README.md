@@ -232,12 +232,12 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 <br /><a href="https://pcmtec.com/"><img align="right" src="https://pcmtec.com/Plugins/Payments.Pcmtec/assets/dist/img/logo-horizontal.png" height="22%" width="22%"></img></a>
  ### <a href="https://pcmtec.com/">`PCMTec`</a>
 
- - PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/    
+ - `PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/`    
 
--  [Workshops that use PCMTec](https://www.pcmtec.com/workshops)  
--  [Software Demo Download](https://www.pcmtec.com/demo)  
--  [Falcon How-To Guides](https://forum.pcmtec.com/forum/17-falcon-howto-guides/)  
--  [PCMtec MKII Falcon Dash Emulator](https://forum.pcmtec.com/topic/821-dash-emulator-for-testing-mft-multi-flash-tune-on-the-bench/)  
+-  [`Workshops that use PCMTec`](https://www.pcmtec.com/workshops)  
+-  [`Software Demo Download`](https://www.pcmtec.com/demo)  
+-  [`Falcon How-To Guides`](https://forum.pcmtec.com/forum/17-falcon-howto-guides/)  
+-  [`PCMtec MKII Falcon Dash Emulator`](https://forum.pcmtec.com/topic/821-dash-emulator-for-testing-mft-multi-flash-tune-on-the-bench/)  
   
 [![Rolando](http://img.youtube.com/vi/c-1weXzfLn0/0.jpg)](http://www.youtube.com/watch?v=c-1weXzfLn0 "Dash Emulator")  
 
@@ -393,7 +393,11 @@ resources/
 ```
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />  
    
-## [Troubleshooting Tips]()  
+## [Troubleshooting Tips]()    
+
+  
+  [![IMAGE](http://img.youtube.com/vi/TRlQQ8DtfMQ/0.jpg)](http://www.youtube.com/watch?v=TRlQQ8DtfMQ "Territory CANbus Comms Issue")  
+  
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)    
   - [`Ford Mods Technical Document Archive`](http://www.fordmods.com/ford-technical-documents.html)      
   - [`Ford Mods Forum List`](http://www.fordmods.com/fordmods-tech-f57/)    
