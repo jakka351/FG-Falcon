@@ -552,13 +552,19 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
 
 
+<p align="center">
+  <a href="https://canbus.com.au/">
+    <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
+  </a>
+</p>
+  <h3 align="center">FG-Falcon</h3>
+   
+  <p align="center"> 
+    <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
+    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
+    <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
+    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+<br/>
 
 <br/>
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
-<a href="https://canbus.com.au/"><img src="https://i0.wp.com/canbus.com.au/wp-content/uploads/2022/02/SASCANBAN.png"/></a>
-<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
-
-
-
-
-
