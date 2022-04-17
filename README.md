@@ -1,17 +1,12 @@
+# FG-Falcon  
 
-<p align="center">
-  <a href="https://canbus.com.au/">
-    <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
-  </a>
+<p align="right">
+    <img align="centre" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" />
+    <br/>
+    <a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a>
 </p>
-  <h3 align="center">FG-Falcon</h3>
-   
-  <p align="center"> 
-    <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
-    <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
-    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
-<br/><a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a></p></br/><br/>
+
+***
 
 
 ## Table of contents  
@@ -296,13 +291,16 @@ Australian CanBus Products
 <br/>
 <br/>
 <br/>
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/images.jpeg" />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
+
+
              E . . . N . . . G . . . I . . . N . . . E . . . E . . . R
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
       
 
@@ -588,7 +586,6 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
   <h3 align="center">FG-Falcon</h3>
    
   <p align="center"> 
-    <img aligh="centre" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" />
 
     <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
     <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
@@ -596,3 +593,8 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 <br/>
 
+<p align="center"> 
+    <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
+    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
+    <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
+    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/>
