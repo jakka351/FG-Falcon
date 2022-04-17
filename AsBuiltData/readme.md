@@ -5,6 +5,8 @@
 `Please also note that BEM As builtdata includes keyfob data. 
 Your key can be cloned using this data and your car can be started(without your keys)!
 If you have shared your BEM as built data online, please use the remote key teaching procedure to erase your existing keys and re-learn key.
+
+Fact check pending, think this data is just lock unlock not start car. j
 Refer to workshop manual below /Remote key teaching:`
 http://fordforums.com.au/wsmpub/fg/419-10.html
 
