@@ -333,7 +333,7 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
   
 <img  src="https://user-images.githubusercontent.com/57064943/163689716-06ed572b-572d-458a-8905-c81d189d3a84.png" height="60%" width="60%" />
   <br/>
-     
+   `Open Source ICC replacement in development`    
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
   <br/>
  ### ICC Splash Graphics 
