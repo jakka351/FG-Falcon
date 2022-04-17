@@ -228,7 +228,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   
 <br/>
 Main Menu:      
-<img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png" height="55%" width="55%" /> 
+<img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png" height="75%" width="75%" /> 
 <br />
 <br />
 
