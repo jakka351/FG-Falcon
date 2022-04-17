@@ -1,6 +1,6 @@
 # FG-Falcon  
 <p align="left">  <sup> Collection of resources relating to the electrical & mechanical components of the FG Falcon.</sup></p>
-<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="25%" width="25%"/></p> 
+<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="45%" width="45%"/></p> 
 
 
 ## Table of contents 
