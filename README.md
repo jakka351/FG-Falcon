@@ -219,7 +219,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
 
 <br /><a href="https://grabcad.com/library/skpang-pican2-can-bus-board-for-raspberry-pi-simple-mockup-1">
-<img align='right' src='https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/pican.png' height='5%' width='5%' />
+<img align='right' src='https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/pican.png' height='15%' width='15%' />
 </a>
 
 ### [`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/6fpa-util)
@@ -228,7 +228,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
   
 <br/>
 Main Menu:      
-<img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png" height="25%" width="25%" /><img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194944.png" height="25%" width="25%" />  
+<img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png" height="55%" width="55%" /> 
 <br />
 <br />
 
