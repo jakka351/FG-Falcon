@@ -1,15 +1,23 @@
-# FG-Falcon  
-<p align="left">  <sup> Collection of resources relating to the electrical & mechanical components of the FG Falcon.</sup></p>
-<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="35%" width="35%"/></p> 
 
-<br/><br/><br/><br/><br/><br/>
 
+# FG-Falcon 
+	
+<p align="center"> 
+<sup>	<a href="">
+Collection of resources relating to the electrical & mechanical components of the FG Falcon.
+	</a></sup>
+	<br/>
+	
+</p>
+<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="35%" width="35%"/></p>
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+	
 ## Table of contents 
 
 <table><sup>
-<tr>
-<img src="https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png" width="50%"/>
- 	
+<tr>	
 <td>
 
 	
