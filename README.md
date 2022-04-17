@@ -1,10 +1,8 @@
 # FG-Falcon  
-
 <p align="right">
     <img align="centre" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" />
-    <br/>
-    <a href="https://github.com/jakka351/FG-Falcon/wiki">Collection of resources relating to electrical and mechanical systems of the FG Falcon.</a>
 </p>
+
 
 ***
 
@@ -277,10 +275,9 @@ Australian CanBus Products
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940036096.jpg" height="30%" width="30%" /><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940003245.jpg" height="25%" width="25%" /><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1647510577547.jpg" height="30%" width="30%" />
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940036096.jpg" height="30%" width="30%" /><img align="right" src="https://user-images.githubusercontent.com/57064943/163707328-0cf20183-13c3-40ef-a19f-dce4b1ab19b1.png" height="35%" width="35%" /><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1647510577547.jpg" height="30%" width="30%" />
 <br/> 
   <br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -299,6 +296,8 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
 
 
+  
+  
              E . . . N . . . G . . . I . . . N . . . E . . . E . . . R
 
 <br/>
@@ -592,9 +591,3 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
     <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/><img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 <br/>
-
-<p align="center"> 
-    <a href="https://github.com/jakka351/fg-falcon/wiki"><img src="https://img.shields.io/badge/FG-Wiki-purple" /></a> |
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  | 
-    <a href="https://canbus.com.au/"><img src="https://img.shields.io/badge/canbus-.com.au-red" /></a> | 
-    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-green" /></a><br/>
