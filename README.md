@@ -4,7 +4,7 @@
 
 <p align="right">
 	
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" height="18%" width="18%"/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" height="28%" width="28%"/>
 	</p>
 
 
