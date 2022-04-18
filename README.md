@@ -1,4 +1,5 @@
 
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 <p align="right">
@@ -17,7 +18,6 @@ Collection of resources relating to the electrical & mechanical components of th
 	
 </p>
 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
@@ -118,7 +118,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="25%" width="25%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="35%" width="35%" />
 
 ## CanBus Decoded:
 [`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
