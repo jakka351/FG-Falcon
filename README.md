@@ -1,5 +1,6 @@
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="9%" width="9%"/>
 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
 # FG-Falcon 
 	
 <p align="center"> 
@@ -9,7 +10,7 @@ Collection of resources relating to the electrical & mechanical components of th
 	<br/>
 	
 </p>
-<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="35%" width="35%"/></p>
+<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="27%" width="27%"/></p>
 
 <br/><br/><br/><br/>
 <br/><br/>
@@ -108,6 +109,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="25%" width="25%" />
 
 ## CanBus Decoded:
 [`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
@@ -149,6 +151,8 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="10%" width="10%"/>
 
 ## Software
 Software Written by owners and enthusiasts. 
@@ -320,7 +324,7 @@ Australian CanBus Products
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <br/>
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163750249-88f995f6-7996-465c-8bb7-997c58af6940.png" height="" width="" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163750249-88f995f6-7996-465c-8bb7-997c58af6940.png" height="50&" width="50%" />
 
   
 ### [`Whiteford Tech`](https://m.facebook.com/Whiteford-Tech-168145224027606/)  
@@ -332,7 +336,7 @@ Australian CanBus Products
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940036096.jpg" height="30%" width="30%" /><img src="https://user-images.githubusercontent.com/57064943/163707328-0cf20183-13c3-40ef-a19f-dce4b1ab19b1.png" height="35%" width="35%" /><img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1647510577547.jpg" height="30%" width="30%" />
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1649940036096.jpg" height="30%" width="30%" /><img src="https://user-images.githubusercontent.com/57064943/163707328-0cf20183-13c3-40ef-a19f-dce4b1ab19b1.png" height="50%" width="50%" /><img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1647510577547.jpg" height="30%" width="30%" />
 <br/> 
 <br/>
 <br/>
