@@ -1,9 +1,9 @@
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="9%" width="9%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
 
 
 # FG-Falcon 
 	
-<p align="center"> 
+<p align="left"> 
 <sup>	<a href="">
 Collection of resources relating to the electrical & mechanical components of the FG Falcon.
 	</a></sup>
