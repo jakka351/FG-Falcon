@@ -17,7 +17,11 @@ Collection of resources relating to the electrical & mechanical components of th
 	</a></sup>
 	
 </p>
-
+<p align="left">
+    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  |  
+    <a href="https://www.com/"><img src="https://img.shields.io/badge/FORScan-Aus-blue" /></a>  | 
+    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-blue" /></a><br/>
+</p>
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
