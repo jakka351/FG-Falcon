@@ -1,4 +1,11 @@
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
+
+
+
+<p align="right">
+	
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
+	</p>
+
 
 
 # FG-Falcon 
@@ -7,16 +14,17 @@
 <sup>	<a href="">
 Collection of resources relating to the electrical & mechanical components of the FG Falcon.
 	</a></sup>
-	<br/>
 	
 </p>
-<p align="right"><img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="27%" width="27%"/></p>
 
-<br/><br/><br/><br/>
-<br/><br/>
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
+
+
 
 ## Table of contents 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <table><sup>
 <tr>	
@@ -62,14 +70,15 @@ Collection of resources relating to the electrical & mechanical components of th
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-## Orion CanBus
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="35%" width="35%"/><br/>
+
+# Orion CANBus
 
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
 
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163747790-0e5a65f3-4708-4935-a9f1-8881d89ae040.png" height="10%" width="10%"/>
-<br/>
 
 ## Vehicle Network layout:
 
