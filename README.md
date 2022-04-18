@@ -17,7 +17,6 @@ Collection of resources relating to the electrical & mechanical components of th
 ## Table of contents 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-
 <table><sup>
 <tr>	
 <td>
@@ -65,8 +64,12 @@ Collection of resources relating to the electrical & mechanical components of th
 ## Orion CanBus
 
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
-    
-       
+
+
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163747790-0e5a65f3-4708-4935-a9f1-8881d89ae040.png" height="10%" width="10%"/>
+<br/>
+
 ## Vehicle Network layout:
 
 Protocol  | Modules | Speed | Function  |
@@ -317,7 +320,8 @@ Australian CanBus Products
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <br/>
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/Attach0_20210824_184348.jpg" height="30%" width="30%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163750249-88f995f6-7996-465c-8bb7-997c58af6940.png" height="" width="" />
+
   
 ### [`Whiteford Tech`](https://m.facebook.com/Whiteford-Tech-168145224027606/)  
 
