@@ -23,6 +23,7 @@ Collection of resources relating to the electrical & mechanical components of th
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-blue" /></a><br/>
 </p>
 
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
 
@@ -66,16 +67,14 @@ Collection of resources relating to the electrical & mechanical components of th
 - [Credit and license](#Credit-and-license)
 - [Disclaimer](#Disclaimer)  
 	   
-<p align="right"> 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" /></p>
 </td>
 	</tr></sup>
 </table>
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="35%" width="35%"/><br/>
+<p align="right"> 
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" /></p>
 
 # Orion CANBus
 
@@ -171,8 +170,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="10%" width="10%"/>
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
-
+  
 ## Software
 Software Written by owners and enthusiasts. 
 
