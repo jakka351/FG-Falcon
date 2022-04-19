@@ -218,7 +218,8 @@ Description   | Platform      | Model     | Author
       - Uses python-can library and SPI-CAN interface
       - Emit keypresses which are picked up by Android Auto  
 
-<img src="https://raw.githubusercontent.com/jakka351/can0swc/main/can0swc.gif" height="50%" width="50%" />
+<img src="https://user-images.githubusercontent.com/57064943/164008829-e267f4b3-ce48-440f-863c-020da48f7bca.png" height="50%" width="50%" />
+
      
 <br/>
 
