@@ -354,9 +354,8 @@ Australian CanBus Products
   -  `MKII Custom ICC Gauges and Graphix, GT-F 351 Gauges`  
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
-![image](https://user-images.githubusercontent.com/57064943/163984053-399a46bb-c5e5-4ef3-b871-4543f3dd16ba.png)
 
-<img src="https://user-images.githubusercontent.com/57064943/163979523-7dc8214e-dab9-407b-afde-6b8124cf853d.png" height="30%" width="30%" /><img src="https://user-images.githubusercontent.com/57064943/163982261-bf724897-aa35-4f8e-84f1-bfeb3450bf5e.png" height="50%" width="50%" /><img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FB_IMG_1647510577547.jpg" height="30%" width="30%" />
+<img src="https://user-images.githubusercontent.com/57064943/163982261-bf724897-aa35-4f8e-84f1-bfeb3450bf5e.png" height="70%" width="70%" />
 <br/> 
 <br/>
 <br/>
