@@ -1,11 +1,11 @@
-
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 <p align="right">
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
 	
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" height="35%" width="35%"/>
-	</p>
+</p>
 
 
 
@@ -14,17 +14,19 @@
 <p align="left"> 
 <sup>	<a href="">
 Collection of resources relating to the electrical & mechanical components of the FG Falcon.
-	</a></sup>
+	</a></sup><br />
 	
 </p>
-<p align="left">
+<p align="center">
     <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  |  
     <a href="https://www.com/"><img src="https://img.shields.io/badge/FORScan-Aus-blue" /></a>  | 
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-blue" /></a><br/>
 </p>
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
+
+<br/><br/><br/><br/>
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
+
 
 
 
@@ -384,7 +386,7 @@ Australian CanBus Products
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<br/><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/test%20(1).jpg" height="20%" width="20%" /> 
+<br/><img align="right" src="https://user-images.githubusercontent.com/57064943/163975755-9645df5a-eef6-427d-bdb0-87c316931c01.png" height="20%" width="20%" /> 
 ## Interior Command Centre  / Entertainment System
  - [`Enable FPV Logo on ICC`](https://github.com/jakka351/FG-Falcon/wiki/Enable-FPV-Logo-on-ICC)   
  - [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
@@ -526,6 +528,7 @@ resources/
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" height="35%" width="35%"/>
 
 ## [Troubleshooting Tips]()    
 
