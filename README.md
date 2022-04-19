@@ -669,7 +669,7 @@ resources/
  [`Australian FORScan Users Group`](https://www.facebook.com/groups/344706629955641/)   
  [`Pitlane Automotive`](https://www.pitlaneautomotive.com/)  
  [`Injectronics`](https://injectronics.com.au)  
- [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website` 
+ [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website`   
  [`Kayhan Audio`](https://aslautomedia.com.au)  
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
