@@ -360,10 +360,6 @@ Australian CanBus Products
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="70%" width="70%" />
 <br/> 
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
 
 
@@ -408,19 +404,20 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
   
 <img  src="https://user-images.githubusercontent.com/57064943/163689716-06ed572b-572d-458a-8905-c81d189d3a84.png" height="80%" width="80%" />
   <br/>
+
    `Open Source ICC replacement in development`    
-<br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
-  <br/>
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
+<br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
+  <br/>
+
  ### ICC Splash Graphics 
  
   - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)[`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)[`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)  
   - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)[`GT Logo`]()[`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)  
-
   - [`ICC Nav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/navigationVariant.png)[`ICC NoNav`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/nonNavigationVariant.png)[`ICC Gauges Voltage`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Background_Volts.png)  
  
   
