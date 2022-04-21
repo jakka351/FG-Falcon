@@ -6,9 +6,12 @@
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
 	
 </p>
+<sup>
+The Ford Falcon (FG) is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
+To make a fresh start, Ford Australia decided to revolutionize the designation of all models within the range. In particular, the long-standing Futura, Fairmont, and Fairmont Ghia models were replaced by the more contemporary G6 and G6 E models, respectively. The FG moniker references the now discontinued Fairmont Ghia.[1] The FG was superseded in December 2014,[2] by the FG X series.
+[Wikipedia]
 
-
-
+</sup>
 # FG-Falcon 
 	
 <p align="left"> 
