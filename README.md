@@ -82,6 +82,8 @@ To make a fresh start, Ford Australia decided to revolutionize the designation o
 
 # Orion CANBus
 
+<sup> 
+
 Controller Area Network (CAN) bus. This consists
 of two twisted wires and operates serially
 (data is transmitted sequentially). It is used for
@@ -115,6 +117,8 @@ correct functioning of the data bus system, the
 modules must always be connected with an
 integral terminating resistor.   
 
+</sup> 
+   
 `Module Communications Network, 2008 Workshop Manual`  
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
 
