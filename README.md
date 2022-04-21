@@ -84,30 +84,33 @@ To make a fresh start, Ford Australia decided to revolutionize the designation o
 # Orion CANBus
 
 <sup> 
-
 Controller Area Network (CAN) bus. This consists of two twisted wires and operates serially (data is transmitted sequentially). It is used for communication between the modules themselves and between the modules and the IDS. The modules are connected to the data bus in parallel. New modules can be incorporated easily, without modifying the other wiring or modules.
 The transmitted data is received by every module connected to the Controller Area Network (CAN). As each data packet has an identifier, in which  the priority of the message is determined as well as the content identification, each module can  detect whether or not the data is relevant for its own information processing. This enables several modules to be addressed with a particular data packet and supplied with data simultaneously. For this purpose, it is ensured that important data (for example from the Anti-lock Brake System (ABS)) is transmitted first. The other modules are only 
 able to submit their data to the data bus after the high-priority messages have been received. In order to guarantee a high degree of error  protection, two 120 Ohm terminating resistors are installed in the CAN. These are integrated in the first module connected to the CAN and in the  last module connected to the CAN respectively and are used for suppression as well as the elimination of voltage peaks. In order to ensure correct functioning of the data bus system, the modules must always be connected with an integral terminating resistor.   
 
 </sup> <br/><br/>  
-   
+ 
+<p> 
 `Module Communications Network, 2008 Workshop Manual`  
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
 
-<br /><sup>
+</p>
+<br />
 
 
-## Vehicle Network layout:
+## Vehicle Network layout:  
 
-Protocol  | Modules | Speed | Function  |
+<sup>
+
+Protocol  | Modules | Speed | [ Function       ] |
 ---------|---------|-------|--------|  
-   CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
-   CAN     | ABS, DSC, PCM, TCM, RCM, HIM | 500kbps | Powertrain Comms, ABS, Instrumentation  |
-   CAN     | ABS, DSC, SAS, YRS, RCM | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
-   ISO9141 | 6 Speed Trans Manufacturer | - | Not directly accessible single wire bus  |
-   LIN     | BEM to Alarm Link | 20kbps | Not directly accessible single wire master slave |  
+   CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM            | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
+   CAN     | ABS, DSC, PCM, TCM, RCM, HIM           | 500kbps | Powertrain Comms, ABS, Instrumentation  |
+   CAN     | ABS, DSC, SAS, YRS, RCM              | 500kbps | Private-HS-CAN, ABS,DSC,EBA,TCS, Steering Angle Sensor, LPI module to PCM |
+   ISO9141 | 6 Speed Trans Manufacturer            | - | Not directly accessible single wire bus  |
+   LIN     | BEM to Alarm Link                 | 20kbps | Not directly accessible single wire master slave |  
    EOBD | PCM | 500kbps | Emissions & Diagnostics  |
-   UART | AIM/Ipod | - | Apple Accessory Protool |
+   UART | AIM/Ipod | - | Apple Accessory Protool       |
    Bluetooth | BPM | - | Serial Port Profile |
    RF Comm | BEM | - | Keyfob |
    Infrared | NAV | Lightspeed! | Navigation Remote mk1 |
