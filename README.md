@@ -18,8 +18,8 @@ Collection of resources relating to the electrical & mechanical components of th
 	
 </p>
 <p align="center">
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  |  
-    <a href="https://www.com/"><img src="https://img.shields.io/badge/[DiagSig_Rx-FORScan-blue" /></a>  |  
+    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/[0x330]Ford-Forums-blue" /></a>  |  
+    <a href="https://www.com/"><img src="https://img.shields.io/badge/[DiagSig_Rx]-FORScan-blue" /></a>  |  
     <a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/[0x623]PCMtec-blue" /></a>  |  
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/[0x623]-BARRA-blue" /></a><br/>
 </p>
