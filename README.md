@@ -22,7 +22,7 @@ Collection of resources relating to the electrical & mechanical components of th
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/[0x330]CAN-BARRA-blue" /></a><br/>
 </p>
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="8%" width="8%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="15%" width="15%"/>
 
 <sup>
 The Ford Falcon is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
