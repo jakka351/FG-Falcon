@@ -127,9 +127,9 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="55%" width="55%" />
 
-## CanBus Decoded:
+# CanBus Decoded:
 [`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
-
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 			
   **Collection of FG-CAN Data from various sources**
    - [`latest and greatest fg can sheet`](https://github.com/jakka351/FG-Falcon/blob/master/6FPA.xlsx) 
@@ -157,12 +157,15 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163757433-f30c0cae-696a-4681-af92-a1c6cdeb13e9.png" height="10%" width="10%"/>
-
-  ## AsBuilt Data & Candump Logs:
+# Module Configuration [As Built Data]  
+  ## AsBuilt Data Files & Candump Logs:
    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)   
    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)   
    [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)    
-   				
+  ## Raw CAN Recordings(socketcan .log format)   			
+
+
+
 ![image](https://user-images.githubusercontent.com/57064943/132037966-b5bffa27-8b1b-4eef-be3e-53b271d4302e.png)
    
    
@@ -175,7 +178,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="10%" width="10%"/>
   
-## Software
+# Software
 Software Written by owners and enthusiasts. 
 
 Description   | Platform      | Model     | Author
@@ -296,9 +299,13 @@ Main Menu:
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-
-
-## `PCM Programming`    
+# ECU Firmware  
+  
+  W.I.P
+  
+  
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+# `PCM Programming`    
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
