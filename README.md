@@ -21,7 +21,7 @@ Collection of resources relating to the electrical & mechanical components of th
     <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  |  
     <a href="https://www.com/"><img src="https://img.shields.io/badge/FORScan-Aus-blue" /></a>  |  
     <a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/PCMtec-Tuning-blue" /></a>  |  
-    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-blue" /></a><br/>
+    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/0xBARRA%3F-blue" /></a><br/>
 </p>
 
 
