@@ -27,7 +27,7 @@ Collection of resources relating to the electrical & mechanical components of th
 <sup>
 The Ford Falcon is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
 To make a fresh start, Ford Australia decided to revolutionize the designation of all models within the range. In particular, the long-standing Futura, Fairmont, and Fairmont Ghia models were replaced by the more contemporary G6 and G6 E models, respectively. The FG moniker references the now discontinued Fairmont Ghia. The FG was superseded in December 2014, by the FG X series.
-[Wikipedia]
+[Wikipedia]()
 
 </sup>
 
@@ -102,7 +102,7 @@ able to submit their data to the data bus after the high-priority messages have 
 
 <sup>
 
-Protocol  | Modules | Speed | [ Function       ] |
+Protocol  | Modules | Speed | [ - - - - Function - - - - - -    ] |
 ---------|---------|-------|--------|  
    CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM            | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
    CAN     | ABS, DSC, PCM, TCM, RCM, HIM           | 500kbps | Powertrain Comms, ABS, Instrumentation  |
@@ -134,13 +134,13 @@ PAM | - |  Midspeed | 0x736 | 0x73E|  0x1081, 0x1087, 0x10FA  | 0x2701 UnSupppor
 PCM | - |  High Speed | 0x7E0 | 0x7E8 |  |  |
 TCM | - |  High Speed | 0x7E1| 0x7E9 |   |  |  
 HIM | - |  High Speed | 0x733 | 0x73A | |  |
-
+</sup>  
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="55%" width="55%" />
 
-# CanBus Decoded:
+## CanBus Decoded:
 [`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 			
@@ -171,12 +171,12 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163757433-f30c0cae-696a-4681-af92-a1c6cdeb13e9.png" height="10%" width="10%"/>
 
-# Module Configuration [As Built Data]  
-  ## AsBuilt Data Files & Candump Logs:
+## Module Configuration [As Built Data]  
+  ### AsBuilt Data Files & Candump Logs:
    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)   
    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)   
    [`fg fpv 5.4 tr6060 candump log hscan`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/candump-2021-01-20_205722.log)    
-  ## Raw CAN Recordings(socketcan .log format)   			
+  ### Raw CAN Recordings(socketcan .log format)   			
 
 
 
@@ -192,7 +192,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="10%" width="10%"/>
   
-# Software
+## Software
 Software Written by owners and enthusiasts. 
 
 Description   | Platform      | Model     | Author
@@ -315,13 +315,13 @@ Main Menu:
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-# ECU Firmware  
+## ECU Firmware  
   
   W.I.P
   
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-# `PCM Programming`    
+## `PCM Programming`    
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
@@ -329,7 +329,7 @@ Main Menu:
 
 <br /><a href="https://pcmtec.com/"><img align="right" src="https://user-images.githubusercontent.com/57064943/163758478-19cf4445-84bc-47fa-ba10-061e6ed70b2e.png" height="60%" width="60%"></img></a>
 
- ### <a href="https://pcmtec.com/">`PCMTec`</a>
+ ## <a href="https://pcmtec.com/">`PCMTec`</a>
 
   `PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/`    
 
@@ -383,7 +383,7 @@ Australian CanBus Products
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="70%" width="70%" />
+<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="90%" width="90%" />
 <br/> 
 <br/>
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
