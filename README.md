@@ -731,8 +731,12 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-## Disclaimer 
-#### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.
+## Disclaimer & Legal Notice
+#### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.  
+  
+  
+   
+ #### Please see [ClusterMods](https://www.clustermods.com/payment-postage) for a run down of the legalities and requirements in the modification of an Instrument Cluster Odometer reading. It is perfectly legal to change the reading in the context of a vehicle repair, ie replacement part, it is illegal to modify one with the intention to decieve or to gain finanicial benefit ie a 'wind back'. For further information on this issue and information for consumers see https://www.choice.com.au/transport/cars/used/articles/odometer-tampering-fraud
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
