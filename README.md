@@ -78,7 +78,7 @@ To make a fresh start, Ford Australia decided to revolutionize the designation o
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <p align="right"> 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="45%" width="45%" /></p>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" /></p>
 </p>
 
 # Orion CANBus
@@ -90,8 +90,14 @@ able to submit their data to the data bus after the high-priority messages have 
 
 </sup> <br/><br/>  
  
-<p> 
+<p> <br/><br/>  
+	
 `Module Communications Network, 2008 Workshop Manual`  
+	
+</p>
+
+<p><br/><br/>  
+	
    There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
 
 </p>
