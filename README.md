@@ -736,7 +736,7 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
   
   
    
- #### Please see [ClusterMods](https://www.clustermods.com/payment-postage) for a run down of the legalities and requirements in the modification of an Instrument Cluster Odometer reading. It is perfectly legal to change the reading in the context of a vehicle repair, ie replacement part, it is illegal to modify one with the intention to decieve or to gain finanicial benefit ie a 'wind back'. For further information on this issue and information for consumers see https://www.choice.com.au/transport/cars/used/articles/odometer-tampering-fraud
+ #### Please see [ClusterMods](https://www.clustermods.com/) for a run down of the legalities and requirements in the modification of an Instrument Cluster Odometer reading. It is perfectly legal to change the reading in the context of a vehicle repair, ie replacement part, it is illegal to modify one with the intention to decieve or to gain finanicial benefit ie a 'wind back'. For further information on this issue and information for consumers see https://www.choice.com.au/transport/cars/used/articles/odometer-tampering-fraud
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
