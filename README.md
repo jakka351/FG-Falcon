@@ -96,13 +96,17 @@ able to submit their data to the data bus after the high-priority messages have 
 
 <p><br/><br/>  
 	
-   There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg. In a nutshell the communications layers for 2008-2011 are as follows:
+   There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg.
+	  
+	In a nutshell the communications layers for 2008-2011 are as follows:
 
 </p>
 <br />
 
 
 ## Vehicle Network layout:  
+
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <sup>
 
@@ -142,11 +146,10 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="55%" width="55%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163755801-ee0254f2-0ae0-42fc-9e42-6eabe058f516.png" height="35%" width="35%" />
 
 ## CanBus Decoded:
 [`Spreadsheet .PNG`](https://user-images.githubusercontent.com/57064943/147951982-b6c589f0-b3d5-418f-abff-7b50921f7264.png)
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 			
   **Collection of FG-CAN Data from various sources**
    - [`latest and greatest fg can sheet`](https://github.com/jakka351/FG-Falcon/blob/master/6FPA.xlsx) 
@@ -341,9 +344,15 @@ Main Menu:
 -  [`Software Demo Download`](https://www.pcmtec.com/demo)  
 -  [`Falcon How-To Guides`](https://forum.pcmtec.com/forum/17-falcon-howto-guides/)  
 -  [`PCMtec MKII Falcon Dash Emulator`](https://forum.pcmtec.com/topic/821-dash-emulator-for-testing-mft-multi-flash-tune-on-the-bench/)  
-  
-[![Rolando](http://img.youtube.com/vi/c-1weXzfLn0/0.jpg)](http://www.youtube.com/watch?v=c-1weXzfLn0 "Dash Emulator")  
+-  [`Functionality that can be added includes:`]()
+-  - `Launch Control`
+-  - `Flat Foot Shifting in Manual Transmissions - clutch position switch triggers torque reduction while throttle stays open`
+-  - `Boost by Gear/Speed`
+-  - `Selectable Multi-tune via Cruise Control paddle`
+-  - `PCM CustomOS` 
 
+![image](https://user-images.githubusercontent.com/57064943/165012862-df8389c1-2731-417c-ae98-decb2ec7c9a1.png)
+![image](https://user-images.githubusercontent.com/57064943/165012881-3bd462ca-6b72-47e1-9bdf-3874d300314b.png)
 
    
    <br/><br/>
@@ -354,7 +363,7 @@ Main Menu:
 
  <br/><img align="right" src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="20%" width="20%" />
 
-### [`CAN Solutions`](https://store.cansolutions.com.au/)    
+### [`CANBarrra`](https://store.cansolutions.com.au/)    
 Australian CanBus Products     
 -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
    Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicle
@@ -368,6 +377,7 @@ Australian CanBus Products
         Oil Pressure Lamp Output (BF Onwards)  
         Alternator Lamp Output (FG Onward)  
      ```  
+![image](https://user-images.githubusercontent.com/57064943/165013169-2fd3f0d2-fc4d-49fe-bfb0-622afa7af4e0.png)
 
 <br/>
 <br/>
