@@ -243,7 +243,8 @@ Description   | Platform      | Model     | Author
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
  [`Police Mode Enabler`](https://github.com/jakka351/FG-Falcon/) | Windows | BA-FG  | ??? |
  [`AsBuiltExplorer.exe`](https://github.com/jakka351/fg-python)  | Windows | Ford | Jesse Yeager www.compulsivecode.com |
-  
+ [`PodEmu Android Ipod Interface`](https://forum.xda-developers.com/t/app-4-0-3-podmode-connect-ur-android-device-to-iphone-dock-car-audio-interface.2220108/) | Android + AIM | FGI | [`Forum Post`](https://www.fordxr6turbo.com/forum/topic/86337-fg-iphone-connector-to-android/) [`Youtube`](https://www.youtube.com/watch?v=0UgZ8OL72OA) Classic |  
+ 
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
