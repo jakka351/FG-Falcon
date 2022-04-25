@@ -173,8 +173,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
  ![image](https://user-images.githubusercontent.com/57064943/147953425-1da72aa0-6974-447d-aa46-60243a4ff166.png)
 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)![image](https://user-images.githubusercontent.com/57064943/165017575-21684587-5262-4e79-99ab-60437c72b5a5.png)
-
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/165017526-8ecc6cf9-2e2e-43f2-8f25-713441db2dd6.png" height="30%" width="30%"/>
