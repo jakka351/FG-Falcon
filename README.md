@@ -101,10 +101,9 @@ able to submit their data to the data bus after the high-priority messages have 
 	In a nutshell the communications layers for 2008-2011 are as follows:
 
 </p>
-<br />
-
 <img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="25%" width="25%" />
-     
+<br />
+ 
  
 
 
