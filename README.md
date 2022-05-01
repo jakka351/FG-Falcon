@@ -202,7 +202,9 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="18%" width="18%"/>
+
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166146149-194cba07-3baa-46d2-b5f0-cfa753d52178.png" height="25%" width="25%"/>
 <br />
 
 ## Firmware
@@ -509,8 +511,11 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 
 
 <br/>
-<br/><img align="right" src="https://user-images.githubusercontent.com/57064943/166143556-b8be13d6-914e-412a-941d-bd9ecf19bb90.png align="right" width="25%" height="25%" />
+<br/><img align="right" src="https://user-images.githubusercontent.com/57064943/166143556-b8be13d6-914e-412a-941d-bd9ecf19bb90.png" align="right" width="25%" height="25%" />
 
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166145564-bb69cf50-aad1-4aab-aaab-0973dce81a8e.png" align="right" width="25%" height="25%" />
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166145975-32cb6f7b-5a7f-49e8-afe2-937fbd2d3041.png" align="right" width="25%" height="25%" />
 
 
 ## Libraries  
