@@ -96,9 +96,9 @@ able to submit their data to the data bus after the high-priority messages have 
 	 
 	
 </p>
-<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="20%" width="20%" />
+<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="30%" width="30%" />
 <br />
- <br/> FG-Falcon/README.md 
+ 
  
 
 
@@ -204,7 +204,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166146149-194cba07-3baa-46d2-b5f0-cfa753d52178.png" height="25%" width="25%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166146149-194cba07-3baa-46d2-b5f0-cfa753d52178.png" height="35%" width="35%"/>
 <br />
 
 ## Firmware
@@ -217,7 +217,7 @@ Seeking `.phf` and `.hex` firmwares for the FGI Falcon ecu's specifically the FD
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="15%" width="15%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="30%" width="30%"/>
   
 ## Software
 Software Written by owners and enthusiasts. 
