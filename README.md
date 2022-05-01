@@ -28,6 +28,7 @@ To make a fresh start, Ford Australia decided to revolutionize the designation o
 [Wikipedia](https://wikipedia.org)
 
 </sup>
+
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="5%" width="5%"/>
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
@@ -200,15 +201,21 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="18%" width="18%"/>
+<br />
+
 ## Firmware
 Seeking .phf and .hex firmwares for the FGI Falcon ecu's specifically the FDIM, ACM, AIM, BPM. Bootloaders would be nice too. File headers would also be helpful in recreating the files. Manufacturer was SWSA, Sumitomo Wiring Systems Australia.  
 
+<br />
+<br />
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/160247583-dfb5eb54-70f2-415b-810b-6da187de90cc.png" height="10%" width="10%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="15%" width="15%"/>
   
 ## Software
 Software Written by owners and enthusiasts. 
@@ -499,6 +506,13 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
+
+
+<br/>
+<br/><img align="right" src="https://user-images.githubusercontent.com/57064943/166143556-b8be13d6-914e-412a-941d-bd9ecf19bb90.png align="right" width="25%" height="25%" />
+
+
+
 ## Libraries  
 
 
@@ -544,8 +558,9 @@ for more information, use the help file
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img src="https://user-images.githubusercontent.com/57064943/166140705-da5ce4de-3a6c-4a4a-a8df-3c5378c6ea63.png" align="right" height="24%" width="24%" />
 <br /> 
+<img src="https://user-images.githubusercontent.com/57064943/166140705-da5ce4de-3a6c-4a4a-a8df-3c5378c6ea63.png" align="right" height="24%" width="24%" />
+
 
 
 ### Resources
@@ -743,12 +758,8 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 
 ## Disclaimer & Legal Notice
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.  
+ 
   
-  
-   
- #### Please see [ClusterMods](https://www.clustermods.com/) for a run down of the legalities and requirements in the modification of an Instrument Cluster Odometer reading. It is perfectly legal to change the reading in the context of a vehicle repair, ie replacement part, it is illegal to modify one with the intention to decieve or to gain finanicial benefit ie a 'wind back'. For further information on this issue and information for consumers see https://www.choice.com.au/transport/cars/used/articles/odometer-tampering-fraud
-
-
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
@@ -761,10 +772,7 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
    
   <p align="center"> 
 </p><p align="center">
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/github/stars/jakka351/FG-Falcon" /></a>  | 
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/Ford-Forums-blue" /></a>  |  
-    <a href="https://www.com/"><img src="https://img.shields.io/badge/FORScan-Aus-blue" /></a>  | 
-    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/Barra-Swapped%3F-blue" /></a><br/>
+   <br/>
 </p>
 
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
