@@ -92,18 +92,12 @@ able to submit their data to the data bus after the high-priority messages have 
 	
 `Module Communications Network, 2008 Workshop Manual`  
 	
-</p>
-
-<p><br/><br/>  
+	 
 	
-   There are significant changes between the BF, FG, FGII and FG-X models. Most of these documents are referring to the mark I fg.
-	  
-	In a nutshell the communications layers for 2008-2011 are as follows:
-
 </p>
-<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="25%" width="25%" />
+<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="20%" width="20%" />
 <br />
- 
+ <br/> FG-Falcon/README.md 
  
 
 
@@ -583,6 +577,7 @@ resources/
   
   [![IMAGE](http://img.youtube.com/vi/TRlQQ8DtfMQ/0.jpg)](http://www.youtube.com/watch?v=TRlQQ8DtfMQ "Territory CANbus Comms Issue")  
   - [`Body Elec Module differences MKI/MKII`](https://www.pandgmotors.com.au/uncategorized/ford-falcon-fg1-and-fg2-bcm-differences-and-programming-what-not-to-do/)  
+  - [`F6 Miss`](https://www.scannerdanner.com/forum/post-your-repair-questions-here/742-ford-fg-f6-miss.html)  
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)    
   - [`Ford Mods Technical Document Archive`](http://www.fordmods.com/ford-technical-documents.html)      
   - [`Ford Mods Forum List`](http://www.fordmods.com/fordmods-tech-f57/)    
