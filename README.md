@@ -547,6 +547,10 @@ for more information, use the help file
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
+<img src="https://user-images.githubusercontent.com/57064943/166140705-da5ce4de-3a6c-4a4a-a8df-3c5378c6ea63.png" align="right" height="24%" width="24%" />
+<br /> 
+
+
 ### Resources
 
 A lot of stuff that is not listed is contained within the Resources folder. 
@@ -734,8 +738,6 @@ resources/
 For queries, concerns, submissions, etc please message on fordforums.com.au.    
 [`Jakka351`](https://github.com/jakka351)      
 [`GokhanDeveloper`](https://github.com/gokhandeveloper)    
-
-![image](https://user-images.githubusercontent.com/57064943/165018162-e0a6cc74-9b0e-4b70-a85c-69fed9974ad8.png)
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
