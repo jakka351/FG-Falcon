@@ -208,7 +208,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 <br />
 
 ## Firmware
-Seeking .phf and .hex firmwares for the FGI Falcon ecu's specifically the FDIM, ACM, AIM, BPM. Bootloaders would be nice too. File headers would also be helpful in recreating the files. Manufacturer was SWSA, Sumitomo Wiring Systems Australia.  
+Seeking `.phf` and `.hex` firmwares for the FGI Falcon ecu's specifically the FDIM, ACM, AIM, BPM. `Bootloaders` would be nice too. File `headers` would also be helpful in recreating the files. Manufacturer was SWSA, `Sumitomo Wiring Systems Australia`.  
 
 <br />
 <br />
