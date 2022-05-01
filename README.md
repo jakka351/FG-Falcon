@@ -392,7 +392,7 @@ Australian CanBus Products
         Oil Pressure Lamp Output (BF Onwards)  
         Alternator Lamp Output (FG Onward)  
      ```  
-![image](https://user-images.githubusercontent.com/57064943/165013169-2fd3f0d2-fc4d-49fe-bfb0-622afa7af4e0.png)
+![image](https://user-images.githubusercontent.com/57064943/166140369-735746f1-e1b8-4c79-b0d2-c1cb314214f5.png)
 
 <br/>
 <br/>
