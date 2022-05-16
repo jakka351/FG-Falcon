@@ -16,29 +16,29 @@ Collection of resources relating to the electrical & mechanical components of th
 	
 </p>
 <p align="left">
-    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/[0x2E1]Ford-Forums-blue" /></a>  |  
-    <a href="https://www.com/"><img src="https://img.shields.io/badge/[0x7E0]-FORScan-blue" /></a>  |  
-    <a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/[0x623]PCM-.tec-blue" /></a>  |  
+    <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/[0x2E1]Ford-Forums-blue" /></a>    
+    <a href="https://www.com/"><img src="https://img.shields.io/badge/[0x7E0]-FORScan-blue" /></a>    
+    <a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/[0x623]PCM-.tec-blue" /></a>    
     <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/[0x330]CAN-BARRA-blue" /></a><br/>
 </p>
-
 <sup>
 The Ford Falcon is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
 To make a fresh start, Ford Australia decided to revolutionize the designation of all models within the range. In particular, the long-standing Futura, Fairmont, and Fairmont Ghia models were replaced by the more contemporary G6 and G6 E models, respectively. The FG moniker references the now discontinued Fairmont Ghia. The FG was superseded in December 2014, by the FG X series.
 https://en.wikipedia.org/wiki/Ford_Falcon_(FG)
-
-</sup>
-
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="5%" width="5%"/>
+<br/></sup>
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163754068-164f0f06-a0d0-4a6f-a0c4-317e01e043b6.png" height="7%" width="7%"/>
+
+
 ## Table of contents 
 
 <table><sup>
 <tr>	
 <td>
 
-	
 - [Orion CanBus](https://github.com/jakka351/fg-falcon#orion)
 - [Module Comms Overview](https://github.com/jakka351/fg-falcon#vehicle-network-layout)
 - [CanBus Decoded](https://github.com/jakka351/fg-falcon#canbus-decoded)
