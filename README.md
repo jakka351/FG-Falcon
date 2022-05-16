@@ -749,9 +749,11 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 [`Jakka351`](https://github.com/jakka351)      
 [`GokhanDeveloper`](https://github.com/gokhandeveloper)    
    
+<sup>
 Also feel free to report any issues to your local police station, but please remember to use the 131-444 number and not 000, as they may deem the situation to be less urgent than you do. They may also laugh at you.   
+</sup>
   
-`pew.`.  `pewpew.` 
+`pew.`  `pewpew.` 
   
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
