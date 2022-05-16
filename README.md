@@ -96,7 +96,7 @@ able to submit their data to the data bus after the high-priority messages have 
 	 
 	
 </p>
-<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="20%" width="20%" />  
+<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="12%" width="12%" />  
  
  
 
@@ -216,7 +216,7 @@ Seeking `.phf` and `.hex` firmwares for the FGI Falcon ecu's specifically the FD
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="30%" width="30%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="10%" width="10%"/>
   
 ## Software
 Software Written by owners and enthusiasts. 
@@ -348,7 +348,7 @@ Main Menu:
   [image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="35%" width="35%"/>
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="20%" width="20%"/>
   
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
@@ -409,7 +409,7 @@ Australian CanBus Products
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <br/>
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="50%" width="50%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="25%" width="25%" />
 
   
 ### [`Whiteford Tech`](https://m.facebook.com/Whiteford-Tech-168145224027606/)  
@@ -421,7 +421,7 @@ Australian CanBus Products
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="90%" width="90%" />
+<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="65%" width="65%" />
 <br/> 
 <br/>
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
