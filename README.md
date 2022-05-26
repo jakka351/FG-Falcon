@@ -195,9 +195,8 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
    - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
    - [`The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan`](https://github.com/jakka351/FG-Falcon/wiki/The-Ultimate-Guide-to-Re-Coding-Fg-Module-VIN-numbers-with-Forscan) 
    - [`Ford Wreckers Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
-   - [`Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion`](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)
-      
-  
+   - [`Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion`](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)  
+   - [`Activate Police Mode with Socketcan`](https://github.com/jakka351/FG-Falcon/wiki/Activate-Police-Mode-with-Socketcan). 
 
 
 
