@@ -697,6 +697,7 @@ resources/
 
   
 ## Articles  
+ - [`Bullet Performance Racing's Technical Archive`](http://www.bpracing.com.au/Technical.html)    
  - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
   - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
@@ -739,7 +740,8 @@ resources/
  [`ASL Automedia`](https://www.aslautomedia.com.au/)        
  [`MackiElec Industries`](https://mackielecindustries.com.au)     
  [`Hooton's Harnesses`](https://www.facebook.com/hootonsharnesses)  
- ['TI Performance'](https://www.tiperformance.com.au/vehicle/fg-falcon/)  
+ [`TI Performance`](https://www.tiperformance.com.au/vehicle/fg-falcon/)  
+ [`Bullet Performance Racing`](http://www.bpracing.com.au/)    
  [`XR6 Turbo Developments`](https://www.xr6turbodevelopments.com.au/)    
  [`Australian FORScan Users Group`](https://www.facebook.com/groups/344706629955641/)   
  [`Pitlane Automotive`](https://www.pitlaneautomotive.com/)  
