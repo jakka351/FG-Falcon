@@ -607,6 +607,8 @@ resources/
 
   
   [![IMAGE](http://img.youtube.com/vi/TRlQQ8DtfMQ/0.jpg)](http://www.youtube.com/watch?v=TRlQQ8DtfMQ "Territory CANbus Comms Issue")  
+  `Whiteford saves the day again...`  
+  
   - [`Body Elec Module differences MKI/MKII`](https://www.pandgmotors.com.au/uncategorized/ford-falcon-fg1-and-fg2-bcm-differences-and-programming-what-not-to-do/)  
   - [`F6 Miss`](https://www.scannerdanner.com/forum/post-your-repair-questions-here/742-ford-fg-f6-miss.html)  
   - [`Ford Territory CanBus Issue - YouTube Video`](https://www.youtube.com/watch?v=TRlQQ8DtfMQ)    
@@ -772,7 +774,7 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 [`GokhanDeveloper`](https://github.com/gokhandeveloper)    
    
 <sup>
-Also feel free to report any issues to your local police station, but please remember to use the 131-444 number and not 000, as they may deem the situation to be less urgent than you do. They may also laugh at you.   
+Also feel free to report any issues to your local police station, but please remember to use the 131-444 number and not 000, as they may deem the situation to be less urgent than you do.  
 </sup>
   
 `pew.`  `pewpew.` 
