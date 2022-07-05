@@ -767,7 +767,7 @@ resources/
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166146149-194cba07-3baa-46d2-b5f0-cfa753d52178.png" height="20%" width="20%"/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/gauge_temp_trans.png" height="20%" width="20%"/>
 
 ## Contributors
 For queries, concerns, submissions, etc please message on fordforums.com.au.    
