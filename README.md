@@ -352,15 +352,14 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 <img align='right' src='https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/pican.png' height='15%' width='15%' />
 </a>
 
-### [`Command Line Diagnostic Utility for Orion`](https://github.com/jakka351/6fpa-util)
+### [ Diagnostic Utility for Orion`](https://github.com/jakka351/6fpa-util)
 
 <a href="https://github.com/jakka351/6FPA-util"><img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/6fpalong.png" /></a>     
   
 <br/>
 
-Main Menu:      
 
-<img src="https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png" height="75%" width="75%" /> 
+<img src="[https://raw.githubusercontent.com/jakka351/6FPA-util/main/img/Screenshot_20211106_194912.png](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGCOM.gif)" height="75%" width="75%" /> 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
@@ -768,6 +767,8 @@ resources/
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+<img align="right" src="[https://user-images.githubusercontent.com/57064943/166146149-194cba07-3baa-46d2-b5f0-cfa753d52178.png](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/gauge_temp_trans.png
+)" height="20%" width="20%"/>
 
 ## Contributors
 For queries, concerns, submissions, etc please message on fordforums.com.au.    
