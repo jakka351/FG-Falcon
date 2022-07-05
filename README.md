@@ -451,9 +451,12 @@ Australian CanBus Products
 
 
 <br/><img align="right" src="https://user-images.githubusercontent.com/57064943/163975755-9645df5a-eef6-427d-bdb0-87c316931c01.png" height="20%" width="20%" /> 
-## Interior Command Centre  / Entertainment System
+# Interior Command Centre  / Entertainment System
  - [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
- 
+
+<img  src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/fdim_hvac_header.png" height="80%" width="80%" />
+  <br/>
+
 
 Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
  
@@ -461,8 +464,8 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-### OpenICC  
-  
+
+## OpenICC  
 <img  src="https://user-images.githubusercontent.com/57064943/163689716-06ed572b-572d-458a-8905-c81d189d3a84.png" height="80%" width="80%" />
   <br/>
 
@@ -525,8 +528,6 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 
 
 <br/>
-
-<img align="right" src="https://user-images.githubusercontent.com/57064943/166145975-32cb6f7b-5a7f-49e8-afe2-937fbd2d3041.png" align="right" width="25%" height="25%" />
 
 
 ## Libraries  
@@ -601,7 +602,7 @@ resources/
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" height="35%" width="35%"/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/gauge_speed_trans.png" height="20%" width="20%"/>
 
 ## [Troubleshooting Tips]()    
 
