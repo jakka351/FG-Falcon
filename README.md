@@ -743,6 +743,7 @@ resources/
 
 
 ## Credit & License 
+Note: The license referenced at the top only covers this readme file, persons listed below may have other applicable licenses in their works that are linked from here.
  - [`Kyle May`](https://www.kylemay.net.au/)   
  - [`Bull3time`](https://github.com/Bull3time)  
  - [`Mitchell H`](https://fordforums.com.au/member.php?u=2315299)
@@ -751,7 +752,7 @@ resources/
  - [`XR6 ICC Replacement`](https://fordforums.com.au/showthread.php?t=11475851)    
  - [`ICC Replacement`](https://fordforums.com.au/showthread.php?p=6521457#post6521457)  
  - [`Ford Forums Australia`](https://fordforums.com.au)      
-  
+ - [`Ford of Australia`](https://ford.com.au)  
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
