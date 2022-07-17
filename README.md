@@ -688,6 +688,9 @@ resources/
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/179386149-17db16b9-873d-473f-b5c1-bd130fbd2e3d.png" height="20%" width="20%"/>
+
   
 ## Articles  
  - [`Bullet Performance Racing's Technical Archive`](http://www.bpracing.com.au/Technical.html)    
@@ -711,7 +714,6 @@ resources/
  
  
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-
 
 
 <a href="https://www.fordforums.com.au/"><img src="https://www.fordforums.com.au/banners/AFF_fordforums_banner.jpg" /></a><br/>  
@@ -776,7 +778,11 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 <sup>
 
 
-Also feel free to report any issues to your local police station, but please remember to use the 131-444 number and not 000, as they may deem the situation to be less urgent than you do.  
+Also feel free to report any issues to your local police station,  
+but please remember to use the 131-444 number and not 000,   
+as they may deem the situation to be less urgent than you do.  
+
+
 </sup>
   
 `pew.`  `pewpew.` 
@@ -806,11 +812,9 @@ Also feel free to report any issues to your local police station, but please rem
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 <br/>
 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 ![image](https://user-images.githubusercontent.com/57064943/179386128-bda7f254-c358-4428-95cc-6d8ced575978.png)
-![image](https://user-images.githubusercontent.com/57064943/179386149-17db16b9-873d-473f-b5c1-bd130fbd2e3d.png)
 ![image]()
 
-![image]()
+<img align="right" src="https://user-images.githubusercontent.com/57064943/179386149-17db16b9-873d-473f-b5c1-bd130fbd2e3d.png" height="20%" width="20%"/>
