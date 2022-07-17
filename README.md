@@ -619,6 +619,9 @@ resources/
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+![image]()
+
+
 
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
 
@@ -676,6 +679,8 @@ resources/
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+<img align="right" src="https://user-images.githubusercontent.com/57064943/179399073-ce0d1e13-7cf7-4ea7-8484-7afe53d876ca.png" alt="EFFGEE">
 
   
 ## [Wiki](https://github.com/jakka351/FG-Falcon/wiki)  
