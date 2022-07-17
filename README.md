@@ -434,6 +434,8 @@ Australian CanBus Products
    </p>
 <br/>
    
+   <img align="right" src="https://user-images.githubusercontent.com/57064943/179398128-e2bf011b-6aee-4b40-9411-342d25c94ea5.png" height="20%" width="20%"/>
+
  
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
   
@@ -461,6 +463,7 @@ Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY
 
    `Open Source ICC replacement in development`    
 
+![image](https://user-images.githubusercontent.com/57064943/179398405-0c1b8caa-d09d-4ec0-824b-b8addd50fe50.png)
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
