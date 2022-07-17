@@ -680,7 +680,7 @@ resources/
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://user-images.githubusercontent.com/57064943/179399073-ce0d1e13-7cf7-4ea7-8484-7afe53d876ca.png" alt="EFFGEE">
+<img align="right" src="https://user-images.githubusercontent.com/57064943/179399073-ce0d1e13-7cf7-4ea7-8484-7afe53d876ca.png" =height="20%" WIDTH="20%" alt="EFFGEE">
 
   
 ## [Wiki](https://github.com/jakka351/FG-Falcon/wiki)  
