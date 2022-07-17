@@ -764,6 +764,11 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 [`GokhanDeveloper`](https://github.com/gokhandeveloper)    
    
 <sup>
+
+
+
+![image](https://user-images.githubusercontent.com/57064943/179386094-be411b38-93c1-4c9e-adc0-8685940acc3e.png)
+
 Also feel free to report any issues to your local police station, but please remember to use the 131-444 number and not 000, as they may deem the situation to be less urgent than you do.  
 </sup>
   
