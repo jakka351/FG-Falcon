@@ -1,5 +1,5 @@
 //Infered port, connected to Base shield D3.
-
+// This work by Mitchell H
 #define SDA_PORT PORTD
 #define SDA_PIN 4   //define the SDA pin         
 #define SCL_PORT PORTD
