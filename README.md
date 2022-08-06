@@ -701,9 +701,11 @@ resources/
 
   
 ## Articles  
+
  - [`Bullet Performance Racing's Technical Archive`](http://www.bpracing.com.au/Technical.html)    
+ - [`Ford Spanish & Silver Oak PCM Processor Info from BPR`](https://www.bulletperformanceracing.com.au/PPC-Hardware.html)  
  - [`SocketCAN Setup for Raspberry Pi`](https://github.com/jakka351/FG-Falcon/wiki/Socketcan-Setup-Raspberry-Pi)
-  - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
+ - [`JasonACT's Ford Forums Thread on the failing mkII ICC`](https://www.fordforums.com.au/showthread.php?t=11479908&page=15)  `Recommended Reading`
  - [`FG Github Wiki`](https://github.com/jakka351/FG-Falcon/wiki)   
  - [`Benny Ryan's Aussie Tech Blog - https://benryanau.wordpress.com/`](https://benryanau.wordpress.com/)    
  - [`Playing with Socketcan`](https://dayba.wordpress.com/2017/05/25/playing-with-socketcan-using-can-utils/)  
