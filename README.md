@@ -185,6 +185,8 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 <img align="right" src="https://user-images.githubusercontent.com/57064943/165017526-8ecc6cf9-2e2e-43f2-8f25-713441db2dd6.png" height="30%" width="30%"/>
 
 ## Module Configuration [As Built Data]  
+  `Diagnostic Services 0x21 readDataByLocalId, 0x3B writeDataByLocalId are generally what is used to read and write the "As Built" data. Ford's Diagnostic software IDS & FJDS have the capability to read and write to these memory locations, as does the FORScan software. The Vehicle Identification Number is generaly located a memory location 0x00, and can be read via readDataByLocalId with a can message ie $7A6#0221000000000000 will ask the FDIM for its coded VIN number. `   
+    
   ### AsBuilt Data Files & Candump Logs:
    [`2009 FG Falcon FPV GS As Built Data`](https://github.com/jakka351/FG-FalconAsBuilt)   
    [`fg fpv 5.4 tr6060 candump log mscan`](https://github.com/jakka351/FG-Falcon/blob/master/resources/candump-2021-01-22_135811.log)   
