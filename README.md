@@ -680,6 +680,9 @@ resources/
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
+<img align="right" src="https://user-images.githubusercontent.com/57064943/185085315-de7a5e2d-3a71-4427-b90a-a93f02b5b0f7.jpeg" height="20%" width="20%"/>
+
+
 ## Wiring Diagrams & Pinouts                  [![images](https://img.shields.io/badge/Ford-Forums-darkblue)](https://fordforums.com.au/) 
  - [`ICC connector`](https://github.com/jakka351/FG-Falcon/wiki/Interior-Command-Centre)    
  - [`Cruise Control Buttons`](https://github.com/jakka351/FG-Falcon/wiki/Cruise-Control)  
