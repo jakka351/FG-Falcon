@@ -7,10 +7,10 @@
 	
 </p>
 
-# FG-Falcon 
-	
+# FG-Falcon `FoA Orion`
 <p align="left"> 
-<sup>	<a href="">
+<sup>
+<a href="">
 Collection of resources relating to the electrical & mechanical components of the FG Falcon.
 	</a></sup><br />
 	
