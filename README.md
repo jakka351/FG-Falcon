@@ -286,9 +286,28 @@ Description   | Platform      | Model     | Author
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+
+<br />
+
+<a href="https://fb.watch/fQ7c6DWO6V/"><img align="right" src="https://user-images.githubusercontent.com/57064943/192815222-37f1a4ed-14cf-4982-9738-e85218584072.png" height="20%" width="20%" /></a>
+
+
+
+### [`FoA Orion - Front Display Interface Module HVAC Zone Tool`](https://github.com/jakka351/can0swc)  
+
+  - `Set the Display of HVAC Data on the FDIM`
+      - Modifies a location in EEPROM memory within the FDIM allowing the HVAC zone display to be changed
+      - `https://fb.watch/fQ7c6DWO6V/`
+
+<img src="https://user-images.githubusercontent.com/57064943/192803218-e6afaf9f-7123-4c6b-84a7-52b2ccbe1daf.png" height="80%" width="80%" />
+
 <br />
 
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can0swc.png" height="30%" width="30%" /></a>
+
+
+
+
 
 ### [`can0swc`](https://github.com/jakka351/can0swc)  
 
@@ -584,7 +603,8 @@ for more information, use the help file
 <br /> 
 <img src="https://user-images.githubusercontent.com/57064943/166140705-da5ce4de-3a6c-4a4a-a8df-3c5378c6ea63.png" align="right" height="24%" width="24%" />
 
-
+![BLUBPMt](https://user-images.githubusercontent.com/57064943/192804854-c28ead8e-9f69-4d10-b00b-d84ac9c72f83.png)
+`Gotta love the BPM.`
 
 ### Resources
 
