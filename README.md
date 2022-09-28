@@ -284,7 +284,7 @@ Description   | Platform      | Model     | Author
  
 
 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+![setzone](https://user-images.githubusercontent.com/57064943/192819049-7a405a0a-dc49-44a8-8d06-b2b3aebf2013.png)
 
 
 <br />
@@ -295,11 +295,36 @@ Description   | Platform      | Model     | Author
 
 ### [`FoA Orion - Front Display Interface Module HVAC Zone Tool`](https://github.com/jakka351/can0swc)  
 
+
+
   - `Set the Display of HVAC Data on the FDIM`
       - `Modifies a location in EEPROM memory within the FDIM allowing the HVAC zone display to be changed`
       - [`https://fb.watch/fQ7c6DWO6V/`](https://fb.watch/fQ7c6DWO6V/)
 
 <img src="https://user-images.githubusercontent.com/57064943/192803218-e6afaf9f-7123-4c6b-84a7-52b2ccbe1daf.png" height="80%" width="80%" />
+
+![ABSCOMMBANNER](https://user-images.githubusercontent.com/57064943/192820256-a097c18a-47fd-4a16-aa93-5b41cb12be7b.png)
+
+<br />
+
+<a href="https://fb.watch/fQ7c6DWO6V/"><img align="right" src="https://user-images.githubusercontent.com/57064943/192819136-3973639a-3de5-49b2-a782-df9bdfe8500e.png" height="35%" width="35%" /></a>
+
+
+
+### [`FoA Orion - Antilock Brake System Config Tool`](https://github.com/jakka351/can0swc)  
+
+
+
+  - `Set the As Built Config for the ABS Module`
+
+![image])
+
+
+<img src="https://user-images.githubusercontent.com/57064943/192819934-7540f3a6-90d1-4d9c-9d11-f5cc11d1243e.png" height="80%" width="80%" />
+
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+
 
 <br />
 
