@@ -289,15 +289,15 @@ Description   | Platform      | Model     | Author
 
 <br />
 
-<a href="https://fb.watch/fQ7c6DWO6V/"><img align="right" src="https://user-images.githubusercontent.com/57064943/192815222-37f1a4ed-14cf-4982-9738-e85218584072.png" height="20%" width="20%" /></a>
+<a href="https://fb.watch/fQ7c6DWO6V/"><img align="right" src="https://user-images.githubusercontent.com/57064943/192815222-37f1a4ed-14cf-4982-9738-e85218584072.png" height="35%" width="35%" /></a>
 
 
 
 ### [`FoA Orion - Front Display Interface Module HVAC Zone Tool`](https://github.com/jakka351/can0swc)  
 
   - `Set the Display of HVAC Data on the FDIM`
-      - Modifies a location in EEPROM memory within the FDIM allowing the HVAC zone display to be changed
-      - `https://fb.watch/fQ7c6DWO6V/`
+      - `Modifies a location in EEPROM memory within the FDIM allowing the HVAC zone display to be changed`
+      - [`https://fb.watch/fQ7c6DWO6V/`](https://fb.watch/fQ7c6DWO6V/)
 
 <img src="https://user-images.githubusercontent.com/57064943/192803218-e6afaf9f-7123-4c6b-84a7-52b2ccbe1daf.png" height="80%" width="80%" />
 
