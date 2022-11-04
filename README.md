@@ -742,8 +742,21 @@ resources/
  - [`Audio Interface Module`](https://github.com/jakka351/FG-Falcon/wiki/Audio-Interface-Module)   
  - [`Bluetooth & Phone`](https://github.com/jakka351/FG-Falcon/wiki/Bluetooth)  
  - [`Diagnostic Port`](https://github.com/jakka351/FG-Falcon/wiki/Diagnostic-Port)  
+ 
+ ### Diagnostic Port Pinout
+
+![](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/plug_dlc.png)
+
+ ### Engine Bay Fuse
 
 ![eng_bay_fuse](https://user-images.githubusercontent.com/57064943/185084553-fc54860a-c0b6-4d33-9529-0b25f569894c.png)
+
+### Audio Interface Module Plug  
+![image](https://user-images.githubusercontent.com/57064943/199873835-47d07223-4919-413a-980f-9b7014e14583.png)
+
+### Schematic  
+![AIM](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGAIM.jpg)    
+![aim](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGAIM2b.jpg)
 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
