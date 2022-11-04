@@ -755,6 +755,8 @@ resources/
 ![image](https://user-images.githubusercontent.com/57064943/199873835-47d07223-4919-413a-980f-9b7014e14583.png)
 
 ### Schematic  
+![image](https://user-images.githubusercontent.com/57064943/199874247-d7f259e4-ef1c-4dad-8ba4-de07b7e31f1b.png)
+
 ![AIM](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGAIM.jpg)    
 ![aim](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGAIM2b.jpg)
 
