@@ -28,9 +28,9 @@ https://en.wikipedia.org/wiki/Ford_Falcon_(FG)
 <br/></sup>
 
   
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="5%" width="5%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="10%" width="10%" />
 
-### I am Jack's Lump of Cam      
+### I am Benjamins's Lump of Cam      
         
 	
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
