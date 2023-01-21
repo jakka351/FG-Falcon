@@ -231,9 +231,74 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
    
    ### ECU Rx/Tx Addressing 
    ![image](https://user-images.githubusercontent.com/57064943/194045888-cc97dc10-b80b-4cc3-a625-2388d0927b49.png)
+   
+### CAN Generic Diagnostic Specification - Down Under Version - Mk1 only
+Service  | Byte |
+---------|---------|
+diagnosticSessionControl | 0x10 | 
+reportDiagnosticState | 0x50 | 
+diagnosticSessionControl standardDiagnosticSession | 0x81 |
+diagnosticSessionControl ecuProgrammingSession | 0x85 |
+diagnosticSessionControl ecuAdjustmentSession | 0x87 |
+diagnosticSessionControl systemSupplierSpecific | 0xFA|
+clearDiagnosticInformation | 0x14 | 
+readDTCByStatus | 0x18 | 
+readDataByLocalID(As Built) | 0x21 | 
+readMemoryByCommonID(Data IDentifiers [DID]) | 0x22 | 
+readMemoryByAddress(Direct Memory Read[DMR]) | 0x23 | 
+requestSecurityAccess | 0x27 | 
+reportSecurityAccess | 0x67 | 
+writeDataByCommonID(Write DID Memory) | 0x2E | 
+inputOutputControlByLocalID (Routine Entry)| 0x2F | 
+startRoutineByLocalIdentifier(Ecu Self Test) | 0x31 | 
+stopRoutineByLocalIetdentifier | 0x32 | 
+requestRoutineResultsByLocalID | 0x33 | 
+requestDownload | 0x34 | 
+requestUpload | 0x35 | 
+transferData | 0x36 | 
+requestTransferExit | 0x37 | 
+writeDataByLocalId(Write As Built) | 0x3B | 
+requestReadMemoryBlock | 0x3C | 
+writeMemoryByAddress | 0x3D | 
+testerPresent | 0x3E | 
+testerPresent RequestResponse | 0x01 | 
+testerPresentSuppressResponse | 0x02 | 
+controlDTCSetting | 0x85 | 
+requestDiagnosticDataPacket | 0xA0 | 
+dynamicallyDefineDataPacket | 0xA1 | 
+noStoredCodesLoggingStateEntry | 0xB0 | 
+diagnosticCommand | 0xB1 | 
+inputIntegrityTestStateEntry | 0xB2 | 
+requestManufacturerStateEntry | 0xB4 |
 
-   
-   
+### 0x27 requestSecurityAccess - Parking Aid Module  
+```
+    	//////////////////////////////////////////////////////////////////
+        // / 0x736 Parking Aid Module
+        // / Seed & Key Procedure
+        // / must be in diagnostic mode 85 to get seed
+        // /
+        // /   Send >> 736$0210850000000000
+        // /   Recv << 736$0250850000000000
+        // /   Send >> 736$0227010000000000
+        // /   Recv << 736$0527021122330000
+        // /   Send >> 736$0227021122330000
+        // /   Recv << 736$0227020000000000
+        // /
+        // / 0.000000  736  02 27 01 00 00 00 00 00 .'.......
+        // / 0.000000  73E  05 67 01 11 22 33 00 00 .g.."
+        // /
+        // / Took me one guess to crack the pam seed key procedure.
+        // /
+        // /  can0  RX - -  73E   [8]  05 67 01 11 22 33 00 00   '.g.."3..'
+        // /  can0  TX - -  736   [8]  05 27 02 11 22 33 00 00   '.'.."3..'
+        // /  can0  RX - -  73E   [8]  02 67 02 00 00 00 00 00   '.g......'
+        //////////////////////////////////////////////////////////////////
+        // / Also interesting to note: entering into a systemSupplierSpecific diagnostic session is possible without security access:
+        // /  can0  TX - -  736   [8]  02 10 FA 00 00 00 00 00   
+        // /  can0  RX - -  73E   [8]  02 50 FA 00 00 00 00 00   
+        //////////////////////////////////////////////////////////////////
+```
 </p>  
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
