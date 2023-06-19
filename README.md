@@ -226,7 +226,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <p align="left">
     <sup>    
-    The module diagnostic's on the FGI Falcon are very much aligned to ISO 14230 - KWP2000, however they are Ford Specific and tFhe designated specification that the FGI Falcon was designed to is Ford's CAN Generic Diagnostic Specification v2001/V2003. There are some differences between the ford global specification and the diagnostic services on the vehicle. Beyond the diagnostics of the Ford Motor Company lies the component manufacturer diagnostics. Unknown and not accessible via Ford Diagnostic software, there are unknowns to be found within the vehicleManufacturerSpecific and systemSupplierSpecific diagnostic sessions, accessible on some modules without security access, some with hidden seed & key exchanges - and possibly with CAN Calibration protocol. Some of the component manufacturers are no longer around with respect to this vehicle, (SWSA), some have been renamed (VDO) and some are still around (Bosch). If anyone wants to share their secret documents, feel free to get in touch on ford forums au.
+    The module diagnostic's on the FGI Falcon are very much aligned to ISO 14230 - KWP2000, however they are Ford Specific and the designated specification that the FGI Falcon was designed to is Ford's CAN Generic Diagnostic Specification v2001/V2003. There are some differences between the ford global specification and the diagnostic services on the vehicle. Beyond the diagnostics of the Ford Motor Company lies the component manufacturer diagnostics. Unknown and not accessible via Ford Diagnostic software, there are unknowns to be found within the vehicleManufacturerSpecific and systemSupplierSpecific diagnostic sessions, accessible on some modules without security access, some with hidden seed & key exchanges - and possibly with CAN Calibration protocol. Some of the component manufacturers are no longer around with respect to this vehicle, (SWSA), some have been renamed (VDO) and some are still around (Bosch). If anyone wants to share their secret documents, feel free to get in touch on ford forums au.
    </sup>
    
    ### ECU Rx/Tx Addressing 
@@ -279,11 +279,11 @@ requestManufacturerStateEntry | 0xB4 |
         // / must be in diagnostic mode 85 to get seed
         // /
         // /   Send >> 736$0210850000000000
-        // /   Recv << 736$0250850000000000
+        // /   Recv << 73E$0250850000000000
         // /   Send >> 736$0227010000000000
-        // /   Recv << 736$0527021122330000
+        // /   Recv << 73E$0567021122330000
         // /   Send >> 736$0227021122330000
-        // /   Recv << 736$0227020000000000
+        // /   Recv << 73E$0267020000000000
         // /
         // / 0.000000  736  02 27 01 00 00 00 00 00 .'.......
         // / 0.000000  73E  05 67 01 11 22 33 00 00 .g.."
