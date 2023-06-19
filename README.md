@@ -517,7 +517,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
  <br/><img align="right" src="https://store.cansolutions.com.au/wp/wp-content/uploads/2020/07/CB2a.jpg" height="20%" width="20%" />
 
-# [`CANBarrra`](https://store.cansolutions.com.au/)    
+# [`CANBarra`](https://store.cansolutions.com.au/)    
 Australian CanBus Products     
 -  [`CANBarra CANBUS Translator`](https://store.cansolutions.com.au/product-category/canbarra-modules/)         
    Converts the CANBUS signals from BA BF FG PCMs for Barra Swapped vehicle
@@ -712,8 +712,7 @@ for more information, use the help file
 <br /> 
 <img src="https://user-images.githubusercontent.com/57064943/166140705-da5ce4de-3a6c-4a4a-a8df-3c5378c6ea63.png" align="right" height="24%" width="24%" />
 
-![BLUBPMt](https://user-images.githubusercontent.com/57064943/192804854-c28ead8e-9f69-4d10-b00b-d84ac9c72f83.png)
-`Gotta love the BPM.`
+
 
 ### Resources
 
@@ -725,7 +724,7 @@ resources/
 |    ├── /
 |    │   ├── file1
 |    │   └── file2
-|    └── folder4/
+|    └── folder4
 |        ├── file3
 |        └── file4
 |____
