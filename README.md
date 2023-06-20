@@ -27,12 +27,6 @@ To make a fresh start, Ford Australia decided to revolutionize the designation o
 https://en.wikipedia.org/wiki/Ford_Falcon_(FG)
 <br/></sup>
 
-  
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="10%" width="10%" />
-
-
-        
-	
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
@@ -95,21 +89,18 @@ able to submit their data to the data bus after the high-priority messages have 
 
 </sup> <br/><br/>  
  
-<p> <br/><br/>  
+<p> <br/>
 	
 `Module Communications Network, 2008 Workshop Manual`  
 	
-	 
-	
 </p>
-<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="20%" width="20%" />  
+<img src="https://user-images.githubusercontent.com/57064943/166141713-08ef10eb-26ea-45d1-94ad-ad35968772ff.png" align="right" height="15%" width="20%" />  
 
-## Vehicle Network layout:  
-
+# Vehicle Network layout:  
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <sup>
-
+	
 Protocol  | Modules | Speed | [ - - - - Function - - - - - -    ] |
 ---------|---------|-------|--------|  
    CAN     | AIM, ACM, BEM, BPM, FDIM, IC, PAM            | 125kbps | ICC, Audio, Bluetooth, Ipod, Cluster, Body Electric  |
@@ -195,6 +186,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 
 <p align="left">
     <sup>    
+	    
  Diagnostic Services `0x21 readDataByLocalId`, `0x3B writeDataByLocalId` are generally what is used to read and write the `As Built` data. Ford's Diagnostic software IDS & FJDS have the capability to read and write to these memory locations, as does the FORScan software. The Vehicle Identification Number isgenerally at memory location `0x00` on each ECU, and can be read via `readDataByLocalId` with a can message ie `$7A6#0221000000000000` will ask the FDIM for its coded VIN number. To write a VIN you generally need to have had securityAccess granted via a seed & key exchange.u</sup></p>   
 
   
