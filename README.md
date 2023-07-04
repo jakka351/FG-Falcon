@@ -706,7 +706,7 @@ for more information, use the help file
 
 
 
-### Resources
+## Resources
 
 A lot of stuff that is not listed is contained within the Resources folder. 
 
