@@ -508,7 +508,7 @@ Australian CanBus Products
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 <br/>
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="25%" width="25%" />
+<img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
 ### [`Whiteford Tech`](https://www.facebook.com/profile.php?id=100092233691024&mibextid=ZbWKwL)
