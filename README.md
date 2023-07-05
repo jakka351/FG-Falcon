@@ -520,52 +520,21 @@ Australian CanBus Products
   -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="65%" width="65%" />
+<img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 <br/> 
-<br/>
-<img align="right" src="https://user-images.githubusercontent.com/57064943/163706907-48fcd541-6998-42c8-a673-b33784e09128.png" height="25%" width="25%" />
-
-
-<br/>
-   <p align="center">
-    E . . . N . . . G . . . I . . . N . . . E . . . E . . . R
-   </p>
-<br/>
    
-   <img align="right" src="https://user-images.githubusercontent.com/57064943/179398128-e2bf011b-6aee-4b40-9411-342d25c94ea5.png" height="20%" width="20%"/>
-
- 
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-  
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 <br/><img align="right" src="https://user-images.githubusercontent.com/57064943/163975755-9645df5a-eef6-427d-bdb0-87c316931c01.png" height="20%" width="20%" /> 
 # Interior Command Centre  / Entertainment System
 
-![fdim_high_309](https://user-images.githubusercontent.com/57064943/185084644-87cb2d55-92c0-4987-bf6a-df587d067ea5.png)
-
-
 - [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
 
 <img  src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/fdim_hvac_header.png" height="80%" width="80%" />
   <br/>
 
-
-Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.   
- 
-
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-
-
-
-## OpenICC  
-<img  src="https://user-images.githubusercontent.com/57064943/163689716-06ed572b-572d-458a-8905-c81d189d3a84.png" height="80%" width="80%" />
-  <br/>
-
-   `Open Source ICC replacement in development`    
-
-![image](https://user-images.githubusercontent.com/57064943/179398405-0c1b8caa-d09d-4ec0-824b-b8addd50fe50.png)
+Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.  
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
