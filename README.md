@@ -187,7 +187,7 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
 <p align="left">
     <sup>    
 	    
- Diagnostic Services `0x21 readDataByLocalId`, `0x3B writeDataByLocalId` are generally what is used to read and write the `As Built` data. Ford's Diagnostic software IDS & FJDS have the capability to read and write to these memory locations, as does the FORScan software. The Vehicle Identification Number isgenerally at memory location `0x00` on each ECU, and can be read via `readDataByLocalId` with a can message ie `$7A6#0221000000000000` will ask the FDIM for its coded VIN number. To write a VIN you generally need to have had securityAccess granted via a seed & key exchange.u</sup></p>   
+ Diagnostic Services `0x21 readDataByLocalId`, `0x3B writeDataByLocalId` are generally what is used to read and write the `As Built` data. Ford's Diagnostic software IDS & FJDS have the capability to read and write to these memory locations, as does the FORScan software. The Vehicle Identification Number isgenerally at memory location `0x00` on each ECU, and can be read via `readDataByLocalId` with a can message ie `$7A6#0221000000000000` will ask the FDIM for its coded VIN number. To write a VIN you generally need to have had securityAccess granted via a seed & key exchange.</sup></p>   
 
   
   ### AsBuilt Data Files & Candump Logs:
