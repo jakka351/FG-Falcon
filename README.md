@@ -897,8 +897,7 @@ as they may deem the situation to be less urgent than you do.
   
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/gauge_temp_trans.png" height="20%" width="20%"/>
-![image](https://github.com/jakka351/FG-Falcon/assets/57064943/88b6051a-9cbc-4413-8b0c-10994126dd5c)
+<img align="right" src="https://github-production-user-asset-6210df.s3.amazonaws.com/57064943/254874402-88b6051a-9cbc-4413-8b0c-10994126dd5c.png" height="20%" width="20%"/>
 
 ## Disclaimer & Legal Notice
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.  
