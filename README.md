@@ -348,7 +348,7 @@ Description   | Platform      | Model     | Author
  [`Ford Mustang CAN2CLUSTER Project`](https://github.com/thomastech/CAN2Cluster)    |   | Mustang | https://github.com/thomastech/
  [`FORD EEC-IV diagnostic scanner`](https://github.com/babroval/ford-eec-iv-diagnostic)     |   | Ford | https://github.com/babroval/
  [`Display HVAC info can0hvac.py`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/jakka351)   | | |
- [`Police Mode Enabler`](https://github.com/jakka351/FG-Falcon/) | Windows | BA-FG  | ??? |
+ [`Police Mode Enabler`](https://github.com/jakka351/FG-Falcon/) | Windows | BA-FG  | [Cluster Mods](https://clustermods.com) |
  [`AsBuiltExplorer.exe`](https://github.com/jakka351/fg-python)  | Windows | Ford | Jesse Yeager www.compulsivecode.com |
  [`PodEmu Android Ipod Interface`](https://forum.xda-developers.com/t/app-4-0-3-podmode-connect-ur-android-device-to-iphone-dock-car-audio-interface.2220108/) | Android + AIM | FGI | [`Forum Post`](https://www.fordxr6turbo.com/forum/topic/86337-fg-iphone-connector-to-android/) [`Youtube`](https://www.youtube.com/watch?v=0UgZ8OL72OA) Classic |  
  
