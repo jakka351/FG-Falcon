@@ -408,7 +408,7 @@ Description   | Platform      | Model     | Author
 <a href="https://github.com/jakka351/can0swc"><img align="right" src="https://raw.githubusercontent.com/jakka351/can0swc/main/can0swc.png" height="30%" width="30%" /></a>
 
 
-
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
 ### [`can0swc`](https://github.com/jakka351/can0swc)  
@@ -529,7 +529,11 @@ Australian CanBus Products
         Engine Over Temperature Lamp Output  
         Oil Pressure Lamp Output (BF Onwards)  
         Alternator Lamp Output (FG Onward)  
-     ```  
+     ```
+
+
+     # Nigel!
+   
 ![image](https://user-images.githubusercontent.com/57064943/166140369-735746f1-e1b8-4c79-b0d2-c1cb314214f5.png)
 
 <br/>
@@ -541,14 +545,21 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
-### [`Whiteford Tech`](https://www.facebook.com/profile.php?id=100092233691024&mibextid=ZbWKwL)
+### [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
 
   -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
   -  `FPV Engine Calibrations`    
   -  `Custom Insrument Cluster Start Up Logos` `AKA Bootsplashes`  
   -  `MKII Custom ICC Gauges and Graphix, GT-F 351 Gauges`  
-  -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`  
+  -  `Module Configuration & Programming - Feature Enablers - RPM Shift Alarm`
+  -  `ZF 6HP26 Programming and Calibrations`
+  -  `Firmware updates, upgrades, troubleshooting`
+  -  `Barra Conversion Programming Services`
+  -  `ICC Programming`
+  -  `Passive Anti Theft System pairing and key pairing `
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
+
+#### `Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.`  
 
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 <br/> 
