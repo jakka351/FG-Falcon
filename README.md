@@ -365,6 +365,9 @@ Description   | Platform      | Model     | Author
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+
+<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGCOM.gif" height="100%" width="100%" align="center" /> 
+
 <br />
 
 <a href="https://fb.watch/fQ7c6DWO6V/"><img align="right" src="https://user-images.githubusercontent.com/57064943/192815222-37f1a4ed-14cf-4982-9738-e85218584072.png" height="35%" width="35%" /></a>
@@ -473,10 +476,6 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
   <br/>
 
-
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-
-<img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FGCOM.gif" height="100%" width="100%" align="center" /> 
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
