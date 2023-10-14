@@ -544,7 +544,7 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
-### [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
+# [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
 
   -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
   -  `FPV Engine Calibrations`    
@@ -558,7 +558,7 @@ Australian CanBus Products
   -  `Passive Anti Theft System pairing and key pairing `
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-#### `Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.`  
+#### Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.  
 
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 <br/> 
