@@ -83,29 +83,29 @@ namespace FGCOM
 		/////////////////////////////////////                                                  /////////////////////////////////////
 		public void startDiagnosticSession(string sessionType)
 		{
-            waitfor = 0x50;
-            addTxt1("[0x10 startDiagnosticSess] \r\n");
-            Write("10" + sessionType + "\r");
-			if (timeout == 0)
-			{
-				delayloop(250);
-				int sidByte = rxBuf[1];
-	            switch(sidByte)
-				{
-					case 0x50:
-						addTxt1(sessionType + " Session started successfully...\r\n");
-						break;
-					case 0x7F:
-						addTxt1(sessionType + " Session failed to start...\r\n");
-						break;
-					default:
-						addTxt1("No Response from ECU...\r\n");
-						break;
-				}
-				waitfor = 0;
-			}           
+          	  waitfor = 0x50;
+            	  addTxt1("[0x10 startDiagnosticSess] \r\n");
+            	  Write("10" + sessionType + "\r");
+		  if (timeout == 0)
+		  {
 			delayloop(250);
-			return;
+			int sidByte = rxBuf[1];
+	        	switch(sidByte)
+			{
+			    case 0x50:
+				addTxt1(sessionType + " Session started successfully...\r\n");
+				break;
+			    case 0x7F:
+				addTxt1(sessionType + " Session failed to start...\r\n");
+				break;
+           		    default:
+				addTxt1("No Response from ECU...\r\n");
+				break;
+			}
+			waitfor = 0;
+		    }           
+		    delayloop(250);
+		    return;
 		}
 		/////////////////////////////////////                              /////////////////////////////////////
 		/// startDiagnosticSession (ref. KWP-GRP-1.5, 6.1.1)
