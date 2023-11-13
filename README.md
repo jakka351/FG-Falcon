@@ -302,9 +302,9 @@ requestManufacturerStateEntry | 0xB4 |
 
 ## Firmware
 
-[`PHF2BIN`](https://github.com/rollsch/PHF2BIN) - `Converts a Ford .phf file to a binary image by rollsch`
-[`FG2ICCComms`](https://github.com/jakka351/FG2ICCComms) - `JasonACT's software tool to re-core the MK2 FDIM`
-`FG2IPCComms` - `JasonACT's software tool for flashing firmware and eeprom of the IPC - not available here due to odometer fraudsters`
+[`PHF2BIN`](https://github.com/rollsch/PHF2BIN) - `Converts a Ford .phf file to a binary image by rollsch`  
+[`FG2ICCComms`](https://github.com/jakka351/FG2ICCComms) - `JasonACT's software tool to re-core the MK2 FDIM`  
+`FG2IPCComms` - `JasonACT's software tool for flashing firmware and eeprom of the IPC - not available here due to odometer fraudsters`  
 
 
  `Audio Control Module`           (   )    
