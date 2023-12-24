@@ -966,7 +966,6 @@ as they may deem the situation to be less urgent than you do.
 
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
+![image](https://github.com/jakka351/FG-Falcon/assets/57064943/2c89821c-1ccc-4775-92b2-1f5cdf1de02b) ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/2e2a5200-5c13-420d-99dc-9b3fc0c344f1)
 
 
-
-<img src="https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png" align="center" />
