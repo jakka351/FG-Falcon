@@ -490,10 +490,10 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
 <a href="https://pcmtec.com/"><img align="left" src="https://user-images.githubusercontent.com/57064943/163758478-19cf4445-84bc-47fa-ba10-061e6ed70b2e.png" height="45%" width="45%"></img></a>
 
-<br /><br /><br />
+<br /><br /><br /><br /><br /><br />
 
 
-`PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located at https://forum.pcmtec.com/`    
+PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falcons. Other Ford Models are actively supported. Forums located [here](https://forum.pcmtec.com/)    
 
 -  [`Workshops that use PCMTec`](https://www.pcmtec.com/workshops)  
 -  [`Software Demo Download`](https://www.pcmtec.com/demo)  
