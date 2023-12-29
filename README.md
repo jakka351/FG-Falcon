@@ -302,18 +302,17 @@ requestManufacturerStateEntry | 0xB4 |
 
 ## Firmware
 
-[`PHF2BIN`](https://github.com/rollsch/PHF2BIN) - `Converts a Ford .phf file to a binary image by rollsch`  
-[`FG2ICCComms`](https://github.com/jakka351/FG2ICCComms) - `JasonACT's software tool to re-core the MK2 FDIM`  
-`FG2IPCComms` - `JasonACT's software tool for flashing firmware and eeprom of the IPC - not available here due to odometer fraudsters`  
+Falcon ECU Firmware related softwares and posts.  
 
+[`PHF2BIN`](https://github.com/rollsch/PHF2BIN) - Converts a Ford .phf file to a binary image by rollsch  
+[`FG2ICCComms`](https://github.com/jakka351/FG2ICCComms) - JasonACT's software tool to re-core the MK2 FDIM  
+`FG2IPCComms` - JasonACT's software tool for flashing firmware and eeprom of the IPC - not available here due to odometer fraudsters  
+[`PCMtec development blog`](https://pcmhacking.net/forums/viewtopic.php?t=4940)
+[`BA Falcon Body Module EEPROM`](https://pcmhacking.net/forums/viewtopic.php?t=8424)  
+[`FG Falconn Instrument Cluster Boot Mode & Firmware Download`](https://pcmhacking.net/forums/viewtopic.php?t=8419)  
+[`FG Falcon Restraints Control Module`](https://pcmhacking.net/forums/viewtopic.php?t=8425)  
 
- `Audio Control Module`           (   )    
- `Audio Interface Module`         ( x )    
- `Bluetooth Phone Module`         (   )        
- `Front Display Interface Module` ( x )    
- `Instrument Panel Cluster`       ( x )    
- `HVAC Integrated Module`         (   )    
- `Parking Aid Module`             (   )     
+    
   
 <br />
 <br />
@@ -487,8 +486,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/166143780-9685fc0f-eeac-4459-9320-abc607407b39.png" height="15%" width="15%"/>
-  
-## `PCM Programming`    
+      
 
 <a href="https://pcmtec.com/"><img align="left" src="https://user-images.githubusercontent.com/57064943/163758478-19cf4445-84bc-47fa-ba10-061e6ed70b2e.png" height="45%" width="45%"></img></a>
 
@@ -501,6 +499,7 @@ Forscan is community built and tested Diagnostic Software for Ford, Lincoln, Maz
 -  [`Software Demo Download`](https://www.pcmtec.com/demo)  
 -  [`Falcon How-To Guides`](https://forum.pcmtec.com/forum/17-falcon-howto-guides/)  
 -  [`PCMtec MKII Falcon Dash Emulator`](https://forum.pcmtec.com/topic/821-dash-emulator-for-testing-mft-multi-flash-tune-on-the-bench/)  
+-  [`PCMtec development blog`](https://pcmhacking.net/forums/viewtopic.php?t=4940)  
 -  [`Functionality that can be added includes:`]()
 -  - `Launch Control`
 -  - `Flat Foot Shifting in Manual Transmissions - clutch position switch triggers torque reduction while throttle stays open`
@@ -885,7 +884,7 @@ resources/
  [`Ford Forums AU`](https://fordforums.com.au/)   
  [`XR6 Turbo Forums`](https://www.fordxr6turbo.com/)  
  [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
- [`Oz Falcon`](https://http://www.ozfalcon.com.au/) 
+ [`Oz Falcon`](https://http://www.ozfalcon.com.au/)   
  [`Tester Present - Specialist Automotive Solutions`](https://testerpresent.com.au)  
  [`Whiteford Tech`](https://www.facebook.com/pages/category/Product-service/Whiteford-Tech-168145224027606/) - `Engineer`    
  [`CAN Solutions`](https://cansolutions.com.au/)  
@@ -899,7 +898,7 @@ resources/
  [`Bullet Performance Racing`](http://www.bpracing.com.au/)    
  [`XR6 Turbo Developments`](https://www.xr6turbodevelopments.com.au/)    
  [`Australian FORScan Users Group`](https://www.facebook.com/groups/344706629955641/)   
- [`Pitlane Automotive`](https://www.pitlaneautomotive.com/)  
+ [`PCM Hacking Forums`](https://pcmhacking.net/forums/)  
  [`Injectronics`](https://injectronics.com.au)  
  [`FG Mods`](https://fgmods.com.au/) `Please double check any technical advice gotten from here, as this is more of an art project than a modification website`   
  [`Kayhan Audio`](https://aslautomedia.com.au)  
