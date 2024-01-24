@@ -20,10 +20,13 @@ FoA Orion
 </p>
 <p align="left">
 <a href="https://fordforums.com.au/"><img src="https://img.shields.io/badge/[0x2E1]Ford-Forums-blue" /></a>    
-    <a href="https://www.forscan.org/"><img src="https://img.shields.io/badge/[0x7E0]-FORScan-blue" /></a>    
-    <a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/[0x623]PCM-.tec-blue" /></a>    
-    <a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/[0x330]CAN-BARRA-blue" /></a><br/>
+    
+<a href="https://pcmtec.com/"><img src="https://img.shields.io/badge/[0x623]PCM-.tec-blue" /></a>    
+<a href="https://cansolutions.com.au/"><img src="https://img.shields.io/badge/[0x330]CAN-BARRA-blue" /></a><br/>
 </p>
+
+***
+
 <sup>
 The Ford Falcon is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
 To make a fresh start, Ford Australia decided to revolutionize the designation of all models within the range. In particular, the long-standing Futura, Fairmont, and Fairmont Ghia models were replaced by the more contemporary G6 and G6 E models, respectively. The FG moniker references the now discontinued Fairmont Ghia. The FG was superseded in December 2014, by the FG X series.
