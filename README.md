@@ -10,8 +10,9 @@
 # FG Falcon  `FoA Orion`
 
 <a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>  
-
-
+  
+[Donate if you like the work we have done here](https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W)  
+  
 ***
 
 <sup>
@@ -923,15 +924,10 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
 [`Jakka351`](https://github.com/jakka351)      
 [`GokhanDeveloper`](https://github.com/gokhandeveloper)    
    
-<sup>
+
+[`Feel free to Donate if you want the repository to keep expanding.`](https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W)
 
 
-Also feel free to report any issues to your local police station,  
-but please remember to use the 131-444 number and not 000,   
-as they may deem the situation to be less urgent than you do.  
-
-
-</sup>
   
 `pew.`  `pewpew.` 
 
@@ -958,6 +954,6 @@ as they may deem the situation to be less urgent than you do.
 
 <img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
 
-![image](https://github.com/jakka351/FG-Falcon/assets/57064943/2c89821c-1ccc-4775-92b2-1f5cdf1de02b) ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/2e2a5200-5c13-420d-99dc-9b3fc0c344f1)
+
 
 
