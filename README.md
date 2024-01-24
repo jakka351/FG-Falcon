@@ -26,7 +26,7 @@ https://en.wikipedia.org/wiki/Ford_Falcon_(FG)
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
-<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/super-roo.png" height="15%" width="15%"/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/super-roo.png" height="20%" width="20%"/>
 
 
 ## Table of contents 
