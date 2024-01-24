@@ -196,7 +196,6 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
    - [`Police Mode`](https://github.com/jakka351/FG-Falcon/wiki/Police-Mode)      
    - [`The Ultimate Guide to Re Coding Fg Module VIN numbers with Forscan`](https://github.com/jakka351/FG-Falcon/wiki/The-Ultimate-Guide-to-Coding-FG-Module-VIN-numbers-with-Forscan) 
    - [`Ford Wreckers Article on PCM Programming`](https://www.fordwreckers.com.au/powertrain-control-module-programming-ba-bf-fg-ford-falcons/)      
-   - [`Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion`](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)  
    - [`Activate Police Mode with Socketcan`](https://github.com/jakka351/FG-Falcon/wiki/Activate-Police-Mode-with-Socketcan). 
 
 
@@ -640,8 +639,44 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 
 
 ## Twilight  
-## Conversion & Modification Information  
+As these cars age and slowly fade away, hopefully this archive allows people to keep them alive for as long as possible...    
+
 ## Antilock Braking System  
+### ABS Background & Information for Barra Conversions
+  - [Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)
+  - [PCMtec Forums How-to on ABS Reprogramming](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming/)
+  - [PCMtec Forums Second Page with additional information on ABS/PCM Matching](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming/page/2/)
+    
+### ABS Configuration Options [As Built Data]
+The ABS has a variety of configuration options - these much match up with the vehicle type & the PCM Strategy & Calibration.  
+ABS As Built Config Options:  
+``` 			       XTSportIG1G2RS            =  0x100401,
+                               XTSportIRS                =  0x100501,
+                               G6Turbo                   =  0x100601,
+                               G6SedanDLPGXTG6G6ESport   =  0x110401,
+                               PoliceSedanDLPGXTSport    =  0x110501,
+                               UteDLPGREBXR612t          =  0x120402,
+                               F6PursultUTE12t4pot       =  0x140102,
+                               F6PursultUTE12t6pot       =  0x140202,
+                               XT                        =  0x160401,
+                               G6SedanDLPGXTStd          =  0x170401,
+                               UteI6RDLPGXL34t           =  0x180402,
+                               F6Force64potBrakes        =  0x190101,
+                               F6Force66potBrakes        =  0x190201,
+                               XR6                       =  0x190401,
+                               XR6Turbo                  =  0x190601,
+                               XR6TurboPolice            =  0x190701,
+                               GTForce4pOtBrakes         =  0x200101,
+                               GTGTPForces6potBrakes     =  0x200201,
+                               XR8                       =  0x200601,
+                               XR8Police                 =  0x200701,
+                               UteI67DLPG1t              =  0x210402,
+                               UteI6                     =  0x220402,
+                               G6SedanDLPGXTHDSus        =  0x230401,
+                               XTPoliceHDFrontSusandIRS  =  0x230501,
+                               XTHDFrontSusandIRS        =  0x230401
+                               ```
+
   
   
 
