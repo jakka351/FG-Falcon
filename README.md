@@ -154,7 +154,10 @@ HIM | - |  High Speed | 0x733 | 0x73A | |  |
    - [`FG%20CAN%20ID%20List.xlsx`](https://github.com/jakka351/FG-Falcon/blob/master/resources/FG%20CAN%20ID%20List.xlsx)  
    - [`HS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/FG%20HS%20CAN%20Decoded.xlsx)        
    - [`MS-Can spreadsheet`](https://github.com/jakka351/FG-Falcon/raw/master/resources/Low%20Speed%20CAN%20Bus%20decoded%20(Old).xls) 
-   - [`FG CAN Document`](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx)    
+   - [`FG CAN Document`](https://github.com/jakka351/FG-Falcon/raw/master/resources/CAN%20Codes.docx)
+
+  **FG Falcon High Speed, MidSpeed and Diagnostic CAN Logs taken from Ford FJDS software**
+   - [FG Falcon CAN Logs](https://github.com/jakka351/FG-Falcon-CAN-Logs)
  
    [**BA,BF CAN spreadsheet**](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)  [`from Lukeyson`](https://forum.pcmtec.com/topic/279-can-messages/)   
    - [`BA,BF CAN spreadsheet`](https://github.com/jakka351/FG-Falcon/blob/master/resources/BA%20BF%20SX%20SY%20Falcon%20Territory%20CAN-IDs.xlsx)
