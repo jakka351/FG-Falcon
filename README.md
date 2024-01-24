@@ -637,11 +637,9 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 
 <br/>
 
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-## Twilight  
-As these cars age and slowly fade away, hopefully this archive allows people to keep them alive for as long as possible...    
-
-***
+<img align="right" src="https://user-images.githubusercontent.com/57064943/166145564-bb69cf50-aad1-4aab-aaab-0973dce81a8e.png" align="right" width="25%" height="25%" />
 
 ## Antilock Braking System  
 ### ABS Background & Guides  
@@ -970,7 +968,12 @@ For queries, concerns, submissions, etc please message on fordforums.com.au.
   
 `pew.`  `pewpew.` 
 
-  
+
+
+## Twilight  
+As these cars age and slowly fade away, hopefully this archive allows people to keep them alive for as long as possible...    
+
+
   
 <a href="https://testerpresent.com.au><img src="https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png" align="center" /></a>
 
