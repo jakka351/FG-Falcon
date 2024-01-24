@@ -572,23 +572,7 @@ Australian CanBus Products
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 
 # Engineer
-
-
-<br/> 
    
-![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-
-
-<br/><img align="right" src="https://user-images.githubusercontent.com/57064943/163975755-9645df5a-eef6-427d-bdb0-87c316931c01.png" height="20%" width="20%" /> 
-# Interior Command Centre  / Entertainment System
-
-- [`Dismantling FGII Screen`](https://www.fordforums.com.au/showpost.php?p=6383512&postcount=269)     
-
-<img  src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/fdim_hvac_header.png" height="80%" width="80%" />
-  <br/>
-
-Raspberry Pi Running <a href="https://github.com/opendsh/dash">Dash</a> as a DIY Headunit.  
-
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 
