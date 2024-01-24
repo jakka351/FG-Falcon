@@ -929,7 +929,7 @@ As these cars age and slowly fade away, hopefully this archive allows people to 
 
 
   
-<a href="https://testerpresent.com.au><img src="https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png" align="center" /></a>
+<img src="https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png" align="center" />
 
 <img align="right" src="https://github-production-user-asset-6210df.s3.amazonaws.com/57064943/254874402-88b6051a-9cbc-4413-8b0c-10994126dd5c.png" height="20%" width="20%"/>
 
