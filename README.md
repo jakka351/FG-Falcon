@@ -689,50 +689,6 @@ ABS As Built Config Options:
 ```
 
   
-  
-
-
-## Libraries  
-
-
-<br/>
-<br/><img align="right" src="https://raw.githubusercontent.com/linux-can/can-logos/master/png/SocketCAN-logo-60dpi.png" />
-
-### [`Can-Utils(socketcan)`](https://github.com/linux-can/can-utils)  
-
-  -  candump
-
-candump let you sniff CAN packets from one or more CAN interfaces with lots of other useful options to filter, redirect messages etc. Here just a small example:
-```
- candump vcan0
- vcan0  123   [4]  01 AA BB 22
- vcan0  123   [4]  01 AA BB 23
- vcan0  123   [4]  01 AA BB 24
-```
-
- for more information, use the help file
-```
-    candump -help
-```
-cansniffer
-
-cansniffer is a tool that organizes can information by Arbitration ID and allows users to determine what values are changing. by default, if any arbitration ID doesn't receive "Different" information in the packet after 5 seconds, the data will be cleared from the screen.
-```
-* cansniffer can0
-
-for more information, use the help file
-
-* cansniffer -help
-```
-
-
-  [`Python-CAN`](https://python-can.readthedocs.io/en/master/)
-  [`KIVY installation aid`](https://github.com/techcoder20/RPI-Kivy-Installer)    
-  [`Generic PythonCAN Examples`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/pythoncan)   
-  [`mcp2515 can library`](https://github.com/jakka351/FG-Falcon/tree/master/resources/software/arduino/MCP2515)   
-  [`Seeed Arduino MCP2515 Lib`](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)     
-
-
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
