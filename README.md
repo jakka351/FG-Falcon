@@ -641,13 +641,15 @@ Sprint | [`cars-falconxr6sprint-gallery-trigger-large-7.jpeg`](https://raw.githu
 ## Twilight  
 As these cars age and slowly fade away, hopefully this archive allows people to keep them alive for as long as possible...    
 
+***
+
 ## Antilock Braking System  
-### ABS Background & Information for Barra Conversions
+### ABS Background & Guides  
   - [Nigel's Guide to Programming the FG Falcon ABS module for a Turbo conversion](https://www.tiperformance.com.au/knowledge-base/programming-the-fg-falcon-abs-module-for-a-turbo-conversion/)
   - [PCMtec Forums How-to on ABS Reprogramming](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming/)
   - [PCMtec Forums Second Page with additional information on ABS/PCM Matching](https://forum.pcmtec.com/topic/872-howto-abs-reprogramming/page/2/)
     
-### ABS Configuration Options [As Built Data]
+### ABS Configuration Options [As Built Data]  
 The ABS has a variety of configuration options - these much match up with the vehicle type & the PCM Strategy & Calibration.  
 ABS As Built Config Options:  
 ``` 			       XTSportIG1G2RS            =  0x100401,
@@ -675,7 +677,7 @@ ABS As Built Config Options:
                                G6SedanDLPGXTHDSus        =  0x230401,
                                XTPoliceHDFrontSusandIRS  =  0x230501,
                                XTHDFrontSusandIRS        =  0x230401
-                               ```
+```
 
   
   
