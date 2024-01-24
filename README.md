@@ -12,7 +12,7 @@
 <a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>  
 
 <sup>
-[Donate if you like the work we have done here](https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W)  
+<a href="https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W">Donate if you like the work we have done here</a>  
 </sup>
 ***
 
