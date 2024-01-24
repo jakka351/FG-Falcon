@@ -941,14 +941,13 @@ As these cars age and slowly fade away, hopefully this archive allows people to 
     <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
   </a>
 </p>
-  <h3 align="center">FG-Falcon</h3>
    
   <p align="center"> 
 </p><p align="center">
    <br/>
 </p>
 
-<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
+<img aligh="centre" src="https://raw.githubusercontent.com/andreasbm/readmster/assets/lines/rainbow.png" />
 
 
 
