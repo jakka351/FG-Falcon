@@ -315,7 +315,10 @@ Falcon ECU Firmware related softwares and posts.
   - [FG Falcon Restraints Control Module](https://pcmhacking.net/forums/viewtopic.php?t=8425)
   - [FG Falcon Restraints Control Module Repo](https://github.com/jakka351/RestraintsControlModule)
   - [RPM Alarm Hack](https://github.com/jakka351/RpmAlarmHack)
-    
+  - [Fermec's 6HP26 Flasher](https://pcmhacking.net/forums/viewtopic.php?p=118290&hilit=ZF+flasher#p118290)  
+![image](https://github.com/jakka351/FG-Falcon/assets/57064943/e379a8c7-53f2-4b59-a4bc-c5845af48cbc) 
+  - [Fermec's EEC-VI Flasher](https://pcmhacking.net/forums/viewtopic.php?t=7722&hilit=EEC+flasher)    
+![image](https://github.com/jakka351/FG-Falcon/assets/57064943/ad2e816f-cddc-46aa-9614-bba301939f30)
 
     
   
