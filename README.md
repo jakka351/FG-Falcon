@@ -583,7 +583,7 @@ Australian CanBus Products
 
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
 
- ### ICC Splash Graphics 
+ ## ICC Splash Graphics 
  
   - [`FPV Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/Fpv1.jpg)[`Ford ICC Splash`](https://github.com/jakka351/FG-Falcon/blob/master/resources/images/Ford4.jpg)[`FPV Pursuit Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/PursuitSplashScreen.png)  
   - [`GT-F 351 Splash`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png)[`GT Logo`]()[`GS Logo`](https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/FPV_GS01.jpg)  
@@ -592,28 +592,13 @@ Australian CanBus Products
   
 Thanks to <a href="http://www.fordforums.com.au/showthread.php?t=11479908&page=9">JasonACT</a>
 <br/>
-<br/>
 
-***
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-1.jpeg" height="30%" width="30%" />
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-2.jpeg" height="30%" width="30%" />
 <img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/cars-falconxr6sprint-gallery-trigger-large-3.jpeg" height="30%" width="30%" />
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-### FGX FoA Backgrounds, found hiding on Ford.com.au 
+
+## FGX FoA Backgrounds, found hiding on Ford.com.au 
 
 
 No.   | FGX FoA Backgrounds   
