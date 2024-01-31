@@ -940,11 +940,6 @@ As these cars age and slowly fade away, hopefully this archive allows people to 
 ## Disclaimer & Legal Notice
 #### Modifying any system on a vehicle may have unforseen consequences. All of the information contained here has been collated from various sources and may not be  accurate, this is a permanent work in progress and common sense should be used. This github is not affiliated with Ford Australia in any way. All information has been sourced from publically available documents, or created by the listed persons.  
 
-<p align="center">
-  <a href="https://teaterpresent.com.au/">
-    <img src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/CANBUSCOMAUQUOTE_html_4af13c7f15bbb0da.png" alt="EFFGEE">
-  </a>
-</p>
    
   ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/58fa4e17-c96e-4c5c-a152-50c40d4e8781)
 
