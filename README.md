@@ -578,9 +578,10 @@ Australian CanBus Products
    
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+![image](https://github.com/jakka351/FG-Falcon/assets/57064943/efc984e1-7f89-4891-bedf-ebaea389a8f9)
+
 
 <br/><img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/GTF_SplashScreen.png" height="20%" width="20%" />
-  <br/>
 
  ### ICC Splash Graphics 
  
