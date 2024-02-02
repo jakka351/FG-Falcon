@@ -373,7 +373,7 @@ Description   | Platform      | Model     | Author
 
 ### [`FoA Orion Comms by Jakka351 - FG Falcon Diagnostic Tool`](https://facebook.com/testerPresent)  
 
-![image](https://github.com/jakka351/FG-Falcon/assets/57064943/df4f8593-7657-4c4a-8931-1fc98b1f67e9)
+![image](https://github.com/jakka351/FG-Falcon/assets/57064943/35c5e084-85b2-49dc-a3ac-b470792ffffe)
 
 
 
