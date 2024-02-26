@@ -11,7 +11,7 @@
 
 <a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>  
 
-![fg-falcon](https://github.com/jakka351/FG-Falcon/assets/57064943/375a219d-f307-462f-9301-911482dd206b)
+<img src="https://github.com/jakka351/FG-Falcon/assets/57064943/375a219d-f307-462f-9301-911482dd206b" height="10%" width="10%" />
 
 <sup>
 <a href="https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W">Donate to the FG Falcon Repository</a>  
