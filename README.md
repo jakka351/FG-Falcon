@@ -631,6 +631,20 @@ Australian CanBus Products
    
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+# [`Barra Scan`](BarraScanProgramming) 
+Programming and Diagnostics specialist for BA-FGX Falcons, as well as supplier/installer of Kayhan Audio Headunits & audio systems.  
+Ford Falcon & Territory  
+ - Remove security/audio code error
+ - ECU/ICC/BCM swaps
+ - PATS program
+ - Mustang, Focus, etc
+  
+KEY CUTTING AND PROGRAMMING AVAILABLE FOR MOST POPULAR MAKES AND MODELS!!
+NORTH/WEST MELB
+![image](https://github.com/user-attachments/assets/6a621a58-967c-4547-a5b5-9183238ff002)
+
+
+
 ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/efc984e1-7f89-4891-bedf-ebaea389a8f9)
 
 
@@ -913,7 +927,8 @@ resources/
  [`The Ford Modifications Website - fordmods.com`](https://fordmods.com)    
  [`Oz Falcon`](https://http://www.ozfalcon.com.au/)   
  [`Tester Present - Specialist Automotive Solutions`](https://testerpresent.com.au)  
- [`Whiteford Tech`](https://www.facebook.com/pages/category/Product-service/Whiteford-Tech-168145224027606/) - `Engineer`    
+ [`Whiteford Tech`](https://www.facebook.com/pages/category/Product-service/Whiteford-Tech-168145224027606/) - `Engineer`   
+ [`Barra Scan`](BarraScanProgramming)   
  [`CAN Solutions`](https://cansolutions.com.au/)  
  [`PCMtec`](https://pcmtec.com)  
  [`Cluster Mods`](http://clustermods.com/index.php)     
