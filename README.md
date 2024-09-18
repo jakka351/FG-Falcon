@@ -631,16 +631,26 @@ Australian CanBus Products
    
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
+<br/>
+<img align="right" src="https://raw.githubusercontent.com/jakka351/FG-Falcon/master/resources/images/barrascan.png" height="35%" width="35%" />
+
 # [`Barra Scan`](BarraScanProgramming) 
 Programming and Diagnostics specialist for BA-FGX Falcons, as well as supplier/installer of Kayhan Audio Headunits & audio systems.  
 Ford Falcon & Territory  
- - Remove security/audio code error
- - ECU/ICC/BCM swaps
- - PATS program
- - Mustang, Focus, etc
+ - `Remove security/audio code error`
+ - `ECU/ICC/BCM swaps`
+ - `PATS program`
+ - `Mustang, Focus, etc`
+
+[https://www.barrascan.net/](https://www.barrascan.net/)  
+[`Facebook`](https://www.facebook.com/BarraScanProgramming/)  
+[`Instagram`](https://www.instagram.com/barra.scan/) 
+
   
 KEY CUTTING AND PROGRAMMING AVAILABLE FOR MOST POPULAR MAKES AND MODELS!!
-NORTH/WEST MELB
+NORTH/WEST MELBOURNE
+
+Contact Mick at [barrascan@gmail.com](mailto:barrascan@gmail.com) or 0431 533 262  
 ![image](https://github.com/user-attachments/assets/6a621a58-967c-4547-a5b5-9183238ff002)
 
 
