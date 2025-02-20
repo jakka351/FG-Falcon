@@ -12,12 +12,6 @@
 
 <a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>  
 
-<img src="https://github.com/jakka351/FG-Falcon/assets/57064943/375a219d-f307-462f-9301-911482dd206b" height="20%" width="20%" />
-<br/>
-<sup>
-<a href="https://www.paypal.com/donate/?hosted_button_id=DK2C5T7HS3U5W">Donate to the FG Falcon Repository</a>  
-</sup>
-
 ***
 
 <sup>
@@ -1016,5 +1010,6 @@ As these cars age and slowly fade away, hopefully this archive allows people to 
   ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/58fa4e17-c96e-4c5c-a152-50c40d4e8781)
 
 
+![TesterPresentNewBusinessCard](https://github.com/user-attachments/assets/e753d9dd-95e4-4608-9d54-19f8eda3d6cc)
 
 
