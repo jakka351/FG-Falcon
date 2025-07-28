@@ -365,8 +365,11 @@ Description   | Platform      | Model     | Author
 
 <br />
 # 6HP26 Toolkit
+
 The 6HP26 Toolkit is software for the 6HP26 Transmission Control Module, you can Read and Clear Fault codes, Read and Reset Clutch Wear Learnings and Adaptations, Read and Write the TCM Calibration and Completely Flash the TCM with this software...You can also convert BF to FG and vice versa.
-<video src="https://www.youtube.com/watch?v=wjHF3a5AWUA" controls width="600"></video>
+
+[![Watch the Demo](https://img.youtube.com/vi/wjHF3a5AWUA/0.jpg)](https://youtu.be/wjHF3a5AWUA)
+
 
 
 
