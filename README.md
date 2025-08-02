@@ -18,7 +18,6 @@
 
                                The Ford FG Falcon (FoA Orion) Repository
 
-----------------------------------------------------------------------------------------------------------------
 
 <sup>
 The Ford Falcon is a full-sized car that was produced by Ford Australia from 2008 to 2014. It was the first iteration of the seventh and last generation of the Falcon.
