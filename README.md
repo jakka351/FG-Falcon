@@ -661,10 +661,11 @@ NORTH/WEST MELBOURNE
 Contact Mick at [barrascan@gmail.com](mailto:barrascan@gmail.com) or 0431 533 262  
 ![image](https://github.com/user-attachments/assets/6a621a58-967c-4547-a5b5-9183238ff002)
 
+  
 <br />
+<img width="40%" height="40%" align"right" src="https://github.com/user-attachments/assets/1cb6a269-feec-42dd-b92a-9e0d0524c3c1" />
 
-<img width="40%" height="40%" align"right" alt="image" src="https://github.com/user-attachments/assets/1cb6a269-feec-42dd-b92a-9e0d0524c3c1" />
-
+  
 # [`Mr Module`]("https://mrmodule.com.au")  
 
 Mr Module is the man who reverse engineered the MK1 FG Instrument Cluster VDO Bootmode Protocol and has given us the ability to do this:  
