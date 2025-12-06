@@ -661,8 +661,33 @@ NORTH/WEST MELBOURNE
 Contact Mick at [barrascan@gmail.com](mailto:barrascan@gmail.com) or 0431 533 262  
 ![image](https://github.com/user-attachments/assets/6a621a58-967c-4547-a5b5-9183238ff002)
 
+<br />
+<img width="40%" height="40%" align"right" alt="image" src="https://github.com/user-attachments/assets/1cb6a269-feec-42dd-b92a-9e0d0524c3c1" />
+
+# [`Mr Module`]("https://mrmodule.com.au")  
+
+Mr Module is the man who reverse engineered the MK1 FG Instrument Cluster VDO Bootmode Protocol and has given us the ability to do this:  
+<img width="65%" height="65%" alt="image" src="https://github.com/user-attachments/assets/33dad26f-2267-4028-a3b4-62cc08a68c43" />
+
+Mr Module offers a range of plug-and-play and easy to fit solutions to automotive electrical problems, as well as repair and programming services for faulty and replacement parts. Operating as a part-time one-man business, I have been developing and selling modules since 2018 – shipping Australia wide and internationally.
+
+All products are designed by an auto electrician, and have been rigorously tested on real vehicles here in Australia. You are dealing directly with the manufacturer, which means after-sales support will never be an issue. At Mr Module, we keep it black and white – offering straightforward, genuine solutions while minimizing the complexity.
+
+All products are kept in stock unless otherwise noted, and free Express Post shipping is included with every standard order. Items ship from central Victoria via Australia Post. Turn-around time on programming and repair services is 1 business day, unless specified otherwise. International shipping is available on all products, please contact me via email if there is no shipping option for your country.
+
+I’m always looking to see what else I can do. If you have a problem that needs a solution, or a part that needs repairing – please contact me and I may be able to help out.
+
+Popular Solutions
+DPF Delete Modules for late model 4WD’s.
+Smartlock bypass modules for EB-AU Ford Falcons.
+Exhaust Pressure Corrector module for current model Ford Ranger.
+A highly configurable ALDL Simulator and PCM Simulator for use with Holden Commodore electronics.
+Tacho / RPM signal converter and switch, universal applications.
+Repair and Programming services for ECUs and instrument clusters
 
 
+***  
+  
 ![image](https://github.com/jakka351/FG-Falcon/assets/57064943/efc984e1-7f89-4891-bedf-ebaea389a8f9)
 
 
