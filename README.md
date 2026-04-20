@@ -589,12 +589,24 @@ PCMTec is Australian Developed PCM Tuning software specifically for FG,FG-X Falc
 
 # [`Keyless Dynamics`](https://keylessdynamics.com.au/tp)    
 
-Secure Fingerprint Ignition Module from Keyless Dynamics.  https://keylessdynamics.com.au
-
+Secure Fingerprint Ignition Module from Keyless Dynamics.  https://keylessdynamics.com.au  
+The Keyless Start Module is a replacement for the factory key barrel in the FG Mk1 & Mk2  
+(BA/BF coming soon), which allows you to start your Falcon with your fingerprint!  
+  
+- Plug and play with PATS enabled  
+- Designed and manufactured by hand in Australia  
+- All genuine components from authorized distributors  
+- Holds up to 50 fingerprints  
+- 2 years of reliability testing  
+- Not connected to the internet, some things shouldn't be  
+- Simple interface to change settings, no forced app you'll only use once  
+- Intuitive haptic feedback  
+- Mechanic mode to temporarily accept any fingerprint  
+  
 ![image](https://github.com/jakka351/FG-Falcon/blob/master/resources/keyless.gif)
-
+  
 Technical Specifications: https://github.com/jakka351/FG-Falcon/blob/master/resources/techspec.pdf
-
+  
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
