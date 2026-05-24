@@ -1,7 +1,3 @@
-<a href="https://testerpresent.com.au/">
-<img width="1326" height="201" alt="image" src="https://github.com/user-attachments/assets/d6519415-9430-4fa9-aedf-41249296c096" />
-</a>
-
 <p align="right">
 
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163706360-f1d8e14a-aabd-40f2-90a0-0cdc0badf70c.png" height="20%" width="20%"/>
