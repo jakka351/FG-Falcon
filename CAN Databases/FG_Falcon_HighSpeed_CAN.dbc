@@ -1,0 +1,1396 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Antilock_Brake_Module Body_Electronic_Module Data_Request HVAC_Integrated_Module Instrument_Cluster OnBoardDiagnostics On_Board_Diagnostics Powertrain_Control_Module Restraints_Control_Module Steering_Angle_Sensor TDC Transmission_Control_Module Vector__XXX before
+
+CM_ "FG Falcon High-Speed CAN (HS-CAN) DBC. Generated from uploaded highSpeedCAN.dbc and BigFalconSheet(1).xlsx. Byte-level overview signals are conservative placeholders where exact scaling/bit layout was not available.";
+BA_DEF_ BO_  "Bus" STRING ;
+BA_DEF_DEF_  "Bus" "" ;
+
+VAL_TABLE_ Inst_Econ_Mode 1 "L per Hr" 0 "L per 100Km" ;
+VAL_TABLE_ Transmission_Configuration 1 "Copperhead" 0 "Barra_E265" ;
+VAL_TABLE_ Fuel_Type_And_Delivery 12 "Petrol LPG Dual Fuel" 11 "LPG EFI" 2 "Petrol EFI" ;
+VAL_TABLE_ Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_TABLE_ Dash_Ind_State 2 "Flash" 1 "On" 0 "Off" ;
+VAL_TABLE_ Gear_Position_Target 15 "Invalid" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Required_NotRequired 1 "Not Required" 0 "Required" ;
+VAL_TABLE_ Engaged_Disengaged 1 "Engaged" 0 "Disengaged" ;
+VAL_TABLE_ Transmission_Shift_Map 7 "Cruise " 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not Used" 1 "Sports" 0 "Normal" ;
+VAL_TABLE_ Gear_Position_Actual 15 "Gear Shift In Progress" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Gear_Position_Selected 15 "Intermediate" 7 "Fifth" 6 "Second" 5 "Third" 4 "Fourth" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_TABLE_ Off_On 1 "On" 0 "Off" ;
+VAL_TABLE_ Transmission_Mode 6 "Reserved - Creep" 5 "Economy" 4 "Reserved - Winter" 3 "Manual Shift Mode" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_TABLE_ Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward Gear 9" 18 "Forward Gear 8" 17 "Forward Gear 7" 16 "Forward Gear 6" 11 "Reserved" 10 "Reverse" 6 "Forward Gear D" 5 "Forward Gear 5" 4 "Forward Gear 4" 3 "Forward Gear 3" 2 "Forward Gear 2" 1 "Forward Gear 1" 0 "Blank" ;
+VAL_TABLE_ Eng_Crank_Status 3 "Low Voltage Crank Attempt" 2 "Crank In Progress" 1 "Crank Pending" 0 "No Action" ;
+VAL_TABLE_ Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_TABLE_ Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake Pedal Pressed" 0 "Brake Pedal Off" ;
+VAL_TABLE_ Cruise_Status 7 "Cruise Active" 2 "Cruise Resume" 1 "Cruise On" 0 "Cruise Off" ;
+VAL_TABLE_ Active_Inactive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ True_False 1 "True" 0 "False" ;
+
+BO_ 1 Current_Data: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2 Freeze_Frame_Data: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_2_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 3 Diagnostic_Trouble_Codes: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_3_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 4 Clear_Trouble_Code: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_4_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 5 Test_Results_Oxygen_Sensors: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_5_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 6 Test_Results_Non_Continuous_Testing: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_6_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 7 Show_Pending_Trouble_Codes: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_7_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 8 Special_Control_Mode: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_8_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 9 Request_Vehicle_Information: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_9_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 10 Request_Permanent_Trouble_Codes: 8 On_Board_Diagnostics
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Mode_10_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 112 YAW_MSG_1: 8 Vector__XXX
+
+BO_ 117 YAW_MSG_2: 8 Vector__XXX
+
+BO_ 128 SAS_MSG_1: 8 Vector__XXX
+
+BO_ 133 YAW_MSG_3: 8 Vector__XXX
+
+BO_ 144 SAS_MSG_2: 8 Vector__XXX
+ SG_ Steering_Wheel_Angle : 7|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+
+BO_ 151 PCM_MSG_1: 8 Vector__XXX
+ SG_ Indicated_Eng_Torque : 7|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Eng_Friction_Torque : 23|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Driver_Demand_Torque : 55|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Actual_Eng_Torque : 39|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 201 TCM_MSG_1: 8 Vector__XXX
+ SG_ Transmission_Output_Speed : 55|16@0+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ Transmission_Input_Speed : 39|16@0+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ Torque_Conv_Slip : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Torque_Limit : 23|8@0+ (4,0) [0|0] "Nm" Vector__XXX
+ SG_ Torque_Reduction : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 252 PCM_MSG_2: 8 Vector__XXX
+ SG_ TCS_ShiftMapDesired : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_BrakeActive : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Active : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TC_RequestedOff : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_ECM : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Fitted : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 288 PCM_MSG_3: 8 Vector__XXX
+ SG_ Indicated_Eng_Torque : 7|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Estimated_Eng_Torque : 23|16@0+ (1,0) [0|0] "Nm" Vector__XXX
+
+BO_ 296 BEM_MSG_3: 8 Vector__XXX
+ SG_ Interior_Dimmer_Low : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Interior_Dimmer_High : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Auto : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Fog : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Parker : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_HighBeam : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Right_Indicator : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Left_Indicator : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 301 PCM_MSG_4: 8 Vector__XXX
+ SG_ Brake_State : 57|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Eng_Crank : 58|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Status : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OBD_ClearDTC : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Speed : 39|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+ SG_ HDC_Status : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedal_Position : 23|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Throttle_Position : 15|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Engine_Speed_ROC : 7|8@0+ (0.015625,-2) [0|0] "rpm/s" Vector__XXX
+
+BO_ 471 FE_9D_DF_E6_63_F4_B6: 7 Instrument_Cluster
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 512 PCM_MSG_5: 8 Vector__XXX
+ SG_ Key_Off_Timer : 63|8@0+ (1,0) [0|0] "Min" Vector__XXX
+ SG_ Eng_Crank_Status : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cat_Protection_Active : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Inertial_Loss_Type : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Type : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Max_Avail_Torque : 39|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Min_Avail_Torque : 23|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Actual_Eng_Torque : 7|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+
+BO_ 519 PCM_MSG_6: 8 Vector__XXX
+ SG_ Throttle_Position_ROC : 63|8@0- (1,0) [0|0] "%/s" Vector__XXX
+ SG_ Throttle_Position : 55|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Vehicle_Speed : 39|16@0+ (0.0078125,0) [0|0] "km/h" Vector__XXX
+ SG_ Engine_Speed_ROC : 23|16@0- (0.25,0) [0|0] "rpm/s" Vector__XXX
+ SG_ Engine_Speed : 7|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+
+BO_ 528 ABS_MSG_1: 8 Vector__XXX
+ SG_ Gear_Shift_Inhibit : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BTM_Clear_EngOff_Timer : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Failed : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Active : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HDC_Enabled : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Failed : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Active : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Disabled_ByUser : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Failed : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Active : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Disabled_ByUser : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Failed : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_Failed : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Active : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Split_SlowFast_Torque_Req : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABD_Fitted : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_Fitted : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCS_Fitted : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Fitted : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBD_Fitted : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Type : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Desired_Torque_Command_Slow : 47|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+ SG_ Desired_Torque_Command : 7|16@0+ (1,-512) [0|0] "Nm" Vector__XXX
+
+BO_ 560 PCM_MSG_7: 8 Vector__XXX
+ SG_ Tq_Conv_Multi_Factor : 31|16@0+ (6.1035E-005,0.01) [0|0] "ratio" Vector__XXX
+ SG_ Transmission_Losses : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Ratio : 15|16@0+ (6.1035E-005,0) [0|0] "ratio" Vector__XXX
+ SG_ Transmission_Mode : 58|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Fault : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Overheat : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Shift_In_Progress : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Conv_Locked : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Trans_Gear_Pos : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 775 ICC_MSG_1: 8 Vector__XXX
+ SG_ Reset_Trip_Timer : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Fuel : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Speed : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Down : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Up : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ M_Overspeed_On : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Active_Adjust : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Blower_Position : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Temperature_Position : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Diff_Lock_Switch : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Traction_VDC_Switch : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Down_Switch : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Up_Switch : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Down_Switch : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Up_Switch : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Down_Switch : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Up_Switch : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Climate_Ctrl_Off_Switch : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_ACC_On_Switch : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Down_Switch : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Up_Switch : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Floor_Switch : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Switch : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Floor_Switch : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Floor_Switch : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Switch : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Recirc_Switch : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Switch : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 832 CLU_MSG_2: 8 Vector__XXX
+
+BO_ 848 CLU_MSG_3: 8 Vector__XXX
+
+BO_ 851 HIM_MSG_1: 8 Vector__XXX
+ SG_ Blower_Speed : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Max_Request : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Clutch_Request : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Blower_Voltage : 55|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Evap_Temp : 47|8@0+ (0.33333333333333,-30) [0|0] "C" Vector__XXX
+ SG_ Ambient_Temp : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Passenger_Temp : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Off_Seg : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Semi_Seg : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_Seg : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Seg : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Seg : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Seg : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Seg : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OS_Temp_Seg : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fanblade_Seg : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Person_Seg : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Seg : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Floor_Seg : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Seg : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fresh_Seg : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Recirc_Seg : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Seg : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1001 TCM_MSG_2: 8 Vector__XXX
+ SG_ Tq_Conv_Multi_Factor : 63|8@0+ (0.01,0.01) [0|0] "ratio" Vector__XXX
+ SG_ Gear_Position_Target : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ J_Gate_Selection_Fault : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Gearbox_Losses : 39|8@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ Trans_Malfunction : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCM_Config_Flag : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Converter_Status : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Selection_Fault : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Neutral_Control : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Perf_Mode_Indication : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TCM_DTC_MIL_Status : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OBD_TCM_Clear_Ack : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Oil_Temperature : 23|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Transmission_Shift_Map : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Position_Actual : 3|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Position_Selected : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1027 BEM_MSG_1: 8 Vector__XXX
+ SG_ Sun_Load_Passenger : 39|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ Sun_Load_Driver : 31|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ Cabin_Temperature : 23|8@0+ (0.5,-40) [0|0] "C" Vector__XXX
+ SG_ Priority_Key_1 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Priority_Key_2 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_On_Warning : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Trailer_Connected : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Accessories_Switch : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rear_Demist : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rear_Door_Ajar : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LR_Door_Ajar : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RR_Door_Ajar : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LF_Door_Ajar : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RF_Door_Ajar : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1031 HSCAN_MSG_407: 8 Body_Electronic_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1061 PCM_MSG_15: 8 Vector__XXX
+ SG_ Fuel_Level : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Inst_Fuel_Consumption : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Enable : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set_Speed : 15|16@0+ (1,0) [0|0] "km/h" Vector__XXX
+ SG_ Boost_Pressure : 31|16@0+ (1,0) [0|0] "kPa" Vector__XXX
+
+BO_ 1063 PCM_MSG_8: 8 Vector__XXX
+ SG_ Immobiliser_Ind : 53|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Pulse : 63|8@0+ (7.88519E-005,0) [0|0] "L" Vector__XXX
+ SG_ DTC_Logging : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Shed_Load : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MIL_Ind : 51|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ETC_Warning_Ind : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Compressor_State : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Idle_Mode : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Diff_Lock_Ind : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Overheat_Warn_Ind : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Oil_Pressure_Warn_Ind : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Alternator_Fail_Ind : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_Set_Ind : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Oil_Low_Ind : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Odometer_Count : 39|8@0+ (0.000201167,0) [0|0] "km" Vector__XXX
+ SG_ PCM_Battery_Voltage : 31|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ AC_Pressure : 11|12@0+ (1,-100) [0|0] "kPa" Vector__XXX
+ SG_ Eng_Oil_Pressure : 15|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Coolant_Temperature : 7|8@0+ (1,-40) [0|0] "C" Vector__XXX
+
+BO_ 1079 CLU_MSG_1: 8 Vector__XXX
+ SG_ Max_Fuel_Level : 63|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+ SG_ Illumination_Level_High : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Illumination_Level_Low : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cluster_Voltage : 31|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ MIL_Strategy_On : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Park_Brake_Ind : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Park_Lights : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Sender_Fault : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Low_Fuel_Ind : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Level_Instant : 15|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+ SG_ Fuel_Level_Damped : 7|8@0+ (0.51,0) [0|0] "L" Vector__XXX
+
+BO_ 1101 PCM_MSG_9: 8 Vector__XXX
+ SG_ Baro_Pressure : 63|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Eng_Oil_Temperature : 55|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Coolant_Temperature : 39|12@0+ (0.1,-40) [0|0] "C" Vector__XXX
+ SG_ MIL_Status : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1107 ODO_MSG_1: 8 Vector__XXX
+ SG_ Odometer : 39|24@0+ (1,0) [0|0] "km" Vector__XXX
+
+BO_ 1108 MessageLabel: 8 Vector__XXX
+
+BO_ 1200 TCS_MSG_1: 8 Vector__XXX
+ SG_ Wheel_Speed_RR : 55|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_RL : 39|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_FR : 23|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ Wheel_Speed_FL : 7|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1216 PCM_MSG_10: 8 Vector__XXX
+ SG_ Odometer : 7|24@0+ (0.1,0) [0|0] "Km" Vector__XXX
+
+BO_ 1280 CLU_MSG_4: 8 Vector__XXX
+ SG_ Travel_Time : 55|16@0+ (1,0) [0|0] "min" Vector__XXX
+ SG_ Average_Economy_Mode : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Average_Economy : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Average_Speed : 7|8@0+ (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1363 CLU_MSG_5: 8 Vector__XXX
+ SG_ Odometer : 39|24@0+ (1,0) [0|0] "km" Vector__XXX
+ SG_ Inst_Econ : 31|8@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ Inst_Econ_Mode : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuel_Range : 7|16@0+ (1,0) [0|0] "km" Vector__XXX
+
+BO_ 1571 PCM_MSG_11: 8 Vector__XXX
+ SG_ RWD_Flag : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Aux_Vehicle_Id : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Peak_Engine_Torque : 31|8@0+ (4,0) [0|0] "Nm" Vector__XXX
+ SG_ Fuel_Type_And_Delivery : 23|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Induction_Type : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Valve_Count : 10|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cylinder_Count : 15|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engine_Displacement : 7|8@0+ (0.1,0) [0|0] "L" Vector__XXX
+
+BO_ 1600 PCM_MSG_12: 8 Vector__XXX
+ SG_ RWD_Flag : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Forward_Gear_Count : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Configuration : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Base_Torque_Split : 47|8@0+ (0.0078125,0) [0|0] "ratio" Vector__XXX
+ SG_ Fraction_Portion_Ratio : 15|16@0+ (0.00012207,0) [0|0] "ratio" Vector__XXX
+ SG_ Axle_Ratio : 31|16@0+ (0.00012207,0) [0|0] "ratio" Vector__XXX
+ SG_ AutoTransTCMControl_Flag : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutoTransPCMControl_Flag : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ManualTrans_Flag : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AWD_Flag : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FWD_Flag : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1616 PCM_MSG_13: 8 Vector__XXX
+
+BO_ 1664 RCM_Rapid_Data_Response_1: 8 Restraints_Control_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1665 RCM_Rapid_Data_Response_2: 8 Restraints_Control_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1696 PCM_Rapid_Data_Response_1: 8 Powertrain_Control_Module
+ SG_ PCM_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1697 PCM_Rapid_Data_Response_2: 8 Powertrain_Control_Module
+ SG_ PCM_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1698 PCM_Rapid_Data_Response_3: 8 Powertrain_Control_Module
+ SG_ PCM_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1699 PCM_Rapid_Data_Response_4: 8 Powertrain_Control_Module
+ SG_ PCM_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PCM_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1700 TCM_Rapid_Data_Response_1: 8 Powertrain_Control_Module
+ SG_ TCM_Live_Data_Steam_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Steam_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1701 TCM_Rapid_Data_Response_2: 8 Powertrain_Control_Module
+ SG_ TCM_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1712 ABS_Rapid_Data_Response_1: 8 Antilock_Brake_Module
+ SG_ ABS_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1713 ABS_Rapid_Data_Response_2: 8 Antilock_Brake_Module
+ SG_ ABS_Live_Data_Stream_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ABS_Live_Data_Stream_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1782 PCM_MSG_14: 8 Vector__XXX
+ SG_ Immobiliser_Byte_7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1784 BEM_MSG_2: 8 Vector__XXX
+ SG_ Immobiliser_Byte_7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Immobiliser_Byte_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1786 IpcImmob_0x720: 8 Instrument_Cluster
+ SG_ Immobilizer_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Immobilizer_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1843 HIM_DiagSig_Rx: 8 Data_Request
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1850 HIM_DiagSig_Tx: 8 HVAC_Integrated_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1888 Diagnostic_Service_Request_0xBF: 8 Antilock_Brake_Module
+ SG_ B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1943 SAS_DiagSig_Rx: 8 Steering_Angle_Sensor
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1951 SAS_DiagSig_Tx: 8 Steering_Angle_Sensor
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2015 MessageLabel: 8 Vector__XXX
+
+BO_ 2016 request: 8 Powertrain_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2017 TCM_DiagSig_Rx: 8 Transmission_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2024 OnBoardDiagnostics: 8 OnBoardDiagnostics
+ SG_ S1_PID_00_PIDsSupported_01_20 : 23|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_01_MonitorStatus : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_02_FreezeDTC : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+ SG_ S1_PID_03_FuelSystemStatus : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+ SG_ S1_PID_04_CalcEngineLoad : 31|8@0+ (0.39216,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_05_EngineCoolantTemp : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+ SG_ S1_PID_06_ShortFuelTrimBank1 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_07_LongFuelTrimBank1 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_08_ShortFuelTrimBank2 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_09_LongFuelTrimBank2 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_0A_FuelPressure : 31|8@0+ (3,0) [0|765] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_0B_IntakeManiAbsPress : 31|8@0+ (1,0) [0|255] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_0C_EngineRPM : 31|16@0+ (0.25,0) [0|16383.8] "rpm" OnBoardDiagnostics
+ SG_ S1_PID_0D_VehicleSpeed : 31|8@0+ (1,0) [0|255] "km/h" OnBoardDiagnostics
+ SG_ S1_PID_0E_TimingAdvance : 31|8@0+ (0.5,-64) [-64|63.5] "deg" before TDC OnBoardDiagnostics
+ SG_ S1_PID_0F_IntakeAirTemperature : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+ SG_ S1_PID_10_MAFAirFlowRate : 31|16@0+ (0.01,0) [0|655.35] "grams/sec" OnBoardDiagnostics
+ SG_ S1_PID_11_ThrottlePosition : 31|8@0+ (0.39216,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_12_CmdSecAirStatus : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_14_OxySensor1_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_14_OxySensor1_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_15_OxySensor2_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_15_OxySensor2_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_16_OxySensor3_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_16_OxySensor3_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_17_OxySensor4_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_17_OxySensor4_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_18_OxySensor5_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_18_OxySensor5_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_19_OxySensor6_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_19_OxySensor6_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_1A_OxySensor7_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_1A_OxySensor7_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_1B_OxySensor8_STFT : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_1B_OxySensor8_Volt : 31|8@0+ (0.005,0) [0|1.275] "volts" OnBoardDiagnostics
+ SG_ S1_PID_1C_OBDStandard : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_1F_TimeSinceEngStart : 31|16@0+ (1,0) [0|65535] "seconds" OnBoardDiagnostics
+ SG_ S1_PID_20_PIDsSupported_21_40 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_21_DistanceMILOn : 31|16@0+ (1,0) [0|65535] "km" OnBoardDiagnostics
+ SG_ S1_PID_22_FuelRailPres : 31|16@0+ (0.079,0) [0|5177.27] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_23_FuelRailGaug : 31|16@0+ (10,0) [0|655350] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_24_OxySensor1_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_24_OxySensor1_Volt : 47|16@0+ (0.00012207,0) [0|2] "volts" OnBoardDiagnostics
+ SG_ S1_PID_25_OxySensor2_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_25_OxySensor2_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_26_OxySensor3_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_26_OxySensor3_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_27_OxySensor4_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_27_OxySensor4_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_28_OxySensor5_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_28_OxySensor5_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_29_OxySensor6_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_29_OxySensor6_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_2A_OxySensor7_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_2A_OxySensor7_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_2B_OxySensor8_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_2B_OxySensor8_Volt : 47|16@0+ (0.00012207,0) [0|8] "volts" OnBoardDiagnostics
+ SG_ S1_PID_2E_CmdEvapPurge : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_2F_FuelTankLevel : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_30_WarmUpsSinceCodeClear : 31|8@0+ (1,0) [0|255] "count" OnBoardDiagnostics
+ SG_ S1_PID_31_DistanceSinceCodeClear : 31|16@0+ (1,0) [0|65535] "km" OnBoardDiagnostics
+ SG_ S1_PID_32_EvapSysVaporPres : 31|16@0- (0.25,0) [-8192|8191.75] "Pa" OnBoardDiagnostics
+ SG_ S1_PID_33_AbsBaroPres : 31|8@0+ (1,0) [0|255] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_34_OxySensor1_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_34_OxySensor1_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_35_OxySensor2_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_35_OxySensor2_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_36_OxySensor3_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_36_OxySensor3_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_37_OxySensor4_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_37_OxySensor4_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_38_OxySensor5_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_38_OxySensor5_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_39_OxySensor6_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_39_OxySensor6_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_3A_OxySensor7_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_3A_OxySensor7_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_3B_OxySensor8_Crnt : 47|16@0+ (0.00390625,-128) [-128|128] "mA" OnBoardDiagnostics
+ SG_ S1_PID_3B_OxySensor8_FAER : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_3C_CatTempBank1Sens1 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+ SG_ S1_PID_3D_CatTempBank2Sens1 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+ SG_ S1_PID_3E_CatTempBank1Sens2 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+ SG_ S1_PID_3F_CatTempBank2Sens2 : 31|16@0+ (0.1,-40) [-40|6513.5] "degC" OnBoardDiagnostics
+ SG_ S1_PID_40_PIDsSupported_41_60 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_41_MonStatusDriveCycle : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_42_ControlModuleVolt : 31|16@0+ (0.001,0) [0|65.535] "V" OnBoardDiagnostics
+ SG_ S1_PID_43_AbsLoadValue : 31|16@0+ (0.392157,0) [0|25700] "%" OnBoardDiagnostics
+ SG_ S1_PID_44_FuelAirCmdEquiv : 31|16@0+ (3.05176,-05) [0|2] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_45_RelThrottlePos : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_46_AmbientAirTemp : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+ SG_ S1_PID_47_AbsThrottlePosB : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_48_AbsThrottlePosC : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_49_AbsThrottlePosD : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_4A_AbsThrottlePosE : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_4B_AbsThrottlePosF : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_4C_CmdThrottleAct : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_4D_TimeRunMILOn : 31|16@0+ (1,0) [0|65535] "minutes" OnBoardDiagnostics
+ SG_ S1_PID_4E_TimeSinceCodeClear : 31|16@0+ (1,0) [0|65535] "minutes" OnBoardDiagnostics
+ SG_ S1_PID_4F_Max_FAER : 31|8@0+ (1,0) [0|255] "ratio" OnBoardDiagnostics
+ SG_ S1_PID_4F_Max_IntManiAbsPres : 55|8@0+ (10,0) [0|2550] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_4F_Max_OxySensCrnt : 47|8@0+ (1,0) [0|255] "mA" OnBoardDiagnostics
+ SG_ S1_PID_4F_Max_OxySensVol : 39|8@0+ (1,0) [0|255] "V" OnBoardDiagnostics
+ SG_ S1_PID_50_Max_AirFlowMAF : 31|8@0+ (10,0) [0|2550] "g/s" OnBoardDiagnostics
+ SG_ S1_PID_51_FuelType : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_52_EthanolFuelPct : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_53_AbsEvapSysVapPres : 31|16@0+ (0.005,0) [0|327.675] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_54_EvapSysVapPres : 31|16@0+ (1,-32767) [-32767|32768] "Pa" OnBoardDiagnostics
+ SG_ S1_PID_55_ShortSecOxyTrimBank1 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_55_ShortSecOxyTrimBank3 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_56_LongSecOxyTrimBank1 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_56_LongSecOxyTrimBank3 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_57_ShortSecOxyTrimBank2 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_57_ShortSecOxyTrimBank4 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_58_LongSecOxyTrimBank2 : 31|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_58_LongSecOxyTrimBank4 : 39|8@0+ (0.78125,-100) [-100|99.2188] "%" OnBoardDiagnostics
+ SG_ S1_PID_59_FuelRailAbsPres : 31|16@0+ (10,0) [0|655350] "kPa" OnBoardDiagnostics
+ SG_ S1_PID_5A_RelAccelPedalPos : 31|8@0+ (0.392157,0) [0|100] "%" OnBoardDiagnostics
+ SG_ S1_PID_5C_EngineOilTemp : 31|8@0+ (1,-40) [-40|215] "degC" OnBoardDiagnostics
+ SG_ S1_PID_5D_FuelInjectionTiming : 31|16@0+ (0.0078125,-210) [-210|301.992] "deg" OnBoardDiagnostics
+ SG_ S1_PID_5E_EngineFuelRate : 31|16@0+ (0.05,0) [0|3276.75] "L/h" OnBoardDiagnostics
+ SG_ S1_PID_5F_EmissionReq : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_60_PIDsSupported_61_80 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_61_DemandEngTorqPct : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_62_ActualEngTorqPct : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_63_EngRefTorq : 31|16@0+ (1,0) [0|65535] "Nm" OnBoardDiagnostics
+ SG_ S1_PID_64_EngPctTorq_EP1 : 39|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_64_EngPctTorq_EP2 : 47|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_64_EngPctTorq_EP3 : 55|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_64_EngPctTorq_EP4 : 63|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_64_EngPctTorq_Idle : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_65_AuxInputOutput : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_66_MAFSensor : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_67_EngineCoolantTemp : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_68_IntakeAirTempSens : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_6B_ExhaustGasTemp : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_6C_CmdThrottleActRel : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_6D_FuelPresContrSys : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_6E_InjPresContrSys : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_6F_TurboComprPres : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_70_BoostPresCntrl : 31|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ S1_PID_80_PIDsSupported_81_A0 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_8E_EngFrictionPctTorq : 31|8@0+ (1,-125) [-125|130] "%" OnBoardDiagnostics
+ SG_ S1_PID_A0_PIDsSupported_A1_C0 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S1_PID_C0_PIDsSupported_C1_E0 : 31|32@0+ (1,0) [0|4.29497] "" OnBoardDiagnostics
+ SG_ S2_PID_02_FreezeDTC : 31|16@0+ (1,0) [0|65535] "" OnBoardDiagnostics
+ SG_ response : 15|4@0+ (1,0) [0|15] "" OnBoardDiagnostics
+ SG_ length : 7|8@0+ (1,0) [0|255] "" OnBoardDiagnostics
+ SG_ service : 11|4@0+ (1,0) [0|15] "" OnBoardDiagnostics
+
+BO_ 2025 TCM_DiagSig_Tx: 8 Transmission_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+CM_ BO_ 1 "Bus: HS-CAN. Source: overview byte map. Overview names: Current Data | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 1 "HS-CAN";
+CM_ SG_ 1 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1 Mode_1_B1 "Overview byte 1: Mode 1";
+CM_ SG_ 1 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 1 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 2 "Bus: HS-CAN. Source: overview byte map. Overview names: Freeze Frame Data | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 2 "HS-CAN";
+CM_ SG_ 2 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 2 Mode_2_B1 "Overview byte 1: Mode 2";
+CM_ SG_ 2 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 2 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 2 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 2 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 2 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 2 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 3 "Bus: HS-CAN. Source: overview byte map. Overview names: Diagnostic Trouble Codes | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 3 "HS-CAN";
+CM_ SG_ 3 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 3 Mode_3_B1 "Overview byte 1: Mode 3";
+CM_ SG_ 3 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 3 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 3 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 3 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 3 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 3 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 4 "Bus: HS-CAN. Source: overview byte map. Overview names: Clear Trouble Code | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 4 "HS-CAN";
+CM_ SG_ 4 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 4 Mode_4_B1 "Overview byte 1: Mode 4";
+CM_ SG_ 4 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 4 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 4 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 4 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 4 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 4 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 5 "Bus: HS-CAN. Source: overview byte map. Overview names: Test Results/Oxygen Sensors | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 5 "HS-CAN";
+CM_ SG_ 5 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 5 Mode_5_B1 "Overview byte 1: Mode 5";
+CM_ SG_ 5 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 5 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 5 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 5 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 5 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 5 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 6 "Bus: HS-CAN. Source: overview byte map. Overview names: Test Results/Non-Continuous Testing | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 6 "HS-CAN";
+CM_ SG_ 6 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 6 Mode_6_B1 "Overview byte 1: Mode 6";
+CM_ SG_ 6 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 6 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 6 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 6 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 6 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 6 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 7 "Bus: HS-CAN. Source: overview byte map. Overview names: Show Pending Trouble Codes | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 7 "HS-CAN";
+CM_ SG_ 7 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 7 Mode_7_B1 "Overview byte 1: Mode 7";
+CM_ SG_ 7 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 7 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 7 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 7 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 7 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 7 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 8 "Bus: HS-CAN. Source: overview byte map. Overview names: Special Control Mode | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 8 "HS-CAN";
+CM_ SG_ 8 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 8 Mode_8_B1 "Overview byte 1: Mode 8";
+CM_ SG_ 8 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 8 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 8 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 8 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 8 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 8 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 9 "Bus: HS-CAN. Source: overview byte map. Overview names: Request Vehicle Information | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 9 "HS-CAN";
+CM_ SG_ 9 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 9 Mode_9_B1 "Overview byte 1: Mode 9";
+CM_ SG_ 9 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 9 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 9 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 9 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 9 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 9 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 10 "Bus: HS-CAN. Source: overview byte map. Overview names: Request Permanent Trouble Codes | Overview ECUs/modules: On Board Diagnostics";
+BA_ "Bus" BO_ 10 "HS-CAN";
+CM_ SG_ 10 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 10 Mode_10_B1 "Overview byte 1: Mode 10";
+CM_ SG_ 10 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 10 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 10 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 10 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 10 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 10 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 112 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 112 "HS-CAN";
+CM_ BO_ 117 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 117 "HS-CAN";
+CM_ BO_ 128 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 128 "HS-CAN";
+CM_ BO_ 133 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 133 "HS-CAN";
+CM_ BO_ 144 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 144 "HS-CAN";
+CM_ BO_ 151 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 151 "HS-CAN";
+CM_ BO_ 201 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 201 "HS-CAN";
+CM_ BO_ 252 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 252 "HS-CAN";
+CM_ BO_ 288 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 288 "HS-CAN";
+CM_ BO_ 296 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 296 "HS-CAN";
+CM_ BO_ 301 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 301 "HS-CAN";
+CM_ BO_ 471 "Bus: HS-CAN. Source: overview byte map. Overview names: FE 9D DF E6 63 F4 B6 | Overview ECUs/modules: Instrument Cluster";
+BA_ "Bus" BO_ 471 "HS-CAN";
+CM_ SG_ 471 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 471 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 471 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 471 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 471 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 471 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 471 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ BO_ 512 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 512 "HS-CAN";
+CM_ BO_ 519 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 519 "HS-CAN";
+CM_ BO_ 528 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 528 "HS-CAN";
+CM_ BO_ 560 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 560 "HS-CAN";
+CM_ BO_ 775 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 775 "HS-CAN";
+CM_ BO_ 832 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 832 "HS-CAN";
+CM_ BO_ 848 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 848 "HS-CAN";
+CM_ BO_ 851 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 851 "HS-CAN";
+CM_ BO_ 1001 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1001 "HS-CAN";
+CM_ BO_ 1027 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1027 "HS-CAN";
+CM_ BO_ 1031 "Bus: HS-CAN. Source: overview byte map. Overview names: ??? | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1031 "HS-CAN";
+CM_ SG_ 1031 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1031 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1031 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1031 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1031 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1031 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1031 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1031 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1061 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1061 "HS-CAN";
+CM_ BO_ 1063 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1063 "HS-CAN";
+CM_ BO_ 1079 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1079 "HS-CAN";
+CM_ BO_ 1101 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1101 "HS-CAN";
+CM_ BO_ 1107 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1107 "HS-CAN";
+CM_ BO_ 1108 "Bus: HS-CAN. Source: DbcDatabaseFile row 74.";
+BA_ "Bus" BO_ 1108 "HS-CAN";
+CM_ BO_ 1200 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1200 "HS-CAN";
+CM_ BO_ 1216 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1216 "HS-CAN";
+CM_ BO_ 1280 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1280 "HS-CAN";
+CM_ BO_ 1363 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1363 "HS-CAN";
+CM_ BO_ 1571 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1571 "HS-CAN";
+CM_ BO_ 1600 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1600 "HS-CAN";
+CM_ BO_ 1616 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1616 "HS-CAN";
+CM_ BO_ 1664 "Bus: HS-CAN. Source: overview byte map. Overview names: RCM_Rapid_Data_Response_1 | Overview ECUs/modules: Restraints Control Module";
+BA_ "Bus" BO_ 1664 "HS-CAN";
+CM_ SG_ 1664 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1664 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1664 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1664 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1664 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1664 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1664 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1664 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1665 "Bus: HS-CAN. Source: overview byte map. Overview names: RCM_Rapid_Data_Response_2 | Overview ECUs/modules: Restraints Control Module";
+BA_ "Bus" BO_ 1665 "HS-CAN";
+CM_ SG_ 1665 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1665 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1665 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1665 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1665 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1665 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1665 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1665 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1696 "Bus: HS-CAN. Source: overview byte map. Overview names: PCM_Rapid_Data_Response_1 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1696 "HS-CAN";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B0 "Overview byte 0: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B1 "Overview byte 1: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B2 "Overview byte 2: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B3 "Overview byte 3: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B4 "Overview byte 4: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B5 "Overview byte 5: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B6 "Overview byte 6: PCM Live Data Stream";
+CM_ SG_ 1696 PCM_Live_Data_Stream_B7 "Overview byte 7: PCM Live Data Stream";
+CM_ BO_ 1697 "Bus: HS-CAN. Source: overview byte map. Overview names: PCM_Rapid_Data_Response_2 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1697 "HS-CAN";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B0 "Overview byte 0: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B1 "Overview byte 1: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B2 "Overview byte 2: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B3 "Overview byte 3: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B4 "Overview byte 4: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B5 "Overview byte 5: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B6 "Overview byte 6: PCM Live Data Stream";
+CM_ SG_ 1697 PCM_Live_Data_Stream_B7 "Overview byte 7: PCM Live Data Stream";
+CM_ BO_ 1698 "Bus: HS-CAN. Source: overview byte map. Overview names: PCM_Rapid_Data_Response_3 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1698 "HS-CAN";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B0 "Overview byte 0: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B1 "Overview byte 1: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B2 "Overview byte 2: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B3 "Overview byte 3: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B4 "Overview byte 4: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B5 "Overview byte 5: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B6 "Overview byte 6: PCM Live Data Stream";
+CM_ SG_ 1698 PCM_Live_Data_Stream_B7 "Overview byte 7: PCM Live Data Stream";
+CM_ BO_ 1699 "Bus: HS-CAN. Source: overview byte map. Overview names: PCM_Rapid_Data_Response_4 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1699 "HS-CAN";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B0 "Overview byte 0: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B1 "Overview byte 1: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B2 "Overview byte 2: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B3 "Overview byte 3: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B4 "Overview byte 4: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B5 "Overview byte 5: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B6 "Overview byte 6: PCM Live Data Stream";
+CM_ SG_ 1699 PCM_Live_Data_Stream_B7 "Overview byte 7: PCM Live Data Stream";
+CM_ BO_ 1700 "Bus: HS-CAN. Source: overview byte map. Overview names: TCM_Rapid_Data_Response_1 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1700 "HS-CAN";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B0 "Overview byte 0: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B1 "Overview byte 1: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B2 "Overview byte 2: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B3 "Overview byte 3: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B4 "Overview byte 4: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B5 "Overview byte 5: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B6 "Overview byte 6: TCM Live Data Steam";
+CM_ SG_ 1700 TCM_Live_Data_Steam_B7 "Overview byte 7: TCM Live Data Steam";
+CM_ BO_ 1701 "Bus: HS-CAN. Source: overview byte map. Overview names: TCM_Rapid_Data_Response_2 | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1701 "HS-CAN";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B0 "Overview byte 0: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B1 "Overview byte 1: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B2 "Overview byte 2: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B3 "Overview byte 3: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B4 "Overview byte 4: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B5 "Overview byte 5: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B6 "Overview byte 6: TCM Live Data Stream";
+CM_ SG_ 1701 TCM_Live_Data_Stream_B7 "Overview byte 7: TCM Live Data Stream";
+CM_ BO_ 1712 "Bus: HS-CAN. Source: overview byte map. Overview names: ABS_Rapid_Data_Response_1 | Overview ECUs/modules: Antilock Brake Module";
+BA_ "Bus" BO_ 1712 "HS-CAN";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B0 "Overview byte 0: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B1 "Overview byte 1: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B2 "Overview byte 2: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B3 "Overview byte 3: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B4 "Overview byte 4: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B5 "Overview byte 5: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B6 "Overview byte 6: ABS Live Data Stream";
+CM_ SG_ 1712 ABS_Live_Data_Stream_B7 "Overview byte 7: ABS Live Data Stream";
+CM_ BO_ 1713 "Bus: HS-CAN. Source: overview byte map. Overview names: ABS_Rapid_Data_Response_2 | Overview ECUs/modules: Antilock Brake Module";
+BA_ "Bus" BO_ 1713 "HS-CAN";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B0 "Overview byte 0: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B1 "Overview byte 1: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B2 "Overview byte 2: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B3 "Overview byte 3: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B4 "Overview byte 4: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B5 "Overview byte 5: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B6 "Overview byte 6: ABS Live Data Stream";
+CM_ SG_ 1713 ABS_Live_Data_Stream_B7 "Overview byte 7: ABS Live Data Stream";
+CM_ BO_ 1782 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1782 "HS-CAN";
+CM_ BO_ 1784 "Bus: HS-CAN. Source: uploaded highSpeedCAN.dbc.";
+BA_ "Bus" BO_ 1784 "HS-CAN";
+CM_ BO_ 1786 "Bus: HS-CAN. Source: overview byte map. Overview names: IpcImmob_0x720 | Overview ECUs/modules: Instrument Cluster";
+BA_ "Bus" BO_ 1786 "HS-CAN";
+CM_ SG_ 1786 Immobilizer_B0 "Overview byte 0: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B1 "Overview byte 1: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B2 "Overview byte 2: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B3 "Overview byte 3: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B4 "Overview byte 4: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B5 "Overview byte 5: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B6 "Overview byte 6: Immobilizer";
+CM_ SG_ 1786 Immobilizer_B7 "Overview byte 7: Immobilizer";
+CM_ BO_ 1843 "Bus: HS-CAN. Source: overview byte map. Overview names: HIM_DiagSig_Rx, evaporator temperature, Air conditioning compressor cycling switch, Missing the CAN message from BEM, Blend Door Position, Blend Door Target Position, Blower Motor Speed - Actual Position, Blower Motor Speed - Target Position, Blower/Fan Sense Voltage, Climate Control Actuator Modes | Overview ECUs/modules: Data Request, HVAC Integrated Module";
+BA_ "Bus" BO_ 1843 "HS-CAN";
+CM_ SG_ 1843 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1843 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1843 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1843 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 1843 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1843 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1843 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1843 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1850 "Bus: HS-CAN. Source: overview byte map. Overview names: HIM_DiagSig_Tx | Overview ECUs/modules: HVAC Integrated Module";
+BA_ "Bus" BO_ 1850 "HS-CAN";
+CM_ SG_ 1850 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1850 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1850 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 1850 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1850 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1850 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1850 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1850 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1888 "Bus: HS-CAN. Source: overview byte map. Overview names: Diagnostic Service Request 0xBF | Overview ECUs/modules: Antilock Brake Module";
+BA_ "Bus" BO_ 1888 "HS-CAN";
+CM_ SG_ 1888 B0 "Overview byte 0: ??";
+CM_ SG_ 1888 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1888 B2 "Overview byte 2: ??";
+CM_ SG_ 1888 B3 "Overview byte 3: ??";
+CM_ SG_ 1888 B4 "Overview byte 4: ??";
+CM_ SG_ 1888 B5 "Overview byte 5: `??";
+CM_ SG_ 1888 B6 "Overview byte 6: ??";
+CM_ SG_ 1888 B7 "Overview byte 7: ??";
+CM_ BO_ 1943 "Bus: HS-CAN. Source: overview byte map. Overview names: SAS_DiagSig_Rx | Overview ECUs/modules: Steering Angle Sensor";
+BA_ "Bus" BO_ 1943 "HS-CAN";
+CM_ SG_ 1943 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1943 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1943 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 1943 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1943 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1943 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1943 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1943 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1951 "Bus: HS-CAN. Source: overview byte map. Overview names: SAS_DiagSig_Tx | Overview ECUs/modules: Steering Angle Sensor";
+BA_ "Bus" BO_ 1951 "HS-CAN";
+CM_ SG_ 1951 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1951 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1951 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 1951 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1951 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1951 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1951 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1951 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 2015 "Bus: HS-CAN. Source: DbcDatabaseFile row 824.";
+BA_ "Bus" BO_ 2015 "HS-CAN";
+CM_ BO_ 2016 "Bus: HS-CAN. Source: overview byte map. Overview names: request, response, Manifold absolute pressure sensor, Heated Exhaust Gas Oxygen Sensor (bank 1, Short term fuel trim 1, Heated Exhaust Gas Oxygen Sensor (bank 2, Short term fuel trim 2, PCM_DiagSig_Rx, Time Since Engine Start, Cylinder Head Temperature | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 2016 "HS-CAN";
+CM_ SG_ 2016 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 2016 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 2016 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 2016 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 2016 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 2016 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 2016 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 2016 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 2017 "Bus: HS-CAN. Source: overview byte map. Overview names: TCM_DiagSig_Rx | Overview ECUs/modules: Transmission Control Module";
+BA_ "Bus" BO_ 2017 "HS-CAN";
+CM_ SG_ 2017 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 2017 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 2017 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 2017 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 2017 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 2017 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 2017 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 2017 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 2024 "Bus: HS-CAN. Source: DbcDatabaseFile row 826.";
+BA_ "Bus" BO_ 2024 "HS-CAN";
+CM_ BO_ 2025 "Bus: HS-CAN. Source: overview byte map. Overview names: TCM_DiagSig_Tx | Overview ECUs/modules: Transmission Control Module";
+BA_ "Bus" BO_ 2025 "HS-CAN";
+CM_ SG_ 2025 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 2025 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 2025 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 2025 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 2025 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 2025 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 2025 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 2025 Parameters_B7 "Overview byte 7: Parameters";
+
+VAL_ 252 TCS_ShiftMapDesired 1 "True" 0 "False" ;
+VAL_ 252 HDC_BrakeActive 1 "Active" 0 "Inactive" ;
+VAL_ 252 VDC_Active 1 "Active" 0 "Inactive" ;
+VAL_ 252 TC_RequestedOff 1 "True" 0 "False" ;
+VAL_ 252 EBD_ECM 1 "True" 0 "False" ;
+VAL_ 252 TCS_Fitted 1 "True" 0 "False" ;
+VAL_ 296 Lights_Auto 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Fog 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Parker 1 "On" 0 "Off" ;
+VAL_ 296 Lights_HighBeam 1 "On" 0 "Off" ;
+VAL_ 296 Right_Indicator 1 "On" 0 "Off" ;
+VAL_ 296 Left_Indicator 1 "On" 0 "Off" ;
+VAL_ 301 Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake Pedal Pressed" 0 "Brake Pedal Off" ;
+VAL_ 301 Eng_Crank 1 "Active" 0 "Inactive" ;
+VAL_ 301 Cruise_Status 7 "Cruise Active" 2 "Cruise Resume" 1 "Cruise On" 0 "Cruise Off" ;
+VAL_ 301 OBD_ClearDTC 1 "True" 0 "False" ;
+VAL_ 301 HDC_Status 1 "Active" 0 "Inactive" ;
+VAL_ 301 Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake" 0 "Brake" ;
+VAL_ 301 Cruise_Status 7 "Cruise" 2 "Cruise" 1 "Cruise" 0 "Cruise" ;
+VAL_ 512 Eng_Crank_Status 3 "Low Voltage Crank Attempt" 2 "Crank In Progress" 1 "Crank Pending" 0 "No Action" ;
+VAL_ 512 Cat_Protection_Active 1 "True" 0 "False" ;
+VAL_ 512 Inertial_Loss_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 512 Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 512 Eng_Crank_Status 3 "Low" 2 "Crank" 1 "Crank" 0 "No" ;
+VAL_ 512 Inertial_Loss_Type 1 "Engine" 0 "Axle" ;
+VAL_ 512 Torque_Type 1 "Engine" 0 "Axle" ;
+VAL_ 528 Gear_Shift_Inhibit 1 "True" 0 "False" ;
+VAL_ 528 BTM_Clear_EngOff_Timer 1 "True" 0 "False" ;
+VAL_ 528 HDC_Failed 1 "True" 0 "False" ;
+VAL_ 528 HDC_Active 1 "True" 0 "False" ;
+VAL_ 528 HDC_Enabled 1 "True" 0 "False" ;
+VAL_ 528 VDC_Failed 1 "True" 0 "False" ;
+VAL_ 528 VDC_Active 1 "True" 0 "False" ;
+VAL_ 528 VDC_Disabled_ByUser 1 "True" 0 "False" ;
+VAL_ 528 TCS_Failed 1 "True" 0 "False" ;
+VAL_ 528 TCS_Active 1 "True" 0 "False" ;
+VAL_ 528 TCS_Disabled_ByUser 1 "True" 0 "False" ;
+VAL_ 528 ABS_Failed 1 "True" 0 "False" ;
+VAL_ 528 EBD_Failed 1 "True" 0 "False" ;
+VAL_ 528 ABS_Active 1 "True" 0 "False" ;
+VAL_ 528 Split_SlowFast_Torque_Req 1 "True" 0 "False" ;
+VAL_ 528 ABD_Fitted 1 "True" 0 "False" ;
+VAL_ 528 VDC_Fitted 1 "True" 0 "False" ;
+VAL_ 528 TCS_Fitted 1 "True" 0 "False" ;
+VAL_ 528 ABS_Fitted 1 "True" 0 "False" ;
+VAL_ 528 EBD_Fitted 1 "True" 0 "False" ;
+VAL_ 528 Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_ 528 VDC_Failed 0 "" ;
+VAL_ 528 Torque_Type 1 "Engine" 0 "Axle" ;
+VAL_ 560 Transmission_Mode 6 "Reserved - Creep" 5 "Economy" 4 "Reserved - Winter" 3 "Manual Shift Mode" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_ 560 Transmission_Fault 1 "True" 0 "False" ;
+VAL_ 560 Transmission_Overheat 1 "True" 0 "False" ;
+VAL_ 560 Shift_In_Progress 1 "True" 0 "False" ;
+VAL_ 560 Torque_Conv_Locked 1 "True" 0 "False" ;
+VAL_ 560 Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward Gear 9" 18 "Forward Gear 8" 17 "Forward Gear 7" 16 "Forward Gear 6" 11 "Reserved" 10 "Reverse" 6 "Forward Gear D" 5 "Forward Gear 5" 4 "Forward Gear 4" 3 "Forward Gear 3" 2 "Forward Gear 2" 1 "Forward Gear 1" 0 "Blank" ;
+VAL_ 560 Transmission_Mode 6 "Reserved" 5 "Economy" 4 "Reserved" 3 "Manual" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_ 560 Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward" 18 "Forward" 17 "Forward" 16 "Forward" 11 "Reserved" 10 "Reverse" 6 "Forward" 5 "Forward" 4 "Forward" 3 "Forward" 2 "Forward" 1 "Forward" 0 "Blank" ;
+VAL_ 775 Reset_Trip_Timer 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Fuel 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Speed 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Down 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Up 1 "On" 0 "Off" ;
+VAL_ 775 M_Overspeed_On 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Active_Adjust 1 "On" 0 "Off" ;
+VAL_ 775 Diff_Lock_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Traction_VDC_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Climate_Ctrl_Off_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Auto_ACC_On_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Recirc_Switch 1 "On" 0 "Off" ;
+VAL_ 775 AC_Switch 1 "On" 0 "Off" ;
+VAL_ 851 AC_Max_Request 1 "On" 0 "Off" ;
+VAL_ 851 AC_Clutch_Request 1 "On" 0 "Off" ;
+VAL_ 851 Off_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Semi_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Auto_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Driver_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Pass_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Driver_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Pass_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 OS_Temp_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Fanblade_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Person_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Screen_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Floor_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Face_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Fresh_Seg 1 "On" 0 "Off" ;
+VAL_ 851 Recirc_Seg 1 "On" 0 "Off" ;
+VAL_ 851 AC_Seg 1 "On" 0 "Off" ;
+VAL_ 1001 Gear_Position_Target 15 "Invalid" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_ 1001 J_Gate_Selection_Fault 1 "True" 0 "False" ;
+VAL_ 1001 Trans_Malfunction 1 "True" 0 "False" ;
+VAL_ 1001 TCM_Config_Flag 1 "Not Required" 0 "Required" ;
+VAL_ 1001 Torque_Converter_Status 1 "Engaged" 0 "Disengaged" ;
+VAL_ 1001 Gear_Selection_Fault 1 "On" 0 "Off" ;
+VAL_ 1001 Idle_Neutral_Control 1 "On" 0 "Off" ;
+VAL_ 1001 Perf_Mode_Indication 1 "On" 0 "Off" ;
+VAL_ 1001 TCM_DTC_MIL_Status 1 "On" 0 "Off" ;
+VAL_ 1001 OBD_TCM_Clear_Ack 1 "On" 0 "Off" ;
+VAL_ 1001 Transmission_Shift_Map 7 "Cruise " 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not Used" 1 "Sports" 0 "Normal" ;
+VAL_ 1001 Gear_Position_Actual 15 "Gear Shift In Progress" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_ 1001 Gear_Position_Selected 15 "Intermediate" 7 "Fifth" 6 "Second" 5 "Third" 4 "Fourth" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 1001 TCM_Config_Flag 1 "Not" 0 "Required" ;
+VAL_ 1001 Transmission_Shift_Map 7 "Cruise" 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not" 1 "Sports" 0 "Normal" ;
+VAL_ 1001 Gear_Position_Actual 15 "Gear" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_ 1027 Priority_Key_1 1 "On" 0 "Off" ;
+VAL_ 1027 Priority_Key_2 1 "On" 0 "Off" ;
+VAL_ 1027 Lights_On_Warning 1 "On" 0 "Off" ;
+VAL_ 1027 Trailer_Connected 1 "On" 0 "Off" ;
+VAL_ 1027 Accessories_Switch 1 "On" 0 "Off" ;
+VAL_ 1027 Rear_Demist 1 "On" 0 "Off" ;
+VAL_ 1027 Rear_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 LR_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 RR_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 LF_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1027 RF_Door_Ajar 1 "On" 0 "Off" ;
+VAL_ 1061 Cruise_Set 1 "On" 0 "Off" ;
+VAL_ 1061 Cruise_Enable 1 "On" 0 "Off" ;
+VAL_ 1063 Immobiliser_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 DTC_Logging 1 "On" 0 "Off" ;
+VAL_ 1063 AC_Shed_Load 1 "True" 0 "False" ;
+VAL_ 1063 MIL_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 ETC_Warning_Ind 2 "Flash" 1 "On" 0 "Off" ;
+VAL_ 1063 AC_Compressor_State 1 "On" 0 "Off" ;
+VAL_ 1063 Idle_Mode 1 "On" 0 "Off" ;
+VAL_ 1063 Diff_Lock_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Engine_Overheat_Warn_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Oil_Pressure_Warn_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Alternator_Fail_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Cruise_Set_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 Oil_Low_Ind 1 "On" 0 "Off" ;
+VAL_ 1063 AC_Pressure 0 "" ;
+VAL_ 1079 MIL_Strategy_On 1 "On" 0 "Off" ;
+VAL_ 1079 Park_Brake_Ind 1 "On" 0 "Off" ;
+VAL_ 1079 Park_Lights 1 "On" 0 "Off" ;
+VAL_ 1079 Fuel_Sender_Fault 1 "True" 0 "False" ;
+VAL_ 1079 Low_Fuel_Ind 1 "On" 0 "Off" ;
+VAL_ 1101 MIL_Status 1 "On" 0 "Off" ;
+VAL_ 1107 Odometer 0 "0_KM" 1 "1_KM" 10 "10KM" 100 "100KM" 1000 "1000KM" 10000 "10000KM" 100000 "100000KM" 200000 "200000KM" ;
+VAL_ 1363 Inst_Econ_Mode 1 "L per Hr" 0 "L per 100Km" ;
+VAL_ 1363 Inst_Econ_Mode 1 "L" 0 "L" ;
+VAL_ 1571 RWD_Flag 1 "True" 0 "False" ;
+VAL_ 1571 Fuel_Type_And_Delivery 12 "Petrol LPG Dual Fuel" 11 "LPG EFI" 2 "Petrol EFI" ;
+VAL_ 1571 Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_ 1571 Fuel_Type_And_Delivery 12 "Petrol" 11 "LPG" 2 "Petrol" ;
+VAL_ 1571 Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally" ;
+VAL_ 1600 RWD_Flag 1 "True" 0 "False" ;
+VAL_ 1600 Transmission_Configuration 1 "Copperhead" 0 "Barra_E265" ;
+VAL_ 1600 AutoTransTCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1600 AutoTransPCMControl_Flag 1 "True" 0 "False" ;
+VAL_ 1600 ManualTrans_Flag 1 "True" 0 "False" ;
+VAL_ 1600 AWD_Flag 1 "True" 0 "False" ;
+VAL_ 1600 FWD_Flag 1 "True" 0 "False" ;

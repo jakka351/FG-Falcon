@@ -1,0 +1,1490 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Antilock_Brake_Module AudioControlModule Audio_Control_Module Audio_Interface_Module BluetoothPhoneModule Bluetooth_Phone_Module BodyElectricModule Body_Electronic_Module Data_Request Data_Response Diagnostic_Tester FrontDisplayInterfaceModule Front_Display_Interface_Module HVAC_Control_Module HVAC_Integrated_Module HvacIntegratedModule InstrumentCluster Instrument_Cluster NegativeResponseError ParkingAidModule Parking_Aid_Module PowertrainControlModule Powertrain_Control_Module RestraintsControlModule Restraints_Control_Module Transmission_Control_Module Vector__XXX
+
+CM_ "FG Falcon Mid-Speed CAN (MS-CAN) DBC. Generated from uploaded highSpeedCAN.dbc and BigFalconSheet(1).xlsx. Byte-level overview signals are conservative placeholders where exact scaling/bit layout was not available.";
+BA_DEF_ BO_  "Bus" STRING ;
+BA_DEF_DEF_  "Bus" "" ;
+
+VAL_TABLE_ Inst_Econ_Mode 1 "L per Hr" 0 "L per 100Km" ;
+VAL_TABLE_ Transmission_Configuration 1 "Copperhead" 0 "Barra_E265" ;
+VAL_TABLE_ Fuel_Type_And_Delivery 12 "Petrol LPG Dual Fuel" 11 "LPG EFI" 2 "Petrol EFI" ;
+VAL_TABLE_ Induction_Type 9 "Unknown" 4 "None" 3 "Supercharged" 2 "Turbocharged" 1 "Naturally Aspirated" ;
+VAL_TABLE_ Dash_Ind_State 2 "Flash" 1 "On" 0 "Off" ;
+VAL_TABLE_ Gear_Position_Target 15 "Invalid" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Required_NotRequired 1 "Not Required" 0 "Required" ;
+VAL_TABLE_ Engaged_Disengaged 1 "Engaged" 0 "Disengaged" ;
+VAL_TABLE_ Transmission_Shift_Map 7 "Cruise " 6 "Manual" 5 "Traction" 4 "Gradient" 3 "Hot" 2 "Not Used" 1 "Sports" 0 "Normal" ;
+VAL_TABLE_ Gear_Position_Actual 15 "Gear Shift In Progress" 12 "Reverse" 6 "Sixth" 5 "Fifth" 4 "Fourth" 3 "Third" 2 "Second" 1 "First" 0 "Neutral" ;
+VAL_TABLE_ Gear_Position_Selected 15 "Intermediate" 7 "Fifth" 6 "Second" 5 "Third" 4 "Fourth" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_TABLE_ Off_On 1 "On" 0 "Off" ;
+VAL_TABLE_ Transmission_Mode 6 "Reserved - Creep" 5 "Economy" 4 "Reserved - Winter" 3 "Manual Shift Mode" 2 "Performance" 1 "ADP" 0 "Blank" ;
+VAL_TABLE_ Trans_Gear_Pos 255 "Invalid" 241 "Neutral" 240 "Park" 19 "Forward Gear 9" 18 "Forward Gear 8" 17 "Forward Gear 7" 16 "Forward Gear 6" 11 "Reserved" 10 "Reverse" 6 "Forward Gear D" 5 "Forward Gear 5" 4 "Forward Gear 4" 3 "Forward Gear 3" 2 "Forward Gear 2" 1 "Forward Gear 1" 0 "Blank" ;
+VAL_TABLE_ Eng_Crank_Status 3 "Low Voltage Crank Attempt" 2 "Crank In Progress" 1 "Crank Pending" 0 "No Action" ;
+VAL_TABLE_ Torque_Type 1 "Engine Torque" 0 "Axle Torque" ;
+VAL_TABLE_ Brake_State 3 "Reserved2" 2 "Reserved1" 1 "Brake Pedal Pressed" 0 "Brake Pedal Off" ;
+VAL_TABLE_ Cruise_Status 7 "Cruise Active" 2 "Cruise Resume" 1 "Cruise On" 0 "Cruise Off" ;
+VAL_TABLE_ Active_Inactive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ True_False 1 "True" 0 "False" ;
+
+BO_ 12 InputOutputControlByIdentifier: 8 NegativeResponseError
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Negative_Response_Code_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Identifier_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 296 LightsAndIllumination: 8 InstrumentCluster
+ SG_ HighBeamStatus : 0|1@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ IllumLevelDisplay : 8|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+ SG_ IllumLevelSwitch : 24|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ AutoHeadlampSwitchStatus : 0|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ FogLampStatus : 0|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ ParkAndLowBeamStatus : 0|1@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ TurnStalkSwitchSatus : 16|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ RearBeltMinderStatus : 56|8@1+ (1,0) [0|0] "" RestraintsControlModule
+ SG_ Interior_Dimmer_Low : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Interior_Dimmer_High : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Auto : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Fog : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_Parker : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Lights_HighBeam : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Right_Indicator : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Left_Indicator : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 471 Remote_Request_Frame: 7 Front_Display_Interface_Module
+ SG_ Remote_Request_Frame_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 704 Bluetooth_Menu_Pairing_Ascii_Data: 8 Bluetooth_Phone_Module
+ SG_ Ascii_Data_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ascii_Data_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 705 Bluetooth_Menu_Open: 8 Bluetooth_Phone_Module
+ SG_ Phone_Call_Active_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 708 Bluetooth_Signal: 8 Bluetooth_Phone_Module
+ SG_ Menu_Active_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 714 MSG1: 8 BluetoothPhoneModule
+ SG_ BpmContinuousTroubleCodes : 0|8@1+ (1,0) [0|255] "" BluetoothPhoneModule
+ SG_ BpmOperatingState : 0|8@1+ (1,0) [0|255] "" BluetoothPhoneModule
+ SG_ BpmOnDemandDtcs : 0|8@1+ (1,0) [0|255] "" BluetoothPhoneModule
+ SG_ SecurityStatusBpm : 8|8@1+ (1,0) [0|255] "" BluetoothPhoneModule
+ SG_ BTH_CONTD : 0|8@1+ (1,0) [0|255] "" BluetoothPhoneModule
+
+BO_ 716 BPM_Operating_State: 8 Bluetooth_Phone_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 717 Incoming_Call_Call_in_Progress_Call_End_Re_Dial_Voice_Tag: 8 Bluetooth_Phone_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 718 BluetoothPairCodeAscii: 8 BluetoothPhoneModule
+ SG_ MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 719 Bluetooth_Phone_Module: 8 Bluetooth_Phone_Module
+ SG_ cangen_can0_g_10_I_2D4_L_8_D_333333333333333333_Percent_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 722 Ipod_Menu_Percent_Filesystem: 8 Audio_Interface_Module
+ SG_ Security_Status_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Authentication_Device_Error_Code_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 723 Ipod_Serial_Data: 8 Audio_Interface_Module
+ SG_ Number_of_continuous_DTCs_stored_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Consumer_Device_Error_Count_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 724 Consumer_Device_Not_Connected: 8 Audio_Interface_Module
+ SG_ Consumer_Device_Model_ID_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ipod_Track_Time_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ iPod_Firmware_Version_Number_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ipod_Mode_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ipod_Controls_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ipod_Mode_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ipod_Mode_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 737 Audio_Mode_Switches: 8 Audio_Control_Module
+ SG_ Audio_Mode_Switch_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 738 Audio_Mode_Switches: 8 Audio_Control_Module
+ SG_ Audio_Mode_Switch_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 739 Phone_AUX2_switcher: 8 Audio_Control_Module
+ SG_ Audio_Mode_Switch_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 742 AudioTunedFreqRadioDataService: 8 AudioControlModule
+ SG_ AudioFMFrequencyStep : 8|8@1+ (0.01,0) [0|255] "" InstrumentCluster
+ SG_ AudioTunedFreqency : 0|8@1+ (2,0) [0|255] "" InstrumentCluster
+ SG_ AudioTunerBandPreset : 16|8@1+ (1,0) [0|255] "" InstrumentCluster
+ SG_ RDS_PSN_State : 56|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+
+BO_ 748 MessageLabel: 8 Vector__XXX
+
+BO_ 751 Unknown: 8 AudioControlModule
+
+BO_ 754 SWCMediaControlBtns: 8 AudioControlModule
+ SG_ AudioCurrentMediaMode : 48|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+ SG_ SteeringWheelControlsLeft_ms : 56|8@1+ (1,0) [0|255] "ACTIVE/INACTIVE" FrontDisplayInterfaceModule
+ SG_ AudioVolumeLevel : 0|8@1+ (2,0) [0|15] "Vol" FrontDisplayInterfaceModule
+
+BO_ 756 RDS_MESSAGE: 8 AudioControlModule
+ SG_ RDS_MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 757 RDS_MESSAGE: 8 AudioControlModule
+ SG_ RDS_MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 758 RDS_MESSAGE: 8 AudioControlModule
+ SG_ RDS_MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 761 CdMp3Data: 8 FrontDisplayInterfaceModule
+
+BO_ 764 InteriorCommandCentreMediaControl: 8 FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentre_MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 775 InteriorCommandCentreBodyControl: 8 FrontDisplayInterfaceModule
+ SG_ InteriorCommandCentreBem_MessageData0 : 0|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData1 : 8|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData2 : 16|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData3 : 24|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData4 : 32|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData5 : 40|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData6 : 48|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorCommandCentreBem_MessageData7 : 56|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ IllumBatsaverRequest_MS_0x307 : 16|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ Reset_Trip_Timer : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Fuel : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reset_Avg_Speed : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Down : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Up : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ M_Overspeed_On : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overspeed_Active_Adjust : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Blower_Position : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Temperature_Position : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Diff_Lock_Switch : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Traction_VDC_Switch : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Down_Switch : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Temp_Up_Switch : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Down_Switch : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pass_Temp_Up_Switch : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Down_Switch : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fan_Spd_Up_Switch : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Climate_Ctrl_Off_Switch : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_ACC_On_Switch : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Down_Switch : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Air_Dist_Up_Switch : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Floor_Switch : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Screen_Switch : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Floor_Switch : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Floor_Switch : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Face_Switch : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Recirc_Switch : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Switch : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 777 AudioRDSPSName18: 8 AudioControlModule
+ SG_ RDS_PSName_MessageData0 : 0|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData1 : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData2 : 16|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData3 : 24|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData4 : 32|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData5 : 40|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData6 : 48|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ RDS_PSName_MessageData7 : 56|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+
+BO_ 779 Unknown: 8 BodyElectricModule
+ SG_ CCNTABS : 46|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 781 CD_TRACK_TYPE_PLAYING: 8 AudioControlModule
+ SG_ CD_PlayingNow : 16|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+ SG_ CD_TrackNumber : 8|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+ SG_ CD_Type : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+
+BO_ 783 Unknown: 8 BodyElectricModule
+
+BO_ 785 BeltMinderStatus: 8 BodyElectricModule
+ SG_ RearBeltMinderStatus : 0|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ SeatbeltIndicatorState : 48|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ SeatBeltStatusFrontLeft : 32|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ SeatBeltStatusFrontRight : 0|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ SeatBeltStatusRearLeft : 16|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ SeatBeltStatusRearRight : 16|8@1+ (1,0) [0|0] "" BodyElectricModule
+
+BO_ 787 IntActTemp: 8 FrontDisplayInterfaceModule
+ SG_ InteriorActualTemperature : 0|8@1+ (0.166667,0) [0|255] "Degrees_C" HvacIntegratedModule
+
+BO_ 789 MenuOptionsICC: 8 FrontDisplayInterfaceModule
+ SG_ CycleLockSetting : 0|8@1+ (1,0) [0|255] "" BodyElectricModule
+ SG_ Ignition : 16|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ FollowMeHomeLighting : 24|8@1+ (0.1,0) [0|255] "" BodyElectricModule
+ SG_ InteriorLightStatus : 0|8@1+ (1,0) [0|0] "" FrontDisplayInterfaceModule
+ SG_ CabLightSetting : 8|8@1+ (1,0) [0|255] "" FrontDisplayInterfaceModule
+ SG_ IgnitionState : 8|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ AutoHeadlightAdjustment : 32|8@1+ (1,0) [0|255] "" BodyElectricModule
+
+BO_ 791 VehicleIdentificationNumber: 8 BodyElectricModule
+ SG_ VIN : 0|63@1+ (1,0) [0|0] "" AudioControlModule
+
+BO_ 816 ParkBrakeOn_MS: 8 InstrumentCluster
+
+BO_ 832 RCM_STAT_DPLY_ENABLED_RCRD_MS: 8 RestraintsControlModule
+ SG_ FuelCutOffStatus : 8|8@1+ (1,0) [0|255] "" InstrumentCluster
+ SG_ SeatBeltWarningRequest : 8|8@1+ (1,0) [0|255] "" InstrumentCluster
+ SG_ SeatBeltChineRequest : 8|8@1+ (1,0) [0|255] "" InstrumentCluster
+ SG_ AirBagFault : 8|8@1+ (1,0) [0|255] "" InstrumentCluster
+ SG_ AirBagWarningLight : 8|8@1+ (1,0) [0|255] "" InstrumentCluster
+
+BO_ 851 HVAC_ClimateStatus_MS: 8 HVAC_Integrated_Module
+ SG_ VentStatus_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PassengerTargetTemp_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PassengerTemp_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DriverTargetTemp_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DriverTemp_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ExteriorAmbientTemp_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FanSpeedActual_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FanSpeedTarget_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 864 ReverseParkingSenseSystem: 8 ParkingAidModule
+ SG_ PRK_BRAKE : 16|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ RC_DIST : 8|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ REAR_SENS : 58|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ REAR_TONE : 40|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ VBAT : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ TRAILINS : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ TRANSRV : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ SYS_OZ : 16|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ RM_DIST : 24|8@1+ (1,0) [0|0] "" ParkingAidModule
+ SG_ PARK_SYS : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
+
+BO_ 869 ReverseGearEngaged: 8 BodyElectricModule
+ SG_ ReverseGearSelected : 0|8@1+ (1,0) [0|0] "" ParkingAidModule
+
+BO_ 1027 BEM_Status_MS: 8 Body_Electronic_Module
+ SG_ DoorStatus_Accessories_TrailerConnected_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PriorityKey_LightsOn_RearDemist_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CabinTemperature_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SunloadDriver_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SunloadPassenger_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Boot_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Windscreen_Wipers_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Locking_State_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1030 SeatBeltStatus: 8 BodyElectricModule
+ SG_ SeatBeltStatusFrontRight : 0|8@1+ (1,0) [0|0] "" InstrumentCluster
+ SG_ SeatBeltStatusFrontLeft : 32|8@1+ (1,0) [0|0] "" InstrumentCluster
+ SG_ SeatBeltStatusRearLeft : 16|8@1+ (1,0) [0|0] "" InstrumentCluster
+ SG_ SeatBeltStatusRearRight : 16|8@1+ (1,0) [0|0] "" InstrumentCluster
+ SG_ SeatBeltStatusRearCentre : 16|8@1+ (1,0) [0|0] "" InstrumentCluster
+ SG_ IgnitionState : 8|8@1+ (1,0) [0|0] "" BodyElectricModule
+ SG_ InteriorLightStatus : 16|8@1+ (1,0) [0|0] "" BodyElectricModule
+
+BO_ 1033 AdditionalBodyInformation: 8 BodyElectricModule
+
+BO_ 1101 EngineOilTemperature: 8 PowertrainControlModule
+ SG_ CylinderHeadTemp4 : 32|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
+ SG_ CylinderHeadTemp5 : 40|8@1+ (0.5,0) [0|255] "Degrees_C" PowertrainControlModule
+ SG_ EngineOilTemperature6 : 48|8@1+ (0.5,0) [0|255] "Degrees_C" InstrumentCluster
+ SG_ AtmosphericAbsolutePressure7 : 56|8@1+ (0.5,0) [0|255] "KPa" PowertrainControlModule
+ SG_ Baro_Pressure : 63|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+ SG_ Eng_Oil_Temperature : 55|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Coolant_Temperature : 39|12@0+ (0.1,-40) [0|0] "C" Vector__XXX
+ SG_ MIL_Status : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1107 Odometer: 8 Data_Request
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1281 MessageLabel: 8 Vector__XXX
+
+BO_ 1292 ACM_KeepAlive: 8 AudioControlModule
+ SG_ KeepAliveACM : 0|63@1+ (0,0) [0|0] "" InstrumentCluster
+
+BO_ 1297 Unknown: 8 Vector__XXX
+
+BO_ 1345 BEM_KeepAliveSignal: 8 Body_Electronic_Module
+ SG_ Keep_Alive_Signal_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Keep_Alive_Signal_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Keep_Alive_Signal_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1365 Unknown: 8 InstrumentCluster
+
+BO_ 1372 FDIM_KeepAlive: 8 FrontDisplayInterfaceModule
+ SG_ KeepAliveFDIM : 0|8@1+ (0.1,0) [0|0] "" InstrumentCluster
+
+BO_ 1600 TransConfig_MS: 8 Instrument_Cluster
+ SG_ ManualTransFlag_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1664 PAM_CCP_DTO: 8 Parking_Aid_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1665 PAM_CCP_CRO: 8 Parking_Aid_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1782 ImmobTransfer_PCM_1_to_8_PATS: 8 Powertrain_Control_Module
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_PCM_1_to_8_PATS_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1784 ImmobTransfer_BEM_1_to_8_PATS: 8 Body_Electronic_Module
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_BEM_1_to_8_PATS_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1786 ImmobTransfer_IPC_1_to_8_PATS: 8 Instrument_Cluster
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ImmobTransfer_IPC_1_to_8_PATS_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1788 Msg: 8 Vector__XXX
+
+BO_ 1797 IPC_CCP: 8 Vector__XXX
+ SG_ CCP__B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1798 BEM_CAN_CALIBRATION_PROTOCOL: 8 Diagnostic_Tester
+ SG_ CCP__B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1809 MSCAN_MSG_711: 8 Vector__XXX
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1810 BEM_CAN_CALIBRATION_PROTOCOL: 8 Body_Electronic_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1812 Where_did_this_data_come_from: 8 Vector__XXX
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1824 IC_DiagSig_Rx: 8 InstrumentCluster
+
+BO_ 1830 BEM_DiagSig_Rx: 8 Data_Request
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1831 ACM_DiagSig_Rx: 8 Audio_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1832 IC_DiagSig_Tx: 8 Instrument_Cluster
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1838 BEM_DiagSig_Tx: 8 Body_Electronic_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1839 ACM_DiagSig_Tx: 8 Audio_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1843 Clear_DTC_s: 8 HVAC_Control_Module
+ SG_ LEN_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1846 PAM_DiagSig_Rx: 8 Restraints_Control_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1847 RCM_DiagSig_Rx: 8 Parking_Aid_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1854 PAM_DiagSig_Tx: 8 Data_Response
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Echo_Request_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1855 PAM_DiagSig_Tx: 8 Parking_Aid_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1888 ABS_DiagSig_Rx: 8 Antilock_Brake_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1895 AIM_DiagSig_Rx: 8 Audio_Interface_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1896 ABS_DiagSig_Tx: 8 Antilock_Brake_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1903 AIM_DiagSig_Tx: 8 Audio_Interface_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1921 BPM_DiagSig_Rx: 8 Bluetooth_Phone_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1929 BPM_DiagSig_Tx: 8 Data_Response
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1958 FDIM_DiagSig_Rx: 8 Data_Request
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Service_Request_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1966 FDIM_DiagSig_Tx: 8 Front_Display_Interface_Module
+ SG_ Data_Length_Packet_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Response_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Request_Echo_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Error_Code_ID_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameters_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2016 Clear_DTC_s: 8 Powertrain_Control_Module
+ SG_ LEN_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2017 Clear_DTC_s: 8 Transmission_Control_Module
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ _0XFF_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 259282800 _6B_FB_3E_B9_B9_DA_DD_DE: 8 Instrument_Cluster
+ SG_ RawByte0_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte1_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte2_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte3_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte4_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RawByte7_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+CM_ BO_ 12 "Bus: MS-CAN. Source: overview byte map. Overview names: InputOutputControlByIdentifier, NegativeResponseError, generalReject, serviceNotSupported, subFunctionNotSupported, responseTooLong, busyRepeatRequest, conditionsNotCorrect, requestSequenceError, u | Overview ECUs/modules: NegativeResponseError, InputOutputControlByIdentifier";
+BA_ "Bus" BO_ 12 "MS-CAN";
+CM_ SG_ 12 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 12 Negative_Response_Code_B1 "Overview byte 1: Negative Response Code";
+CM_ SG_ 12 Error_Identifier_B2 "Overview byte 2: Error Identifier";
+CM_ SG_ 12 Request_Echo_B3 "Overview byte 3: Request Echo";
+CM_ SG_ 12 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 12 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 12 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 12 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 296 "Bus: MS-CAN. Source: DbcDatabaseFile row 106, DbcDatabaseFile row 399. Alternative message name from source: BEM_MSG_3";
+BA_ "Bus" BO_ 296 "MS-CAN";
+CM_ BO_ 471 "Bus: MS-CAN. Source: overview byte map. Overview names: Remote Request Frame | Overview ECUs/modules: Front Display Interface Module, Instrument Cluster";
+BA_ "Bus" BO_ 471 "MS-CAN";
+CM_ SG_ 471 Remote_Request_Frame_B0 "Overview byte 0: Remote Request Frame";
+CM_ SG_ 471 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 471 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 471 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 471 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 471 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 471 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ BO_ 704 "Bus: MS-CAN. Source: overview byte map. Overview names: Bluetooth Menu/Pairing Ascii Data | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 704 "MS-CAN";
+CM_ SG_ 704 Ascii_Data_B0 "Overview byte 0: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B1 "Overview byte 1: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B2 "Overview byte 2: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B3 "Overview byte 3: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B4 "Overview byte 4: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B5 "Overview byte 5: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B6 "Overview byte 6: Ascii Data";
+CM_ SG_ 704 Ascii_Data_B7 "Overview byte 7: Ascii Data";
+CM_ BO_ 705 "Bus: MS-CAN. Source: overview byte map. Overview names: Bluetooth Menu Open | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 705 "MS-CAN";
+CM_ SG_ 705 Phone_Call_Active_B0 "Overview byte 0: Phone Call Active";
+CM_ SG_ 705 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 705 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 705 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 705 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 705 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 705 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 705 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 708 "Bus: MS-CAN. Source: overview byte map. Overview names: Bluetooth Signal | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 708 "MS-CAN";
+CM_ SG_ 708 Menu_Active_B0 "Overview byte 0: Menu Active";
+CM_ SG_ 708 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 708 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 708 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 708 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 708 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 708 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 708 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 714 "Bus: MS-CAN. Source: DbcDatabaseFile row 153.";
+BA_ "Bus" BO_ 714 "MS-CAN";
+CM_ BO_ 716 "Bus: MS-CAN. Source: overview byte map. Overview names: BPM Operating State | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 716 "MS-CAN";
+CM_ SG_ 716 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 716 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 716 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 716 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 716 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 716 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 716 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 716 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 717 "Bus: MS-CAN. Source: overview byte map. Overview names: Incoming Call,  Call in Progress, Call End, Re-Dial, Voice Tag | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 717 "MS-CAN";
+CM_ SG_ 717 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 717 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 717 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 717 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 717 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 717 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 717 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 717 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 718 "Bus: MS-CAN. Source: DbcDatabaseFile row 160.";
+BA_ "Bus" BO_ 718 "MS-CAN";
+CM_ BO_ 719 "Bus: MS-CAN. Source: overview byte map. Overview names: Bluetooth Phone Module | Overview ECUs/modules: Bluetooth Phone Module";
+BA_ "Bus" BO_ 719 "MS-CAN";
+CM_ SG_ 719 cangen_can0_g_10_I_2D4_L_8_D_333333333333333333_Percent_B0 "Overview byte 0: cangen can0 -g 10 -I 2D4 -L 8 -D 333333333333333333 &";
+CM_ SG_ 719 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 719 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 719 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 719 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 719 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 719 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 719 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 722 "Bus: MS-CAN. Source: overview byte map. Overview names: Ipod Menu & Filesystem | Overview ECUs/modules: Audio Interface Module";
+BA_ "Bus" BO_ 722 "MS-CAN";
+CM_ SG_ 722 Security_Status_B0 "Overview byte 0: Security Status";
+CM_ SG_ 722 Authentication_Device_Error_Code_B1 "Overview byte 1: Authentication Device Error Code";
+CM_ SG_ 722 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 722 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 722 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 722 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 722 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 722 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 723 "Bus: MS-CAN. Source: overview byte map. Overview names: Ipod Serial Data | Overview ECUs/modules: Audio Interface Module";
+BA_ "Bus" BO_ 723 "MS-CAN";
+CM_ SG_ 723 Number_of_continuous_DTCs_stored_B0 "Overview byte 0: Number of continuous DTCs stored";
+CM_ SG_ 723 Consumer_Device_Error_Count_B1 "Overview byte 1: Consumer Device Error Count";
+CM_ SG_ 723 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 723 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 723 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 723 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 723 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 723 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 724 "Bus: MS-CAN. Source: overview byte map. Overview names: Consumer Device Not Connected | Overview ECUs/modules: Audio Interface Module";
+BA_ "Bus" BO_ 724 "MS-CAN";
+CM_ SG_ 724 Consumer_Device_Model_ID_B0 "Overview byte 0: Consumer Device Model ID";
+CM_ SG_ 724 Ipod_Track_Time_B1 "Overview byte 1: Ipod Track Time";
+CM_ SG_ 724 iPod_Firmware_Version_Number_B2 "Overview byte 2: iPod Firmware Version Number";
+CM_ SG_ 724 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 724 Ipod_Mode_B4 "Overview byte 4: Ipod Mode";
+CM_ SG_ 724 Ipod_Controls_B5 "Overview byte 5: Ipod Controls";
+CM_ SG_ 724 Ipod_Mode_B6 "Overview byte 6: Ipod Mode";
+CM_ SG_ 724 Ipod_Mode_B7 "Overview byte 7: Ipod Mode";
+CM_ BO_ 737 "Bus: MS-CAN. Source: overview byte map. Overview names: Audio Mode Switches | Overview ECUs/modules: Audio Control Module";
+BA_ "Bus" BO_ 737 "MS-CAN";
+CM_ SG_ 737 Audio_Mode_Switch_B0 "Overview byte 0: Audio Mode Switch";
+CM_ SG_ 737 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 737 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 737 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 737 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 737 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 737 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 737 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 738 "Bus: MS-CAN. Source: overview byte map. Overview names: Audio Mode Switches | Overview ECUs/modules: Audio Control Module";
+BA_ "Bus" BO_ 738 "MS-CAN";
+CM_ SG_ 738 Audio_Mode_Switch_B0 "Overview byte 0: Audio Mode Switch";
+CM_ SG_ 738 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 738 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 738 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 738 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 738 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 738 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 738 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 739 "Bus: MS-CAN. Source: overview byte map. Overview names: Phone, AUX2 switcher | Overview ECUs/modules: Audio Control Module";
+BA_ "Bus" BO_ 739 "MS-CAN";
+CM_ SG_ 739 Audio_Mode_Switch_B0 "Overview byte 0: Audio Mode Switch";
+CM_ SG_ 739 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 739 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 739 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 739 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 739 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 739 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 739 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 742 "Bus: MS-CAN. Source: DbcDatabaseFile row 170.";
+BA_ "Bus" BO_ 742 "MS-CAN";
+CM_ BO_ 748 "Bus: MS-CAN. Source: DbcDatabaseFile row 46.";
+BA_ "Bus" BO_ 748 "MS-CAN";
+CM_ BO_ 751 "Bus: MS-CAN. Source: DbcDatabaseFile row 48.";
+BA_ "Bus" BO_ 751 "MS-CAN";
+CM_ BO_ 754 "Bus: MS-CAN. Source: DbcDatabaseFile row 176.";
+BA_ "Bus" BO_ 754 "MS-CAN";
+CM_ BO_ 756 "Bus: MS-CAN. Source: DbcDatabaseFile row 181.";
+BA_ "Bus" BO_ 756 "MS-CAN";
+CM_ BO_ 757 "Bus: MS-CAN. Source: DbcDatabaseFile row 191.";
+BA_ "Bus" BO_ 757 "MS-CAN";
+CM_ BO_ 758 "Bus: MS-CAN. Source: DbcDatabaseFile row 201.";
+BA_ "Bus" BO_ 758 "MS-CAN";
+CM_ BO_ 761 "Bus: MS-CAN. Source: DbcDatabaseFile row 211.";
+BA_ "Bus" BO_ 761 "MS-CAN";
+CM_ BO_ 764 "Bus: MS-CAN. Source: DbcDatabaseFile row 213.";
+BA_ "Bus" BO_ 764 "MS-CAN";
+CM_ BO_ 775 "Bus: MS-CAN. Source: DbcDatabaseFile row 223, DbcDatabaseFile row 515. Alternative message name from source: ICC_MSG_1";
+BA_ "Bus" BO_ 775 "MS-CAN";
+CM_ BO_ 777 "Bus: MS-CAN. Source: DbcDatabaseFile row 234.";
+BA_ "Bus" BO_ 777 "MS-CAN";
+CM_ BO_ 779 "Bus: MS-CAN. Source: DbcDatabaseFile row 244.";
+BA_ "Bus" BO_ 779 "MS-CAN";
+CM_ BO_ 781 "Bus: MS-CAN. Source: DbcDatabaseFile row 247.";
+BA_ "Bus" BO_ 781 "MS-CAN";
+CM_ BO_ 783 "Bus: MS-CAN. Source: DbcDatabaseFile row 50.";
+BA_ "Bus" BO_ 783 "MS-CAN";
+CM_ BO_ 785 "Bus: MS-CAN. Source: DbcDatabaseFile row 252.";
+BA_ "Bus" BO_ 785 "MS-CAN";
+CM_ BO_ 787 "Bus: MS-CAN. Source: DbcDatabaseFile row 260.";
+BA_ "Bus" BO_ 787 "MS-CAN";
+CM_ BO_ 789 "Bus: MS-CAN. Source: DbcDatabaseFile row 263.";
+BA_ "Bus" BO_ 789 "MS-CAN";
+CM_ BO_ 791 "Bus: MS-CAN. Source: DbcDatabaseFile row 272.";
+BA_ "Bus" BO_ 791 "MS-CAN";
+CM_ BO_ 816 "Bus: MS-CAN. Source: DbcDatabaseFile row 52.";
+BA_ "Bus" BO_ 816 "MS-CAN";
+CM_ BO_ 832 "Bus: MS-CAN. Source: DbcDatabaseFile row 275, DbcDatabaseFile row 425. Alternative message name from source: CLU_MSG_2";
+BA_ "Bus" BO_ 832 "MS-CAN";
+CM_ BO_ 851 "Bus: MS-CAN. Source: overview byte map. Overview names: HVAC_ClimateStatus_MS | Overview ECUs/modules: HVAC Integrated Module";
+BA_ "Bus" BO_ 851 "MS-CAN";
+CM_ SG_ 851 VentStatus_B0 "Overview byte 0: VentStatus";
+CM_ SG_ 851 PassengerTargetTemp_B1 "Overview byte 1: PassengerTargetTemp";
+CM_ SG_ 851 PassengerTemp_B2 "Overview byte 2: PassengerTemp";
+CM_ SG_ 851 DriverTargetTemp_B3 "Overview byte 3: DriverTargetTemp";
+CM_ SG_ 851 DriverTemp_B4 "Overview byte 4: DriverTemp";
+CM_ SG_ 851 ExteriorAmbientTemp_B5 "Overview byte 5: ExteriorAmbientTemp";
+CM_ SG_ 851 FanSpeedActual_B6 "Overview byte 6: FanSpeedActual";
+CM_ SG_ 851 FanSpeedTarget_B7 "Overview byte 7: FanSpeedTarget";
+CM_ BO_ 864 "Bus: MS-CAN. Source: DbcDatabaseFile row 297.";
+BA_ "Bus" BO_ 864 "MS-CAN";
+CM_ BO_ 869 "Bus: MS-CAN. Source: DbcDatabaseFile row 56.";
+BA_ "Bus" BO_ 869 "MS-CAN";
+CM_ BO_ 1027 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM_Status_MS | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1027 "MS-CAN";
+CM_ SG_ 1027 DoorStatus_Accessories_TrailerConnected_B0 "Overview byte 0: DoorStatus/Accessories/TrailerConnected";
+CM_ SG_ 1027 PriorityKey_LightsOn_RearDemist_B1 "Overview byte 1: PriorityKey/LightsOn/RearDemist";
+CM_ SG_ 1027 CabinTemperature_B2 "Overview byte 2: CabinTemperature";
+CM_ SG_ 1027 SunloadDriver_B3 "Overview byte 3: SunloadDriver";
+CM_ SG_ 1027 SunloadPassenger_B4 "Overview byte 4: SunloadPassenger";
+CM_ SG_ 1027 Boot_B5 "Overview byte 5: Boot";
+CM_ SG_ 1027 Windscreen_Wipers_B6 "Overview byte 6: Windscreen Wipers";
+CM_ SG_ 1027 Locking_State_B7 "Overview byte 7: Locking State";
+CM_ BO_ 1030 "Bus: MS-CAN. Source: DbcDatabaseFile row 323.";
+BA_ "Bus" BO_ 1030 "MS-CAN";
+CM_ BO_ 1033 "Bus: MS-CAN. Source: DbcDatabaseFile row 59.";
+BA_ "Bus" BO_ 1033 "MS-CAN";
+CM_ BO_ 1101 "Bus: MS-CAN. Source: DbcDatabaseFile row 354, DbcDatabaseFile row 647. Alternative message name from source: PCM_MSG_9";
+BA_ "Bus" BO_ 1101 "MS-CAN";
+CM_ BO_ 1107 "Bus: MS-CAN. Source: overview byte map. Overview names: Odometer | Overview ECUs/modules: Data Request";
+BA_ "Bus" BO_ 1107 "MS-CAN";
+CM_ SG_ 1107 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1107 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1107 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1107 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1107 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1107 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1107 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1107 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1281 "Bus: MS-CAN. Source: DbcDatabaseFile row 82.";
+BA_ "Bus" BO_ 1281 "MS-CAN";
+CM_ BO_ 1292 "Bus: MS-CAN. Source: DbcDatabaseFile row 375.";
+BA_ "Bus" BO_ 1292 "MS-CAN";
+CM_ BO_ 1297 "Bus: MS-CAN. Source: DbcDatabaseFile row 78.";
+BA_ "Bus" BO_ 1297 "MS-CAN";
+CM_ BO_ 1345 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM_KeepAliveSignal | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1345 "MS-CAN";
+CM_ SG_ 1345 Keep_Alive_Signal_B0 "Overview byte 0: Keep Alive Signal";
+CM_ SG_ 1345 Keep_Alive_Signal_B1 "Overview byte 1: Keep Alive Signal";
+CM_ SG_ 1345 Keep_Alive_Signal_B2 "Overview byte 2: Keep Alive Signal";
+CM_ SG_ 1345 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1345 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1345 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1345 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1345 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1365 "Bus: MS-CAN. Source: DbcDatabaseFile row 80.";
+BA_ "Bus" BO_ 1365 "MS-CAN";
+CM_ BO_ 1372 "Bus: MS-CAN. Source: DbcDatabaseFile row 378.";
+BA_ "Bus" BO_ 1372 "MS-CAN";
+CM_ BO_ 1600 "Bus: MS-CAN. Source: overview byte map. Overview names: TransConfig_MS | Overview ECUs/modules: Instrument Cluster";
+BA_ "Bus" BO_ 1600 "MS-CAN";
+CM_ SG_ 1600 ManualTransFlag_B0 "Overview byte 0: ManualTransFlag";
+CM_ SG_ 1600 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1600 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1600 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1600 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1600 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1600 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1600 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1664 "Bus: MS-CAN. Source: overview byte map. Overview names: PAM_CCP_DTO | Overview ECUs/modules: Parking Aid Module";
+BA_ "Bus" BO_ 1664 "MS-CAN";
+CM_ SG_ 1664 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1664 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1664 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1664 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1664 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1664 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1664 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1664 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1665 "Bus: MS-CAN. Source: overview byte map. Overview names: PAM_CCP_CRO | Overview ECUs/modules: Parking Aid Module";
+BA_ "Bus" BO_ 1665 "MS-CAN";
+CM_ SG_ 1665 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1665 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1665 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1665 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1665 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1665 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1665 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1665 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1782 "Bus: MS-CAN. Source: overview byte map. Overview names: ImmobTransfer_PCM_1 to 8   PATS | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 1782 "MS-CAN";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B0 "Overview byte 0: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B1 "Overview byte 1: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B2 "Overview byte 2: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B3 "Overview byte 3: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B4 "Overview byte 4: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B5 "Overview byte 5: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B6 "Overview byte 6: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ SG_ 1782 ImmobTransfer_PCM_1_to_8_PATS_B7 "Overview byte 7: ImmobTransfer_PCM_1 to 8   PATS";
+CM_ BO_ 1784 "Bus: MS-CAN. Source: overview byte map. Overview names: ImmobTransfer_BEM_1 to 8   PATS | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1784 "MS-CAN";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B0 "Overview byte 0: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B1 "Overview byte 1: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B2 "Overview byte 2: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B3 "Overview byte 3: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B4 "Overview byte 4: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B5 "Overview byte 5: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B6 "Overview byte 6: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ SG_ 1784 ImmobTransfer_BEM_1_to_8_PATS_B7 "Overview byte 7: ImmobTransfer_BEM_1 to 8   PATS";
+CM_ BO_ 1786 "Bus: MS-CAN. Source: overview byte map. Overview names: ImmobTransfer_IPC_1 to 8   PATS | Overview ECUs/modules: Instrument Cluster";
+BA_ "Bus" BO_ 1786 "MS-CAN";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B0 "Overview byte 0: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B1 "Overview byte 1: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B2 "Overview byte 2: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B3 "Overview byte 3: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B4 "Overview byte 4: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B5 "Overview byte 5: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B6 "Overview byte 6: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ SG_ 1786 ImmobTransfer_IPC_1_to_8_PATS_B7 "Overview byte 7: ImmobTransfer_IPC_1 to 8   PATS";
+CM_ BO_ 1788 "Bus: MS-CAN. Source: DbcDatabaseFile row 820.";
+BA_ "Bus" BO_ 1788 "MS-CAN";
+CM_ BO_ 1797 "Bus: MS-CAN. Source: overview byte map. Overview names: IPC CCP?, Unkown | Overview ECUs/modules: ?, Unkown";
+BA_ "Bus" BO_ 1797 "MS-CAN";
+CM_ SG_ 1797 CCP__B0 "Overview byte 0: CCP?";
+CM_ SG_ 1797 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1797 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1797 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1797 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1797 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1797 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1797 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1798 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM CAN CALIBRATION PROTOCOL, Unkown | Overview ECUs/modules: Diagnostic Tester, Unkown";
+BA_ "Bus" BO_ 1798 "MS-CAN";
+CM_ SG_ 1798 CCP__B0 "Overview byte 0: CCP?";
+CM_ SG_ 1798 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1798 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1798 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1798 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1798 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1798 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1798 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1809 "Bus: MS-CAN. Source: overview byte map.";
+BA_ "Bus" BO_ 1809 "MS-CAN";
+CM_ SG_ 1809 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1809 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1809 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1809 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1809 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1809 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1809 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1809 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1810 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM CAN CALIBRATION PROTOCOL | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1810 "MS-CAN";
+CM_ SG_ 1810 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1810 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1810 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1810 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1810 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1810 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1810 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1810 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1812 "Bus: MS-CAN. Source: overview byte map. Overview names: Where did this data come from!";
+BA_ "Bus" BO_ 1812 "MS-CAN";
+CM_ SG_ 1812 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 1812 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1812 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1812 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 1812 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1812 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1812 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1812 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1824 "Bus: MS-CAN. Source: DbcDatabaseFile row 822.";
+BA_ "Bus" BO_ 1824 "MS-CAN";
+CM_ BO_ 1830 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM_DiagSig_Rx, Clear DTC’s, Read DTC’s, BEM On Demand Self-Test, EcuReset, A/C Sunload Sensor Status, Anti-Scan Function, Auto Lamp Output Status, Heated Backlight Switch, Battery Saver Relay Status. | Overview ECUs/modules: Data Request, Body Electronic Module, Body Electric Module";
+BA_ "Bus" BO_ 1830 "MS-CAN";
+CM_ SG_ 1830 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1830 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1830 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1830 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1830 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1830 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1830 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1830 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1831 "Bus: MS-CAN. Source: overview byte map. Overview names: ACM_DiagSig_Rx, Clear DTC’s, Read DTC’s, ACM On Demand Self-Test, EcuReset | Overview ECUs/modules: Audio Control Module";
+BA_ "Bus" BO_ 1831 "MS-CAN";
+CM_ SG_ 1831 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1831 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1831 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1831 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1831 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1831 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1831 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1831 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1832 "Bus: MS-CAN. Source: overview byte map. Overview names: IC_DiagSig_Tx, 06 62 E2 00 17 0B 6C > Data is 170B6C - might be checking model?, 7F its a trick, FA 11 88 57 > 3 byte challenge key appears out of nowhere, 02 50 FA > Success!, FA 01 02 15 A1 > !!! 0xA1 is byte 0, 0x15 is byte 1 in the EEPROM., FA 02 02 > Happy days, back a 4 byte short packet: 05 50 00 00, Positive Response | Overview ECUs/modules: Instrument Cluster, READ DATA BY ID, NEGATIVE RESPONSE CODE, MANUFACTURER SEED KEY, ENTER MANUFACTURER STATE, EEPROM READ, EEPROM WRITE, ENTER PROGRAMMING MODE";
+BA_ "Bus" BO_ 1832 "MS-CAN";
+CM_ SG_ 1832 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1832 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1832 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1832 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1832 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1832 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1832 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1832 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1838 "Bus: MS-CAN. Source: overview byte map. Overview names: BEM_DiagSig_Tx | Overview ECUs/modules: Body Electronic Module";
+BA_ "Bus" BO_ 1838 "MS-CAN";
+CM_ SG_ 1838 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1838 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1838 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1838 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1838 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1838 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1838 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1838 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1839 "Bus: MS-CAN. Source: overview byte map. Overview names: ACM_DiagSig_Tx | Overview ECUs/modules: Audio Control Module";
+BA_ "Bus" BO_ 1839 "MS-CAN";
+CM_ SG_ 1839 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1839 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1839 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1839 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1839 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1839 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1839 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1839 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1843 "Bus: MS-CAN. Source: overview byte map. Overview names: Clear DTC’s, Read DTC’s, HIM On Demand Self-Test, EcuReset | Overview ECUs/modules: HVAC Control Module";
+BA_ "Bus" BO_ 1843 "MS-CAN";
+CM_ SG_ 1843 LEN_B0 "Overview byte 0: LEN";
+CM_ SG_ 1843 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 1843 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 1843 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1843 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 1843 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 1843 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 1843 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 1846 "Bus: MS-CAN. Source: overview byte map. Overview names: PAM_DiagSig_Rx, Clear DTC’s, Read DTC’s, Supplier Diagnostic Session 0x10FA, RCM_DiagSig_Rx, PAM On Demand Self-Test, EcuReset, Parking aid system status, Echo Value for Right Corner Sensor, Parking aid rear sensor status | Overview ECUs/modules: Restraints Control Module, Parking Aid Module, Data Request, MANUFACTURER STATE, Parking aid system status, Echo Value for Right Corner Sensor, Parking aid rear sensor status, Parking Aid Sounder";
+BA_ "Bus" BO_ 1846 "MS-CAN";
+CM_ SG_ 1846 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1846 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1846 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1846 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1846 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1846 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1846 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1846 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1847 "Bus: MS-CAN. Source: overview byte map. Overview names: RCM_DiagSig_Rx, Clear DTC’s, Read DTC’s, PAM_DiagSig_Rx, RCM_ On Demand Self-Test, EcuReset, PAM On Demand Self-Test | Overview ECUs/modules: Parking Aid Module, Restraints Control Module";
+BA_ "Bus" BO_ 1847 "MS-CAN";
+CM_ SG_ 1847 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1847 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1847 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1847 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1847 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1847 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1847 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1847 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1854 "Bus: MS-CAN. Source: overview byte map. Overview names: PAM_DiagSig_Tx, Positive Response Supplier Diagnostic, RCM_DiagSig_Rx | Overview ECUs/modules: Data Response, Parking Aid Module, MANUFACTURER STATE, Restraints Control Module";
+BA_ "Bus" BO_ 1854 "MS-CAN";
+CM_ SG_ 1854 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1854 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1854 Echo_Request_B2 "Overview byte 2: Echo Request";
+CM_ SG_ 1854 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1854 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1854 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1854 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1854 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1855 "Bus: MS-CAN. Source: overview byte map. Overview names: PAM_DiagSig_Tx, RCM_DiagSig_Rx | Overview ECUs/modules: Parking Aid Module, Restraints Control Module";
+BA_ "Bus" BO_ 1855 "MS-CAN";
+CM_ SG_ 1855 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1855 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1855 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1855 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1855 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1855 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1855 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1855 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1888 "Bus: MS-CAN. Source: overview byte map. Overview names: ABS_DiagSig_Rx, Clear DTC’s, Read DTC’s, ABS On Demand Self-Test, EcuReset | Overview ECUs/modules: Antilock Brake Module, Data Request";
+BA_ "Bus" BO_ 1888 "MS-CAN";
+CM_ SG_ 1888 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1888 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1888 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1888 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1888 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1888 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1888 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1888 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1895 "Bus: MS-CAN. Source: overview byte map. Overview names: AIM_DiagSig_Rx, Clear DTC’s, Read DTC’s, AIM On Demand Self-Test, EcuReset | Overview ECUs/modules: Audio Interface Module, Data Response";
+BA_ "Bus" BO_ 1895 "MS-CAN";
+CM_ SG_ 1895 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1895 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1895 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1895 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1895 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1895 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1895 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1895 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1896 "Bus: MS-CAN. Source: overview byte map. Overview names: ABS_DiagSig_Tx | Overview ECUs/modules: Antilock Brake Module";
+BA_ "Bus" BO_ 1896 "MS-CAN";
+CM_ SG_ 1896 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1896 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1896 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1896 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1896 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1896 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1896 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1896 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1903 "Bus: MS-CAN. Source: overview byte map. Overview names: AIM_DiagSig_Tx | Overview ECUs/modules: Audio Interface Module";
+BA_ "Bus" BO_ 1903 "MS-CAN";
+CM_ SG_ 1903 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1903 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1903 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1903 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1903 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1903 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1903 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1903 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1921 "Bus: MS-CAN. Source: overview byte map. Overview names: BPM_DiagSig_Rx, Clear DTC’s, Read DTC’s, BPM On Demand Self-Test, EcuReset, Bluetooth Reception Signal Strength, Security Status, ECU Operating States, Number of continuous trouble codes set, Number of On Demand DTCs | Overview ECUs/modules: Bluetooth Phone Module, Data Request";
+BA_ "Bus" BO_ 1921 "MS-CAN";
+CM_ SG_ 1921 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1921 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1921 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1921 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 1921 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1921 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1921 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1921 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1929 "Bus: MS-CAN. Source: overview byte map. Overview names: BPM_DiagSig_Tx, Bluetooth Reception Signal Strength, Security Status, ECU Operating States, Number of continuous trouble codes set, Number of On Demand DTCs | Overview ECUs/modules: Data Response, Bluetooth Phone Module";
+BA_ "Bus" BO_ 1929 "MS-CAN";
+CM_ SG_ 1929 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1929 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1929 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1929 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1929 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1929 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1929 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1929 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1958 "Bus: MS-CAN. Source: overview byte map. Overview names: FDIM_DiagSig_Rx, Air Conditioning Switch Status, FDIM On Demand Self-Test, EcuReset, Active Video Input, Air distribution status, AMSwitch, Autoset, Back/Home Button Pressed, Continuous Codes | Overview ECUs/modules: Data Request, Front Display Interface Module";
+BA_ "Bus" BO_ 1958 "MS-CAN";
+CM_ SG_ 1958 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1958 Service_Request_B1 "Overview byte 1: Service Request";
+CM_ SG_ 1958 Parameters_B2 "Overview byte 2: Parameters";
+CM_ SG_ 1958 Parameters_B3 "Overview byte 3: Parameters";
+CM_ SG_ 1958 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1958 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1958 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1958 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 1966 "Bus: MS-CAN. Source: overview byte map. Overview names: FDIM_DiagSig_Tx | Overview ECUs/modules: Front Display Interface Module";
+BA_ "Bus" BO_ 1966 "MS-CAN";
+CM_ SG_ 1966 Data_Length_Packet_B0 "Overview byte 0: Data Length Packet";
+CM_ SG_ 1966 Response_B1 "Overview byte 1: Response";
+CM_ SG_ 1966 Request_Echo_B2 "Overview byte 2: Request Echo";
+CM_ SG_ 1966 Error_Code_ID_B3 "Overview byte 3: Error Code ID";
+CM_ SG_ 1966 Parameters_B4 "Overview byte 4: Parameters";
+CM_ SG_ 1966 Parameters_B5 "Overview byte 5: Parameters";
+CM_ SG_ 1966 Parameters_B6 "Overview byte 6: Parameters";
+CM_ SG_ 1966 Parameters_B7 "Overview byte 7: Parameters";
+CM_ BO_ 2016 "Bus: MS-CAN. Source: overview byte map. Overview names: Clear DTC’s, Read DTC’s, EcuReset, Key On Engine Off Self-Test, Key On Engine Running Self-Test | Overview ECUs/modules: Powertrain Control Module";
+BA_ "Bus" BO_ 2016 "MS-CAN";
+CM_ SG_ 2016 LEN_B0 "Overview byte 0: LEN";
+CM_ SG_ 2016 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 2016 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 2016 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 2016 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 2016 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 2016 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 2016 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 2017 "Bus: MS-CAN. Source: overview byte map. Overview names: Clear DTC’s, Read DTC’s | Overview ECUs/modules: Transmission Control Module";
+BA_ "Bus" BO_ 2017 "MS-CAN";
+CM_ SG_ 2017 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 2017 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 2017 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 2017 _0XFF_B3 "Overview byte 3: 0XFF";
+CM_ SG_ 2017 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 2017 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 2017 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 2017 RawByte7_B7 "Overview byte 7: RawByte7";
+CM_ BO_ 259282800 "Bus: MS-CAN. Source: overview byte map. Overview names: 6B FB 3E B9 B9 DA DD DE | Overview ECUs/modules: Instrument Cluster";
+BA_ "Bus" BO_ 259282800 "MS-CAN";
+CM_ SG_ 259282800 RawByte0_B0 "Overview byte 0: RawByte0";
+CM_ SG_ 259282800 RawByte1_B1 "Overview byte 1: RawByte1";
+CM_ SG_ 259282800 RawByte2_B2 "Overview byte 2: RawByte2";
+CM_ SG_ 259282800 RawByte3_B3 "Overview byte 3: RawByte3";
+CM_ SG_ 259282800 RawByte4_B4 "Overview byte 4: RawByte4";
+CM_ SG_ 259282800 RawByte5_B5 "Overview byte 5: RawByte5";
+CM_ SG_ 259282800 RawByte6_B6 "Overview byte 6: RawByte6";
+CM_ SG_ 259282800 RawByte7_B7 "Overview byte 7: RawByte7";
+
+VAL_ 296 Lights_Auto 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Fog 1 "On" 0 "Off" ;
+VAL_ 296 Lights_Parker 1 "On" 0 "Off" ;
+VAL_ 296 Lights_HighBeam 1 "On" 0 "Off" ;
+VAL_ 296 Right_Indicator 1 "On" 0 "Off" ;
+VAL_ 296 Left_Indicator 1 "On" 0 "Off" ;
+VAL_ 296 HighBeamStatus 0 "off" ;
+VAL_ 296 IllumLevelDisplay 255 "No" 31 "MaxBrightness" ;
+VAL_ 296 AutoHeadlampSwitchStatus 0 "No" ;
+VAL_ 296 FogLampStatus 0 "No" ;
+VAL_ 296 ParkAndLowBeamStatus 0 "No" ;
+VAL_ 296 TurnStalkSwitchSatus 8 "IndicatingLeft" 16 "IndicatingRight" ;
+VAL_ 296 RearBeltMinderStatus 0 "" ;
+VAL_ 714 BpmContinuousTroubleCodes 0 "NumberOfContinuousTroubleCodesSet" ;
+VAL_ 714 BpmOperatingState 0 "ECUOperatingStates" ;
+VAL_ 714 BpmOnDemandDtcs 0 "NumberOfOnDemandDTCs" ;
+VAL_ 714 SecurityStatusBpm 0 "SecurityStatus" ;
+VAL_ 714 BTH_CONTD 0 "BluetoothReceptionSignalStrength" ;
+VAL_ 742 AudioFMFrequencyStep 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No" 0 "AudioFMFrequencyStep_(Message.Data[1]_*_0.01)" 2 "" 18 "No" ;
+VAL_ 742 AudioTunedFreqency 0 "" 50 "100" 47 "94" 46 "" 0 "" 50 "100" 47 "94" 46 "" ;
+VAL_ 742 AudioTunerBandPreset 0 "AM_Radio" 0 "AM_Radio" ;
+VAL_ 742 RDS_PSN_State 0 "No" 0 "No" ;
+VAL_ 754 AudioCurrentMediaMode 65 "AUX1" 66 "AUX2" 67 "CD_MP3" 69 "RADIO" 70 "PHONE" 72 "AudioOff" 97 "SWC_PHONE_BTN_ACTIVE" 101 "SWC_PHONE_BTN_ACTIVE" 104 "SWC_PHONE_BTN_ACTIVE" 0 "No" ;
+VAL_ 754 SteeringWheelControlsLeft_ms 8 "SEEK_BUTTON_ACTIVE" 9 "SEEK_BUTTON_ACTIVE" 12 "SEEK_BUTTON_ACTIVE" 16 "SEEK_BUTTON_ACTIVE" 17 "VOL_UP_BTN_ACTIVE" 18 "VOL_UP_BTN_ACTIVE" 20 "VOL_UP_BTN_ACTIVE" 24 "VOL_DOWN_BTN_ACTIVE" 25 "VOL_DOWN_BTN_ACTIVE" 0 "No" ;
+VAL_ 754 AudioVolumeLevel 0 "Mute" 1 "Vol_Lvl_2" 2 "Vol_Lvl_4" 3 "Vol_Lvl_6" 4 "Vol_Lvl_8" 5 "Vol_Lvl_10" 6 "Vol_Lvl_12" 7 "Vol_Lvl_14" 8 "Vol_Lvl_16" 9 "Vol_Lvl_18" 10 "Vol_Lvl_20" 11 "Vol_Lvl_22" 12 "Vol_Lvl_24" 13 "Vol_Lvl_26" 14 "Vol_Lvl_28" 15 "Vol_Lvl_30" ;
+VAL_ 756 RDS_MessageData0 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData1 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData3 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData5 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 756 RDS_MessageData7 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData0 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData1 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData2 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData3 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData4 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData5 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData6 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 757 RDS_MessageData7 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData0 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData1 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData2 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData3 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData4 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData5 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData6 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 758 RDS_MessageData7 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 58 "10" 59 "11" 60 "12" 61 "13" 62 "14" 63 "15" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" 91 "a" 92 "b" 93 "c" 94 "d" 95 "e" 96 "f" 97 "g" 98 "h" 99 "i" 100 "j" 101 "l" 102 "m" 103 "n" 104 "o" 105 "p" 106 "q" 107 "r" 108 "s" 109 "t" 110 "u" 111 "v" 112 "w" 113 "x" 114 "y" 115 "z" ;
+VAL_ 764 InteriorCommandCentre_MessageData0 1 "MenuSwitch" 4 "SeekUpSwitch" 8 "SeekDownSwitch" 32 "AmFmSwitch" 64 "ScanSwitch" 128 "CdAuxSwitch" ;
+VAL_ 764 InteriorCommandCentre_MessageData1 128 "EjectCdSwitch" 64 "LoadSwitch" 0 "NoDescription" ;
+VAL_ 764 InteriorCommandCentre_MessageData2 0 "" 33 "OkSwitch" ;
+VAL_ 764 InteriorCommandCentre_MessageData3 0 "" 65 "VolumeUpRotEncoder" 129 "VolumeDownRotEncoder" ;
+VAL_ 764 InteriorCommandCentre_MessageData4 0 "" ;
+VAL_ 764 InteriorCommandCentre_MessageData5 0 "" ;
+VAL_ 764 InteriorCommandCentre_MessageData6 0 "" ;
+VAL_ 764 InteriorCommandCentre_MessageData7 0 "" ;
+VAL_ 775 Reset_Trip_Timer 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Fuel 1 "On" 0 "Off" ;
+VAL_ 775 Reset_Avg_Speed 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Down 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Up 1 "On" 0 "Off" ;
+VAL_ 775 M_Overspeed_On 1 "On" 0 "Off" ;
+VAL_ 775 Overspeed_Active_Adjust 1 "On" 0 "Off" ;
+VAL_ 775 Diff_Lock_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Traction_VDC_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Driver_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Pass_Temp_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Fan_Spd_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Climate_Ctrl_Off_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Auto_ACC_On_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Down_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Air_Dist_Up_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Screen_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Floor_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Face_Switch 1 "On" 0 "Off" ;
+VAL_ 775 Recirc_Switch 1 "On" 0 "Off" ;
+VAL_ 775 AC_Switch 1 "On" 0 "Off" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData0 2 "WindowDefogFront" 32 "RearDemisterToggle" 64 "CloseCabinOpenCabin" 128 "AirConditioningToggle" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData1 4 "FanSpeedIncrease" 8 "FanSpeedDecrease" 16 "Off" 32 "AutoAirConditioning" 128 "CycleVentConfiguration" 0 "NoActiveSwitch" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData2 1 "HazardLightSwitch" 64 "ACTempDownSwitch" 128 "ACTempUpSwitch" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData3 160 "InteriorLights" 144 "DSCTractionControlButton" 192 "LockButton" 132 "UnlockButton" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData4 0 "" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData5 0 "" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData6 0 "" ;
+VAL_ 775 InteriorCommandCentreBem_MessageData7 0 "" ;
+VAL_ 781 CD_PlayingNow 0 "No" ;
+VAL_ 781 CD_TrackNumber 0 "No" ;
+VAL_ 781 CD_Type 0 "" 0 "No" ;
+VAL_ 789 CycleLockSetting 4 "CycleTwoStageLocking" 8 "CycleTwoStageLocking" 32 "CycleConfirmLockingWithHorn" 64 "CycleDriveAwayLocking" 128 "CycleConfirmLockingWithIndicators" ;
+VAL_ 789 Ignition 0 "" ;
+VAL_ 789 FollowMeHomeLighting 0 "Off" 1 "Min" 2 "" 3 "" 4 "" 5 "Mid" 6 "" 7 "" 8 "" 9 "" 10 "Max" ;
+VAL_ 789 InteriorLightStatus 0 "" ;
+VAL_ 789 CabLightSetting 32 "CycleCabinLightsOnWithUnlockCar" 64 "CabinLightsResetSettings" 128 "CycleCabinLightsOnWithDoorOpen" ;
+VAL_ 789 IgnitionState 4 "CycleCabinLightsOnWithIgnitionOff" 32 "CycleCabinLightsOnWithKeyOut" ;
+VAL_ 789 AutoHeadlightAdjustment 0 "" 16 "Auto" 32 "Auto" 48 "Auto" 64 "Auto" 80 "Auto" 96 "Auto" 112 "Auto" 128 "" 0 "Off" 1 "Off" 2 "Off" 3 "Off" 4 "Off" 5 "Off" 6 "Off" 7 "Off" 8 "Off" ;
+VAL_ 791 VIN 0 "No" ;
+VAL_ 864 RC_DIST 0 "EchoValueForRightCornerSensor" ;
+VAL_ 864 REAR_SENS 0 "ParkingAidRearSensorStatus" 255 "Active" ;
+VAL_ 864 REAR_TONE 0 "ParkingAidSounder" ;
+VAL_ 864 VBAT 0 "BatteryVoltage" ;
+VAL_ 864 TRAILINS 0 "TrailerInstalled" ;
+VAL_ 864 TRANSRV 0 "TransmissionInREVERSE" ;
+VAL_ 864 SYS_OZ 0 "SystemOutputZone" ;
+VAL_ 864 RM_DIST 0 "EchoValueForRightMiddleSensor" ;
+VAL_ 864 PARK_SYS 0 "ParkingAidSystemInactive" 5 "ParkingAidSystemActive" ;
+VAL_ 869 ReverseGearSelected 5 "Reverse" ;
+VAL_ 1030 SeatBeltStatusFrontRight 0 "No" ;
+VAL_ 1030 SeatBeltStatusFrontLeft 0 "No" 0 "No" ;
+VAL_ 1030 SeatBeltStatusRearLeft 0 "No" ;
+VAL_ 1030 SeatBeltStatusRearRight 0 "No" ;
+VAL_ 1030 IgnitionState 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No" 1 "IgnitionOff" 2 "AccessoryOn" 4 "IgnitionOn" 0 "No" ;
+VAL_ 1030 InteriorLightStatus 8 "InteriorLightsOn" 0 "InteriorLightsOff" 8 "InteriorLightsOn" 0 "InteriorLightsOff" ;
+VAL_ 1101 MIL_Status 1 "On" 0 "Off" ;
+VAL_ 1101 CylinderHeadTemp4 0 "" ;
+VAL_ 1101 CylinderHeadTemp5 0 "" ;
+VAL_ 1101 EngineOilTemperature6 0 "" ;
+VAL_ 1101 AtmosphericAbsolutePressure7 0 "" ;
+VAL_ 1292 KeepAliveACM 0 "AcmKeepAliveSignal" ;
+VAL_ 1372 KeepAliveFDIM 0 "0" ;
