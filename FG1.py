@@ -416,9 +416,9 @@ def PARSER_RESPONSE(_DiagSig_Rx):
    if messageSent == 1: 
        print("request sent onto canbus for", DiagSig_Rx[_DiagSig_Rx])
    if responsePos == 1:
-       print("recieved positive response to request from:", DiagSig_Tx[(_DiagSig_Rx + 0x08)], " for Service:", ServiceRequest )
+       print("received positive response to request from:", DiagSig_Tx[(_DiagSig_Rx + 0x08)], " for Service:", ServiceRequest )
    if responseNeg == 1:
-       print("recieved negative response code from ecu:",  DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
+       print("received negative response code from ecu:",  DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
    return 
    
 # WIP
@@ -995,9 +995,9 @@ def controlDTCSetting(_DiagSig_Rx, _controlDTCSetting):
         if messageSent == 1: 
             print("request sent onto canbus for", DiagSig_Rx[_DiagSig_Rx])
         if responsePos == 1:
-            print("recieved positive response to request from:", DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
+            print("received positive response to request from:", DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
         if responseNeg == 1:
-            print("recieved negative response code from ecu:",  DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
+            print("received negative response code from ecu:",  DiagSig_Tx[(_DiagSig_Rx + 0x08)] )
     except can.CanError:
         print("Message NOT sent")
 #############################################################################################################
@@ -1713,4 +1713,3 @@ layout                     = [[sg.Menu(menu_def, tearoff=False, key='-MENU BAR-'
 cleanscreen()
 time.sleep(1)
 menu()
-
