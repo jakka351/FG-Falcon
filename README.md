@@ -4,8 +4,9 @@
 
 </p>
 
-# FG Falcon `FoA Orion`
+# FG Falcon `FoA Orion` 
 
+<a href="https://testerpresent.com.au/AntiTheft.php">Anti-Theft Campaign is now in full swing! </a>
 
 <br/><br/>
   
@@ -639,6 +640,10 @@ Australian CanBus Products
 
   
 # [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
+`There appears to be no trace of the man. A ghost. Like he never was around. He is still around, but my gut tells me that he is a fucking criminal who has pulled
+the wool over the eyes of innocent people and has created a great many potential victims. Time will tell. I will out him publicly if I find any proof of criminality....fucker...
+21/08/2026`
+   
 
   -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
   -  `FPV Engine Calibrations`    
@@ -652,7 +657,9 @@ Australian CanBus Products
   -  `Passive Anti Theft System pairing and key pairing `
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
-#### Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.  
+`The above reads like a free for all on vehicle electronic identity doesn't it. Does that strike you as odd?`
+
+#### Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.  DO NOT CONTACT
 
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 
