@@ -640,7 +640,7 @@ Australian CanBus Products
 
   
 # [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
-`There appears to be no trace of the man. A ghost. Like he never was around. He is still around, but my gut tells me that he is a fucking criminal who has pulled
+`There appears to be no trace of the man. A ghost. Like he never was around. Feels like that was by design. He is still around, but my gut tells me that he is a fucking criminal who has pulled
 the wool over the eyes of innocent people and has created a great many potential victims. Time will tell. I will out him publicly if I find any proof of criminality....fucker...
 21/08/2026`
    
