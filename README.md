@@ -8,6 +8,38 @@
 
 <a href="https://testerpresent.com.au/AntiTheft.php">Anti-Theft Campaign is now in full swing! </a>
 
+'''
+    Hooning through the sun...
+    In a four-hundred-horsepower sleigh...
+    O’er the roads we go...
+    Boosting all the way...
+    
+    Bells on ford forums ring...
+    Making spirits bright...
+    Oh what fun it is to splice and hack...
+    Jason's o'er the eeprom tonight!
+    
+    Oh!
+    Jingle bells, Kayhan Smells,
+    ASL all the way! (Dont Pay)
+    Roland yells, Whiteford smells,
+    Nigel laid an egg.
+    
+    Oh!
+    ...what fun it is to ride
+    In a pcm-tec-tuned sleigh.
+    Hey!
+
+    Jingle bells, Kayhan Smells,
+    ASL all the way! (Dont Pay)
+    Hey! 
+
+    Oh what fun it is to ride...
+    with red and flashing blue ... 
+    chasing after you! 
+    
+'''
+
 <br/><br/>
   
 
