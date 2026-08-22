@@ -1,6 +1,6 @@
 <p align="right">
 
-<img align="right" alt="Old School cops drive Ford Fucking Falcons" src="https://github.com/user-attachments/assets/5457720c-5233-49aa-814f-083798667183" height="20%" width="20%"/>
+<img align="right" alt="Old School cops drive Ford Fucking Falcons" src="https://github.com/user-attachments/assets/5457720c-5233-49aa-814f-083798667183" height="35%" width="35%"/>
 
 </p>
 
