@@ -1,15 +1,9 @@
-<p align="right">
-
-<img align="right" alt="Old School cops drive Ford Fucking Falcons" src="https://github.com/user-attachments/assets/5457720c-5233-49aa-814f-083798667183" height="35%" width="35%"/>
-
-</p>
-
 # FG Falcon `FoA Orion` 
-
 
                                The Ford FG Falcon (FoA Orion) Repository
 
 
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/e91d1f36-3101-4085-8c60-2219507e94b8" />
 
 
 <a href="https://testerpresent.com.au/AntiTheft.php">Anti-Theft Campaign is now in full swing! </a>
