@@ -675,6 +675,10 @@ Josh thought it was a good idea to go around defaming myself(jakka351) to any an
 about me, because he feels threatened by my software. Guess what Josh - I'm taking you to fucking court for defamation, for a lot of fucking money. Watch out for this bastard,
 he will rob you dry, and not give a fuck about fixing your problems - the truth always comes out. 
 
+
+<img width="617" height="366" alt="image" src="https://github.com/user-attachments/assets/563f91c3-ea0b-4b91-b740-ba56cd630c1d" />
+
+
   -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
   -  `FPV Engine Calibrations`    
   -  `Custom Insrument Cluster Start Up Logos` `AKA Bootsplashes`  
