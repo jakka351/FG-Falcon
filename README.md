@@ -669,9 +669,11 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
-# [`Whiteford Tech`](mailto:whitefordtech@outlook.com) Josh Freiden is a Liar and a Cheat beware.
+# [`Whiteford Tech`](mailto:whitefordtech@outlook.com) Josh Freiden is a Liar beware.
 
-   
+Josh thought it was a good idea to go around defaming myself(jakka351) to any and every workshop or person that he could, spreading absolute malicious false information
+about me, because he feels threatened by my software. Guess what Josh - I'm taking you to fucking court for defamation, for a lot of fucking money. Watch out for this bastard,
+he will rob you dry, and not give a fuck about fixing your problems - the truth always comes out. 
 
   -  `Ford Falcon BA-FGX and Territory SX-SZII Diagnostics and Module Programming Specialist. `  
   -  `FPV Engine Calibrations`    
