@@ -669,7 +669,7 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
-# [`Whiteford Tech`](mailto:whitefordtech@outlook.com)
+# [`Whiteford Tech`](mailto:whitefordtech@outlook.com) Josh Freiden is a Liar and a Cheat beware.
 
    
 
