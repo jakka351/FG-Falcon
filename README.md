@@ -397,6 +397,36 @@ Description   | Platform      | Model     | Author
 <br />
 
 
+# FG2ICCFlash
+
+<sup>Module Programming for the MkII FG Falcon FDIM via J2534 &amp; USB — [`github.com/jakka351/FG2ICCFlash`](https://github.com/jakka351/FG2ICCFlash)</sup>
+
+[`FG2ICCFlash`](https://github.com/jakka351/FG2ICCFlash) is a full-spec, open-source engineering tool for reprogramming the Ford **MkII FG Falcon Front Display Interface Module (FDIM)** — the ICC, or Interior Command Centre. It stands in for the Ford dealership reflash path (Ford IDS), which is broken for this procedure and no longer maintained for it, and gives DIYers, independent workshops and dealerships back the module programming, configuration and firmware **recore** functionality they had lost. Published freely in the spirit of Right to Repair. Most of the project builds on the extensive reverse-engineering and development work of **JasonACT**.
+
+### How it works — two stages
+- **Stage 1 — CANbus / OBD:** flashed over the OBD-II port through an **SAE J2534 PassThru** device on Ford Mid-Speed CAN (125 kbps).
+- **Stage 2 — USB:** firmware recore completed over USB, driven from within the tool. Includes a small Linux scripting engine for building custom recore payloads, selectable community firmware backups, and `navimaps.zip`.
+
+Both the OBD flash and the USB flash are **bench-verified working**.
+
+### Features
+- Read &amp; Clear DTCs, On-Demand Self Test, and EOL Assembly Self Test (Diagnostics tab)
+- Built-in **As-Built data / EEPROM editor** — module configuration options, programmed VIN, and single/dual-zone HVAC settings; loads and saves FORScan-format `.ABT` files *(configuration editing currently untested)*
+- Firmware supplied in **PHF, Binary and Hex**; official updates and community recore backups are downloadable from the Stage 2 tab, hosted at [`testerpresent.com.au/FDIM`](https://www.testerpresent.com.au/FDIM/). The `-CS` firmware is believed to be the FPV-spec build with extra EEPROM space.
+- **MK2-into-MK1 patched firmware** (`AR79-14D017-JL.phf`): inverts `0x128` dimming to match the MK1 CANbus, rebroadcasts `0x353` ambient temperature on `0x313` byte 0, and realigns the `0x307` HVAC buttons to what the MK1 expects.
+
+### Requirements
+- Windows laptop with **.NET Framework 4.8.1 (x86)**
+- **SAE J2534 PassThru** device with Ford Mid-Speed CAN @ 125 kbps capability
+- A USB drive of 8 GB or larger
+
+> **Brick risk:** MkII FDIMs are delicate and reprogramming can inexplicably brick a unit, rendering it useless. Use at your own risk; if unsure, contract a suitably qualified module programmer.
+
+Written in C#. Ships with a LICENSE, Code of Conduct, Contributing guide and Security policy; builds are on the repo's [releases page](https://github.com/jakka351/FG2ICCFlash/releases).
+
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
+
+
 # 6HP26 Toolkit
 
 The 6HP26 Toolkit is software for the 6HP26 Transmission Control Module, you can Read and Clear Fault codes, Read and Reset Clutch Wear Learnings and Adaptations, Read and Write the TCM Calibration and Completely Flash the TCM with this software...You can also convert BF to FG and vice versa.
