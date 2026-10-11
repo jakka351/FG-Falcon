@@ -396,6 +396,7 @@ Description   | Platform      | Model     | Author
 
 <br />
 
+<img width="30%" height="30%" align="right" alt="image" src="https://github.com/user-attachments/assets/4ec02cac-3cc2-4aff-8d72-ce95ba946201" />
 
 # FG2ICCFlash
 
