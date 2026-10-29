@@ -702,7 +702,7 @@ Australian CanBus Products
   
 # [`Whiteford Tech`](mailto:whitefordtech@outlook.com) 
 
-Why has all existence of Jack Whiteford, and Whiteford Tech been scrubbed from the internet? Why has E8 Automotive's ABN been cancelled? What in the 351 happened? And what's the real story with the GTF gauges? Dropping soon....the method and means to do it for free.  
+**Why has all existence of Jack Whiteford, and Whiteford Tech been scrubbed from the internet?** Why has E8 Automotive's ABN been cancelled? What in the 351 happened? And what's the real story with the GTF gauges? Dropping soon....the method and means to do it for free.  
 *Jakka 30/10/2026*  
 
 <img width="617" height="366" alt="image" src="https://github.com/user-attachments/assets/563f91c3-ea0b-4b91-b740-ba56cd630c1d" />
