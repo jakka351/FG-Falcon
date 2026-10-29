@@ -700,12 +700,10 @@ Australian CanBus Products
 <img align="right" src="https://user-images.githubusercontent.com/57064943/163985391-fac33783-dad8-4021-9388-6d9c9c3e8b7e.png" height="35%" width="35%" />
 
   
-# [`Whiteford Tech`](mailto:whitefordtech@outlook.com) Josh Freiden is a Liar beware.
+# [`Whiteford Tech`](mailto:whitefordtech@outlook.com) 
 
-Josh thought it was a good idea to go around defaming myself(jakka351) to any and every workshop or person that he could, spreading absolute malicious false information
-about me, because he feels threatened by my software. Guess what Josh - I'm taking you to fucking court for defamation, for a lot of fucking money. Watch out for this bastard,
-he will rob you dry, and not give a fuck about fixing your problems - the truth always comes out. 
-
+Why has all existence of Jack Whiteford, and Whiteford Tech been scrubbed from the internet? Why has E8 Automotive's ABN been cancelled? What in the 351 happened? And what's the real story with the GTF gauges? Dropping soon....the method and means to do it for free.  
+*Jakka 30/10/2026*  
 
 <img width="617" height="366" alt="image" src="https://github.com/user-attachments/assets/563f91c3-ea0b-4b91-b740-ba56cd630c1d" />
 
@@ -723,7 +721,7 @@ he will rob you dry, and not give a fuck about fixing your problems - the truth 
   -  `Odometer Correction for Replacement or Repaired Instrument Clusters BA, BF, FGI, FGII, FG-X`  
 
 
-#### Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.  DO NOT CONTACT
+#### Contact Jack at WhitefordTech@outlook.com, or message Jack Whiteford on facebook.  
 
 <img src="https://user-images.githubusercontent.com/57064943/163985635-4b60d424-1f77-4cb7-8d1d-d6d7b53e5143.png" height="85%" width="65%" />
 
